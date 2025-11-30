@@ -184,4 +184,4 @@ window.closeSidebar = function() {
 //    var coordString = "[" + lat + ", " + lng + "]";
 //    L.popup().setLatLng(e.latlng).setContent("Copied: " + coordString).openOn(map);
 //    navigator.clipboard.writeText(coordString);
-//});
+//    });
