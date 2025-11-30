@@ -375,5 +375,34 @@ const wikiData = {
             &bull; <strong>The Gyre-Wobble:</strong> During a high-society gala, the Gyre-Stone stutters. For ten seconds, the unnatural repression of the ocean fails. Seawater erupts from the drains and surges over the sea-walls, flooding the lower plaza of Aretzu with waist-deep brine before instantly receding when the Stone stabilizes. The King hires the party to journey into the mechanism beneath Aretzu to find the “discordant gear” before the capital is swallowed by the sea.<br>
             &bull; <strong>The Black Sap:</strong> A smuggler in the fishing villages is exporting a concentrated, black version of the Nareth Sacrament. It doesn't cause detachment; it causes total memory erasure. The Silentiaries need outsiders to track the source, as their own agents are too “detached” to understand the criminal mindset.<br>
             &bull; <strong>The Pilgrim's Price:</strong> A wealthy merchant from Rivhalde hires the party to escort his traumatized daughter to the Nareth Ringwood. He hopes the Rift will “eat” her grief. The party must protect her from bandits who target wealthy pilgrims, only to realize the “cure” might take her personality along with her sorrow.			`
+},
+"Myrskov": {
+        "title": "Myrskov",
+        "type": "Region",
+		"image": "assets/Myrskov.jpg",
+        "coords": [-81, -144],
+        "content": `
+           <em style="color: #555;">“You're walking too loud.” “I barely made a sound.” “It’s not about the twigs. It’s the intent. If you march through like a soldier, the woods will treat you like one.” “So how should I walk then?” “You have to walk like who you are, not like the role you were assigned. Do that, and the mist might just let you pass.”</em><br>
+            <strong style="font-size: 0.9em;">- Elnira, Myrrkin Guide, instructing a mercenary</strong><br><br>
+
+            <h3 style="color: #8B0000; margin-bottom: 5px;">The Overlapping Land</h3>
+            Myrskov is a region of double-vision. To the naked eye, it is a dense, damp boreal forest, heavy with ancient pines and clinging mist. But to the mind, it is something else entirely. The air feels thick, charged with unplaced nostalgia. It is a place where a second, dreamlike reality sits heavily on top of the physical world. This is not a trap for the unwary, but a test of the spirit. A pragmatic traveler might cross Myrskov and see nothing but trees and fog. But for the sensitive or the open-hearted, the forest induces a state of child-like wonder, a feeling of returning to a home one has never visited. The danger here is not getting lost in the geography, but drifting too far into this feeling of “oneness,” forgetting the urgency of the waking world.<br>
+            Despite this, while not heavily populated, the region is mostly stable. Some villages thrive, maintained by the Listeners. These local guardians patrol the “Chime Routes” - ancient paths marked by iron bells and bone wind chimes. They train to listen for the subtle discord in the wind that signals a Rift opening or the dream-layer growing too thick.<br><br>
+
+            <h4 style="color: #000080; margin-bottom: 3px;">The Collision</h4>
+            Before the Sundering, Myrskov was simply a forest: deep, dark, plentiful and mundane. But when the world broke, the Glimmerwild - a dimension of pure emotion and fey logic collided with this part of Virelia. The impact was catastrophic for the Glimmerwild. While the collision made the forest of Myrskov softer and more dreamlike, the exchange went both ways: the rigid, static physics of Virelia infected the Glimmerwild like a virus. The dream-realm began to “calcify,” dying by becoming bound to our universe’s laws. The Myrrkin are the refugees of this slow apocalypse, fleeing a home that is hardening into stone and swiftly kills their population.<br><br>
+
+            <h4 style="color: #000080; margin-bottom: 3px;">Governance of Whispers</h4>
+            There is no secular government in Myrskov because laws require a rigid reality to enforce, and reality here is negotiable. In the absence of soldiers, power has shifted to the Druids and Shamans. These spiritual leaders are the only ones who can navigate the overlapping logics of the forest without losing their minds. They act as the de facto judges, mediators, and protectors, interpreting the mood of the forest as often as they interpret the needs of the people.<br>
+            The only true city in the region is Brackwater Hold. Originally built by the Remosan Empire as a forward operating base to conquer the region, the fortress was a failure of epic proportions. The Empire quickly realized that walls cannot keep out dreams, and supply lines cannot be maintained when soldiers go missing so often. They abandoned the hold, and the locals moved in. Now, the high stone walls meant to repel the forest are covered in moss and vines, housing a community that survives by processing resin and harvesting memory-bark.<br><br>
+
+            <h4 style="color: #000080; margin-bottom: 3px;">Spiritual Spellcasting</h4>
+            Magic in Myrskov is introspective and symbolic. Spells here shape themselves around emotion and metaphor rather than rigid arcane formulas. Consequently, Wizards often struggle here, finding their precise calculations slipping like wet soap. Druidic magic, however, thrives. The shamans of Myrskov do not just command nature; they bargain with the collective subconscious of the wood. Because of the thin veil, the forest is home to the largest population of Myrrkin in Virelia. They serve as natural mediators between the locals and the lingering fey influence, often hired to interpret sudden blooms of strange flora or to calm down localized “emotional storms.”<br><br>
+
+            <h4 style="color: #000080; margin-bottom: 3px;">Plot Hooks</h4>
+            &bull; <strong>The Sleepless Agent:</strong> A Weave agent went missing in the woods three weeks ago. Her body has not been found, but her “dream” has returned to her home village. Every night, a spectral version of her walks into the tavern, orders a drink, and asks for help, repeating the same coordinates before vanishing at dawn.<br>
+            &bull; <strong>The Fading Town:</strong> A small hamlet near the eastern border is slowly “falling asleep.” First the birds went silent, then the livestock stopped moving. Now, the villagers are found standing in their fields, staring at the sun, their memories unraveling hour by hour.<br>
+            &bull; <strong>The Echo-Child:</strong> A child in Brackwater has begun speaking a dialect of Sylvan that hasn't been heard since the moment of the Collision. The local elders fear the boy isn't just remembering a past life—he is a vessel for a Glimmerwild entity trying to push its way back through the veil.
+			`
 }
 } ;

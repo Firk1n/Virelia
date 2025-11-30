@@ -178,7 +178,7 @@ window.closeSidebar = function() {
     document.getElementById('sidebar').classList.remove('active');
 };
 
-//map.on('click', function(e) {
+// map.on('click', function(e) {
 //    var lat = e.latlng.lat.toFixed(0);
 //    var lng = e.latlng.lng.toFixed(0);
 //    var coordString = "[" + lat + ", " + lng + "]";
