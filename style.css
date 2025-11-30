@@ -1,0 +1,165 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    /* Prevents the whole page from rubber-banding on Mac/Mobile */
+    overscroll-behavior: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+    /* TRICK: Change this color to match your map's ocean color! 
+       If your ocean is dark blue, put that hex code here.
+       This makes the "black borders" invisible.
+    */
+    background: #202020; 
+    /* If you are using the texture: */
+    /* background-image: url('assets/ocean.png'); */
+    /* background-repeat: repeat; */
+}
+
+/* --- THE SIDEBAR ENCYCLOPEDIA --- */
+#sidebar {
+    position: fixed;
+    top: 0;
+    right: -450px; /* Hidden off-screen */
+    width: 450px;  /* Nice wide reading area */
+    height: 100%;
+    background: #fdf6e3; /* Parchment color */
+    box-shadow: -5px 0 15px rgba(0,0,0,0.5);
+    transition: right 0.3s ease-in-out;
+    z-index: 2000;
+    overflow-y: auto; /* Scrollbar for long text */
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+#sidebar.active {
+    right: 0; /* Slide in */
+}
+
+#sidebar h2 {
+    margin-top: 0;
+    border-bottom: 2px solid #93403c;
+    color: #2c3e50;
+    padding-bottom: 10px;
+}
+
+#sidebar img {
+    /* 1. FORCE FULL WIDTH (Ribbon Style) */
+    display: block;
+    width: calc(100% + 60px); /* Width of sidebar + left padding + right padding */
+    max-width: none; /* Allow it to break the container */
+    
+    /* 2. PULL IT TO THE EDGES */
+    /* We pull it -30px Up, Left, and Right to counteract the sidebar padding */
+    margin: -30px -30px 20px -30px; 
+    
+    /* 3. STYLING */
+    border-bottom: 4px solid #93403c; /* A divider line below the art */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    
+    /* 4. INTERACTION */
+    cursor: zoom-in; /* Tells user they can click to see details */
+}
+
+#sidebar p {
+    line-height: 1.6;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Close Button (The X) */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    
+    /* Make it a circle */
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    
+    /* The Contrast Fix: Semi-transparent parchment background */
+    background: rgba(253, 246, 227, 0.85); 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    
+    /* Center the X using Grid */
+    display: grid;
+    place-items: center;
+
+    /* Manual fix for vertical centering: push it up slightly */
+    padding-bottom: 2px; /* Nudge up */
+    
+    font-size: 24px;
+    font-weight: bold;
+    
+    cursor: pointer;
+    color: #8b0000; /* Dark Red X */
+    z-index: 2001; /* Sit on top of the ribbon image */
+    transition: all 0.2s ease;
+}
+
+.close-btn:hover { 
+    background: #8b0000; /* Turn solid red on hover */
+    color: #fdf6e3; /* Turn text parchment color */
+    transform: scale(1.1);
+}
+
+/* --- CUSTOM MARKERS --- */
+.marker-pin {
+    border-radius: 50%;
+    
+    /* THE CHANGE: New Border Color */
+    border: 2px solid #f6dfbf; 
+    
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    opacity: 0.9; 
+    z-index: 500;
+}
+
+/* Hover Effect: Pop out and turn Gold */
+.marker-pin:hover {
+    transform: scale(1.2);
+    opacity: 1.0;
+    
+    /* optional: Change border color on hover */
+    border-color: #ffec00; 
+    
+    z-index: 1000 !important;
+}
+
+/* 1. REGION */
+.type-region {
+    background: #93403c; 
+    width: 30px;
+    height: 30px;
+    border-width: 3px; /* Keep regions looking "heavy" */
+}
+
+/* 2. CITY */
+.type-city {
+    background: #d9a958;
+    width: 22px;
+    height: 22px;
+}
+
+/* 3. TOWN */
+.type-town {
+    background: #6A5D7B;
+    width: 16px;
+    height: 16px;
+}
+
+/* 4. POI */
+.type-poi {
+    background: #4A6D7C;
+    width: 10px;
+    height: 10px;
+}

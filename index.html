@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Map Encyclopedia</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="map"></div>
+
+    <div id="sidebar">
+        <span class="close-btn" onclick="closeSidebar()">&times;</span>
+        <div id="sidebar-content">
+            <h2>Welcome</h2>
+            <p>Click a location on the map to begin.</p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="wiki-data.js"></script>
+    <script src="main.js"></script>
+
+<div id="lightbox" onclick="closeLightbox()" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:5000; justify-content:center; align-items:center; cursor: zoom-out;">
+    <img id="lightbox-img" style="max-width:95%; max-height:95%;">
+</div>
+
+<script>
+    // Function to open the lightbox
+    function showLightbox(src) {
+        let box = document.getElementById('lightbox');
+        let img = document.getElementById('lightbox-img');
+        img.src = src;
+        box.style.display = 'flex'; // Uses flexbox to center the image
+    }
+
+    // Function to close it
+    function closeLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
+    }
+</script>
+</body>
+</html>
