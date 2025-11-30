@@ -92,8 +92,9 @@ body, html {
     display: grid;
     place-items: center;
 
-    /* Manual fix for vertical centering: push it up slightly */
-    padding-bottom: 2px; /* Nudge up */
+    /* Manual fix: Box-sizing ensures padding doesn't stretch the circle */
+    box-sizing: border-box; 
+    padding-bottom: 4px; /* Nudge the X upwards */
     
     font-size: 24px;
     font-weight: bold;
@@ -162,4 +163,53 @@ body, html {
     background: #4A6D7C;
     width: 10px;
     height: 10px;
+}
+
+/* --- LEAFLET UI OVERRIDES --- */
+.leaflet-control-layers {
+    background: #fdf6e3 !important; 
+    border: 2px solid #93403c !important; 
+    border-radius: 4px !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5) !important;
+    color: #2c3e50;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    padding: 5px !important;
+}
+.leaflet-control-layers-expanded { padding: 10px !important; }
+.leaflet-control-layers label { font-size: 14px; cursor: pointer; }
+
+/* --- MOBILE OPTIMIZATIONS --- */
+@media (max-width: 600px) {
+    /* Make sidebar fill the whole screen on phones */
+    #sidebar {
+        width: 100%;
+        right: -100%;
+        
+        /* FIX: Prevent horizontal scrolling/swiping off-screen */
+        overflow-x: hidden;
+        
+        /* FIX: Reduce padding to give text more room on small screens */
+        padding: 20px; 
+    }
+    
+    /* Make Close Button bigger for thumbs */
+    .close-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 28px;
+        
+        /* Adjust position to match new 20px padding */
+        top: 10px;
+        right: 10px;
+    }
+    
+    /* Adjust ribbon images to match new padding */
+    #sidebar img {
+        /* Recalculate width: 100% + Left Pad (20) + Right Pad (20) */
+        width: calc(100% + 40px); 
+        
+        /* Update negative margins to pull to the new edge */
+        margin: -20px -20px 20px -20px;
+    }
 }
