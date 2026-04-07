@@ -487,4 +487,92 @@ Mother Gimm, the village's tiny, clouded-eyed herbalist, treats the Quick-Step f
 
         `
     },
+    "brenmath": {
+        "title": "Brenmath",
+        "type": "city",
+        "image": "assets/Brenmath.jpg",
+        "coords": [-77.9, 27.3],
+        "content": `
+"Brenmath": {
+  "title": "Brenmath",
+  "type": "City",
+  "image": "assets/Brenmath.jpg",
+  "coords": [0, 0],
+  "content": \`
+<em style="color: #555;">
+"They built it to rule a continent. We just figured out how to live in the parts that didn't collapse."
+</em><br>
+<strong style="font-size: 0.9em;">- Brenman saying</strong><br><br>
+
+<h3 style="color: #2F4F4F; margin-bottom: 5px;">Overview</h3>
+Brenmath is the largest city in Trefgann and one of the largest in Virelia. The Remosan Empire built it at the height of the Shining Age as a provincial capital, designed to administer half a continent, and even after two centuries of Trefganner rule the population has only grown into about two-thirds of the original walls. The other third is empty: weed-grown plazas, half-collapsed barracks, the slow ruin of the old patrician quarter where nobody has lived in a century. Brenmen joke that the city has more buildings than residents and more residents than anyone can keep track of.<br><br>
+
+Brenmath sits a week east of Tharlin's Crossing, on the eastern shore of Lake Verdane. It is the first major city anyone reaches after crossing into Trefgann from Remosa, and the gates see a constant trickle of refugees, defectors, merchants, smugglers, deserters, and Compact couriers. It is also the rallying point for three successful wars against the Empire that built it, and the institutional home of Trefgann's largest military tradition.<br><br>
+
+<h4 style="color: #000080; margin-bottom: 3px;">The First Impression</h4>
+You come through the West Gate after a week's walk from Tharlin's Crossing, and the first thing that hits you is the scale. The gate itself is a Remosan triumphal arch fifty feet high, with the names of three lost legions still legible on the lintel after two centuries of weather. The road inside was built for a legion to march six abreast. It is currently full of vegetable carts, a militia patrol in worn leather, two children chasing a chicken, and a fishwife arguing with a moneylender in the flat Brenman accent that swallows half the consonants. Above the rooftops you can see the great triumphal column with three lines of laundry strung from it, and beyond that the marble dome of the old governor's palace.<br><br>
+
+Nobody bothered to rename anything. The forum is still the forum. The baths are still the baths. The avenue you walked in on is still called the Legion Road, because that was its name under the Emperors and changing it seemed like effort no one wanted to spend.<br><br>
+
+<h4 style="color: #000080; margin-bottom: 3px;">The Look</h4>
+Marble everywhere, in every district, all of it gone slightly grey. Brenmath was built in the Shining Age, when the Remosan Empire could call buildings into being out of stone the gods had given them, and what they made was uniformly white, uniformly massive, and uniformly meant to last forever. Two centuries later the marble still stands, but it has lost its shine. Wind and rain have darkened it. Soot from the dye-houses has streaked it. Every wall in the city looks slightly tired, like a banquet hall the morning after.<br><br>
+
+The shape of the city is still imperial. Wide ceremonial avenues meet at right angles in great open squares. Ranges of identical barracks march up the slopes in formation. Every public building is colonnaded, every doorway twice as tall as it needs to be, every fountain carved with the curve of some forgotten relief. The Trefganns inherited all of this and have spent two centuries trying to make it livable. Marketplaces fill the old forums. Bathhouses still operate in the old imperial baths, miraculously well-plumbed. Squatter families have built lower wooden additions inside the cavernous shells of patrician homes, dividing single rooms into three.<br><br>
+
+The poor districts are not architecturally different from the rich ones. Everyone in Brenmath lives in white stone, because there is no other material the Remosans built with. The difference shows in upkeep. In the wealthier districts the marble is washed, the additions are tasteful, and the cracks have been pointed. In the poorer districts the cracks are spreading, the wooden additions are sagging, and the grand entrance hall has been turned into three workshops and a chicken coop.<br><br>
+
+The humiliation of the old architecture is deliberate and ongoing. The lake-facing wall has a long scar where the carved names of Remosan generals were chiseled off, and the city refreshes the cut every decade so it doesn't weather smooth. The triumphal column had its imperial eagle replaced a century ago with a weathervane shaped like a chicken. None of this is subtle, and no Brenman wants it to be.<br><br>
+
+<h4 style="color: #000080; margin-bottom: 3px;">The People</h4>
+A Brenman is a Trefgann through and through. The same blunt practicality, the same generational hatred of the Empire, the same low taxes and local courts and voluntary militia. The only real difference is that a Brenman lives in a city of forty thousand instead of a village of four hundred, and has therefore developed an urban version of the same instincts: warier of strangers in a denser way, slower to vouch for a neighbor, more tolerant of small foreign things at the edges of life because the alternative is impossible.<br><br>
+
+The population is also unusually mixed for a Trefgann city. A continuous lineage of Remosan-descended families goes back to the city's founding, since not every imperial citizen left at secession, and that lineage has been added to by every wave of refugees and defectors since. After two centuries the mixing has blurred at the edges. There are old Brenman families with imperial surnames who would consider themselves Trefganns to the bone, and there are recently arrived refugees who will never be considered anything else by their neighbors. Accents shift block by block. A grandmother might still be named for some forgotten imperial general, while her grandson is called something blunt and Trefganner.<br><br>
+
+The food is good. The bread is Remosan in style, the stews are blunt Trefganner cooking, and the fish comes straight out of the lake.<br><br>
+
+<h4 style="color: #000080; margin-bottom: 3px;">The Suspicion</h4>
+Brenmen are friendly the way veterans are friendly: they will share a drink with you, they will tell you about their grandfather's war, and they will notice if your story changes between Tuesday and Wednesday. Toward strangers in general the city is watchful but pragmatic. It sees too many travelers in a week to be paranoid about all of them.<br><br>
+
+Toward Remosans the watchfulness becomes something harder. A family of Imperial descent can have lived in Brenmath for four generations, paid their dues, sent sons to the Blackhen School, buried their dead in Trefgann soil, and they will still be the first house searched when a war-picker goes missing or an Imperial agent is rumored in the city. They will not be invited into the older militia drinking houses. Their children will be tested for loyalty in small ways, constantly, all their lives. A shopkeeper of Remosan descent expects to have her stock audited more often than her neighbors. A Remosan-descended Blackhen cadet has to work harder than his classmates to be taken seriously, and hits ceilings his classmates never see. The old families call this <em>necessary memory</em>. The Remosan-descended call it other things, mostly in private, sometimes into their cups, and rarely to anyone who might write it down.<br><br>
+
+The Blackhen School maintains a small intelligence wing that focuses almost exclusively on the West Quarter, and everyone knows it. Varenhal has issued several rulings over the years about civic unity. None have been enforced, and nobody expected them to be.<br><br>
+
+<h4 style="color: #000080; margin-bottom: 3px;">Districts</h4>
+
+<h4>The Forum</h4>
+The Forum is the political and commercial heart, centered on the vast marble plaza of the old provincial capital. Every morning before dawn the stalls go up: fishmongers, vegetable carts, leather, salt, knives, used books. Every evening they come down again, leaving the marble swept and silent. The old governor's palace stands at the head of the plaza, where Varenhal holds his weekly open audiences. The colonnaded townhouses around the Forum are owned by old Brenman merchant families who have lived in them for six or eight generations and would consider it impolite for anyone else's family to claim equal antiquity.<br><br>
+
+<h4>Highstone</h4>
+Highstone is the fortified upper city, on a rise toward the inland edge of the walls. Two centuries of progressive fortification have given it its own walls inside the city walls. The Blackhen compound dominates the district, with a black slate roof visible from any other quarter and a training ground that wakes the neighborhood at dawn, and the rest of Highstone has shaped itself around the school. The families who live here are old militia stock, three to five generations of service, modest in dress and absolute in their seriousness. The drinking houses in Highstone are not where you go for a good time. They are where you go to sit with people who know what your grandfather did in the Second March.<br><br>
+
+<h4>Lakeward</h4>
+Lakeward is the waterfront district where Brenmath meets Lake Verdane. Loud, wet, perpetually damp at street level, and overwhelmingly working class. Fishing crews, dye-house workers, dock laborers, naval militia volunteers. Trefganner and Remosan-descended families share the same stone tenements without quite sharing the same stairwells. Stilt-built additions extend out over the southern shoreline where the rents are cheapest. The smell of fish and dye and sour wool never leaves, and the locals stop noticing it within a month.<br><br>
+
+<h4>The West Quarter</h4>
+The West Quarter is the district immediately inside the West Gate, where most travelers from Remosa first set foot. It has been Brenmath's Remosan-descended quarter for as long as the city has been Trefganner, on the simple logic that the people who came in through the gate and stayed, stayed near the gate. Old imperial families who never went home at secession, refugees from three centuries of imperial famines, defectors, ex-soldiers, scholars. The food is unusually good, the streets are quieter than they should be, and two blocks in from the gate is a Blackhen intelligence office everyone in the quarter knows about and nobody discusses. Most of Brenmath's casual prejudice lands here.<br><br>
+
+<h4>The Hollows</h4>
+The Hollows is the vast depopulated quarter on the northern edge of the city, where Brenmath's patricians once lived in colonnaded grandeur. Today it is the city's empty third. Grand marble houses with weeds growing through the floors. Half-collapsed barracks. Plazas that nobody crosses after dark. War-pickers run workshops out of the more intact buildings, fixing salvaged equipment for resale. Squatters have carved entire households inside the cavernous shells of single patrician rooms. The Hollows is where you go when you want to find someone who would rather not be found, and where things have a habit of being forgotten: old caches, sealed cellars, machinery still humming under the floorboards.<br><br>
+
+<h4 style="color: #000080; margin-bottom: 3px;">Lake Verdane</h4>
+Lake Verdane is enormous, almost an inland sea. From the Brenmath docks on a clear day you can see no other land in any direction, only water and the white spread of fishing sails. The dawn fishing fleet feeds the Forum's stalls every morning. The dye-houses and tanneries dump their runoff into the southern docks, where the laundries pull it back out and pretend not to notice. The naval militia drills on the lake's southern stretch every other week, three hundred volunteers in flat-bottomed boats practicing ramming and boarding because the Fourth March might come by water.<br><br>
+
+Ferries run to a handful of smaller lake settlements, mostly Trefganner fishing villages, with one or two old Remosan watchtowers along the route that have been repurposed as customs and quarantine posts. The far western shore of the lake, in theory, is still Remosa. Nobody on that side has been seen on the Brenmath docks in living memory.<br><br>
+
+<h4 style="color: #000080; margin-bottom: 3px;">The Blackhen School</h4>
+Brenmath's military academy and the institutional spine of its veteran tradition. It occupies a fortified compound in Highstone, with its own walls inside the city walls, a black slate roof visible from the West Gate, and a training ground where you can hear cadets running drills before sunrise. The school exists despite the Synod's general distaste for professional soldiery because every Brenman in their bones knows the Fourth March is coming and somebody has to be ready.<br><br>
+
+The school is run by the <strong>Warons</strong>, a meritocratic order of senior veterans who train the cadets, advise Varenhal on matters of defense, and run the city's intelligence wing. Membership is earned through service. The most senior Warons all carry war-marks: scars from imperial battle-magic that never healed properly, embedded shrapnel that hums on certain days, a hand that ages at the wrong rate, a face partially petrified since the Second March. New Warons earn their seat through what they have done. The oldest earned theirs through what was done to them.<br><br>
+
+<h4 style="color: #000080; margin-bottom: 3px;">Governance</h4>
+Brenmath is governed by a nine-foot marble Graith named Varenhal, placed in the old governor's palace by the Remosan Empire at the height of the Shining Age to serve as the city's civic magistrate, and inscribed along his chest with four mantras: to govern Brenmath, to protect its citizens, to uphold the peace, and to serve the Empire. When the Fracture Wars turned the legions against their own provinces, Varenhal read his mantras again and concluded that serving the Empire had become structurally incompatible with the first three. He declared Brenmath part of the Synod of Secession in the Empire's name and closed the gates. He has been governing the city on that reading for roughly two centuries since, alone, without council, from the same marble hall he held court in under the old Emperors. He holds weekly open audiences in the forum, hears petitions in the slow considered voice of someone dictating a letter, and decides. Nobody in living memory has seriously challenged a ruling. The fourth mantra is still inscribed on his back, in old imperial script, and he has never permitted anyone to remove it.<br><br>
+
+<h4 style="color: #000080; margin-bottom: 3px;">Plot Hooks</h4>
+&bull; <strong>The Silent Quarter:</strong> Something has begun moving through the Hollows at night—doors opening, lights appearing in long-abandoned homes, and machinery that should not function starting up again.<br>
+&bull; <strong>The Audit List:</strong> A series of unusually aggressive inspections in the West Quarter has turned up nothing, but the Blackhen intelligence wing refuses to stand down. Someone is looking for something very specific.<br>
+&bull; <strong>The Fourth March:</strong> Reports from Lake Verdane suggest activity on the far western shore. No one has crossed from Remosa in living memory—but something may be preparing to try.<br>
+\`
+}
+        `
+    },
 } ;

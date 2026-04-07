@@ -493,14 +493,8 @@ Mother Gimm, the village's tiny, clouded-eyed herbalist, treats the Quick-Step f
         "image": "assets/Brenmath.jpg",
         "coords": [-77.9, 27.3],
         "content": `
-"Brenmath": {
-  "title": "Brenmath",
-  "type": "City",
-  "image": "assets/Brenmath.jpg",
-  "coords": [0, 0],
-  "content": \`
 <em style="color: #555;">
-"They built it to rule a continent. We just figured out how to live in the parts that didn't collapse."
+"West Quarter’s fine. Just don’t give anyone a reason."
 </em><br>
 <strong style="font-size: 0.9em;">- Brenman saying</strong><br><br>
 
