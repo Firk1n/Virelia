@@ -49,22 +49,34 @@ body, html {
     padding-bottom: 10px;
 }
 
-#sidebar img {
+/* Ribbon-style hero image (the entry's main `image` field, inserted as the first <img>) */
+#sidebar img.ribbon {
     /* 1. FORCE FULL WIDTH (Ribbon Style) */
     display: block;
     width: calc(100% + 60px); /* Width of sidebar + left padding + right padding */
     max-width: none; /* Allow it to break the container */
-    
+
     /* 2. PULL IT TO THE EDGES */
     /* We pull it -30px Up, Left, and Right to counteract the sidebar padding */
-    margin: -30px -30px 20px -30px; 
-    
+    margin: -30px -30px 20px -30px;
+
     /* 3. STYLING */
     border-bottom: 4px solid #93403c; /* A divider line below the art */
     box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-    
+
     /* 4. INTERACTION */
     cursor: zoom-in; /* Tells user they can click to see details */
+}
+
+/* Inline images inside the entry body (e.g. maps, diagrams pasted into content HTML) */
+#sidebar img:not(.ribbon) {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 16px auto;
+    border: 2px solid #93403c;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    cursor: zoom-in;
 }
 
 #sidebar p {
@@ -178,6 +190,166 @@ body, html {
 }
 .leaflet-control-layers-expanded { padding: 10px !important; }
 .leaflet-control-layers label { font-size: 14px; cursor: pointer; }
+
+/* --- EDIT MODE --- */
+#edit-toolbar {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2500;
+    background: #fdf6e3;
+    border: 2px solid #93403c;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    padding: 8px 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    white-space: nowrap;
+}
+.edit-toolbar-label {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #93403c;
+    border-right: 1px solid #93403c;
+    padding-right: 12px;
+}
+.edit-type-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    background: #fff;
+    border: 1px solid #93403c;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #2c3e50;
+    cursor: pointer;
+    flex: 0 0 auto;
+    width: auto;
+    min-width: max-content;
+    white-space: nowrap;
+    line-height: 1;
+    font-family: inherit;
+}
+.edit-type-btn:hover { background: #f6dfbf; }
+.edit-type-btn.armed {
+    background: #93403c;
+    color: #fdf6e3;
+}
+.edit-type-swatch {
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid #f6dfbf;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    flex-shrink: 0;
+}
+.edit-type-swatch.type-region { width: 14px; height: 14px; }
+.edit-type-swatch.type-city   { width: 12px; height: 12px; }
+.edit-type-swatch.type-town   { width: 10px; height: 10px; }
+.edit-type-swatch.type-poi    { width: 8px;  height: 8px;  }
+#edit-hint {
+    font-size: 11px;
+    color: #555;
+    font-style: italic;
+    border-left: 1px solid #ccc;
+    padding-left: 12px;
+    max-width: 260px;
+    white-space: normal;
+}
+
+#edit-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 380px;
+    height: 100%;
+    background: #fdf6e3;
+    border-right: 2px solid #93403c;
+    box-shadow: 5px 0 15px rgba(0,0,0,0.4);
+    z-index: 2400;
+    overflow-y: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+}
+.edit-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background: #93403c;
+    color: #fdf6e3;
+    font-weight: bold;
+}
+.edit-panel-close {
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 1;
+}
+.edit-panel-body {
+    padding: 14px 16px;
+}
+.edit-panel-body label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 10px 0 4px;
+    color: #555;
+}
+.edit-panel-body label small {
+    font-weight: normal;
+    color: #888;
+}
+.edit-panel-body input[type="text"],
+.edit-panel-body select,
+.edit-panel-body textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 13px;
+    background: #fff;
+}
+.edit-panel-body textarea {
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 12px;
+    resize: vertical;
+}
+#edit-image-current {
+    font-size: 11px;
+    color: #888;
+    margin-top: 4px;
+    font-style: italic;
+}
+.edit-panel-actions {
+    margin-top: 16px;
+    display: flex;
+    gap: 8px;
+}
+.edit-panel-actions button {
+    padding: 8px 14px;
+    border: 1px solid #93403c;
+    border-radius: 4px;
+    background: #fff;
+    color: #2c3e50;
+    font-weight: bold;
+    cursor: pointer;
+}
+.edit-btn-primary { background: #93403c !important; color: #fdf6e3 !important; }
+.edit-btn-danger  { background: #fff !important; color: #8b0000 !important; border-color: #8b0000 !important; }
+.edit-panel-actions button:hover { opacity: 0.85; }
+#edit-status {
+    margin-top: 10px;
+    font-size: 12px;
+    min-height: 16px;
+}
 
 /* --- MOBILE OPTIMIZATIONS --- */
 @media (max-width: 600px) {

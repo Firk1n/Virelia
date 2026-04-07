@@ -67,19 +67,35 @@ var overlayMaps = {
 L.control.layers(baseMaps, overlayMaps, { position: 'topright', collapsed: false }).addTo(map);
 
 
-// --- ICONS & MARKER LOGIC ---
-var iconRegion = L.divIcon({ className: 'marker-pin type-region', iconSize: [30, 30], iconAnchor: [15, 15] });
-var iconCity   = L.divIcon({ className: 'marker-pin type-city',   iconSize: [22, 22], iconAnchor: [11, 11] });
-var iconTown   = L.divIcon({ className: 'marker-pin type-town',   iconSize: [16, 16], iconAnchor: [8, 8] });
-var iconPOI    = L.divIcon({ className: 'marker-pin type-poi',    iconSize: [10, 10], iconAnchor: [5, 5] });
+// --- POINT TYPE REGISTRY ---
+// To add a new pointer type: add an entry here, plus a matching `.type-<id>` rule in style.css.
+// Edit mode's toolbar, the icon lookup, and the zoom-visibility rules all derive from this list.
+var pointTypes = [
+    { id: 'region', label: 'Region', size: 30, zoom: [0, 4] },
+    { id: 'city',   label: 'City',   size: 22, zoom: [0, 8] },
+    { id: 'town',   label: 'Town',   size: 16, zoom: [5, 8] },
+    { id: 'poi',    label: 'POI',    size: 10, zoom: [5, 8] }
+];
+
+pointTypes.forEach(function(pt) {
+    var s = pt.size;
+    pt.icon = L.divIcon({
+        className: 'marker-pin type-' + pt.id,
+        iconSize: [s, s],
+        iconAnchor: [s / 2, s / 2]
+    });
+});
+
+function getPointType(type) {
+    var t = (type || 'poi').toLowerCase();
+    for (var i = 0; i < pointTypes.length; i++) {
+        if (pointTypes[i].id === t) return pointTypes[i];
+    }
+    return pointTypes[pointTypes.length - 1]; // fallback to last (POI)
+}
 
 function getIcon(type) {
-    if (!type) return iconPOI;
-    var t = type.toLowerCase();
-    if (t === 'region') return iconRegion;
-    if (t === 'city')   return iconCity;
-    if (t === 'town')   return iconTown;
-    return iconPOI;
+    return getPointType(type).icon;
 }
 
 // Storage Arrays
@@ -102,7 +118,12 @@ for (let key in wikiData) {
             type: entry.type ? entry.type.toLowerCase() : 'poi' 
         });
         
-        marker.on('click', function() {
+        marker.on('click', function(e) {
+            if (window.editMode && window.editMode.active) {
+                L.DomEvent.stopPropagation(e);
+                window.editMode.loadEntry(key);
+                return;
+            }
             openEntry(key);
         });
     }
@@ -115,19 +136,9 @@ function updateVisibleMarkers() {
     // Clear current markers from the layer group
     markersLayer.clearLayers();
 
-    // Define Visibility Rules [MinZoom, MaxZoom]
-    // You can tweak these numbers to your liking
-    var rules = {
-        'region': [0, 4],  // Visible only when zoomed out
-        'city':   [0, 8],  // Always visible
-        'town':   [5, 8],  // Visible only when close
-        'poi':    [5, 8]   // Visible only when close
-    };
-
-    // Loop through all markers and add them if they match the current zoom
+    // Visibility rules come from the pointTypes registry (zoom: [min, max])
     allMarkers.forEach(function(item) {
-        var range = rules[item.type] || [0, 8]; // Default to always visible if type unknown
-        
+        var range = getPointType(item.type).zoom;
         if (currentZoom >= range[0] && currentZoom <= range[1]) {
             item.marker.addTo(markersLayer);
         }
@@ -153,6 +164,7 @@ window.openEntry = function(key) {
         
         if (entry.image) {
             let img = document.createElement('img');
+            img.className = 'ribbon';
             img.src = entry.image;
             img.onclick = function() { showLightbox(entry.image); };
             img.style.cursor = "zoom-in"; 
@@ -178,10 +190,7 @@ window.closeSidebar = function() {
     document.getElementById('sidebar').classList.remove('active');
 };
 
-// map.on('click', function(e) {
-//    var lat = e.latlng.lat.toFixed(0);
-//    var lng = e.latlng.lng.toFixed(0);
-//    var coordString = "[" + lat + ", " + lng + "]";
-//    L.popup().setLatLng(e.latlng).setContent("Copied: " + coordString).openOn(map);
-//    navigator.clipboard.writeText(coordString);
-//    });
+// Edit mode (loaded via edit.js when ?edit is present in the URL) hooks into:
+//   - map clicks (to drop new markers)
+//   - existing marker clicks (to load entries — see marker.on('click') above)
+//   - the pointTypes registry (to build its toolbar dynamically)
