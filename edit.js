@@ -69,6 +69,10 @@
                 '<input type="file" id="edit-image" accept="image/*" />' +
                 '<div id="edit-image-current"></div>' +
                 '<label>Content <small>(paste pre-formatted HTML)</small></label>' +
+                '<div class="edit-content-toolbar">' +
+                    '<button type="button" id="edit-insert-image">Insert image at cursor…</button>' +
+                    '<input type="file" id="edit-inline-image" accept="image/*" style="display:none" />' +
+                '</div>' +
                 '<textarea id="edit-content" rows="14"></textarea>' +
                 '<div class="edit-panel-actions">' +
                     '<button id="edit-save" class="edit-btn-primary">Save</button>' +
@@ -104,6 +108,27 @@
 
         document.getElementById('edit-image').addEventListener('change', function (e) {
             pickedImageFile = e.target.files[0] || null;
+            schedulePreview();
+        });
+
+        // Inline-image insertion: pick file → prompt for name → convert → upload → insert <img> at cursor
+        // We must request folder permission *before* opening the file picker, so the
+        // permission prompt still has user activation (await chains lose it).
+        document.getElementById('edit-insert-image').onclick = async function () {
+            try {
+                await ensureDirHandle();
+                document.getElementById('edit-inline-image').click();
+            } catch (err) {
+                console.error(err);
+                setStatus('Error: ' + err.message, true);
+            }
+        };
+        document.getElementById('edit-inline-image').addEventListener('change', insertInlineImage);
+
+        // Live preview: re-render the right sidebar whenever the form changes
+        ['edit-title', 'edit-type', 'edit-content', 'edit-coords'].forEach(function (id) {
+            document.getElementById(id).addEventListener('input', schedulePreview);
+            document.getElementById(id).addEventListener('change', schedulePreview);
         });
 
         document.getElementById('edit-panel-close').onclick = closeEditor;
@@ -127,6 +152,95 @@
         el.style.color = isError ? '#8b0000' : '#2c3e50';
     }
 
+    // ---------- Inline image insertion ----------
+
+    async function insertInlineImage(e) {
+        var file = e.target.files[0];
+        e.target.value = '';
+        if (!file) return;
+        var defaultName = file.name.replace(/\.[^.]+$/, '');
+        var name = prompt('Filename (without extension). Will be saved to assets/<name>.jpg', defaultName);
+        if (!name) return;
+        name = name.replace(/[^A-Za-z0-9_\-]/g, '_');
+        try {
+            setStatus('Connecting to project folder…');
+            await ensureDirHandle();
+            setStatus('Converting image…');
+            var blob = await convertToJpegThumbnail(file, 2816, 0.85);
+            setStatus('Copying image…');
+            await writeFileBytes('assets', name + '.jpg', blob);
+            var path = 'assets/' + name + '.jpg';
+            var tag = '<img src="' + path + '" onclick="showLightbox(\'' + path + '\')">';
+            insertAtCursor(document.getElementById('edit-content'), tag);
+            schedulePreview();
+            setStatus('Image inserted.');
+        } catch (err) {
+            console.error(err);
+            setStatus('Error: ' + err.message, true);
+        }
+    }
+
+    function insertAtCursor(textarea, text) {
+        var start = textarea.selectionStart;
+        var end = textarea.selectionEnd;
+        var before = textarea.value.slice(0, start);
+        var after = textarea.value.slice(end);
+        textarea.value = before + text + after;
+        textarea.selectionStart = textarea.selectionEnd = start + text.length;
+        textarea.focus();
+    }
+
+    // ---------- Live preview ----------
+
+    var previewTimer = null;
+    var previewObjectUrl = null;
+
+    function schedulePreview() {
+        if (previewTimer) clearTimeout(previewTimer);
+        previewTimer = setTimeout(renderPreview, 100);
+    }
+
+    function renderPreview() {
+        var sidebar = document.getElementById('sidebar');
+        var contentDiv = document.getElementById('sidebar-content');
+        if (!sidebar || !contentDiv) return;
+
+        var title = document.getElementById('edit-title').value || '(untitled)';
+        var type = document.getElementById('edit-type').value;
+        var content = document.getElementById('edit-content').value;
+
+        // Determine ribbon image source: a freshly-picked file (object URL) takes
+        // precedence over the existing path on disk.
+        var imageSrc = '';
+        if (pickedImageFile) {
+            if (previewObjectUrl) URL.revokeObjectURL(previewObjectUrl);
+            previewObjectUrl = URL.createObjectURL(pickedImageFile);
+            imageSrc = previewObjectUrl;
+        } else if (editingId && wikiData[editingId] && wikiData[editingId].image) {
+            imageSrc = wikiData[editingId].image;
+        }
+
+        contentDiv.innerHTML = '';
+
+        if (imageSrc) {
+            var img = document.createElement('img');
+            img.className = 'ribbon';
+            img.src = imageSrc;
+            img.onerror = function () { this.style.display = 'none'; };
+            contentDiv.appendChild(img);
+        }
+
+        var titleBlock = document.createElement('h2');
+        titleBlock.innerHTML = title + ' <small style="font-size:0.6em">(' + type + ')</small>';
+        contentDiv.appendChild(titleBlock);
+
+        var bodyDiv = document.createElement('div');
+        bodyDiv.innerHTML = content;
+        contentDiv.appendChild(bodyDiv);
+
+        sidebar.classList.add('active');
+    }
+
     // ---------- Editor open/close ----------
 
     function openEditorForNew(latlng, typeId) {
@@ -145,6 +259,7 @@
         document.getElementById('edit-panel').style.display = 'block';
         spawnTempMarker(latlng, typeId);
         setStatus('');
+        renderPreview();
     }
 
     function openEditorForExisting(id) {
@@ -165,6 +280,7 @@
         document.getElementById('edit-panel').style.display = 'block';
         spawnTempMarker(L.latLng(entry.coords[0], entry.coords[1]), (entry.type || 'poi').toLowerCase());
         setStatus('');
+        renderPreview();
     }
 
     function closeEditor() {
@@ -175,6 +291,8 @@
         }
         editingId = null;
         pickedImageFile = null;
+        if (previewObjectUrl) { URL.revokeObjectURL(previewObjectUrl); previewObjectUrl = null; }
+        if (typeof closeSidebar === 'function') closeSidebar();
         // Disarm
         armedType = null;
         document.querySelectorAll('.edit-type-btn').forEach(function (b) { b.classList.remove('armed'); });

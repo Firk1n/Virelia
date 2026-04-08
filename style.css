@@ -100,16 +100,13 @@ body, html {
     background: rgba(253, 246, 227, 0.85); 
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     
-    /* Center the X using Grid */
     display: grid;
     place-items: center;
+    box-sizing: border-box;
 
-    /* Manual fix: Box-sizing ensures padding doesn't stretch the circle */
-    box-sizing: border-box; 
-    padding-bottom: 4px; /* Nudge the X upwards */
-    
     font-size: 24px;
     font-weight: bold;
+    line-height: 1;
     
     cursor: pointer;
     color: #8b0000; /* Dark Red X */
@@ -117,7 +114,13 @@ body, html {
     transition: all 0.2s ease;
 }
 
-.close-btn:hover { 
+.close-x {
+    display: block;
+    /* The × glyph sits high in its font box; nudge it down to look centered */
+    transform: translateY(-3px);
+}
+
+.close-btn:hover {
     background: #8b0000; /* Turn solid red on hover */
     color: #fdf6e3; /* Turn text parchment color */
     transform: scale(1.1);
@@ -322,6 +325,20 @@ body, html {
     font-size: 12px;
     resize: vertical;
 }
+.edit-content-toolbar {
+    margin: 4px 0;
+}
+.edit-content-toolbar button {
+    padding: 4px 10px;
+    border: 1px solid #93403c;
+    border-radius: 3px;
+    background: #fff;
+    color: #2c3e50;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.edit-content-toolbar button:hover { background: #f6dfbf; }
 #edit-image-current {
     font-size: 11px;
     color: #888;
