@@ -42,6 +42,11 @@ body, html {
     right: 0; /* Slide in */
 }
 
+#sidebar.active ~ .close-btn,
+#sidebar.active .close-btn {
+    right: 30px;
+}
+
 #sidebar h2 {
     margin-top: 0;
     border-bottom: 2px solid #93403c;
@@ -87,21 +92,22 @@ body, html {
 
 /* Close Button (The X) */
 .close-btn {
-    position: absolute;
+    position: fixed;
     top: 10px;
-    right: 15px;
-    
+    right: -50px; /* Off-screen; slides in with the sidebar via the .active rule */
+    transition: right 0.3s ease-in-out;
+    display: grid;
+    place-items: center;
+
     /* Make it a circle */
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    
+
     /* The Contrast Fix: Semi-transparent parchment background */
-    background: rgba(253, 246, 227, 0.85); 
+    background: rgba(253, 246, 227, 0.85);
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    
-    display: grid;
-    place-items: center;
+
     box-sizing: border-box;
 
     font-size: 24px;
