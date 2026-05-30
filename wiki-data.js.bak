@@ -787,34 +787,4 @@ The relationship with Trazh is worth mentioning, since it might just be the one 
     \`
         `
     },
-    "trazh": {
-        "title": "Trazh",
-        "type": "town",
-        "coords": [-66.9, -37.6],
-        "content": `
-<em style="color: #555;">"The mare threw a shoe on the south road and I walked her back. Took four hours. Kolev offered to lend me his, which was decent of him considering I broke his nose last week."</em><br>
-<strong style="font-size: 0.9em;">- Overheard in Trazh</strong><br><br>
-
-<h3 style="color: #8B0000; margin-bottom: 5px;">The Pasture</h3>
-Trazh grew up around good grass. A few families found pasture near the Imperial Path some time before anyone was keeping count, started breeding horses, and the village filled in around the work. About two hundred people live here now in wood and fieldstone houses arranged without any particular plan, and on a clear day you see the horses before you see the rooftops. The pasture runs south and east of the village, fenced with post and rail, and the animals are out in all weather except deep winter.<br><br>
-
-The horses are working stock. Road horses, cart horses, patrol horses. Animals that can take a week on the Imperial Path without going lame. They are not fine mounts, and the breeders do not pretend otherwise. A Trazh horse costs a fraction of what a cavalry mount runs and outlasts it on bad road, and the reputation is old enough that buyers come to the village rather than the village going to find them. The trade keeps everyone fed without making anyone rich, and most of the breeders prefer it that way. A woman named Dalla Madric handles the selling end, knows every military procurement officer on this stretch of the Path by name, and sets prices that do not negotiate downward.<br><br>
-
-The ring is behind the Madric house, which is the largest in the village. A circle of packed dirt, twenty paces across, low split-rail fence. Young men fight to ready themselves for conscription. Older men fight to settle things they could settle with words. Soldiers passing through sometimes step in, and the local opinion is that no Trazh man has ever lost to one, which is probably wrong but sincerely believed. The fights are bare-knuckle, the rules are unwritten, and the main ones are: no biting, no weapons, no kicking a man on the ground, stop when one walks out or stays down. Not every man in the village fights. The breeders who value their hands tend not to, and Boz the farrier, who is the largest man in the village, has never set foot in the ring and considers the whole tradition a reliable source of business since somebody always needs something looked at afterward.<br><br>
-
-Trazh has a feud with Castra Vull, a day's ride north. The details are covered in Castra Vull's entry and do not need repeating here except to say that Trazh's version of the story involves considerably less guilt. The sign-stealing and the well are remembered fondly by the young men who did them and with mild embarrassment by everyone else. Kolev, who was involved in most of it, has recently made a friend in Castra Vull and has been less involved since, though he would not put it that way. The loosened paddock gate that let three mares wander is not remembered fondly by anyone, and the breeders' opinion of Castra Vull hardened after it in a way the pranks had not managed.<br><br>
-
-<h4 style="color: #000080; margin-bottom: 3px;">Notable Locations</h4>
-&bull; <strong>The Ring:</strong> Twenty paces of packed dirt behind the Madric house, slight bowl from decades of stamping, split-rail fence for leaning on. No schedule. Fights happen when two men agree to one and the village drifts over because there is not much else to watch on a given evening. Someone rakes it flat afterward.<br>
-&bull; <strong>Anka's:</strong> The front room of the Madric house, which Old Madric's wife has run as a public house for twenty years without a sign or anyone's permission. The beer is standard Remosan, the bread is good, soldiers who stay past dark are charged double. Anka keeps a tally board behind the bar of every man she has thrown out. Her husband's name is a recurring one. <br>
-&bull; <strong>The Paddock:</strong> Trazh's main pasture along the south side of the Imperial Path. Travelers coming up the road see the herd before they see the village, and the quality of the animals speaks for itself. During foaling season the near paddock fills with mares and the breeders sleep in the field shed to keep watch.<br>
-&bull; <strong>Boz's Forge:</strong> A small smithy on the east edge of the village. Boz shoes the horses and does the village ironwork and occasional emergency dentistry on fighters who did not keep their guard up. He is a gentle man with enormous hands who has strong opinions about hoof care and no opinions about anything else.<br><br>
-
-<h4 style="color: #000080; margin-bottom: 3px;">Plot Hooks</h4>
-&bull; <strong>The Dead Horse:</strong> A brown mare belonging to Castra Vull was found dead on the road between the two villages with her throat cut. Castra Vull has accused Trazh. The accusation is wrong and the breeders are angry about it. Nobody in Trazh would kill a horse. Kolev has told Gresch he will find out what happened, which is a promise he made after his third drink at Anka's and which he now has to keep sober.<br>
-&bull; <strong>The Conscription Rider:</strong> A military courier arrived last week with updated conscription rolls. Trazh's quota has doubled. The village has always sent its share without complaint, but the new number would take nearly a third of the men under forty, including two of the better breeders. Old Madric rode to Mirestead to argue the number four days ago. He has not come back.<br>
-&bull; <strong>The Buyer:</strong> A well-dressed man from the interior arrived on the Imperial Path last month, looked at the horses, and offered to buy the entire spring foal crop at a price far above market. He would not say who he was buying for. He is coming back next week with a contract and a cart. The breeders are split between wanting the money and wanting to know why someone needs thirty horses quickly and will not explain why.
-  
-        `
-    },
 } ;
