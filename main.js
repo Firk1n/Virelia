@@ -1,51 +1,90 @@
 // 1. Initialize the Map with Bounds
 var bounds = [[-85, -180], [-2, 176]];
 
+// Zoom range notes, because this is easy to break:
+//   The tile layers below use tileSize 128 + zoomOffset 1, which is hand-rolled
+//   retina rendering (identical to what Leaflet's detectRetina does on a 2x
+//   display) and is why the map is pixel-sharp. The consequence is that the tile
+//   level actually requested is mapZoom + 1, capped by maxNativeZoom: 4.
+//   The pyramid only goes to level 5, so maxNativeZoom must stay 4 -- raise it
+//   and every tile 404s and the whole map goes background-grey.
+//   maxZoom is free to go higher (it just upscales level 5), but past 6 it is
+//   badly blurred: zoom 5 is a 2x upscale, 6 is 4x, the old 8 was 16x.
+//   minZoom is not a fixed number -- see updateMinZoom() below.
 var map = L.map('map', {
-    attributionControl: false, 
+    attributionControl: false,
     maxBounds: bounds,
     maxBoundsViscosity: 1.0,
-    minZoom: 3, 
-    maxZoom: 8  
-}).setView([0, 0], 3);
+    minZoom: 0,
+    maxZoom: 6
+}).setView([-66.79, -2], 3);
+
+// Zooming out past the point where the map spans the window leaves it floating
+// in open background, so derive the floor from the window instead of hardcoding
+// it. On a 1920x1080 screen this lands on 3, which is what it always was; on a
+// smaller window it allows one more step out, on a larger one it allows one less.
+// (For a stricter floor with no empty space above or below the map either, use
+// map.getBoundsZoom(mapBounds, true) instead -- that gives 4 at 1920x1080.)
+var mapBounds = L.latLngBounds(bounds);
+
+function updateMinZoom() {
+    var viewportWidth = map.getSize().x;
+    if (!viewportWidth) { return; }      // container not laid out yet; 'resize' will retry
+    var floor = map.getMaxZoom();
+    for (var z = 0; z <= map.getMaxZoom(); z++) {
+        var nw = map.project(mapBounds.getNorthWest(), z);
+        var se = map.project(mapBounds.getSouthEast(), z);
+        if (se.x - nw.x >= viewportWidth) { floor = z; break; }
+    }
+    if (floor !== map.getMinZoom()) {
+        map.setMinZoom(floor);          // Leaflet zooms in if we are below it
+    }
+}
+
+updateMinZoom();
+map.on('resize', updateMinZoom);
+map.setZoom(map.getMinZoom());
 
 // 2. Define the Layers
 
 // --- BASE LAYERS ---
 var standardMap = L.tileLayer('./tiles/{z}/{x}/{y}.png', {
-    minZoom: 3,
-    maxZoom: 8,       
+    minZoom: 0,
+    maxZoom: 6,       
     tileSize: 128,      
     zoomOffset: 1,      
     detectRetina: false,
     maxNativeZoom: 4,   
     tms: true,    
     noWrap: true,
+    bounds: bounds,
     attribution: 'Virelia'
 }).addTo(map); 
 
 var topoMap = L.tileLayer('./tiles-topo/{z}/{x}/{y}.png', {
-    minZoom: 3,
-    maxZoom: 8,
+    minZoom: 0,
+    maxZoom: 6,
     tileSize: 128,      
     zoomOffset: 1,      
     detectRetina: false,
     maxNativeZoom: 4,   
     tms: true,
     noWrap: true,
+    bounds: bounds,
     attribution: 'Virelia'
 });
 
 // --- OVERLAY LAYERS ---
 var labelsMap = L.tileLayer('./tiles-labels/{z}/{x}/{y}.png', {
-    minZoom: 3,
-    maxZoom: 8,
+    minZoom: 0,
+    maxZoom: 6,
     tileSize: 128,      
     zoomOffset: 1,      
     detectRetina: false,
     maxNativeZoom: 4,   
     tms: true,
     noWrap: true,
+    bounds: bounds,
     zIndex: 10 
 }).addTo(map); 
 
@@ -72,9 +111,9 @@ L.control.layers(baseMaps, overlayMaps, { position: 'topright', collapsed: false
 // Edit mode's toolbar, the icon lookup, and the zoom-visibility rules all derive from this list.
 var pointTypes = [
     { id: 'region', label: 'Region', size: 30, zoom: [0, 4] },
-    { id: 'city',   label: 'City',   size: 22, zoom: [0, 8] },
-    { id: 'town',   label: 'Town',   size: 16, zoom: [5, 8] },
-    { id: 'poi',    label: 'POI',    size: 10, zoom: [5, 8] }
+    { id: 'city',   label: 'City',   size: 22, zoom: [0, 6] },
+    { id: 'town',   label: 'Town',   size: 16, zoom: [5, 6] },
+    { id: 'poi',    label: 'POI',    size: 10, zoom: [5, 6] }
 ];
 
 pointTypes.forEach(function(pt) {

@@ -12,11 +12,16 @@ body, html {
 #map {
     height: 100%;
     width: 100%;
-    /* TRICK: Change this color to match your map's ocean color! 
+    /* TRICK: Change this color to match your map's ocean color!
        If your ocean is dark blue, put that hex code here.
        This makes the "black borders" invisible.
+
+       #6d746b is the median ocean colour sampled from the exported map, so the
+       area outside the tiles reads as more ocean instead of a grey void. This
+       matters at minZoom, where the whole map fits on screen and there is
+       necessarily empty space above and below it.
     */
-    background: #202020; 
+    background: #6d746b;
     /* If you are using the texture: */
     /* background-image: url('assets/ocean.png'); */
     /* background-repeat: repeat; */
