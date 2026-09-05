@@ -817,4 +817,15 @@ Trazh has a feud with Castra Vull, a day's ride north. The details are covered i
   
         `
     },
+    "the_hung_tree": {
+        "title": "The Hung Tree",
+        "type": "poi",
+        "image": "assets/The Hung Tree.jpg",
+        "coords": [-51.5, -52.1],
+        "content": `
+A solitary giant oak, standing in the middle of a clearing in the grove at the meeting point between Remosa, Haldrith and Rivhalde. Thirty to forty meters tall, and wide enough that six people linking arms could not close the circle.
+<br><br>
+Its name has been long forgotten by most, but the well informed know that it relates to the tree's grim history. During the Witch Wars, a Remosan military command ordered the mass execution of deserters at the site. A large tree, big enough to hang dozens of bodies from at once, was the type of sight that deterred others who might consider following in the deserters' footsteps. The tree served as a warning to all three regions, and was so effective, in fact, that it was joked to be a permanent signpost at the time. The excess nourishment has allowed it to grow even bigger than it was, resulting in the wonder that it is today.
+        `
+    },
 } ;
