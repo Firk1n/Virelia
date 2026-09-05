@@ -7,7 +7,7 @@
     "same pixels, but the tile URLs in main.js carry the extension, so the two",
     "have to be changed together."
   ],
-  "format": "png",
+  "format": "webp",
 
   "_comment": [
     "Each output lists the TOP-LEVEL Photoshop groups that should be visible.",

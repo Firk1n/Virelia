@@ -48,7 +48,7 @@ map.setZoom(map.getMinZoom());
 // 2. Define the Layers
 
 // --- BASE LAYERS ---
-var standardMap = L.tileLayer('./tiles/{z}/{x}/{y}.png', {
+var standardMap = L.tileLayer('./tiles/{z}/{x}/{y}.webp', {
     minZoom: 0,
     maxZoom: 6,       
     tileSize: 128,      
@@ -61,7 +61,7 @@ var standardMap = L.tileLayer('./tiles/{z}/{x}/{y}.png', {
     attribution: 'Virelia'
 }).addTo(map); 
 
-var topoMap = L.tileLayer('./tiles-topo/{z}/{x}/{y}.png', {
+var topoMap = L.tileLayer('./tiles-topo/{z}/{x}/{y}.webp', {
     minZoom: 0,
     maxZoom: 6,
     tileSize: 128,      
@@ -75,7 +75,7 @@ var topoMap = L.tileLayer('./tiles-topo/{z}/{x}/{y}.png', {
 });
 
 // --- OVERLAY LAYERS ---
-var labelsMap = L.tileLayer('./tiles-labels/{z}/{x}/{y}.png', {
+var labelsMap = L.tileLayer('./tiles-labels/{z}/{x}/{y}.webp', {
     minZoom: 0,
     maxZoom: 6,
     tileSize: 128,      

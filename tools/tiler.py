@@ -62,6 +62,13 @@ FORMATS = {
     #   0 -> 94.9 KB @ 6ms    2 -> 91.4 KB @ 19ms
     #   4 -> 88.3 KB @ 117ms  6 -> 87.9 KB @ 1544ms   (PNG for comparison: 133.8 KB)
     # 2 gets almost all of the saving for a sixth of the time, so it is the default.
+    #
+    # "lossless" here means every visible pixel is preserved exactly. The encoder
+    # does rewrite the RGB hidden underneath fully transparent pixels, because
+    # discarding it compresses better -- verified against the PNG build, alpha is
+    # identical everywhere and RGB matches wherever alpha > 0. Overview levels are
+    # unaffected either way: they are averaged from the source image in memory,
+    # before anything is encoded. Add "exact": True to keep the hidden RGB too.
     "webp": (".webp", "image/webp", {"lossless": True, "quality": 100, "method": 2}),
 }
 
