@@ -129,13 +129,28 @@
     }
 
     // maxBoundsViscosity is 1, so Leaflet will not let the view leave the map.
-    // Predicting that clamp is the whole trick behind choosing a panel side.
-    function clampCenterX(x, zoom) {
-        var half = map.getSize().x / 2;
-        var west = map.project(mapBounds.getNorthWest(), zoom).x + half;
-        var east = map.project(mapBounds.getSouthEast(), zoom).x - half;
-        if (west > east) return (west + east) / 2;   // map narrower than the window
-        return Math.min(Math.max(x, west), east);
+    // Predicting that clamp is the whole trick behind choosing a panel side --
+    // and behind not lurching, see moveTo.
+    /**
+     * The nearest centre the map will actually hold at this zoom.
+     *
+     * Leaflet applies this same limit itself, but only when the move lands. A
+     * request that points off the edge is therefore animated in full and then
+     * silently corrected, which is the drift-and-snap: the map slides towards
+     * somewhere it cannot stay and is yanked back at the end. Clamping the
+     * request *before* the animation starts means it only ever travels
+     * somewhere it can remain, so there is nothing left to correct.
+     */
+    function clampCenter(center, zoom) {
+        var half = map.getSize().divideBy(2);
+        var point = map.project(center, zoom);
+        var min = map.project(mapBounds.getNorthWest(), zoom).add(half);
+        var max = map.project(mapBounds.getSouthEast(), zoom).subtract(half);
+        // An axis where the map is smaller than the window has no range to
+        // clamp into. Centre it, which is where Leaflet puts it anyway.
+        point.x = min.x > max.x ? (min.x + max.x) / 2 : Math.min(Math.max(point.x, min.x), max.x);
+        point.y = min.y > max.y ? (min.y + max.y) / 2 : Math.min(Math.max(point.y, min.y), max.y);
+        return map.unproject(point, zoom);
     }
 
     /**
@@ -165,8 +180,9 @@
         var size = map.getSize();
         var zoom = target.zoom;
 
-        var wanted = map.project(framedCenter(target, side), zoom).x;
-        var origin = clampCenterX(wanted, zoom) - size.x / 2;
+        // Exactly what moveTo will do: frame for the side, then clamp.
+        var landing = clampCenter(framedCenter(target, side), zoom);
+        var origin = map.project(landing, zoom).x - size.x / 2;
 
         var box = target.bounds;
         var west, east;
@@ -211,7 +227,10 @@
 
     /** Move so the entry lands in the middle of the map the panel is not over. */
     function moveTo(target) {
-        var center = framedCenter(target, panelSide());
+        // Clamped, not raw: an unreachable centre is animated to in full and
+        // then corrected on arrival, which is seen as a lurch past the target
+        // and a snap back. Ask only for where the map can actually sit.
+        var center = clampCenter(framedCenter(target, panelSide()), target.zoom);
 
         if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
             map.setView(center, target.zoom, { animate: false });
