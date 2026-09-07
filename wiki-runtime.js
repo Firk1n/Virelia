@@ -264,7 +264,24 @@
         // left-hand one instead. MapFocus then frames the map around whichever
         // side we chose.
         if (window.MapFocus) {
-            sidebar.classList.toggle('side-left', window.MapFocus.preferredSide(id) === 'left');
+            var wantLeft = window.MapFocus.preferredSide(id) === 'left';
+            if (wantLeft !== sidebar.classList.contains('side-left')) {
+                // Which edge the panel docks to also decides which property
+                // the slide animates: `right` for the default side, `left` for
+                // the other. Switching edges in the same style pass that adds
+                // `active` leaves the new axis with no resolved value to start
+                // from -- it was `auto` an instant earlier, and `auto` cannot
+                // be interpolated -- so the panel appears instead of sliding.
+                // That is why an entry near the edge snapped while a central
+                // one opened gradually.
+                //
+                // Settle it at the new edge's off-screen resting place and
+                // make the browser resolve that, so the slide has somewhere to
+                // start from.
+                sidebar.classList.remove('active');
+                sidebar.classList.toggle('side-left', wantLeft);
+                void sidebar.offsetWidth;       // forces the pending style/layout pass
+            }
         }
 
         sidebar.classList.add('active');
