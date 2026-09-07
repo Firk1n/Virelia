@@ -1,8 +1,9 @@
 {
  "version": 1,
  "entryId": "downsview",
- "textHash": "73290608c44b1964a88187a1b93f1f42ad75af4873c00ec1d13ba0cea5cf5349",
- "renderProfile": "95a2da9b62343cd5173677c0922c2494c47407937d3f85d9b273c982c957e2f6",
+ "textHash": "efcccda67387865018e9a922924f73af38261a0cbcee5837135821f65d4b11a2",
+ "renderProfile": "7e0f7001f0340334513ade5dc6f3dad7aee7d07a508816c9b42498849811fb2f",
+ "audioSrc": "audio/downsview.mp3",
  "segments": [
   {
    "id": "s-0001",
@@ -13,373 +14,373 @@
   {
    "id": "s-0002",
    "start": 2.421,
-   "end": 17.51,
+   "end": 17.515,
    "text": "\"They voted three times on whether the sky was clear enough to hold the Spring View. By the time it passed, it was nearly dusk. So the first clear day of spring, officially, was held in the dark.\""
   },
   {
    "id": "s-0003",
-   "start": 19.21,
-   "end": 23.014,
+   "start": 19.215,
+   "end": 23.019,
    "text": "- A merchant from Glenroot, telling the story for the fourth time"
   },
   {
    "id": "s-0004",
-   "start": 24.514,
-   "end": 26.546,
+   "start": 24.519,
+   "end": 26.551,
    "text": "The Village Above the Quiet"
   },
   {
    "id": "s-0005",
-   "start": 27.446,
-   "end": 38.967,
+   "start": 27.451,
+   "end": 37.288,
    "text": "Downsview is what happens when a handful of Southfielders decide they have had enough of potatoes, whispering, and dying politely among their flock."
   },
   {
    "id": "s-0006",
-   "start": 39.367,
-   "end": 57.92,
+   "start": 38.188,
+   "end": 55.093,
    "text": "It sits on a cluster of high hills roughly three days off the Quiet Road, reached by a switchback track that punishes carts and rewards walkers. From almost any window in the village, the land falls away into a long sweep of grazing pasture and scrub."
   },
   {
    "id": "s-0007",
-   "start": 58.32,
-   "end": 68.914,
+   "start": 55.993,
+   "end": 66.588,
    "text": "On clear days you can see Henon Bay in the distance. On the clearest, the fishing boats. The name does what names should."
   },
   {
    "id": "s-0008",
-   "start": 69.814,
-   "end": 91.366,
-   "text": "The village is barely thirty years old and looks it, tall, narrow houses built tight against the slope, whitewashed walls, painted shutters in whatever color the owner felt like that year, slate roofs angled into the wind. There are no sound-baffles, no padded doors, no heavy curtains."
+   "start": 67.488,
+   "end": 86.662,
+   "text": "The village is barely thirty years old and looks it: tall, narrow houses built tight against the slope, whitewashed walls, painted shutters in whatever color the owner felt like that year, slate roofs angled into the wind. There are no sound-baffles, no padded doors, no heavy curtains."
   },
   {
    "id": "s-0009",
-   "start": 91.766,
-   "end": 103.024,
+   "start": 87.562,
+   "end": 98.822,
    "text": "Windows actually open. Older Southfielders visiting for the first time sometimes stand in the main square for a full minute, unsure what to do with the sound of their own footsteps."
   },
   {
    "id": "s-0010",
-   "start": 103.924,
-   "end": 105.127,
+   "start": 99.722,
+   "end": 100.924,
    "text": "The Defectors"
   },
   {
    "id": "s-0011",
-   "start": 106.027,
-   "end": 118.74,
+   "start": 101.824,
+   "end": 114.825,
    "text": "Downsview was founded by farmers who walked out on the agricultural interior and by visitors who came for the view and simply never left. The founding families were tired of whispering."
   },
   {
    "id": "s-0012",
-   "start": 119.14,
-   "end": 137.025,
+   "start": 115.725,
+   "end": 132.701,
    "text": "Children are allowed to run in the lanes, musicians play outdoors, and arguments happen in full sentences. Neighboring villages send sternly worded letters about once a season, Widow Parns frames the best of them and hangs them behind the bar at her inn."
   },
   {
    "id": "s-0013",
-   "start": 137.425,
-   "end": 140.47,
+   "start": 133.601,
+   "end": 136.646,
    "text": "The letters are a point of quiet pride."
   },
   {
    "id": "s-0014",
-   "start": 141.37,
-   "end": 151.147,
+   "start": 137.546,
+   "end": 147.323,
    "text": "Most of Southfield considers the place a mild embarrassment. Downsview, for its part, has been called worse and in fuller voices."
   },
   {
    "id": "s-0015",
-   "start": 152.047,
-   "end": 154.011,
+   "start": 148.223,
+   "end": 150.187,
    "text": "The Calendar of Excuses"
   },
   {
    "id": "s-0016",
-   "start": 154.911,
-   "end": 162.857,
+   "start": 151.087,
+   "end": 157.068,
    "text": "The village lives on visitors, and visitors come for festivals. Any excuse will do."
   },
   {
    "id": "s-0017",
-   "start": 163.257,
-   "end": 190.49,
+   "start": 157.968,
+   "end": 184.963,
    "text": "There is the Spring View, held on the first clear day of the season by council vote; the Harvest Bleating, which is exactly what it sounds like; the Midsummer Fair, the largest gathering of the year; the Lantern Climb, held in autumn and somehow both dangerous and mandatory; and, most recently,"
   },
   {
    "id": "s-0018",
-   "start": 190.89,
-   "end": 209.207,
+   "start": 185.863,
+   "end": 204.18,
    "text": "the Livestock Beauty Contest, heading into its fourth year and already responsible for two feuds, one engagement, and one minor stampede. Most locals will happily explain which festival is the real one and why the others were invented by rival families to spite theirs."
   },
   {
    "id": "s-0019",
-   "start": 210.107,
-   "end": 225.939,
+   "start": 205.08,
+   "end": 220.039,
    "text": "Between festivals, the village runs on wool and lodging. The Fletcher Sisters, three spinster weavers who finish each other's sentences and judge everyone who walks into their shop, produce the finest blankets in Southfield."
   },
   {
    "id": "s-0020",
-   "start": 226.339,
-   "end": 239.522,
+   "start": 220.939,
+   "end": 233.788,
    "text": "Nearly every household keeps a spare bed or two for travelers; Garrick the blacksmith will rent you the loft above his forge, and Mistress Hennie the baker will rent you the chair by her oven if you ask at the right hour."
   },
   {
    "id": "s-0021",
-   "start": 239.922,
-   "end": 251.624,
+   "start": 234.688,
+   "end": 246.39,
    "text": "A single stubborn vegetable farmer supplies the village's greens and insists that the hillside soil is the finest in the region, a claim he will defend with his fists if pressed."
   },
   {
    "id": "s-0022",
-   "start": 252.524,
-   "end": 255.337,
+   "start": 247.29,
+   "end": 250.103,
    "text": "Quiet Business"
   },
   {
    "id": "s-0023",
-   "start": 256.237,
-   "end": 269.097,
+   "start": 251.003,
+   "end": 267.26,
    "text": "The mayor is Barnaby Parns, a round, flustered man in a sash half a size too tight, who makes most of the village's official decisions. His mother, Widow Parns, makes most of those."
   },
   {
    "id": "s-0024",
-   "start": 269.497,
-   "end": 287.574,
+   "start": 268.16,
+   "end": 286.238,
    "text": "Between them the village runs on a mix of show-of-hands voting and maternal decree, which outsiders sometimes mistake for corruption. The Compact knows Downsview exists, collects its taxes, and otherwise leaves it alone."
   },
   {
    "id": "s-0025",
-   "start": 288.474,
-   "end": 307.712,
+   "start": 287.138,
+   "end": 305.119,
    "text": "At the eastern edge of the village stands the Hollow Chapel, tended by Father Thomas, an aging cleric with kind eyes and a quiet crisis of vocation. Thomas prays daily into the post-Sundering quiet and no longer pretends to hear anything answer."
   },
   {
    "id": "s-0026",
-   "start": 308.112,
-   "end": 320.807,
+   "start": 306.019,
+   "end": 318.717,
    "text": "He patches sprains and fevers with what little residue he can draw, and he keeps the village's brief written history in the chapel basement, a collection he has largely forgotten the contents of."
   },
   {
    "id": "s-0027",
-   "start": 321.707,
-   "end": 324.548,
+   "start": 319.617,
+   "end": 322.457,
    "text": "Notable Locations"
   },
   {
    "id": "s-0028",
-   "start": 325.448,
-   "end": 327.174,
+   "start": 323.357,
+   "end": 325.083,
    "text": "•"
   },
   {
    "id": "s-0029",
-   "start": 328.074,
-   "end": 330.436,
+   "start": 325.983,
+   "end": 328.345,
    "text": "The Lamb and Flag:"
   },
   {
    "id": "s-0030",
-   "start": 331.336,
-   "end": 349.371,
+   "start": 329.245,
+   "end": 347.28,
    "text": "Widow Parns' inn and tavern on the main square, and the heart of the village. Low timber beams, a fire that's never allowed to go out, a Shepherd's Pie that's eighty percent potato, and a strict no-politics rule (sheep genetics excepted)."
   },
   {
    "id": "s-0031",
-   "start": 350.271,
-   "end": 351.997,
+   "start": 348.18,
+   "end": 349.906,
    "text": "•"
   },
   {
    "id": "s-0032",
-   "start": 352.897,
-   "end": 353.752,
+   "start": 350.806,
+   "end": 351.661,
    "text": "The Chapel:"
   },
   {
    "id": "s-0033",
-   "start": 354.652,
-   "end": 369.328,
+   "start": 352.561,
+   "end": 367.237,
    "text": "A drafty old stone chapel at the eastern edge, its bell tower collapsed in a storm years ago and never rebuilt. Father Thomas sells herbal poultices and \"blessed rain,\" and rents out the rectory's spare rooms to the occasional traveler."
   },
   {
    "id": "s-0034",
-   "start": 370.228,
-   "end": 371.954,
+   "start": 368.137,
+   "end": 369.863,
    "text": "•"
   },
   {
    "id": "s-0035",
-   "start": 372.854,
-   "end": 374.016,
+   "start": 370.763,
+   "end": 371.926,
    "text": "Hennie's Oven:"
   },
   {
    "id": "s-0036",
-   "start": 374.916,
-   "end": 388.907,
+   "start": 372.826,
+   "end": 386.816,
    "text": "Mistress Hennie's bakery, and the village's gossip exchange. Heavy sourdough, honey-cakes, and meat pasties for the field hands. If you want to know who is courting whom, you buy a bun here."
   },
   {
    "id": "s-0037",
-   "start": 389.807,
-   "end": 391.533,
+   "start": 387.716,
+   "end": 389.443,
    "text": "•"
   },
   {
    "id": "s-0038",
-   "start": 392.433,
-   "end": 395.589,
+   "start": 390.343,
+   "end": 393.499,
    "text": "The Iron-Shoe:"
   },
   {
    "id": "s-0039",
-   "start": 396.489,
-   "end": 412.364,
+   "start": 394.399,
+   "end": 410.274,
    "text": "Garrick's smithy. Smells of hot iron and wet horse. Mostly horseshoes, plowshares, and nails; he can sharpen a sword but will look mildly offended about it. The local farmers loiter here to smoke pipes and complain about the weather."
   },
   {
    "id": "s-0040",
-   "start": 413.264,
-   "end": 414.99,
+   "start": 411.174,
+   "end": 412.9,
    "text": "•"
   },
   {
    "id": "s-0041",
-   "start": 415.89,
-   "end": 420.95,
+   "start": 413.8,
+   "end": 418.86,
    "text": "The Spindle and Loom:"
   },
   {
    "id": "s-0042",
-   "start": 421.85,
-   "end": 432.791,
+   "start": 419.76,
+   "end": 430.701,
    "text": "The Fletcher Sisters' weaving shop. Three spinning wheels turning in perfect unison, the finest wool blankets in Southfield, and a great deal of silent judgment."
   },
   {
    "id": "s-0043",
-   "start": 433.691,
-   "end": 435.418,
+   "start": 431.601,
+   "end": 433.327,
    "text": "•"
   },
   {
    "id": "s-0044",
-   "start": 436.318,
-   "end": 437.545,
+   "start": 434.227,
+   "end": 435.454,
    "text": "The General Ledger:"
   },
   {
    "id": "s-0045",
-   "start": 438.445,
-   "end": 452.823,
+   "start": 436.354,
+   "end": 450.732,
    "text": "Mayor Barnaby's office and the village's dry-goods store. Salt, sugar, candles, rope, and a desk piled high with judging forms for the beauty contest. Organized chaos."
   },
   {
    "id": "s-0046",
-   "start": 453.723,
-   "end": 455.449,
+   "start": 451.632,
+   "end": 453.358,
    "text": "•"
   },
   {
    "id": "s-0047",
-   "start": 456.349,
-   "end": 457.894,
+   "start": 454.258,
+   "end": 455.804,
    "text": "Krell's Hill Farm:"
   },
   {
    "id": "s-0048",
-   "start": 458.794,
-   "end": 468.545,
+   "start": 456.704,
+   "end": 466.455,
    "text": "The largest sheep operation on the lower slopes. Patrolled by a goose. Home to the prize bull. No casual visitors."
   },
   {
    "id": "s-0049",
-   "start": 469.445,
-   "end": 470.774,
+   "start": 467.355,
+   "end": 468.683,
    "text": "Plot Hooks"
   },
   {
    "id": "s-0050",
-   "start": 471.674,
-   "end": 473.4,
+   "start": 469.583,
+   "end": 471.309,
    "text": "•"
   },
   {
    "id": "s-0051",
-   "start": 474.3,
-   "end": 475.407,
+   "start": 472.209,
+   "end": 473.317,
    "text": "The Fourth Ribbon:"
   },
   {
    "id": "s-0052",
-   "start": 476.307,
-   "end": 486.875,
+   "start": 474.217,
+   "end": 486.707,
    "text": "Old Man Krell, the largest sheep farmer on the lower slopes, has won the Livestock Beauty Contest three years running and is paralyzed by the thought of losing the fourth."
   },
   {
    "id": "s-0053",
-   "start": 487.275,
-   "end": 498.234,
+   "start": 487.607,
+   "end": 497.824,
    "text": "His prize bull is guarded day and night by two terrified shepherd twins and a goose called Honk, whose hatred is the purest thing in the village."
   },
   {
    "id": "s-0054",
-   "start": 498.634,
-   "end": 507.885,
+   "start": 498.724,
+   "end": 508.979,
    "text": "In the tavern, the farmer Jareth, who drinks more than he farms, nurses a plan to humiliate Krell at this year's contest without hurting the bull."
   },
   {
    "id": "s-0055",
-   "start": 508.285,
-   "end": 526.23,
+   "start": 509.879,
+   "end": 526.817,
    "text": "He has been describing it loudly to anyone at The Lamb and Flag who will listen, which, according to Widow Parns, is the main reason it hasn't worked yet. Mistress Hennie suspects the bull is being fed something it shouldn't. Barnaby just wants the Grand Parade to end without a fistfight."
   },
   {
    "id": "s-0056",
-   "start": 526.63,
-   "end": 529.67,
+   "start": 527.717,
+   "end": 530.757,
    "text": "The party arrives the week of the fair."
   },
   {
    "id": "s-0057",
-   "start": 530.57,
-   "end": 532.296,
+   "start": 531.657,
+   "end": 533.383,
    "text": "•"
   },
   {
    "id": "s-0058",
-   "start": 533.196,
-   "end": 534.198,
+   "start": 534.283,
+   "end": 535.286,
    "text": "What's in the Basement:"
   },
   {
    "id": "s-0059",
-   "start": 535.098,
-   "end": 547.393,
+   "start": 536.186,
+   "end": 545.888,
    "text": "The two scholars currently lodging at the Hollow Chapel, a dreamy elven minstrel named Liriam and her cynical human partner Corin, are not here for the view."
   },
   {
    "id": "s-0060",
-   "start": 547.793,
-   "end": 557.409,
+   "start": 546.788,
+   "end": 556.404,
    "text": "Whatever they are looking for in Father Thomas's forgotten archive, they are not volunteering to explain it, and Thomas has started to notice."
   },
   {
    "id": "s-0061",
-   "start": 558.309,
-   "end": 560.035,
+   "start": 557.304,
+   "end": 559.03,
    "text": "•"
   },
   {
    "id": "s-0062",
-   "start": 560.935,
-   "end": 563.117,
+   "start": 559.93,
+   "end": 562.112,
    "text": "Ghost Goblins:"
   },
   {
    "id": "s-0063",
-   "start": 564.017,
-   "end": 577.488,
+   "start": 563.012,
+   "end": 576.483,
    "text": "Krell's shepherds keep losing sheep to what they swear are ghosts in the scrub east of the village. The ghosts are goblins. The council would rather not discuss it during festival season."
   }
  ]
