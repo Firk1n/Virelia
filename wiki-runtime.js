@@ -182,7 +182,7 @@
     var SITE_TITLE = document.title;
 
     function setTitle(entry) {
-        document.title = entry ? entry.title + ' — Virelia' : SITE_TITLE;
+        document.title = entry ? entry.title + ' - Virelia' : SITE_TITLE;
     }
 
     function currentView() {
@@ -309,21 +309,31 @@
         if (bar) bar.hidden = true;
     }
 
+    /**
+     * Show Back only when it goes somewhere.
+     *
+     * Absent rather than greyed: it sits in the corner of the artwork, and a
+     * permanently dead control there is clutter that has to be looked past
+     * every time. The arrow is the whole visible label -- naming the previous
+     * entry made the control as wide as the name and pushed the player onto a
+     * second row -- so the destination lives in the tooltip and the accessible
+     * name, where it costs no room and is still announced.
+     */
     function updateBackControl() {
         var button = document.getElementById('entry-back');
         if (!button) return;
         var previous = trail[depth() - 1];
-        button.disabled = !previous;
-        button.textContent = previous ? '‹ ' + wikiData[previous].title : '‹ Back';
-        button.title = previous ? 'Back to ' + wikiData[previous].title : 'Nothing to go back to';
+        button.hidden = !previous;
+        if (!previous) return;
+        var label = 'Back to ' + wikiData[previous].title;
+        button.title = label;
+        button.setAttribute('aria-label', label);
     }
 
     function resetBackControl() {
         var button = document.getElementById('entry-back');
         if (!button) return;
-        button.disabled = true;
-        button.textContent = '‹ Back';
-        button.title = 'Nothing to go back to';
+        button.hidden = true;
     }
 
     function syncView() {

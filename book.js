@@ -40,6 +40,12 @@
         document.body.appendChild(overlay);
         overlay.querySelector('#book-close').addEventListener('click', close);
         overlay.addEventListener('keydown', onKeyDown);
+        // The darkened surround closes, matching the Wiki and the search panel.
+        // The PDF fills the frame and swallows its own clicks, so only the
+        // margin around it can reach this.
+        overlay.addEventListener('mousedown', function (event) {
+            if (event.target === overlay) close();
+        });
     }
 
     function open() {

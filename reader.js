@@ -60,6 +60,13 @@
 
         elements.close.addEventListener('click', close);
         overlay.addEventListener('keydown', onKeyDown);
+        // The darkened surround is a way out, as it is for the search panel.
+        // mousedown rather than click, and only when it is the surround itself,
+        // so a selection dragged from inside the page and released on the
+        // margin does not dismiss what you were reading.
+        overlay.addEventListener('mousedown', function (event) {
+            if (event.target === overlay) close();
+        });
         elements.previous.addEventListener('click', function () { step(-1); });
         elements.next.addEventListener('click', function () { step(1); });
     }

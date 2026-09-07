@@ -17,6 +17,12 @@
 
     var TIMING_VERSION = 1;
 
+    // A slider costs about a hundred pixels and the row has none to spare, so
+    // speed is a button that steps through the rates anyone actually picks.
+    // Five stops rather than the old 0.1 increments: nobody was hunting for
+    // 1.7x, and every extra stop is another press to get past.
+    var SPEEDS = [1, 1.25, 1.5, 2, 3];
+
     var state = {
         entryId: null,
         contentRoot: null,
@@ -36,7 +42,6 @@
         ui.seek = document.getElementById('narration-seek');
         ui.time = document.getElementById('narration-time');
         ui.speed = document.getElementById('narration-speed');
-        ui.speedValue = document.getElementById('narration-speed-value');
         ui.status = document.getElementById('narration-status');
         if (!ui.play) return;
 
@@ -48,8 +53,9 @@
             state.audio.currentTime = state.audio.duration * (ui.seek.value / 1000);
             if (!state.audio.paused) paint(state.audio.currentTime);
         });
-        ui.speed.addEventListener('input', function () {
-            state.playbackRate = +ui.speed.value || 1;
+        ui.speed.addEventListener('click', function () {
+            var next = SPEEDS.indexOf(state.playbackRate) + 1;
+            state.playbackRate = SPEEDS[next % SPEEDS.length];
             if (state.audio) state.audio.playbackRate = state.playbackRate;
             updateSpeedLabel();
         });
@@ -109,10 +115,12 @@
     }
 
     function updateSpeedLabel() {
-        if (!ui.speedValue) return;
+        if (!ui.speed) return;
         var rate = state.playbackRate;
-        ui.speedValue.textContent = (rate % 1 ? rate.toFixed(1) : rate.toFixed(0)) + '×';
-        if (ui.speed) ui.speed.value = String(rate);
+        // 1 -> "1", 1.5 -> "1.5", 1.25 -> "1.25": no trailing zero, no "1.0".
+        var label = (rate % 1 ? String(rate) : rate.toFixed(0)) + '×';
+        ui.speed.textContent = label;
+        ui.speed.setAttribute('aria-label', 'Playback speed ' + label + ', activate to change');
     }
 
     // ---------- attach / detach ----------

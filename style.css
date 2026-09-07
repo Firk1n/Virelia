@@ -159,6 +159,49 @@ body, html {
     transform: scale(1.1);
 }
 
+/* Back: the close button's twin on the other corner. Same circle, same
+   parchment, so the pair reads as one set of panel controls. Absolute inside
+   the panel like .close-btn, so it rides whichever edge the panel docks to. */
+#entry-back {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    display: grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: rgba(253, 246, 227, 0.85);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    font-family: inherit;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1;
+    color: #8b0000;
+    cursor: pointer;
+    z-index: 2001;
+    transition: all 0.2s ease;
+}
+
+/* The browser's own [hidden] rule is the same weight as the id-less display
+   above but loses to it on order, so say it explicitly -- as #entry-bar does. */
+#entry-back[hidden] { display: none; }
+
+#entry-back:hover {
+    background: #8b0000;
+    color: #fdf6e3;
+    transform: scale(1.1);
+}
+
+.entry-back-glyph {
+    display: block;
+    /* Matches .close-x: the glyph sits high in its font box. */
+    transform: translateY(-2px);
+}
+
 /* --- CUSTOM MARKERS --- */
 .marker-pin {
     border-radius: 50%;
@@ -429,6 +472,15 @@ body, html {
         top: 10px;
         right: 10px;
     }
+
+    /* Back keeps pace with its twin. */
+    #entry-back {
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
+        top: 10px;
+        left: 10px;
+    }
     
     /* Adjust ribbon images to match new padding.
        This has to be `img.ribbon`, not `img`: the desktop rule above is
@@ -613,20 +665,11 @@ h2.seg-active { box-shadow: none; }
     white-space: nowrap;
     flex: 0 0 auto;
 }
+/* The slider and its readout cost about a hundred pixels between them, which
+   is most of what pushed this row onto a second line. A button showing the
+   current rate does the same job in a third of the width. */
 .narration-speed {
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    font-size: 11px;
-    color: #6b5c46;
-    white-space: nowrap;
-}
-#narration-speed {
-    width: 72px;
-    accent-color: #93403c;
-}
-#narration-speed-value {
-    min-width: 25px;
+    min-width: 38px;
     font-variant-numeric: tabular-nums;
 }
 /* Lifted out of the bar's flex flow. As a full-width flex item it took a row

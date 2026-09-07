@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Virelia — Interactive Map</title>
+    <title>Virelia - Interactive Map</title>
     <meta name="description" content="An interactive map of Virelia: twelve regions, their cities and ruins, with the full illustrated history, races and factions — read on the page or aloud.">
     <meta name="author" content="Firk1n">
     <meta name="theme-color" content="#6d746b">
@@ -12,7 +12,7 @@
     <!-- Pasted into a chat, the bare URL said nothing about what it was. -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Virelia">
-    <meta property="og:title" content="Virelia — An Interactive Map and Encyclopedia">
+    <meta property="og:title" content="Virelia - An Interactive Map and Encyclopedia">
     <meta property="og:description" content="Twelve regions, their cities and ruins, with the full illustrated history, races and factions — read on the page or aloud.">
     <meta property="og:url" content="https://vireliamap.vercel.app/">
     <meta property="og:image" content="https://vireliamap.vercel.app/assets/social-card.jpg">
@@ -40,13 +40,22 @@
     </div>
 
     <div id="sidebar">
+        <!-- Back mirrors the close control across the top of the panel: the two
+             are what navigates the panel, so they belong as a pair rather than
+             one of them living among the audio controls. It carries only an
+             arrow -- the place it returns to is in its tooltip and its
+             accessible name, where it costs no room -- and it is absent, not
+             greyed, when there is nowhere to go back to. -->
+        <button type="button" id="entry-back" hidden aria-label="Back"><span class="entry-back-glyph">&lsaquo;</span></button>
         <span class="close-btn" onclick="closeSidebar()"><span class="close-x">&times;</span></span>
         <div id="sidebar-content">
             <h2>Welcome</h2>
             <p>Click a location on the map to begin.</p>
         </div>
+        <!-- One row, and only the player: Back moved to the top of the panel
+             and the speed slider became a button, which between them freed the
+             width that used to push this onto a second line. -->
         <div id="entry-bar" hidden>
-            <button type="button" id="entry-back" class="entry-bar-btn">&lsaquo; Back</button>
             <button type="button" id="narration-prev" class="entry-bar-btn narration-jump"
                     aria-label="Go to the beginning of this paragraph" title="Previous paragraph" disabled>&#8630;</button>
             <button type="button" id="narration-play" class="entry-bar-btn narration-play" aria-label="Read this entry aloud" disabled>&#9654;</button>
@@ -55,11 +64,8 @@
             <input type="range" id="narration-seek" min="0" max="1000" value="0" step="1"
                    aria-label="Seek within the narration" disabled>
             <span id="narration-time" class="narration-time">0:00 / --:--</span>
-            <span class="narration-speed">
-                <input type="range" id="narration-speed" min="1" max="3" value="1" step="0.1"
-                       aria-label="Narration speed">
-                <output id="narration-speed-value" for="narration-speed">1×</output>
-            </span>
+            <button type="button" id="narration-speed" class="entry-bar-btn narration-speed"
+                    aria-label="Playback speed 1×, activate to change" title="Playback speed">1×</button>
             <span id="narration-status" class="narration-status" role="status" aria-live="polite"></span>
         </div>
     </div>
