@@ -20,7 +20,18 @@
     var SRC = 'generated/book.js';
 
     var book = null;
+    var chapters = [];          // the book's chapters, plus the places below
     var loading = null;         // in-flight load, so a double click loads once
+
+    // The book is about regions, races and factions. The map also carries
+    // cities, towns and landmarks, which were never book chapters and should
+    // not become them -- but the wiki is meant to hold everything the map
+    // knows, so it grows the sections the book has no reason to.
+    var PLACE_PARTS = [
+        { type: 'city', part: 'The Cities of Virelia' },
+        { type: 'town', part: 'The Towns of Virelia' },
+        { type: 'poi',  part: 'Places of Interest' }
+    ];
     var opener = null;
     var elements = {};
 
@@ -54,7 +65,12 @@
         elements.list = overlay.querySelector('#reader-toc-list');
         elements.page = overlay.querySelector('#reader-page');
         elements.close = overlay.querySelector('#reader-close');
+        elements.main = overlay.querySelector('.reader-main');
         elements.pager = overlay.querySelector('.reader-pager');
+        // There is one narrator and one transport in the page. Rather than
+        // building a second set of controls that could disagree with the
+        // first, the bar moves to whichever surface is showing the prose.
+        elements.player = document.getElementById('entry-bar');
         elements.previous = overlay.querySelector('#reader-prev');
         elements.next = overlay.querySelector('#reader-next');
 
@@ -69,6 +85,24 @@
         });
         elements.previous.addEventListener('click', function () { step(-1); });
         elements.next.addEventListener('click', function () { step(1); });
+
+        // A cross-link followed here stays here. It used to fall through to
+        // WikiRuntime's document-level handler, which opened the sidebar
+        // underneath the wiki -- so following a reference silently queued up a
+        // panel you would only meet on the way out. The wiki refers to the
+        // wiki; the map pin beside the title is how you cross to the sidebar.
+        elements.page.addEventListener('click', function (event) {
+            var link = event.target.closest && event.target.closest('a.wiki-link');
+            if (!link) return;
+            event.preventDefault();
+            event.stopPropagation();          // keep the global handler out of it
+            var index = indexOfEntry(link.dataset.entry);
+            if (index >= 0) { show(index); return; }
+            // Nothing here covers it, so hand it to the map rather than
+            // swallowing the click.
+            close();
+            window.WikiRuntime.open(link.dataset.entry);
+        });
     }
 
     /** Fetch and run generated/book.js once, resolving to the book or null. */
@@ -87,21 +121,71 @@
             loading = null;
             if (!loaded) return null;
             book = loaded;
+            chapters = book.chapters.concat(placeChapters());
             buildContents();
             return book;
         });
         return loading;
     }
 
+    /**
+     * Chapters for every map entry the book does not already cover.
+     *
+     * The prose is the same generated text the sidebar shows, so there is
+     * nothing to keep in step: one source, read in two places.
+     */
+    function placeChapters() {
+        var inBook = {};
+        book.chapters.forEach(function (c) { if (c.entryId) inBook[c.entryId] = true; });
+
+        var extra = [];
+        PLACE_PARTS.forEach(function (group) {
+            Object.keys(wikiData)
+                .filter(function (id) {
+                    var entry = wikiData[id];
+                    return !inBook[id] && entry.content &&
+                        (entry.type || '').toLowerCase() === group.type;
+                })
+                // A gazetteer is looked things up in, so alphabetical -- unlike
+                // the book's parts, which are in the order they were written.
+                .sort(function (a, b) {
+                    return (wikiData[a].title || a).localeCompare(wikiData[b].title || b);
+                })
+                .forEach(function (id) {
+                    extra.push({
+                        id: 'place-' + id,
+                        entryId: id,
+                        title: wikiData[id].title || id,
+                        entryKind: wikiData[id].type || '',
+                        part: group.part,
+                        html: wikiData[id].content
+                    });
+                });
+        });
+        return extra;
+    }
+
+    /**
+     * The heading a part gets in the contents.
+     *
+     * The book's parts are named in full in the source -- "The Regions of
+     * Virelia" -- because a printed page has to say where it is. A reader
+     * already inside the wiki does not, and the full names sat directly above
+     * a chapter of the same name.
+     */
+    function partLabel(part) {
+        return part.replace(/\s+of\s+Virelia\s*$/i, '').replace(/^The\s+/i, '');
+    }
+
     function buildContents() {
         elements.list.innerHTML = '';
         var currentPart = null;
-        book.chapters.forEach(function (chapter, index) {
+        chapters.forEach(function (chapter, index) {
             if (chapter.part && chapter.part !== currentPart) {
                 currentPart = chapter.part;
                 var partItem = document.createElement('li');
                 partItem.className = 'reader-toc-part';
-                partItem.textContent = currentPart;
+                partItem.textContent = partLabel(currentPart);
                 elements.list.appendChild(partItem);
             }
             var item = document.createElement('li');
@@ -116,36 +200,106 @@
         });
     }
 
+    /**
+     * Remove a leading epigraph that only restates the site's own name.
+     *
+     * Returns the tagline beneath it, if there was one, so the caller can put
+     * it somewhere that makes sense. Matches against the header rather than a
+     * hardcoded string, so the two cannot drift apart.
+     */
+    function liftTitleEpigraph(body) {
+        var first = body.firstElementChild;
+        if (!first || !first.classList.contains('entry-epigraph')) return null;
+        var lines = first.querySelectorAll('p');
+        if (!lines.length) return null;
+        var siteName = elements.overlay.querySelector('.reader-head h1');
+        siteName = siteName ? siteName.textContent.trim().toLowerCase() : 'virelia';
+        if (lines[0].textContent.trim().toLowerCase() !== siteName) return null;
+        var tagline = lines.length > 1 ? lines[lines.length - 1].textContent.trim() : '';
+        first.remove();
+        return tagline || null;
+    }
+
+    function indexOfEntry(id) {
+        return chapters.findIndex(function (c) { return c.entryId === id || c.id === id; });
+    }
+
     var currentIndex = -1;
 
     function show(index) {
-        var chapter = book && book.chapters[index];
+        var chapter = chapters[index];
         if (!chapter) return;
         currentIndex = index;
         elements.page.innerHTML = '';
 
+        var head = document.createElement('div');
+        head.className = 'reader-head-row';
+
         var heading = document.createElement('h2');
         heading.textContent = chapter.title;
-        elements.page.appendChild(heading);
+        // Segment 1 of every narration is the title, exactly as in the
+        // sidebar. Without this the read-along has nothing to mark while the
+        // first line is being spoken.
+        if (chapter.entryId && wikiData[chapter.entryId] && wikiData[chapter.entryId].narration) {
+            heading.dataset.seg = 's-0001';
+        }
+        // Only the places carry one; the book's own chapters have a `kind` of
+        // "chapter"/"front", which is structure and not something to print.
+        if (chapter.entryKind) {
+            var kind = document.createElement('small');
+            kind.textContent = '(' + window.WikiRuntime.typeLabel(chapter.entryKind) + ')';
+            heading.appendChild(document.createTextNode(' '));
+            heading.appendChild(kind);
+        }
+        head.appendChild(heading);
 
-        if (chapter.entryId && wikiData[chapter.entryId]) {
+        // The counterpart of the sidebar's wiki mark: one button, in the same
+        // place on the title line, pointing the other way. Only for chapters
+        // that are actually somewhere -- a race or a faction is not a place.
+        if (chapter.entryId && wikiData[chapter.entryId] && wikiData[chapter.entryId].coords) {
             var jump = document.createElement('button');
             jump.type = 'button';
             jump.className = 'reader-jump';
-            jump.textContent = 'Show on map';
+            jump.title = 'Show ' + chapter.title + ' on the map';
+            jump.setAttribute('aria-label', jump.title);
+            jump.innerHTML = '<svg aria-hidden="true"><use href="#icon-map"></use></svg>';
             jump.addEventListener('click', function () {
                 close();
                 window.WikiRuntime.open(chapter.entryId);
             });
-            elements.page.appendChild(jump);
+            head.appendChild(jump);
         }
+        elements.page.appendChild(head);
 
         var body = document.createElement('div');
         body.className = 'entry-body';
-        body.innerHTML = chapter.html;
+        // The entry's own copy wherever there is one, not the chapter the book
+        // build sliced. They are the same prose, but only the entry's carries
+        // the segment ids the timing files were written against -- the races
+        // segment differently here because their mechanics appendix is split
+        // off, and the wiki's "Fractured Era" chapter stops 236 words early.
+        // Reading the entry fixes both, and makes every chapter narratable.
+        var entry = chapter.entryId ? wikiData[chapter.entryId] : null;
+        body.innerHTML = (entry && entry.content) || chapter.html;
+
+        // The Preface opens with the book's title page: the name, then its
+        // tagline. A printed book needs that; the wiki's own header says
+        // Virelia an inch above the heading, so the name is furniture. Keep
+        // the tagline, which is the half that says something, and set it under
+        // the chapter title where a subtitle belongs -- rather than leaving it
+        // in an epigraph, whose em-dash would make it read as a quotation
+        // attributed to nobody.
+        var subtitle = liftTitleEpigraph(body);
+
         // Cross-links work here too, minus a self-link to the chapter's own
         // map entry.
         window.WikiRuntime.linkify(body, chapter.entryId || null);
+        if (subtitle) {
+            var line = document.createElement('p');
+            line.className = 'reader-subtitle';
+            line.textContent = subtitle;
+            elements.page.appendChild(line);
+        }
         elements.page.appendChild(body);
 
         Array.prototype.forEach.call(elements.list.querySelectorAll('.reader-toc-link'), function (b) {
@@ -162,6 +316,9 @@
         });
 
         updatePager();
+        // Narrate what is on screen. attach() hides the bar by itself for the
+        // Preface and the part introductions, which are nobody's entry.
+        if (window.Narration) window.Narration.attach(chapter.entryId || null, elements.page);
         elements.page.scrollTop = 0;
         elements.page.focus();
     }
@@ -176,8 +333,8 @@
     function updatePager() {
         if (!book) return;
         elements.pager.hidden = false;
-        var previous = book.chapters[currentIndex - 1];
-        var next = book.chapters[currentIndex + 1];
+        var previous = chapters[currentIndex - 1];
+        var next = chapters[currentIndex + 1];
 
         elements.previous.disabled = !previous;
         elements.previous.textContent = previous ? '‹ ' + previous.title : '‹ Previous';
@@ -191,11 +348,16 @@
     function step(delta) {
         if (!book) return;
         var index = currentIndex + delta;
-        if (index >= 0 && index < book.chapters.length) show(index);
+        if (index >= 0 && index < chapters.length) show(index);
     }
 
     function open(chapterId) {
         opener = document.activeElement;
+        // The wiki covers the map and shows the same entry with more room, so
+        // leaving the sidebar open behind it just means finding it still there
+        // on the way out. `chapterId` was read before this, so closing the
+        // panel cannot take the destination with it.
+        if (window.WikiRuntime) window.WikiRuntime.close();
         elements.overlay.hidden = false;
         document.body.classList.add('reader-open');
 
@@ -217,9 +379,14 @@
                     SRC + ' failed to load. Build it: node scripts/build-book.mjs');
                 return;
             }
+            // Between the prose and the chapter pager, so the pager stays the
+            // last thing in the column.
+            if (elements.player && elements.player.parentNode !== elements.main) {
+                elements.main.insertBefore(elements.player, elements.pager);
+            }
             var index = 0;
             if (chapterId) {
-                var found = book.chapters.findIndex(function (c) {
+                var found = chapters.findIndex(function (c) {
                     return c.id === chapterId || c.entryId === chapterId;
                 });
                 if (found >= 0) index = found;
@@ -229,6 +396,13 @@
     }
 
     function close() {
+        // Stop before moving: the highlight points into the page we are about
+        // to leave.
+        if (window.Narration) window.Narration.stop();
+        if (elements.player) {
+            elements.player.hidden = true;
+            document.getElementById('sidebar').appendChild(elements.player);
+        }
         elements.overlay.hidden = true;
         document.body.classList.remove('reader-open');
         // Focus goes back where it came from; nothing else in the page moved,

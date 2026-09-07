@@ -194,10 +194,40 @@ for (let key in wikiData) {
                 window.editMode.loadEntry(key);
                 return;
             }
+            // Clicking the pin you are already reading puts it away. The
+            // marker is the entry's switch, so it should turn off as well as
+            // on rather than re-opening what is open.
+            var sidebar = document.getElementById('sidebar');
+            if (sidebar.classList.contains('active') && sidebar.dataset.entry === key) {
+                closeSidebar();
+                return;
+            }
             openEntry(key);
         });
     }
 }
+
+// --- CLICKING THE MAP ITSELF ---
+// An open entry is dismissed by clicking away from it, which is what the rest
+// of the page already does: the wiki, the book, the search panel and the
+// lightbox all close on their surround.
+//
+// A drag is not a click. Leaflet does suppress the click that ends a pan, but
+// the panel is easy to lose by accident and the guess is cheap to make
+// ourselves: remember where the press started and let go of the idea if the
+// pointer travelled.
+var PRESS_SLOP = 5;          // px of travel still counted as a click, not a drag
+var pressedAt = null;
+
+map.on('mousedown', function (e) { pressedAt = e.containerPoint; });
+
+map.on('click', function (e) {
+    // Edit mode uses map clicks to place markers; leave it alone.
+    if (window.editMode && window.editMode.active) return;
+    if (pressedAt && e.containerPoint.distanceTo(pressedAt) > PRESS_SLOP) return;
+    var sidebar = document.getElementById('sidebar');
+    if (sidebar.classList.contains('active')) closeSidebar();
+});
 
 // --- VISIBILITY ENGINE (Semantic Zooming) ---
 function updateVisibleMarkers() {

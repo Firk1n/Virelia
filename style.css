@@ -580,9 +580,9 @@ body, html {
 }
 .entry-figure img {
     display: block;
-    /* Never upscale: a 395px sigil blown up to the column width is mush.
-       The width/height attributes carry the intrinsic size, so this scales
-       down when the column is narrower and leaves it alone when it is not. */
+    /* Never upscale. The width/height attributes now carry the size the .docx
+       places the picture at, not the size of the file, so this scales down
+       when the column is narrower and leaves it alone when it is not. */
     max-width: 100%;
     height: auto;
     margin: 0 auto;
@@ -590,6 +590,20 @@ body, html {
     box-shadow: 0 2px 6px rgba(0,0,0,0.3);
     cursor: zoom-in;
     background: #fdf6e3;
+}
+
+/* Sigils and runes -- marked by the importer as pictures the document sets
+   well inside its column and no taller than they are wide.
+   The .docx places them between 131px and 363px, which standardises them
+   against each other but still reads as large here: its column is 554px and
+   the reading panel's is nearer 390px, so the same picture occupies far more
+   of the page. The cap is what makes a symbol look like a symbol; the ones
+   the document already sets smaller than it keep their own size. */
+.entry-symbol img {
+    max-width: min(100%, 220px);
+    border-width: 1px;
+    box-shadow: none;
+    background: transparent;
 }
 
 /* --- CROSS-LINKS --- */
@@ -633,6 +647,73 @@ h2.seg-active { box-shadow: none; }
    than `#entry-bar`, so declare it explicitly. Without this, map-only entries
    that have no narration still show an enabled-looking stale player. */
 #entry-bar[hidden] { display: none; }
+/* The controls, wrapped so the whole set can fold away and leave the toggle
+   behind. */
+.entry-bar-controls {
+    /* Basis 0, not auto: with auto the controls ask for their natural width,
+       take the whole line, and push the toggle onto a second row -- undoing
+       the very thing that got this bar down to one. At 0 they take what is
+       left after the toggle, which is more than they need. */
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+#entry-bar.is-collapsed .entry-bar-controls { display: none; }
+
+/* Folded away means gone, not shorter. The bar collapses to no height at all
+   and the button floats up out of it into the corner of the reading area --
+   the same trick the close and back controls use over the ribbon image. In
+   the sidebar that is the bottom corner of the panel; in the wiki the bar
+   sits between the prose and the chapter pager, so zero height puts the
+   button just above the pager without having to know how tall it is. */
+#entry-bar.is-collapsed {
+    height: 0;
+    min-height: 0;
+    padding: 0 14px;
+    border-top: none;
+    background: transparent;
+    overflow: visible;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+#entry-bar.is-collapsed .narration-toggle {
+    position: relative;
+    top: -44px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: rgba(253, 246, 227, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 5;
+}
+#entry-bar.is-collapsed .narration-toggle:hover {
+    background: #93403c;
+    color: #fdf6e3;
+}
+
+.narration-toggle {
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: 1px solid #93403c;
+    border-radius: 4px;
+    background: #fff;
+    color: #93403c;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.narration-toggle svg { width: 16px; height: 16px; }
+.narration-toggle:hover { background: #f6dfbf; }
+/* Filled while the player is open, so the button reads as a state and not
+   merely as another control. */
+.narration-toggle[aria-expanded="true"] { background: #93403c; color: #fdf6e3; }
+
 .entry-bar-btn {
     padding: 6px 10px;
     border: 1px solid #93403c;
@@ -665,12 +746,58 @@ h2.seg-active { box-shadow: none; }
     white-space: nowrap;
     flex: 0 0 auto;
 }
-/* The slider and its readout cost about a hundred pixels between them, which
-   is most of what pushed this row onto a second line. A button showing the
-   current rate does the same job in a third of the width. */
+/* The button costs a third of what the slider did, which is what let this row
+   collapse to one line. The slider still exists -- it opens above the button,
+   where it has room to be the vertical control a rate wants to be. */
+.narration-speed-wrap { position: relative; display: inline-flex; }
 .narration-speed {
-    min-width: 38px;
+    /* Fixed, not min-: "1x" and "1.6x" are different widths, and letting the
+       button size to its label made the whole row shuffle every time the rate
+       crossed a decimal. Wide enough for the longest value it can show. */
+    width: 52px;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+    text-align: center;
     font-variant-numeric: tabular-nums;
+}
+.narration-speed[aria-expanded="true"] { background: #93403c; color: #fdf6e3; }
+
+.narration-speed-popover {
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 8px;
+    background: #fdf6e3;
+    border: 1px solid #93403c;
+    border-radius: 5px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+}
+.narration-speed-popover[hidden] { display: none; }
+#narration-speed-value {
+    font-size: 11px;
+    font-weight: bold;
+    color: #6b5c46;
+    font-variant-numeric: tabular-nums;
+}
+#narration-speed-range {
+    /* Bottom-to-top. `writing-mode` plus rtl is the standard spelling; the
+       -webkit rule is what older WebKit understood, and is ignored where the
+       standard one lands. */
+    writing-mode: vertical-lr;
+    direction: rtl;
+    -webkit-appearance: slider-vertical;
+    width: 20px;
+    height: 104px;
+    margin: 0;
+    accent-color: #93403c;
+    cursor: pointer;
 }
 /* Lifted out of the bar's flex flow. As a full-width flex item it took a row
    of its own the instant it had text, growing the bar and shoving the seek
@@ -745,8 +872,14 @@ h2.seg-active { box-shadow: none; }
     display: flex;
     gap: 8px;
 }
+/* The sprite itself is never drawn; only its symbols are, through <use>. */
+.icon-sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
+
 .map-button {
-    padding: 8px 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 14px 8px 11px;
     background: #fdf6e3;
     border: 2px solid #93403c;
     border-radius: 4px;
@@ -756,8 +889,18 @@ h2.seg-active { box-shadow: none; }
     font-weight: bold;
     color: #2c3e50;
     cursor: pointer;
+    transition: all 0.2s ease;
+}
+/* The mark is the red of the map's own labels; the word stays ink-coloured,
+   so the icon leads and the label follows. */
+.map-button-icon {
+    width: 16px;
+    height: 16px;
+    flex: 0 0 auto;
+    color: #93403c;
 }
 .map-button:hover { background: #f6dfbf; }
+.map-button:hover .map-button-icon { color: #8b0000; }
 body.edit-mode-active .map-buttons { display: none; }
 
 /* These stay pinned to their corner and let a left-docked panel cover them,
@@ -943,25 +1086,53 @@ body.edit-mode-active .map-buttons { display: none; }
 .reader-pager-btn:disabled { opacity: 0.35; cursor: default; }
 .reader-pager-btn:last-child { margin-left: auto; }
 .reader-page:focus { outline: none; }
-.reader-page h2 {
-    margin-top: 0;
-    color: #2c3e50;
-    border-bottom: 2px solid #93403c;
-    padding-bottom: 10px;
-}
-.reader-jump {
+/* Built like the sidebar's .entry-head, and for the same reason: the chapter
+   title never fills the line, so the crossing costs no height. */
+.reader-head-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
     margin-bottom: 18px;
-    padding: 6px 12px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #93403c;
+}
+.reader-page h2 {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    color: #2c3e50;
+    border-bottom: none;      /* the row carries the rule */
+}
+
+/* What is left of the Preface's title page once the name comes off it: a
+   tagline, sitting under the chapter title as a subtitle rather than as a
+   quotation attributed to nobody. */
+.reader-subtitle {
+    margin: -8px 0 20px;
+    color: #7a6a55;
+    font-size: 15px;
+    font-style: italic;
+}
+
+/* The mirror of .entry-wiki-link: same square, same size, opposite direction. */
+.reader-jump {
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    padding: 0;
     border: 1px solid #93403c;
     border-radius: 4px;
     background: #fff;
-    font-family: inherit;
-    font-size: 12px;
-    font-weight: bold;
-    color: #2c3e50;
+    color: #93403c;
     cursor: pointer;
+    transition: all 0.2s ease;
 }
-.reader-jump:hover { background: #f6dfbf; }
+.reader-jump svg { width: 17px; height: 17px; }
+.reader-jump:hover { background: #93403c; color: #fdf6e3; }
 
 @media (max-width: 700px) {
     #reader { padding: 0; }
@@ -1137,6 +1308,9 @@ body.edit-mode-active .map-buttons { display: none; }
     color: #6b5c46;
     font-size: 11px;
 }
+/* With nothing typed there is nothing to say, and the empty strip would
+   still show its padding and its rule. */
+.search-hint:empty { display: none; }
 .search-results {
     flex: 1 1 auto;
     overflow-y: auto;
@@ -1190,3 +1364,59 @@ body.edit-mode-active .map-buttons { display: none; }
         border-width: 0 0 2px 0;
     }
 }
+
+/* --- ENTRY SWAP --- */
+/* Following a link replaces every word in an already-open panel in one frame.
+   The fade is short enough not to be a wait and long enough to read as a
+   change of page rather than a glitch. */
+@keyframes entry-enter {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: none; }
+}
+#sidebar-content.is-entering { animation: entry-enter 240ms ease-out; }
+
+@media (prefers-reduced-motion: reduce) {
+    #sidebar-content.is-entering { animation: none; }
+}
+
+/* Title and crossing share a line. The heading rarely fills the panel, so the
+   button costs no vertical space at all -- where a full-width one under it
+   pushed every paragraph down for something used once. */
+.entry-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #93403c;
+}
+/* Has to be `#sidebar .entry-head h2`, not `.entry-head h2`: the base rule is
+   `#sidebar h2`, and an id beats a class however much later this sits in the
+   file. Without the extra weight the heading keeps its own border and the row
+   draws a second one under it -- two rules, ten pixels apart. Same trap as
+   `#sidebar img.ribbon` further down. */
+#sidebar .entry-head h2 {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border-bottom: none;      /* the row carries the rule now */
+}
+
+.entry-wiki-link {
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: 1px solid #93403c;
+    border-radius: 4px;
+    background: #fff;
+    color: #93403c;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.entry-wiki-link svg { width: 17px; height: 17px; }
+.entry-wiki-link:hover { background: #93403c; color: #fdf6e3; }

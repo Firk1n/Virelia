@@ -7,29 +7,29 @@
       "id": "the_shining_age",
       "title": "The Shining Age",
       "sourceHash": "b5e9a00a69f96d3436a811b47f59bc0dba1abbf83cf3474196d43569163174dd",
-      "textHash": "992fc7da7e56eb8375c035a93df3fdcebb043db2540dad5e6fd813f7fdc19d63",
-      "segments": 7
+      "textHash": "db9a0a97cf0a5e75a3edbe947a10120c803e438cef97b448760cb35e255b49d5",
+      "segments": 9
     },
     {
       "id": "the_sundering",
       "title": "The Sundering",
       "sourceHash": "26172ceb28fb8c1fde8d1f6a89a61935df41013367d880f510f477bc32cf9ea8",
-      "textHash": "847142068ff1ee0e2260981583dfc14a1ef79c96e7c330e73a550b761496ea90",
-      "segments": 5
+      "textHash": "fc1becf03c6568d0ff445c364e8d74093680f9e9fd0fef2680882463701d46c7",
+      "segments": 6
     },
     {
       "id": "the_age_of_silence",
       "title": "The Age of Silence",
       "sourceHash": "90b3352e4a71cbbc508375f27e2285f018c1567a68dae5e0430ac7a1251b9c10",
-      "textHash": "5350ac7779fdea48c196bd294eb2e9d654c414051be77d2e4117ac1183b76a6d",
-      "segments": 10
+      "textHash": "3da7a07a1647ae7fcf6f3bb5a1f4f290100794676ff9ea68b720abc56f85b40a",
+      "segments": 15
     },
     {
       "id": "the_fracture_wars",
       "title": "The Fracture Wars",
       "sourceHash": "f51d066b0a18f36c839a208ce3d7c9bd733774a51785fa64542f3d1ecbfd3f38",
-      "textHash": "d7f12dfc21636400da05ae744ccaf95df9895237a5e99225e5c8e452132eca1a",
-      "segments": 7
+      "textHash": "5badc50491160adee823df6a711bb0a4ce989a826193b4890c6f5335e9a79c45",
+      "segments": 9
     },
     {
       "id": "the_fractured_era",
@@ -299,6 +299,9 @@
     }
   ],
   "changed": [
-    "downsview"
+    "the_shining_age",
+    "the_sundering",
+    "the_age_of_silence",
+    "the_fracture_wars"
   ]
 }

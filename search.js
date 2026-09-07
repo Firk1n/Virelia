@@ -145,7 +145,7 @@
                     ' aria-autocomplete="list">' +
                     '<button type="button" id="search-close" class="search-close" aria-label="Close search">&times;</button>' +
                 '</div>' +
-                '<p id="search-hint" class="search-hint">Regions, races, factions and every word of the text.</p>' +
+                '<p id="search-hint" class="search-hint"></p>' +
                 '<ul id="search-results" class="search-results" role="listbox" aria-label="Results"></ul>' +
             '</div>';
         document.body.appendChild(overlay);
@@ -174,7 +174,7 @@
         elements.input.setAttribute('aria-expanded', results.length ? 'true' : 'false');
 
         if (query.length < 2) {
-            elements.hint.textContent = 'Regions, races, factions and every word of the text.';
+            elements.hint.textContent = '';
             return;
         }
         if (!results.length) {

@@ -125,13 +125,20 @@ function findOpener(lines) {
   // Molakar's opener has no rule at all -- the exporter dropped it. Fall back
   // to the structure the rule would have marked: everything above the first
   // section heading is the opener, and its last line is the citation.
+  //
+  // The heading is what makes this safe, so it is required rather than hoped
+  // for. Without it the loop simply ran out of lines and called whatever it
+  // had collected an epigraph -- which is how The Shining Age, five paragraphs
+  // of prose with no rule and no heading anywhere in it, came out as one long
+  // quotation with its closing sentence demoted to an attribution.
   const opener = [];
+  let bounded = false;
   for (let j = 0; j < Math.min(lines.length, 9); j++) {
     if (isBlank(lines[j])) continue;
-    if (isSectionHeading(lines[j].trim().replace(/\s+/g, ' '))) break;
+    if (isSectionHeading(lines[j].trim().replace(/\s+/g, ' '))) { bounded = true; break; }
     opener.push(j);
   }
-  if (!opener.length) return { openerEnd: -1, citation: -1 };
+  if (!bounded || !opener.length) return { openerEnd: -1, citation: -1 };
   return { openerEnd: opener[opener.length - 1], citation: opener[opener.length - 1] };
 }
 
@@ -334,9 +341,18 @@ export function renderEntry(title, blocks, options = {}) {
         // title has no meaningful predecessor, so it matches on the title alone.
         if (!isTitle && image.after && asAnchor(image.after) !== asAnchor(previousText)) continue;
         placed.add(image);
-        html.push(`<figure class="entry-figure">` +
-          `<img src="${escapeHtml(image.src)}" width="${image.width}" height="${image.height}"` +
-          ` loading="lazy" alt="Illustration from ${escapeHtml(title)}"></figure>`);
+        // The size the .docx places the picture at, not the size of the file
+        // it came from: a faction sigil is a 1074px image set on the page at
+        // about a third of the column, and taking the file's own dimensions is
+        // what made the sigils huge and each of them a different huge.
+        const w = image.displayWidth || image.width;
+        const h = image.displayHeight || image.height;
+        const kind = image.symbol ? 'entry-figure entry-symbol' : 'entry-figure';
+        const alt = image.symbol
+          ? `Sigil of ${escapeHtml(title)}` : `Illustration from ${escapeHtml(title)}`;
+        html.push(`<figure class="${kind}">` +
+          `<img src="${escapeHtml(image.src)}" width="${w}" height="${h}"` +
+          ` loading="lazy" alt="${alt}"></figure>`);
       }
     }
     previousText = anchor;

@@ -4,8 +4,8 @@
   "entries": {
     "the_shining_age": {
       "title": "The Shining Age",
-      "text": "The Shining Age\nBefore time, Virelia was a place of divine order. There were as many gods as there were domains to maintain, and they directed the natural order by hand, lovingly carving each leaf and grain of sand into its proper shape.\nSome relished the mortal races. They took delight in the attention, the adoration, the small intricate stories mortals could not help but conjure. Some saw no real difference between a man and a stone, and preferred tending to other projects: designing new physics, tending to a garden or perfecting a gust of wind to flutter around leaves in a manner that matches their exact taste.\nThis was an era of beauty and miracles, where mountains were raised in symmetrical ranges and rivers softly trickled where they were commanded. The Gods walked the earth and had turned it into their heaven.\nAs a reflection of the gods’ law, the immemorial Remosan Empire ruled over the vast majority of the continent. It was an extraordinary period of abundance coupled with immense hubris, when Gyre-Stones were built to regulate the weather, and imperial highways healed themselves over night.\nWar still happened, but it carried a different sentiment from what the word means now. Soldiers fell in battle and rose again the next morning, dusted off by the local god and sent home with a story to tell. The weapons they used, ones that modern Virelia knows only as legend, were left scattered across the fields after the day's fighting, to be picked up and put away back into the toybox.\nThere were no Rifts, there was nothing yet that could break, unless someone willed it.",
-      "textHash": "992fc7da7e56eb8375c035a93df3fdcebb043db2540dad5e6fd813f7fdc19d63",
+      "text": "The Shining Age\nBefore time, Virelia was a place of divine order. There were as many gods as there were domains to maintain, and they directed the natural order by hand, lovingly carving each leaf and grain of sand into its proper shape.\nSome relished the mortal races. They took delight in the attention, the adoration, the small intricate stories mortals could not help but conjure.\nSome saw no real difference between a man and a stone, and preferred tending to other projects: designing new physics, tending to a garden or perfecting a gust of wind to flutter around leaves in a manner that matches their exact taste.\nThis was an era of beauty and miracles, where mountains were raised in symmetrical ranges and rivers softly trickled where they were commanded. The Gods walked the earth and had turned it into their heaven.\nAs a reflection of the gods’ law, the immemorial Remosan Empire ruled over the vast majority of the continent. It was an extraordinary period of abundance coupled with immense hubris, when Gyre-Stones were built to regulate the weather, and imperial highways healed themselves over night.\nWar still happened, but it carried a different sentiment from what the word means now. Soldiers fell in battle and rose again the next morning, dusted off by the local god and sent home with a story to tell.\nThe weapons they used, ones that modern Virelia knows only as legend, were left scattered across the fields after the day's fighting, to be picked up and put away back into the toybox.\nThere were no Rifts, there was nothing yet that could break, unless someone willed it.",
+      "textHash": "db9a0a97cf0a5e75a3edbe947a10120c803e438cef97b448760cb35e255b49d5",
       "audioSrc": "audio/the_shining_age.mp3",
       "timingSrc": "audio/the_shining_age.timings.json",
       "segments": [
@@ -16,37 +16,49 @@
         },
         {
           "id": "s-0002",
-          "role": "epigraph",
+          "role": "prose",
           "text": "Before time, Virelia was a place of divine order. There were as many gods as there were domains to maintain, and they directed the natural order by hand, lovingly carving each leaf and grain of sand into its proper shape.",
           "last": true
         },
         {
           "id": "s-0003",
-          "role": "epigraph",
-          "text": "Some relished the mortal races. They took delight in the attention, the adoration, the small intricate stories mortals could not help but conjure. Some saw no real difference between a man and a stone, and preferred tending to other projects: designing new physics, tending to a garden or perfecting a gust of wind to flutter around leaves in a manner that matches their exact taste.",
+          "role": "prose",
+          "text": "Some relished the mortal races. They took delight in the attention, the adoration, the small intricate stories mortals could not help but conjure.",
           "last": false
         },
         {
           "id": "s-0004",
-          "role": "epigraph",
+          "role": "prose",
+          "text": "Some saw no real difference between a man and a stone, and preferred tending to other projects: designing new physics, tending to a garden or perfecting a gust of wind to flutter around leaves in a manner that matches their exact taste.",
+          "last": false
+        },
+        {
+          "id": "s-0005",
+          "role": "prose",
           "text": "This was an era of beauty and miracles, where mountains were raised in symmetrical ranges and rivers softly trickled where they were commanded. The Gods walked the earth and had turned it into their heaven.",
           "last": true
         },
         {
-          "id": "s-0005",
-          "role": "epigraph",
+          "id": "s-0006",
+          "role": "prose",
           "text": "As a reflection of the gods’ law, the immemorial Remosan Empire ruled over the vast majority of the continent. It was an extraordinary period of abundance coupled with immense hubris, when Gyre-Stones were built to regulate the weather, and imperial highways healed themselves over night.",
           "last": true
         },
         {
-          "id": "s-0006",
-          "role": "epigraph",
-          "text": "War still happened, but it carried a different sentiment from what the word means now. Soldiers fell in battle and rose again the next morning, dusted off by the local god and sent home with a story to tell. The weapons they used, ones that modern Virelia knows only as legend, were left scattered across the fields after the day's fighting, to be picked up and put away back into the toybox.",
+          "id": "s-0007",
+          "role": "prose",
+          "text": "War still happened, but it carried a different sentiment from what the word means now. Soldiers fell in battle and rose again the next morning, dusted off by the local god and sent home with a story to tell.",
+          "last": false
+        },
+        {
+          "id": "s-0008",
+          "role": "prose",
+          "text": "The weapons they used, ones that modern Virelia knows only as legend, were left scattered across the fields after the day's fighting, to be picked up and put away back into the toybox.",
           "last": true
         },
         {
-          "id": "s-0007",
-          "role": "attribution",
+          "id": "s-0009",
+          "role": "prose",
           "text": "There were no Rifts, there was nothing yet that could break, unless someone willed it.",
           "last": true
         }
@@ -54,8 +66,8 @@
     },
     "the_sundering": {
       "title": "The Sundering",
-      "text": "The Sundering\nThere was no war in heaven. No warning either. One moment the gods were there, and the next they weren't. Eighteen centuries ago, give or take, the shrines went quiet, and the processions arrived at empty altars. Whatever the gods had been to the people who worshipped them, was now gone.\nWhat followed took a little longer to arrive. Systems broke, in different ways, for different reasons we mostly still don't understand. The center of the continent fell inward into what's now called the Mire. Above Lastrago, the sky tore open in an event that came to be called the Mazur. Thirekhet had come down into Molakar to cool the desert into a sanctuary and got perhaps a third of the way through. Neither the ice nor the desert has given ground against the other in eighteen centuries.\nDivine magic was the worst of it. It had been a tool, only useful the way a plough is, because something larger was pulling it. With the gods gone it went feral, and the survivors, who did not yet understand it had gone haywire, kept trying to use it.\nThe results were on the scale you'd expect.",
-      "textHash": "847142068ff1ee0e2260981583dfc14a1ef79c96e7c330e73a550b761496ea90",
+      "text": "The Sundering\nThere was no war in heaven. No warning either. One moment the gods were there, and the next they weren't. Eighteen centuries ago, give or take, the shrines went quiet, and the processions arrived at empty altars. Whatever the gods had been to the people who worshipped them, was now gone.\nWhat followed took a little longer to arrive. Systems broke, in different ways, for different reasons we mostly still don't understand. The center of the continent fell inward into what's now called the Mire. Above Lastrago, the sky tore open in an event that came to be called the Mazur.\nThirekhet had come down into Molakar to cool the desert into a sanctuary and got perhaps a third of the way through. Neither the ice nor the desert has given ground against the other in eighteen centuries.\nDivine magic was the worst of it. It had been a tool, only useful the way a plough is, because something larger was pulling it. With the gods gone it went feral, and the survivors, who did not yet understand it had gone haywire, kept trying to use it.\nThe results were on the scale you'd expect.",
+      "textHash": "fc1becf03c6568d0ff445c364e8d74093680f9e9fd0fef2680882463701d46c7",
       "audioSrc": "audio/the_sundering.mp3",
       "timingSrc": "audio/the_sundering.timings.json",
       "segments": [
@@ -66,25 +78,31 @@
         },
         {
           "id": "s-0002",
-          "role": "epigraph",
+          "role": "prose",
           "text": "There was no war in heaven. No warning either. One moment the gods were there, and the next they weren't. Eighteen centuries ago, give or take, the shrines went quiet, and the processions arrived at empty altars. Whatever the gods had been to the people who worshipped them, was now gone.",
           "last": true
         },
         {
           "id": "s-0003",
-          "role": "epigraph",
-          "text": "What followed took a little longer to arrive. Systems broke, in different ways, for different reasons we mostly still don't understand. The center of the continent fell inward into what's now called the Mire. Above Lastrago, the sky tore open in an event that came to be called the Mazur. Thirekhet had come down into Molakar to cool the desert into a sanctuary and got perhaps a third of the way through. Neither the ice nor the desert has given ground against the other in eighteen centuries.",
-          "last": true
+          "role": "prose",
+          "text": "What followed took a little longer to arrive. Systems broke, in different ways, for different reasons we mostly still don't understand. The center of the continent fell inward into what's now called the Mire. Above Lastrago, the sky tore open in an event that came to be called the Mazur.",
+          "last": false
         },
         {
           "id": "s-0004",
-          "role": "attribution",
+          "role": "prose",
+          "text": "Thirekhet had come down into Molakar to cool the desert into a sanctuary and got perhaps a third of the way through. Neither the ice nor the desert has given ground against the other in eighteen centuries.",
+          "last": true
+        },
+        {
+          "id": "s-0005",
+          "role": "prose",
           "text": "Divine magic was the worst of it. It had been a tool, only useful the way a plough is, because something larger was pulling it. With the gods gone it went feral, and the survivors, who did not yet understand it had gone haywire, kept trying to use it.",
           "last": false
         },
         {
-          "id": "s-0005",
-          "role": "attribution",
+          "id": "s-0006",
+          "role": "prose",
           "text": "The results were on the scale you'd expect.",
           "last": true
         }
@@ -92,8 +110,8 @@
     },
     "the_age_of_silence": {
       "title": "The Age of Silence",
-      "text": "The Age of Silence\nWhen the gods vanished, the people in charge of the Remosan Empire set themselves to fixing things, and they were the wrong people for the job. They were the innocent children of the Shining Age. They had never seen a wound that didn't close or a spell that failed. War, to them, was a kind of strenuous theater. Death was a story you told at dinner. The idea that an action could have a consequence which then stayed was not something their education had prepared them for.\nAnd so they reached for the tools. The damage of the Sundering was severe but not yet total. The Imperial Highways still ran from coast to coast and healed themselves overnight. Grain still moved between provinces. The Gyre-Stones still stood across the empire, each holding its patch of the world steady. What was missing was the maintenance the gods had been quietly performing, and the empire's generals and archmages set themselves to replicate it.\nThey had the old records and the leftover instruments, sometimes even vague memories of how these were once used. They had no idea what they were doing. They didn't even have the framework for understanding that their ignorance was dangerous.\nThe trouble was that they didn't agree on what needed restoring, or how. The Shining Age had as many priesthoods as it had gods, each with its own methods and records, and while the gods were present the differences hadn't mattered. After the Sundering they mattered enormously. Every surviving tradition believed it held the correct approach to a job none of their patrons had ever done alone, and none of them were willing to give an inch to the others.\nThe Age of Silence lasted longer than anyone expected. The damage scaled with the tools. The gods had left behind an entire apparatus of creation: forges, instruments, weapons, arcane infrastructure built to operate on a divine scale. Mortals now held all of it, understood very little of it, and had no way to test their ideas at anything less than full power. Mages reached for ruinous and experimental schools of magic, and were quick to weaponize them.\nThe results irradiated whole populations and twisted entire villages into the crystalline Varn. Elsewhere the Kelarra Peaks tore loose from the continent and rose into the upper air, and are still there. When human soldiers proved too fragile for terrain that no longer behaved, the imperial bio-forges began producing the Orrak, designed from the start to survive what men could not.\nAs famine and arcane radiation hollowed the labor base, the administration turned to the Graith: given the empire's last clear instructions, set to maintain the infrastructure no living workforce could.\nNone of it worked. Even the names of the priesthoods and the specifics of their disagreements have not survived. Many of the Soft Zones and Rifts on the modern map are the work of what later ages called the Witch Wars.\nThey are artillery craters from when humanity broke the world trying to force it back into shape. By the end, the empire was still there in name, but it had used itself up. What came next happened because it no longer had the authority to hold the provinces together.",
-      "textHash": "5350ac7779fdea48c196bd294eb2e9d654c414051be77d2e4117ac1183b76a6d",
+      "text": "The Age of Silence\nWhen the gods vanished, the people in charge of the Remosan Empire set themselves to fixing things, and they were the wrong people for the job. They were the innocent children of the Shining Age. They had never seen a wound that didn't close or a spell that failed.\nWar, to them, was a kind of strenuous theater. Death was a story you told at dinner. The idea that an action could have a consequence which then stayed was not something their education had prepared them for.\nAnd so they reached for the tools. The damage of the Sundering was severe but not yet total. The Imperial Highways still ran from coast to coast and healed themselves overnight. Grain still moved between provinces.\nThe Gyre-Stones still stood across the empire, each holding its patch of the world steady. What was missing was the maintenance the gods had been quietly performing, and the empire's generals and archmages set themselves to replicate it.\nThey had the old records and the leftover instruments, sometimes even vague memories of how these were once used. They had no idea what they were doing. They didn't even have the framework for understanding that their ignorance was dangerous.\nThe trouble was that they didn't agree on what needed restoring, or how. The Shining Age had as many priesthoods as it had gods, each with its own methods and records, and while the gods were present the differences hadn't mattered. After the Sundering they mattered enormously.\nEvery surviving tradition believed it held the correct approach to a job none of their patrons had ever done alone, and none of them were willing to give an inch to the others.\nThe Age of Silence lasted longer than anyone expected. The damage scaled with the tools. The gods had left behind an entire apparatus of creation: forges, instruments, weapons, arcane infrastructure built to operate on a divine scale.\nMortals now held all of it, understood very little of it, and had no way to test their ideas at anything less than full power. Mages reached for ruinous and experimental schools of magic, and were quick to weaponize them.\nThe results irradiated whole populations and twisted entire villages into the crystalline Varn. Elsewhere the Kelarra Peaks tore loose from the continent and rose into the upper air, and are still there.\nWhen human soldiers proved too fragile for terrain that no longer behaved, the imperial bio-forges began producing the Orrak, designed from the start to survive what men could not.\nAs famine and arcane radiation hollowed the labor base, the administration turned to the Graith: given the empire's last clear instructions, set to maintain the infrastructure no living workforce could.\nNone of it worked. Even the names of the priesthoods and the specifics of their disagreements have not survived. Many of the Soft Zones and Rifts on the modern map are the work of what later ages called the Witch Wars.\nThey are artillery craters from when humanity broke the world trying to force it back into shape. By the end, the empire was still there in name, but it had used itself up. What came next happened because it no longer had the authority to hold the provinces together.",
+      "textHash": "3da7a07a1647ae7fcf6f3bb5a1f4f290100794676ff9ea68b720abc56f85b40a",
       "audioSrc": "audio/the_age_of_silence.mp3",
       "timingSrc": "audio/the_age_of_silence.timings.json",
       "segments": [
@@ -104,55 +122,85 @@
         },
         {
           "id": "s-0002",
-          "role": "epigraph",
-          "text": "When the gods vanished, the people in charge of the Remosan Empire set themselves to fixing things, and they were the wrong people for the job. They were the innocent children of the Shining Age. They had never seen a wound that didn't close or a spell that failed. War, to them, was a kind of strenuous theater. Death was a story you told at dinner. The idea that an action could have a consequence which then stayed was not something their education had prepared them for.",
-          "last": true
-        },
-        {
-          "id": "s-0003",
-          "role": "epigraph",
-          "text": "And so they reached for the tools. The damage of the Sundering was severe but not yet total. The Imperial Highways still ran from coast to coast and healed themselves overnight. Grain still moved between provinces. The Gyre-Stones still stood across the empire, each holding its patch of the world steady. What was missing was the maintenance the gods had been quietly performing, and the empire's generals and archmages set themselves to replicate it.",
+          "role": "prose",
+          "text": "When the gods vanished, the people in charge of the Remosan Empire set themselves to fixing things, and they were the wrong people for the job. They were the innocent children of the Shining Age. They had never seen a wound that didn't close or a spell that failed.",
           "last": false
         },
         {
+          "id": "s-0003",
+          "role": "prose",
+          "text": "War, to them, was a kind of strenuous theater. Death was a story you told at dinner. The idea that an action could have a consequence which then stayed was not something their education had prepared them for.",
+          "last": true
+        },
+        {
           "id": "s-0004",
-          "role": "epigraph",
+          "role": "prose",
+          "text": "And so they reached for the tools. The damage of the Sundering was severe but not yet total. The Imperial Highways still ran from coast to coast and healed themselves overnight. Grain still moved between provinces.",
+          "last": false
+        },
+        {
+          "id": "s-0005",
+          "role": "prose",
+          "text": "The Gyre-Stones still stood across the empire, each holding its patch of the world steady. What was missing was the maintenance the gods had been quietly performing, and the empire's generals and archmages set themselves to replicate it.",
+          "last": false
+        },
+        {
+          "id": "s-0006",
+          "role": "prose",
           "text": "They had the old records and the leftover instruments, sometimes even vague memories of how these were once used. They had no idea what they were doing. They didn't even have the framework for understanding that their ignorance was dangerous.",
           "last": true
         },
         {
-          "id": "s-0005",
-          "role": "epigraph",
-          "text": "The trouble was that they didn't agree on what needed restoring, or how. The Shining Age had as many priesthoods as it had gods, each with its own methods and records, and while the gods were present the differences hadn't mattered. After the Sundering they mattered enormously. Every surviving tradition believed it held the correct approach to a job none of their patrons had ever done alone, and none of them were willing to give an inch to the others.",
-          "last": true
-        },
-        {
-          "id": "s-0006",
-          "role": "epigraph",
-          "text": "The Age of Silence lasted longer than anyone expected. The damage scaled with the tools. The gods had left behind an entire apparatus of creation: forges, instruments, weapons, arcane infrastructure built to operate on a divine scale. Mortals now held all of it, understood very little of it, and had no way to test their ideas at anything less than full power. Mages reached for ruinous and experimental schools of magic, and were quick to weaponize them.",
-          "last": false
-        },
-        {
           "id": "s-0007",
-          "role": "epigraph",
-          "text": "The results irradiated whole populations and twisted entire villages into the crystalline Varn. Elsewhere the Kelarra Peaks tore loose from the continent and rose into the upper air, and are still there. When human soldiers proved too fragile for terrain that no longer behaved, the imperial bio-forges began producing the Orrak, designed from the start to survive what men could not.",
+          "role": "prose",
+          "text": "The trouble was that they didn't agree on what needed restoring, or how. The Shining Age had as many priesthoods as it had gods, each with its own methods and records, and while the gods were present the differences hadn't mattered. After the Sundering they mattered enormously.",
           "last": false
         },
         {
           "id": "s-0008",
-          "role": "epigraph",
-          "text": "As famine and arcane radiation hollowed the labor base, the administration turned to the Graith: given the empire's last clear instructions, set to maintain the infrastructure no living workforce could.",
+          "role": "prose",
+          "text": "Every surviving tradition believed it held the correct approach to a job none of their patrons had ever done alone, and none of them were willing to give an inch to the others.",
           "last": true
         },
         {
           "id": "s-0009",
-          "role": "attribution",
-          "text": "None of it worked. Even the names of the priesthoods and the specifics of their disagreements have not survived. Many of the Soft Zones and Rifts on the modern map are the work of what later ages called the Witch Wars.",
+          "role": "prose",
+          "text": "The Age of Silence lasted longer than anyone expected. The damage scaled with the tools. The gods had left behind an entire apparatus of creation: forges, instruments, weapons, arcane infrastructure built to operate on a divine scale.",
           "last": false
         },
         {
           "id": "s-0010",
-          "role": "attribution",
+          "role": "prose",
+          "text": "Mortals now held all of it, understood very little of it, and had no way to test their ideas at anything less than full power. Mages reached for ruinous and experimental schools of magic, and were quick to weaponize them.",
+          "last": false
+        },
+        {
+          "id": "s-0011",
+          "role": "prose",
+          "text": "The results irradiated whole populations and twisted entire villages into the crystalline Varn. Elsewhere the Kelarra Peaks tore loose from the continent and rose into the upper air, and are still there.",
+          "last": false
+        },
+        {
+          "id": "s-0012",
+          "role": "prose",
+          "text": "When human soldiers proved too fragile for terrain that no longer behaved, the imperial bio-forges began producing the Orrak, designed from the start to survive what men could not.",
+          "last": false
+        },
+        {
+          "id": "s-0013",
+          "role": "prose",
+          "text": "As famine and arcane radiation hollowed the labor base, the administration turned to the Graith: given the empire's last clear instructions, set to maintain the infrastructure no living workforce could.",
+          "last": true
+        },
+        {
+          "id": "s-0014",
+          "role": "prose",
+          "text": "None of it worked. Even the names of the priesthoods and the specifics of their disagreements have not survived. Many of the Soft Zones and Rifts on the modern map are the work of what later ages called the Witch Wars.",
+          "last": false
+        },
+        {
+          "id": "s-0015",
+          "role": "prose",
           "text": "They are artillery craters from when humanity broke the world trying to force it back into shape. By the end, the empire was still there in name, but it had used itself up. What came next happened because it no longer had the authority to hold the provinces together.",
           "last": true
         }
@@ -160,8 +208,8 @@
     },
     "the_fracture_wars": {
       "title": "The Fracture Wars",
-      "text": "The Fracture Wars\nThere’s no specific date I can point at where The Age of Silence ended. What matters is at some point people ran out of things to try, and Remosa’s provinces began, quietly and then far less quietly, to defy their leadership. The first deserters are nameless now. Probably in provinces that no longer exist as distinct places.\nWhat most historians cite as the true beginning of the Fracture Wars is Trefgann's Synod of Secession, some two hundred years ago, when the mayors and guild-masters of Remosa’s largest province, which also held the empire's former capital, formally slammed their gates against the empire. The Synod was not the first rebellion, but it was the first one that was organized enough to matter.\nAfter Trefgann, the pattern repeated in Haldrith, Rivhalde, and Southfield. The era of grand armies was no longer. Those who replaced them were smaller, meaner, and fought over every last habitable scrap of land.\nRemosa did not accept any of this. Three times across the years that followed the empire gathered what it had left and marched on Trefgann, each invasion smaller than the last and each one repulsed. The third was fifty years ago.\nFailed the way the others had, and at roughly the same border. Whether this counts as the end of the Fracture Wars is a question only the people who weren't doing the fighting bothered to ask. For everyone else, war was weather.\nNo one could remember the world without it, and no one expected it to ever end.",
-      "textHash": "d7f12dfc21636400da05ae744ccaf95df9895237a5e99225e5c8e452132eca1a",
+      "text": "The Fracture Wars\nThere’s no specific date I can point at where The Age of Silence ended. What matters is at some point people ran out of things to try, and Remosa’s provinces began, quietly and then far less quietly, to defy their leadership. The first deserters are nameless now.\nProbably in provinces that no longer exist as distinct places.\nWhat most historians cite as the true beginning of the Fracture Wars is Trefgann's Synod of Secession, some two hundred years ago, when the mayors and guild-masters of Remosa’s largest province, which also held the empire's former capital, formally slammed their gates against the empire.\nThe Synod was not the first rebellion, but it was the first one that was organized enough to matter.\nAfter Trefgann, the pattern repeated in Haldrith, Rivhalde, and Southfield. The era of grand armies was no longer. Those who replaced them were smaller, meaner, and fought over every last habitable scrap of land.\nRemosa did not accept any of this. Three times across the years that followed the empire gathered what it had left and marched on Trefgann, each invasion smaller than the last and each one repulsed. The third was fifty years ago.\nFailed the way the others had, and at roughly the same border. Whether this counts as the end of the Fracture Wars is a question only the people who weren't doing the fighting bothered to ask. For everyone else, war was weather.\nNo one could remember the world without it, and no one expected it to ever end.",
+      "textHash": "5badc50491160adee823df6a711bb0a4ce989a826193b4890c6f5335e9a79c45",
       "audioSrc": "audio/the_fracture_wars.mp3",
       "timingSrc": "audio/the_fracture_wars.timings.json",
       "segments": [
@@ -172,37 +220,49 @@
         },
         {
           "id": "s-0002",
-          "role": "epigraph",
-          "text": "There’s no specific date I can point at where The Age of Silence ended. What matters is at some point people ran out of things to try, and Remosa’s provinces began, quietly and then far less quietly, to defy their leadership. The first deserters are nameless now. Probably in provinces that no longer exist as distinct places.",
+          "role": "prose",
+          "text": "There’s no specific date I can point at where The Age of Silence ended. What matters is at some point people ran out of things to try, and Remosa’s provinces began, quietly and then far less quietly, to defy their leadership. The first deserters are nameless now.",
           "last": false
         },
         {
           "id": "s-0003",
-          "role": "epigraph",
-          "text": "What most historians cite as the true beginning of the Fracture Wars is Trefgann's Synod of Secession, some two hundred years ago, when the mayors and guild-masters of Remosa’s largest province, which also held the empire's former capital, formally slammed their gates against the empire. The Synod was not the first rebellion, but it was the first one that was organized enough to matter.",
-          "last": true
+          "role": "prose",
+          "text": "Probably in provinces that no longer exist as distinct places.",
+          "last": false
         },
         {
           "id": "s-0004",
-          "role": "epigraph",
+          "role": "prose",
+          "text": "What most historians cite as the true beginning of the Fracture Wars is Trefgann's Synod of Secession, some two hundred years ago, when the mayors and guild-masters of Remosa’s largest province, which also held the empire's former capital, formally slammed their gates against the empire.",
+          "last": false
+        },
+        {
+          "id": "s-0005",
+          "role": "prose",
+          "text": "The Synod was not the first rebellion, but it was the first one that was organized enough to matter.",
+          "last": true
+        },
+        {
+          "id": "s-0006",
+          "role": "prose",
           "text": "After Trefgann, the pattern repeated in Haldrith, Rivhalde, and Southfield. The era of grand armies was no longer. Those who replaced them were smaller, meaner, and fought over every last habitable scrap of land.",
           "last": true
         },
         {
-          "id": "s-0005",
-          "role": "attribution",
+          "id": "s-0007",
+          "role": "prose",
           "text": "Remosa did not accept any of this. Three times across the years that followed the empire gathered what it had left and marched on Trefgann, each invasion smaller than the last and each one repulsed. The third was fifty years ago.",
           "last": false
         },
         {
-          "id": "s-0006",
-          "role": "attribution",
+          "id": "s-0008",
+          "role": "prose",
           "text": "Failed the way the others had, and at roughly the same border. Whether this counts as the end of the Fracture Wars is a question only the people who weren't doing the fighting bothered to ask. For everyone else, war was weather.",
           "last": false
         },
         {
-          "id": "s-0007",
-          "role": "attribution",
+          "id": "s-0009",
+          "role": "prose",
           "text": "No one could remember the world without it, and no one expected it to ever end.",
           "last": true
         }

@@ -123,8 +123,33 @@
      * Existing anchors, attributes, image URLs and markup are never touched,
      * because nothing but character data is ever examined or rewritten.
      */
+    // How often one entry may link to the same other entry. Vanguard mentions
+    // Brenmath more than a dozen times; linking all of them turned a paragraph
+    // into a field of underlines and told the reader nothing after the first.
+    // Two, not one, so a long entry that returns to a subject much later can
+    // offer the way across again -- and only from a different block, or the
+    // second link lands in the same breath as the first.
+    var MAX_LINKS_PER_TARGET = 2;
+    // `.seg` first because it is what a paragraph actually is here: the
+    // generated prose has no <p> at all, only narration segments separated by
+    // <br>, so selecting on block tags alone found nothing and collapsed a
+    // whole entry into one "block". The tags still matter for the older
+    // hand-written entries in wiki-data.js, which do use them.
+    var BLOCKS = '.seg, p, li, td, th, dd, dt, figcaption, blockquote, h1, h2, h3, h4, h5, h6';
+
+    /** The paragraph-ish element a text node sits in, for the one-per-block rule. */
+    function blockOf(node, root) {
+        var el = node.parentElement;
+        var block = el && el.closest && el.closest(BLOCKS);
+        return (block && root.contains(block)) ? block : root;
+    }
+
     function linkify(root, currentId) {
         if (!linkPattern) return;
+        // Shared across the whole entry: the budget is per entry, not per
+        // paragraph, and the walker visits in document order so the mentions
+        // that survive are the earliest ones.
+        var budget = { count: {}, block: {} };
         var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
             acceptNode: function (node) {
                 for (var el = node.parentNode; el && el !== root; el = el.parentNode) {
@@ -139,18 +164,26 @@
         });
         var targets = [];
         while (walker.nextNode()) targets.push(walker.currentNode);
-        targets.forEach(function (node) { linkTextNode(node, currentId); });
+        targets.forEach(function (node) { linkTextNode(node, currentId, root, budget); });
     }
 
-    function linkTextNode(node, currentId) {
+    function linkTextNode(node, currentId, root, budget) {
         var text = node.nodeValue;
         var fragment = document.createDocumentFragment();
+        var block = blockOf(node, root);
         var cursor = 0;
         var match;
         linkPattern.lastIndex = 0;
         while ((match = linkPattern.exec(text)) !== null) {
             var id = byName[match[1].toLowerCase()][0];
             if (id === currentId) continue;             // never link an entry to itself
+            // Spent, or already offered in this very paragraph. The mention
+            // still reads as written; it simply is not a link.
+            var spent = budget.count[id] || 0;
+            if (spent >= MAX_LINKS_PER_TARGET) continue;
+            if (spent > 0 && budget.block[id] === block) continue;
+            budget.count[id] = spent + 1;
+            budget.block[id] = block;
             if (match.index > cursor) {
                 fragment.appendChild(document.createTextNode(text.slice(cursor, match.index)));
             }
@@ -180,6 +213,16 @@
     // should say what it is rather than repeating the site's name. Captured
     // once, before anything has changed it.
     var SITE_TITLE = document.title;
+
+    // "poi" is a filing code, not a description. It is what the map data calls
+    // the type and what the editor picks from, so it stays the stored value --
+    // but nothing shown to a reader should say it.
+    var TYPE_LABELS = { poi: 'place of interest' };
+
+    function typeLabel(type) {
+        var key = String(type || '').toLowerCase();
+        return TYPE_LABELS[key] || type;
+    }
 
     function setTitle(entry) {
         document.title = entry ? entry.title + ' - Virelia' : SITE_TITLE;
@@ -239,16 +282,37 @@
             contentDiv.appendChild(img);
         }
 
+        // The title and the way across to the wiki share a line: the title
+        // rarely fills it, and a full-width button under the heading pushed
+        // the prose down the panel for something read once.
+        var head = document.createElement('div');
+        head.className = 'entry-head';
+
         var title = document.createElement('h2');
         title.textContent = entry.title;
         // Segment 1 of the narration is the title, so the read-along can
-        // highlight it before the body starts.
+        // highlight it before the body starts. The button is deliberately
+        // outside it -- inside, the highlight would sweep over the control.
         title.dataset.seg = 's-0001';
         var kind = document.createElement('small');
-        kind.textContent = '(' + entry.type + ')';
+        kind.textContent = '(' + typeLabel(entry.type) + ')';
         title.appendChild(document.createTextNode(' '));
         title.appendChild(kind);
-        contentDiv.appendChild(title);
+        head.appendChild(title);
+
+        var toWiki = document.createElement('button');
+        toWiki.type = 'button';
+        toWiki.className = 'entry-wiki-link';
+        toWiki.title = 'Read ' + entry.title + ' in the Wiki';
+        toWiki.setAttribute('aria-label', toWiki.title);
+        // The same mark as the Wiki button on the map, so it needs no words.
+        toWiki.innerHTML = '<svg aria-hidden="true"><use href="#icon-wiki"></use></svg>';
+        toWiki.addEventListener('click', function () {
+            if (window.Reader) window.Reader.open(id);
+        });
+        head.appendChild(toWiki);
+
+        contentDiv.appendChild(head);
 
         var body = document.createElement('div');
         body.className = 'entry-body';
@@ -283,6 +347,14 @@
                 void sidebar.offsetWidth;       // forces the pending style/layout pass
             }
         }
+
+        // Swapping one entry for another used to be a hard cut: the panel is
+        // already open and in place, so the only thing that changes is all of
+        // its content, at once. A short fade gives the eye something to
+        // follow. Retriggered by hand because the element is not replaced.
+        contentDiv.classList.remove('is-entering');
+        void contentDiv.offsetWidth;
+        contentDiv.classList.add('is-entering');
 
         sidebar.classList.add('active');
         sidebar.dataset.entry = id;
@@ -415,6 +487,7 @@
 
     window.WikiRuntime = {
         start: start,
+        typeLabel: typeLabel,
         open: open,
         close: close,
         linkify: linkify,

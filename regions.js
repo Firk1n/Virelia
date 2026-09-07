@@ -88,21 +88,42 @@
     }
 
     /**
+     * The zoom at which this entry's own marker is drawn at all.
+     *
+     * Semantic zooming hides towns and landmarks below zoom 5 (see pointTypes
+     * in main.js). Sending the map to a village's coordinates at zoom 3 put
+     * the reader exactly where it is and showed nothing there -- most visibly
+     * when arriving from the wiki, which is read from wherever the map
+     * happened to be left. Regions and cities start at 0, so this asks nothing
+     * of them.
+     */
+    function markerFloor(entry) {
+        if (typeof getPointType !== 'function' || !entry.coords) return 0;
+        var range = getPointType(entry.type).zoom;
+        return range ? Math.min(range[0], map.getMaxZoom()) : 0;
+    }
+
+    /**
      * Where the map would go for this entry, before the panel is considered.
      *
-     * Zoom never increases. Fitting each region tightly meant the small western
-     * ones -- Myrskov, Kelarra Peaks, Knotsreach -- snapped in a level while
-     * their larger neighbours did not, and that inconsistency is what read as
-     * the map lurching. Zooming out to bring a region into view is still
-     * allowed, so following a link while zoomed into a town still works.
+     * Zoom never increases of its own accord. Fitting each region tightly meant
+     * the small western ones -- Myrskov, Kelarra Peaks, Knotsreach -- snapped
+     * in a level while their larger neighbours did not, and that inconsistency
+     * is what read as the map lurching. Zooming out to bring a region into view
+     * is still allowed, so following a link while zoomed into a town still
+     * works. The one thing that does zoom in is a marker that would otherwise
+     * not be rendered: arriving at something invisible is worse than moving.
      */
     function focusTarget(id) {
         var entry = wikiData[id];
         if (!entry) return null;
         var point = entry.coords ? L.latLng(entry.coords) : null;
+        var floor = markerFloor(entry);
         var shapeBounds = boundsFor(id);
         if (!shapeBounds) {
-            return point ? { bounds: null, center: point, zoom: currentZoom() } : null;
+            return point
+                ? { bounds: null, center: point, zoom: Math.max(currentZoom(), floor) }
+                : null;
         }
 
         // The marker is not always inside its region's centroid box -- it sits
@@ -111,8 +132,8 @@
         // while the region itself is comfortably visible.
         if (point) shapeBounds.extend(point);
 
-        var zoom = Math.min(currentZoom(),
-            map.getBoundsZoom(shapeBounds, false, L.point(panelWidth() + 2 * EDGE, 2 * EDGE)));
+        var zoom = Math.max(floor, Math.min(currentZoom(),
+            map.getBoundsZoom(shapeBounds, false, L.point(panelWidth() + 2 * EDGE, 2 * EDGE))));
         var size = map.getSize();
         var span = map.project(shapeBounds.getNorthEast(), zoom)
             .subtract(map.project(shapeBounds.getSouthWest(), zoom));

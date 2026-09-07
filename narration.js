@@ -17,11 +17,12 @@
 
     var TIMING_VERSION = 1;
 
-    // A slider costs about a hundred pixels and the row has none to spare, so
-    // speed is a button that steps through the rates anyone actually picks.
-    // Five stops rather than the old 0.1 increments: nobody was hunting for
-    // 1.7x, and every extra stop is another press to get past.
-    var SPEEDS = [1, 1.25, 1.5, 2, 3];
+    // Speed lives behind the button rather than beside it: the row has no room
+    // for a slider, but a slider is the right control for a continuous value,
+    // so it opens into one on demand. Vertical and bottom-to-top, which is
+    // what a rate control looks like everywhere else.
+    var MIN_RATE = 1;
+    var MAX_RATE = 3;
 
     var state = {
         entryId: null,
@@ -41,11 +42,19 @@
         ui.next = document.getElementById('narration-next');
         ui.seek = document.getElementById('narration-seek');
         ui.time = document.getElementById('narration-time');
+        ui.toggle = document.getElementById('narration-toggle');
         ui.speed = document.getElementById('narration-speed');
+        ui.speedPopover = document.getElementById('narration-speed-popover');
+        ui.speedRange = document.getElementById('narration-speed-range');
+        ui.speedValue = document.getElementById('narration-speed-value');
         ui.status = document.getElementById('narration-status');
         if (!ui.play) return;
 
         ui.play.addEventListener('click', toggle);
+        if (ui.toggle) {
+            ui.toggle.addEventListener('click', function () { setCollapsed(!collapsed); });
+            setCollapsed(readCollapsed());
+        }
         ui.previous.addEventListener('click', function () { jumpParagraph(-1); });
         ui.next.addEventListener('click', function () { jumpParagraph(1); });
         ui.seek.addEventListener('input', function () {
@@ -53,13 +62,57 @@
             state.audio.currentTime = state.audio.duration * (ui.seek.value / 1000);
             if (!state.audio.paused) paint(state.audio.currentTime);
         });
-        ui.speed.addEventListener('click', function () {
-            var next = SPEEDS.indexOf(state.playbackRate) + 1;
-            state.playbackRate = SPEEDS[next % SPEEDS.length];
+        ui.speed.addEventListener('click', function (event) {
+            event.stopPropagation();
+            toggleSpeed();
+        });
+        ui.speedRange.addEventListener('input', function () {
+            state.playbackRate = clampRate(+ui.speedRange.value);
             if (state.audio) state.audio.playbackRate = state.playbackRate;
             updateSpeedLabel();
         });
+        // Inside the popover is not outside it.
+        ui.speedPopover.addEventListener('click', function (event) { event.stopPropagation(); });
+        // Anywhere else is: the panel is a menu, and a menu closes when you
+        // look away from it.
+        document.addEventListener('click', function () { closeSpeed(); });
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape' && isSpeedOpen()) {
+                event.stopPropagation();
+                closeSpeed();
+                ui.speed.focus();
+            }
+        });
         updateSpeedLabel();
+    }
+
+    /* ---------------------------------------------------- folding it away */
+
+    // Remembered per reader, because someone who reads rather than listens
+    // wants it gone every time, not once. A convenience, so a browser that
+    // refuses storage just means it opens expanded again.
+    var COLLAPSED_KEY = 'virelia.narration.collapsed';
+    var collapsed = false;
+
+    function readCollapsed() {
+        try { return window.localStorage.getItem(COLLAPSED_KEY) === '1'; }
+        catch (e) { return false; }
+    }
+
+    function setCollapsed(next) {
+        collapsed = !!next;
+        try { window.localStorage.setItem(COLLAPSED_KEY, collapsed ? '1' : '0'); }
+        catch (e) { /* private window, or storage refused; the class still holds */ }
+        if (ui.bar) ui.bar.classList.toggle('is-collapsed', collapsed);
+        if (ui.toggle) {
+            ui.toggle.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
+            ui.toggle.title = collapsed ? 'Show the audio player' : 'Hide the audio player';
+            ui.toggle.setAttribute('aria-label', ui.toggle.title);
+        }
+        // Folding it away is not a reason to stop reading aloud: someone may
+        // want the voice and not the transport. Closing the popover is, since
+        // it would otherwise float over a bar that is no longer there.
+        if (collapsed) closeSpeed();
     }
 
     // How long a load may take before it is worth mentioning. Below this the
@@ -114,13 +167,43 @@
         ui.time.textContent = clock(at) + ' / ' + clock(total);
     }
 
+    function clampRate(rate) {
+        if (!isFinite(rate)) return 1;
+        // Steps of 0.1 arrive as 1.7000000000000002 often enough to show.
+        return Math.round(Math.min(Math.max(rate, MIN_RATE), MAX_RATE) * 10) / 10;
+    }
+
     function updateSpeedLabel() {
         if (!ui.speed) return;
         var rate = state.playbackRate;
-        // 1 -> "1", 1.5 -> "1.5", 1.25 -> "1.25": no trailing zero, no "1.0".
+        // 1 -> "1", 1.5 -> "1.5": no trailing zero, no "1.0".
         var label = (rate % 1 ? String(rate) : rate.toFixed(0)) + '×';
         ui.speed.textContent = label;
-        ui.speed.setAttribute('aria-label', 'Playback speed ' + label + ', activate to change');
+        ui.speed.setAttribute('aria-label', 'Playback speed ' + label);
+        if (ui.speedValue) ui.speedValue.textContent = label;
+        if (ui.speedRange) ui.speedRange.value = String(rate);
+    }
+
+    function isSpeedOpen() {
+        return ui.speedPopover && !ui.speedPopover.hidden;
+    }
+
+    function openSpeed() {
+        if (!ui.speedPopover) return;
+        ui.speedPopover.hidden = false;
+        ui.speed.setAttribute('aria-expanded', 'true');
+        ui.speedRange.focus();
+    }
+
+    function closeSpeed() {
+        if (!isSpeedOpen()) return;
+        ui.speedPopover.hidden = true;
+        ui.speed.setAttribute('aria-expanded', 'false');
+    }
+
+    function toggleSpeed() {
+        if (isSpeedOpen()) closeSpeed();
+        else openSpeed();
     }
 
     // ---------- attach / detach ----------
@@ -163,6 +246,7 @@
             state.audio = null;
         }
         clearHighlight();
+        closeSpeed();
         state.segments = [];
         if (ui.play) {
             ui.play.classList.remove('is-playing');
