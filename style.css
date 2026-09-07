@@ -572,6 +572,9 @@ h2.seg-active { box-shadow: none; }
     background: #f2e7cf;
     border-top: 2px solid #93403c;
     flex-wrap: wrap;
+    /* Anchors .narration-status, which floats above the bar instead of
+       taking a row inside it. */
+    position: relative;
 }
 
 /* The browser's built-in `[hidden] { display: none }` has lower specificity
@@ -626,9 +629,24 @@ h2.seg-active { box-shadow: none; }
     min-width: 25px;
     font-variant-numeric: tabular-nums;
 }
+/* Lifted out of the bar's flex flow. As a full-width flex item it took a row
+   of its own the instant it had text, growing the bar and shoving the seek
+   slider and every button upward -- a visible jolt for a message that is
+   usually gone again immediately. Floating just above the bar, it can appear
+   and go without anything else moving. */
 .narration-status {
-    flex: 1 0 100%;
+    position: absolute;
+    left: 14px;
+    right: 14px;
+    bottom: 100%;
+    margin-bottom: 6px;
+    padding: 6px 9px;
+    background: #f2e7cf;
+    border: 1px solid #d8cbb0;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
     font-size: 11px;
+    line-height: 1.4;
     color: #6b5c46;
 }
 .narration-status:empty { display: none; }

@@ -56,10 +56,41 @@
         updateSpeedLabel();
     }
 
+    // How long a load may take before it is worth mentioning. Below this the
+    // message appeared and vanished inside a couple of frames -- long enough
+    // to flicker, never long enough to read.
+    var SLOW_ENOUGH_TO_SAY = 500;
+
+    var statusTimer = null;
+
+    /**
+     * Report an outcome, now.
+     *
+     * Also cancels anything waiting to be said about progress: once there is
+     * an outcome, a report that we are still working is no longer true.
+     */
     function setStatus(message, isError) {
+        if (statusTimer) { window.clearTimeout(statusTimer); statusTimer = null; }
         if (!ui.status) return;
         ui.status.textContent = message || '';
         ui.status.classList.toggle('is-error', !!isError);
+    }
+
+    /**
+     * Report progress, but only if it is still going on in a moment.
+     *
+     * Most narration loads finish faster than a reader can notice, and saying
+     * so is worse than saying nothing: the line is only interesting when the
+     * wait is long enough to wonder whether the click registered.
+     */
+    function setStatusIfSlow(message) {
+        if (statusTimer) window.clearTimeout(statusTimer);
+        statusTimer = window.setTimeout(function () {
+            statusTimer = null;
+            if (!ui.status) return;
+            ui.status.textContent = message;
+            ui.status.classList.remove('is-error');
+        }, SLOW_ENOUGH_TO_SAY);
     }
 
     function clock(seconds) {
@@ -241,7 +272,7 @@
         if (!narration) {
             return Promise.reject(new Error('Narration has not been generated for ' + entry.title + ' yet.'));
         }
-        setStatus('Loading narration…');
+        setStatusIfSlow('Loading narration…');
 
         var timingRequest = location.protocol === 'file:'
             ? loadLocalTiming(entryId, narration.timingSrc)
