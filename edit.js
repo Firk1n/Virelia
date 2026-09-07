@@ -41,12 +41,22 @@
             toolbar.appendChild(btn);
         });
 
+        var borderBtn = document.createElement('button');
+        borderBtn.className = 'edit-type-btn';
+        borderBtn.id = 'edit-region-btn';
+        borderBtn.title = 'Trace or adjust a region border';
+        borderBtn.textContent = 'Region border';
+        borderBtn.onclick = function () { toggleRegionTool(); };
+        toolbar.appendChild(borderBtn);
+
         var hint = document.createElement('div');
         hint.id = 'edit-hint';
         hint.textContent = 'Pick a type, then click the map. Or click an existing marker to edit it.';
         toolbar.appendChild(hint);
 
         document.body.appendChild(toolbar);
+
+        buildRegionPanel();
 
         var panel = document.createElement('div');
         panel.id = 'edit-panel';
@@ -139,6 +149,7 @@
 
     function armType(typeId) {
         armedType = typeId;
+        if (regionTool.active) toggleRegionTool(false);
         document.querySelectorAll('.edit-type-btn').forEach(function (b) {
             b.classList.toggle('armed', b.dataset.typeId === typeId);
         });
@@ -324,9 +335,219 @@
         return [parts[0], parts[1]];
     }
 
+    // ---------- Region borders ----------
+    //
+    // Borders are traced by hand and reviewed by eye: nothing in the painted
+    // map tells a script where one region stops, and a guessed outline drawn
+    // over the artwork is worse than no outline. This is the workflow, not an
+    // attempt to derive them.
+    //
+    // Geometry lives in region-geometry.js in GeoJSON [lng, lat] order and is
+    // never touched by the content build, so a rebuild cannot erase a trace.
+
+    var regionTool = {
+        active: false,
+        id: null,
+        points: [],      // [lat, lng], open ring -- the closing point is added on save
+        shape: null,
+        vertices: []
+    };
+
+    function buildRegionPanel() {
+        var panel = document.createElement('div');
+        panel.id = 'edit-region-panel';
+        panel.style.display = 'none';
+        panel.innerHTML =
+            '<label for="edit-region-select"><strong>Region</strong></label>' +
+            '<select id="edit-region-select"></select>' +
+            '<button type="button" id="edit-region-undo">Undo point</button>' +
+            '<button type="button" id="edit-region-clear">Clear</button>' +
+            '<button type="button" id="edit-region-save" class="edit-btn-primary">Save border</button>' +
+            '<button type="button" id="edit-region-cancel">Cancel</button>' +
+            '<span id="edit-region-status"></span>';
+        document.body.appendChild(panel);
+
+        var select = panel.querySelector('#edit-region-select');
+        Object.keys(wikiData).forEach(function (id) {
+            if (String(wikiData[id].type).toLowerCase() !== 'region') return;
+            var option = document.createElement('option');
+            option.value = id;
+            option.textContent = wikiData[id].title +
+                (geometryOf(id) ? ' (traced)' : ' (not traced)');
+            select.appendChild(option);
+        });
+
+        select.addEventListener('change', function () { loadRegion(select.value); });
+        panel.querySelector('#edit-region-undo').onclick = function () {
+            regionTool.points.pop();
+            redrawRegion();
+        };
+        panel.querySelector('#edit-region-clear').onclick = function () {
+            regionTool.points = [];
+            redrawRegion();
+        };
+        panel.querySelector('#edit-region-save').onclick = saveRegionGeometry;
+        panel.querySelector('#edit-region-cancel').onclick = function () { toggleRegionTool(false); };
+    }
+
+    function geometryOf(id) {
+        var data = window.REGION_GEOMETRY;
+        return (data && data.regions && data.regions[id]) || null;
+    }
+
+    function toggleRegionTool(force) {
+        var next = force === undefined ? !regionTool.active : force;
+        regionTool.active = next;
+        document.getElementById('edit-region-btn').classList.toggle('armed', next);
+        document.getElementById('edit-region-panel').style.display = next ? 'flex' : 'none';
+        if (next) {
+            armedType = null;
+            document.querySelectorAll('.edit-type-btn[data-type-id]').forEach(function (b) {
+                b.classList.remove('armed');
+            });
+            if (window.MapFocus) window.MapFocus.clear();
+            loadRegion(document.getElementById('edit-region-select').value);
+        } else {
+            clearRegionLayers();
+            regionTool.points = [];
+            regionTool.id = null;
+        }
+    }
+
+    function loadRegion(id) {
+        regionTool.id = id;
+        var geometry = geometryOf(id);
+        regionTool.points = [];
+        if (geometry && geometry.coordinates && geometry.coordinates[0]) {
+            var ring = geometry.coordinates[0].slice();
+            // Stored rings are closed; the editor works on the open list so a
+            // dragged first vertex does not leave a stray duplicate behind.
+            if (ring.length > 1) {
+                var first = ring[0];
+                var last = ring[ring.length - 1];
+                if (first[0] === last[0] && first[1] === last[1]) ring.pop();
+            }
+            regionTool.points = ring.map(function (p) { return [p[1], p[0]]; });
+        }
+        redrawRegion();
+        if (regionTool.points.length > 2) {
+            map.fitBounds(L.latLngBounds(regionTool.points), { padding: [60, 60], maxZoom: 4 });
+        }
+        setRegionStatus(regionTool.points.length
+            ? regionTool.points.length + ' points. Click to add, drag to move, right-click a point to delete.'
+            : 'Click along the border to place points.');
+    }
+
+    function clearRegionLayers() {
+        if (regionTool.shape) { map.removeLayer(regionTool.shape); regionTool.shape = null; }
+        regionTool.vertices.forEach(function (m) { map.removeLayer(m); });
+        regionTool.vertices = [];
+    }
+
+    function redrawRegion() {
+        clearRegionLayers();
+        if (!regionTool.points.length) return;
+
+        regionTool.shape = L.polygon(regionTool.points, {
+            color: '#93403c',
+            weight: 2,
+            fillColor: '#93403c',
+            fillOpacity: 0.15,
+            dashArray: '6 5',
+            interactive: false
+        }).addTo(map);
+
+        regionTool.points.forEach(function (point, index) {
+            var handle = L.marker(point, {
+                icon: L.divIcon({ className: 'region-vertex', iconSize: [12, 12], iconAnchor: [6, 6] }),
+                draggable: true,
+                zIndexOffset: 2000
+            }).addTo(map);
+            handle.on('drag', function (e) {
+                var ll = e.target.getLatLng();
+                regionTool.points[index] = [ll.lat, ll.lng];
+                if (regionTool.shape) regionTool.shape.setLatLngs(regionTool.points);
+            });
+            handle.on('contextmenu', function (e) {
+                L.DomEvent.stopPropagation(e);
+                regionTool.points.splice(index, 1);
+                redrawRegion();
+            });
+            regionTool.vertices.push(handle);
+        });
+        setRegionStatus(regionTool.points.length + ' points.');
+    }
+
+    function setRegionStatus(message, isError) {
+        var el = document.getElementById('edit-region-status');
+        if (!el) return;
+        el.textContent = message || '';
+        el.style.color = isError ? '#8b0000' : '#6b5c46';
+    }
+
+    function serializeGeometry(data) {
+        // The file's header comment explains the coordinate order and the
+        // no-generated-writes rule, so it is preserved rather than rewritten.
+        var lines = ['window.REGION_GEOMETRY = {', '  "version": 1,', '  "regions": {'];
+        var ids = Object.keys(data.regions).sort();
+        ids.forEach(function (id, i) {
+            var ring = data.regions[id].coordinates[0];
+            var points = ring.map(function (p) {
+                return '[' + p[0].toFixed(3) + ', ' + p[1].toFixed(3) + ']';
+            });
+            lines.push('    "' + id + '": {');
+            lines.push('      "type": "Polygon",');
+            lines.push('      "coordinates": [[');
+            lines.push('        ' + points.join(', '));
+            lines.push('      ]]');
+            lines.push('    }' + (i === ids.length - 1 ? '' : ','));
+        });
+        lines.push('  }');
+        lines.push('};');
+        return lines.join('\n') + '\n';
+    }
+
+    async function saveRegionGeometry() {
+        try {
+            if (!regionTool.id) return setRegionStatus('Pick a region first.', true);
+            if (regionTool.points.length && regionTool.points.length < 3) {
+                return setRegionStatus('A border needs at least three points (or none, to remove it).', true);
+            }
+
+            var data = window.REGION_GEOMETRY || { version: 1, regions: {} };
+            if (!regionTool.points.length) {
+                delete data.regions[regionTool.id];
+            } else {
+                var ring = regionTool.points.map(function (p) { return [p[1], p[0]]; });
+                ring.push(ring[0].slice());          // GeoJSON rings are closed
+                data.regions[regionTool.id] = { type: 'Polygon', coordinates: [ring] };
+            }
+
+            setRegionStatus('Connecting to project folder…');
+            await ensureDirHandle();
+            var src = await readFileText('region-geometry.js');
+            await writeFileText('region-geometry.js.bak', src);
+
+            var marker = src.indexOf('window.REGION_GEOMETRY');
+            var header = marker > 0 ? src.slice(0, marker) : '';
+            await writeFileText('region-geometry.js', header + serializeGeometry(data));
+
+            setRegionStatus('Saved. Reloading…');
+            setTimeout(function () { window.location.reload(); }, 400);
+        } catch (err) {
+            console.error(err);
+            setRegionStatus('Error: ' + err.message, true);
+        }
+    }
+
     // ---------- Map click ----------
 
     map.on('click', function (e) {
+        if (regionTool.active) {
+            regionTool.points.push([e.latlng.lat, e.latlng.lng]);
+            redrawRegion();
+            return;
+        }
         if (!armedType) return;
         openEditorForNew(e.latlng, armedType);
     });

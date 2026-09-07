@@ -1,0 +1,152 @@
+{
+ "version": 1,
+ "entryId": "ashfield_marsh",
+ "textHash": "be6ac0fad71773a31c3cad06a8fdf061713766f371d15cb198c45eefb3028521",
+ "renderProfile": "95a2da9b62343cd5173677c0922c2494c47407937d3f85d9b273c982c957e2f6",
+ "segments": [
+  {
+   "id": "s-0001",
+   "start": 0.6,
+   "end": 1.868,
+   "text": "Ashfield Marsh"
+  },
+  {
+   "id": "s-0002",
+   "start": 2.968,
+   "end": 5.608,
+   "text": "\"It smells like rotten eggs on a hangover morning.\""
+  },
+  {
+   "id": "s-0003",
+   "start": 7.308,
+   "end": 11.175,
+   "text": "- Nizch, Remosan guard, during his first patrol"
+  },
+  {
+   "id": "s-0004",
+   "start": 12.675,
+   "end": 13.644,
+   "text": "The Marsh"
+  },
+  {
+   "id": "s-0005",
+   "start": 14.544,
+   "end": 31.864,
+   "text": "Ashfield Marsh sits on Remosan territory west of the Broadfen River, which marks the practical border with Trefgann. It is roughly four days across for someone who knows the paths and five or six for someone who does not. Most people do not."
+  },
+  {
+   "id": "s-0006",
+   "start": 32.764,
+   "end": 50.501,
+   "text": "The Second March came through here one hundred and eight years ago. The Trefganners chose the marsh as their ground because it took away everything the Remosan army was good at: heavy infantry cannot hold formation in waist-deep water, and war-constructs sink. The bloody fighting lasted weeks."
+  },
+  {
+   "id": "s-0007",
+   "start": 50.901,
+   "end": 63.178,
+   "text": "Eventually the Remosans broke through by attrition, crossed the Broadfen, and continued east toward Brenmath, where they lost the war. Nobody came to clean up the marsh afterward."
+  },
+  {
+   "id": "s-0008",
+   "start": 64.078,
+   "end": 65.269,
+   "text": "The Terrain"
+  },
+  {
+   "id": "s-0009",
+   "start": 66.169,
+   "end": 88.466,
+   "text": "Flat, wet, grey, overbearing. Black water between ridges of firmer ground, reeds taller than a man in places, and fog throughout most hours of the day. The air smells of rotting plant matter: sulfurous and thick, and the smell sticks to your clothes like bonfire smoke."
+  },
+  {
+   "id": "s-0010",
+   "start": 89.366,
+   "end": 110.962,
+   "text": "What looks solid is often waterlogged peat under a skin of grass. Knowing which vegetation allows for firm footing is necessary if you don't want to sink up to your thigh. Between the ridges the water is shin-deep to waist-deep depending on season. Basically, You are never dry."
+  },
+  {
+   "id": "s-0011",
+   "start": 111.362,
+   "end": 116.951,
+   "text": "The air is damp, your boots are soaked, and the morning fog wets anything and everything."
+  },
+  {
+   "id": "s-0012",
+   "start": 117.851,
+   "end": 138.031,
+   "text": "A kilometer in Ashfield takes thrice as long to walk, sometimes more. You route around standing water, test footing, pull your boots out of sucking mud with every other step. Your legs tire quickly, and the whole experience is a sorry one. Navigation is bad."
+  },
+  {
+   "id": "s-0013",
+   "start": 138.431,
+   "end": 151.27,
+   "text": "Everything looks the same: reeds, water, mud, more reeds. Landmarks are scarce because nothing is tall enough to see over the vegetation, and many have been lost in the marsh to never return."
+  },
+  {
+   "id": "s-0014",
+   "start": 152.17,
+   "end": 159.77,
+   "text": "Mosquitoes and flies breed in the standing water and they are constant from dawn to dusk, worse near the water."
+  },
+  {
+   "id": "s-0015",
+   "start": 160.67,
+   "end": 178.77,
+   "text": "Old Remosan causeways cross parts of the marsh, built during the Second March to move troops and never maintained since. Some stretches still hold weight. Others have sunk far enough that they sit underwater and trip you instead of carrying you."
+  },
+  {
+   "id": "s-0016",
+   "start": 179.17,
+   "end": 184.698,
+   "text": "At this point only the smugglers who work the marsh know which sections are usable."
+  },
+  {
+   "id": "s-0017",
+   "start": 185.598,
+   "end": 188.612,
+   "text": "What the Battle Left"
+  },
+  {
+   "id": "s-0018",
+   "start": 189.512,
+   "end": 206.402,
+   "text": "Both armies laid field-works during the engagement: stake-pits, trip-lines, sharpened palisades dug into the ridges. Most of it has rotted or sunk past function in one hundred and eight years. The wood is soft, the rope is gone, the iron is corroded."
+  },
+  {
+   "id": "s-0019",
+   "start": 206.802,
+   "end": 219.676,
+   "text": "A Remosan stake-pit covered by a century of leaf-fall and marsh growth looks like solid ground. The stakes inside are often still sharp, preserved by the anaerobic mud."
+  },
+  {
+   "id": "s-0020",
+   "start": 220.076,
+   "end": 240.693,
+   "text": "Corroded trip-lines strung between submerged posts will catch an ankle and put a person face-down in stinking black water. Equipment surfaces after heavy rain: helmets, sword hilts, buckles, bones. Living memories of the swamp's bloody past."
+  },
+  {
+   "id": "s-0021",
+   "start": 241.593,
+   "end": 244.478,
+   "text": "What the Magic Left"
+  },
+  {
+   "id": "s-0022",
+   "start": 245.378,
+   "end": 251.44,
+   "text": "Several weeks of sustained battle-magic has left the swamp with much residue."
+  },
+  {
+   "id": "s-0023",
+   "start": 252.34,
+   "end": 265.807,
+   "text": "A stretch of marsh might be quiet for months and then loop the same thirty seconds of noise for a week: shouting, the crash of metal, a horn call that cuts off halfway through."
+  },
+  {
+   "id": "s-0024",
+   "start": 266.207,
+   "end": 283.391,
+   "text": "Some echoes are visual: the outline of a palisade where no palisade stands, a smear of torchlight on the fog, the silhouette of soldiers crossing a ridge that is empty when you reach it. Also smells: smoke, hot metal, something chemical that burns the nose."
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "virelia-map",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Interactive Virelia map and wiki, built from Virelia.txt",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-wiki.mjs && node scripts/build-book.mjs",
+    "plan": "node scripts/build-wiki.mjs --dry-run",
+    "check": "node scripts/build-wiki.mjs --check && node scripts/build-book.mjs --check",
+    "test": "npm run check && node scripts/audit.mjs",
+    "images": "python scripts/import-docx-images.py",
+    "pdf": "python scripts/shrink-docx.py",
+    "serve": "python -m http.server 8123"
+  }
+}

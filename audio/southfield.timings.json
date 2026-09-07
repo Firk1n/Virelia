@@ -1,0 +1,260 @@
+{
+ "version": 1,
+ "entryId": "southfield",
+ "textHash": "7fd98a1c82b5ab2152118195fc7b429c84f0f9240e1e96626ac49792658927f5",
+ "renderProfile": "95a2da9b62343cd5173677c0922c2494c47407937d3f85d9b273c982c957e2f6",
+ "segments": [
+  {
+   "id": "s-0001",
+   "start": 0.6,
+   "end": 1.273,
+   "text": "Southfield"
+  },
+  {
+   "id": "s-0002",
+   "start": 2.373,
+   "end": 14.762,
+   "text": "\"Brennan's ox, again! You can't tell me that crackpot raised such a beauty. Everyone knows he's at it with his sheep! You know I fucking heard him sneeze in the middle of the street the other day? The man is a savage.\""
+  },
+  {
+   "id": "s-0003",
+   "start": 16.462,
+   "end": 18.75,
+   "text": "Overheard at Flatford's annual fair"
+  },
+  {
+   "id": "s-0004",
+   "start": 20.25,
+   "end": 22.3,
+   "text": "Far from the Madding Crowd"
+  },
+  {
+   "id": "s-0005",
+   "start": 23.15,
+   "end": 34.734,
+   "text": "Southfield is a simple-minded region, one of hardy people, traditionalists, farmers mostly. Good potatoes, mediocre poetry, and old people glaring at strangers."
+  },
+  {
+   "id": "s-0006",
+   "start": 35.134,
+   "end": 50.097,
+   "text": "The weather is windy, on the cold side throughout most of the year, and fits the gloomy atmosphere that lurks throughout the region. The cottages are built low and thick. The sheep outnumber the people, and probably have more to say too."
+  },
+  {
+   "id": "s-0007",
+   "start": 50.997,
+   "end": 70.863,
+   "text": "For most of its post-Sundering history, Southfield was home to a region-wide rift that made noise leech on vitality. The exact nature of the phenomenon was never entirely understood, but the evidence was unquestionable. Where there was noise, life dwindled. Crops died."
+  },
+  {
+   "id": "s-0008",
+   "start": 71.263,
+   "end": 92.214,
+   "text": "Stillborns were more common. Cattle got sick. The rift has been waning for roughly a century, and in the last fifty years was declared to no longer affect the land at all. Despite this, the locals mostly maintain the habits they developed during that period."
+  },
+  {
+   "id": "s-0009",
+   "start": 92.614,
+   "end": 99.685,
+   "text": "Southfield is exceptionally quiet. Whether out of tradition or trauma depends on who you ask."
+  },
+  {
+   "id": "s-0010",
+   "start": 100.585,
+   "end": 102.156,
+   "text": "Death Whispered a Lullaby"
+  },
+  {
+   "id": "s-0011",
+   "start": 103.006,
+   "end": 120.542,
+   "text": "The rift arrived within the first century after the Sundering. By the time anyone understood what was happening, it was already too late. At first people thought the region was cursed. Imagine realizing years later that all of this suffering, death and famine were preventable."
+  },
+  {
+   "id": "s-0012",
+   "start": 120.942,
+   "end": 138.227,
+   "text": "Once the pattern was understood, the adaptation was fast and total. Festivals stopped. Forges allowed to work only under an active Silence spell. Tools dampened with wool, and livestock was culled to breeds that made less noise."
+  },
+  {
+   "id": "s-0013",
+   "start": 138.627,
+   "end": 157.457,
+   "text": "The architecture changed within a generation: walls thickened, doors got heavier, roofs were lined with whatever would muffle the rain. People latched onto anything they could in an attempt to fight the rift. The communities that adapted survived. The ones that couldn't are no more."
+  },
+  {
+   "id": "s-0014",
+   "start": 158.357,
+   "end": 177.643,
+   "text": "Sign language emerged as the region's main form of communication: a vocabulary of gestures borrowed from shepherds and dock-hands, expanded over generations into something precise enough for day-to-day conversations. Written slates replaced negotiation in public spaces."
+  },
+  {
+   "id": "s-0015",
+   "start": 178.043,
+   "end": 185.847,
+   "text": "Within a few generations the silence stopped being a response to danger and became the ordinary texture of daily life."
+  },
+  {
+   "id": "s-0016",
+   "start": 186.747,
+   "end": 204.883,
+   "text": "The rift began to fade roughly a century ago. The first generation to notice treated the signs as luck. The second renewed research of the anomaly. Then about fifty years ago, a council of village elders formally declared the rift is no more."
+  },
+  {
+   "id": "s-0017",
+   "start": 205.283,
+   "end": 211.64,
+   "text": "The fact that it is so is not enough to convince most Southfielders that things can now change."
+  },
+  {
+   "id": "s-0018",
+   "start": 212.54,
+   "end": 215.333,
+   "text": "All Quiet on the Southern Front"
+  },
+  {
+   "id": "s-0019",
+   "start": 216.183,
+   "end": 235.776,
+   "text": "When Southfield was considered cursed, the empire was quick to write the region off. They didn't have the means to aid it while the fracture wars were taking place, and they were worried the rumors of a dying region would become ones about a dying empire."
+  },
+  {
+   "id": "s-0020",
+   "start": 236.176,
+   "end": 246.106,
+   "text": "Nobody wants to be in the same room with a plague victim, after all. With the empire gone, so went most commoners. Only the stubborn and the poor remained."
+  },
+  {
+   "id": "s-0021",
+   "start": 246.506,
+   "end": 254.886,
+   "text": "Decades later, when the rift was discovered and adapted to, the locals grew fearful of the empire's return, and so they contacted the Compact."
+  },
+  {
+   "id": "s-0022",
+   "start": 255.786,
+   "end": 272.975,
+   "text": "Seeing an agricultural region with no imperial oversight and a population too small to resist, the Compact was quick to accept. They sent administrators, auditors, and soldiers, and quickly integrated themselves into Southfield's political system."
+  },
+  {
+   "id": "s-0023",
+   "start": 273.375,
+   "end": 287.978,
+   "text": "The administrators filed reports that grew shorter each quarter. The region, despite its potential, was poor. Hard headed farmers and local oddities stemming from the rift required more adaptation than the Compact could muster."
+  },
+  {
+   "id": "s-0024",
+   "start": 288.378,
+   "end": 306.999,
+   "text": "Within a decade, they cut their losses and signed a protection agreement: Southfield pays a yearly tax. The Compact claims the region on paper. In exchange, the Compact does nothing at all, which is precisely what Southfield has always wanted from the people in charge of it."
+  },
+  {
+   "id": "s-0025",
+   "start": 307.399,
+   "end": 320.314,
+   "text": "The arrangement keeps the Lienhunters out and the imperial banners from coming back. It is, by Southfield's standards, the most successful negotiation in the region's history."
+  },
+  {
+   "id": "s-0026",
+   "start": 321.214,
+   "end": 322.265,
+   "text": "Farmers' Market"
+  },
+  {
+   "id": "s-0027",
+   "start": 323.115,
+   "end": 331.471,
+   "text": "Each village runs itself, and the conventions vary enough between them that a farmer from the interior would find the coastal settlements odd."
+  },
+  {
+   "id": "s-0028",
+   "start": 331.871,
+   "end": 348.906,
+   "text": "Once a year, the villages send representatives to a general council, held at a rotating location, where the agenda covers road maintenance, the Compact's tax allocation, and whatever local problems have grown large enough to require outside opinion."
+  },
+  {
+   "id": "s-0029",
+   "start": 349.306,
+   "end": 366.373,
+   "text": "The rest of the year, the villages have no obligation to each other and mostly act like it. This works until it doesn't and then works again after everyone has had time to cool down. I think the strongest law that holds Southfield together is probably just inertia."
+  },
+  {
+   "id": "s-0030",
+   "start": 367.273,
+   "end": 384.559,
+   "text": "This is, incidentally, one of the reasons the Compact's integration failed as thoroughly as it did. They arrived expecting a political structure to slot into and found a region that runs on local oddities and has no centre to govern from. An administrator can issue a decree."
+  },
+  {
+   "id": "s-0031",
+   "start": 384.959,
+   "end": 390.224,
+   "text": "The question is who, exactly, would carry it out."
+  },
+  {
+   "id": "s-0032",
+   "start": 391.124,
+   "end": 392.745,
+   "text": "Those Who Remain"
+  },
+  {
+   "id": "s-0033",
+   "start": 393.595,
+   "end": 409.327,
+   "text": "The exodus during the cursed years gutted the region, and it never fully recovered. Humans make up most of it. Dwarves are the next largest group, and the culture suits them: quiet, practical, and uninterested in performance."
+  },
+  {
+   "id": "s-0034",
+   "start": 409.727,
+   "end": 426.271,
+   "text": "A scattering of Or-Racks settled after the Fracture Wars, mostly ones with no ties to Remosa worth preserving. Beyond that, not much. Myrrkin avoid the place entirely, for obvious reasons, and Halflings are not far behind them."
+  },
+  {
+   "id": "s-0035",
+   "start": 426.671,
+   "end": 433.39,
+   "text": "The region is too conservative and too gloomy to attract visitors, and too quiet to keep them."
+  },
+  {
+   "id": "s-0036",
+   "start": 434.29,
+   "end": 434.844,
+   "text": "Rumors"
+  },
+  {
+   "id": "s-0037",
+   "start": 435.694,
+   "end": 450.114,
+   "text": "Have You Ever Seen The Rain: An onion farmer is worried that the rainfall this fall won't be enough. He needs someone to clear out a group of bandits who settled by the nearby lake so he can divert the water."
+  },
+  {
+   "id": "s-0038",
+   "start": 450.514,
+   "end": 459.311,
+   "text": "Rudely enough, the bandits are singing drunk songs at night, and he is convinced the noise is souring his crop."
+  },
+  {
+   "id": "s-0039",
+   "start": 460.211,
+   "end": 477.229,
+   "text": "The Taxman: The Compact's annual tax collector has arrived three months early, accompanied by a surveyor and six Lienhunters. He claims the Protection Agreement entitles the Compact to a \"periodic review of territorial assets.\""
+  },
+  {
+   "id": "s-0040",
+   "start": 477.629,
+   "end": 494.721,
+   "text": "The nearest village council is looking for hired muscle to escort the delegation through the region and ensure they leave on schedule. The Compact surveyor is quietly mapping things that have nothing to do with taxes."
+  },
+  {
+   "id": "s-0041",
+   "start": 495.621,
+   "end": 518.655,
+   "text": "The Harvest of the Living: Three weeks ago, a merchant was found dead on the Quiet Road between Netclam and Glaskatch. What unsettled the locals is not just the killing, but the fact that it was loud. Travelers kilometers away reported hearing screaming that lasted for hours."
+  },
+  {
+   "id": "s-0042",
+   "start": 519.055,
+   "end": 530.936,
+   "text": "The nearest village council is looking to find whoever is responsible and deal with them. A second body was found just last week."
+  }
+ ]
+}

@@ -1,0 +1,878 @@
+{
+ "version": 1,
+ "entryId": "glaskatch",
+ "textHash": "9201dcace042ea472f1f7e8bbd52fb2c8d0547622c032674368b9c48a4073338",
+ "renderProfile": "95a2da9b62343cd5173677c0922c2494c47407937d3f85d9b273c982c957e2f6",
+ "segments": [
+  {
+   "id": "s-0001",
+   "start": 0.6,
+   "end": 1.222,
+   "text": "Glaskatch"
+  },
+  {
+   "id": "s-0002",
+   "start": 2.322,
+   "end": 20.884,
+   "text": "\"It was the weirdest date of my life. I think she was wearing a 'Witty' shard that had belonged to an old man? She kept cracking jokes about the price of wool and calling me 'sonny'. I wasn't sure if she was flirting or vetting me for her bridge club.\""
+  },
+  {
+   "id": "s-0003",
+   "start": 22.584,
+   "end": 24.09,
+   "text": "- Overheard in a tavern"
+  },
+  {
+   "id": "s-0004",
+   "start": 25.59,
+   "end": 26.524,
+   "text": "Overview"
+  },
+  {
+   "id": "s-0005",
+   "start": 27.424,
+   "end": 41.867,
+   "text": "Glaskatch sits at the southern terminus of the Quiet Road, on the northern shore of Trail's End Lake, technically inside Southfield but operating with enough autonomy that nobody in the region pretends otherwise."
+  },
+  {
+   "id": "s-0006",
+   "start": 42.267,
+   "end": 56.17,
+   "text": "It is not a large city, perhaps eight thousand permanent residents, but it carries an outsized reputation across most of Virelia. Glaskatch is where the dead are made portable."
+  },
+  {
+   "id": "s-0007",
+   "start": 57.07,
+   "end": 79.745,
+   "text": "The city is the only place in the world that practices the personality shard trade at scale. Mediators, Extractors, Resonance Houses, and the Ethics Tribunal that licenses all of them have grown together over two centuries into a single integrated economy that does almost nothing else."
+  },
+  {
+   "id": "s-0008",
+   "start": 80.145,
+   "end": 97.937,
+   "text": "People come here to preserve the dead, to graft skill they couldn't otherwise afford, and occasionally to remove parts of themselves they no longer want. The city accommodates all three with the same quiet professionalism. It does not advertise. It does not need to."
+  },
+  {
+   "id": "s-0009",
+   "start": 98.837,
+   "end": 99.749,
+   "text": "The Trade"
+  },
+  {
+   "id": "s-0010",
+   "start": 100.649,
+   "end": 113.014,
+   "text": "When someone dies, their family contracts with a licensed Extractor to harvest specific aspects of the deceased's personality before the imprint fades."
+  },
+  {
+   "id": "s-0011",
+   "start": 113.414,
+   "end": 126.987,
+   "text": "The Extractor takes a psychic impression of chosen traits, a master blacksmith's sense of proportion, a mother's warmth, a diplomat's patience, and binds it into a small crystalline medium."
+  },
+  {
+   "id": "s-0012",
+   "start": 127.387,
+   "end": 135.99,
+   "text": "The shard can then be worn or temporarily integrated by a living person, who carries the fragment as long as they need it."
+  },
+  {
+   "id": "s-0013",
+   "start": 136.89,
+   "end": 153.256,
+   "text": "The most common use is grief. A bereaved spouse buys a sliver of their partner's warmth and carries it in a locket, and the dead are not gone in the way the dead are gone elsewhere. The second most common use is craft."
+  },
+  {
+   "id": "s-0014",
+   "start": 153.656,
+   "end": 171.62,
+   "text": "An apprentice blacksmith saves for years to afford a fragment of a legendary smith's instinct for metal, and the years it would have taken to develop that instinct on his own become months. Beyond these two, the trade extends in every direction the human personality can be cut into pieces."
+  },
+  {
+   "id": "s-0015",
+   "start": 172.02,
+   "end": 187.455,
+   "text": "Negotiators rent slivers of historic mediators for difficult treaties. Officers wear fragments of famous tacticians' battlefield clarity before a campaign. Some buyers come for things they don't admit to wanting."
+  },
+  {
+   "id": "s-0016",
+   "start": 188.355,
+   "end": 196.766,
+   "text": "The practice is invasive. Wearing a shard means hosting a fragment of someone else's mind, and the fragment occasionally leaks."
+  },
+  {
+   "id": "s-0017",
+   "start": 197.166,
+   "end": 212.9,
+   "text": "A merchant carrying a patience-shard might suddenly recall a childhood memory that isn't his, or speak in an unfamiliar dialect for a few seconds, or laugh in a way his wife doesn't recognize. The locals call this"
+  },
+  {
+   "id": "s-0018",
+   "start": 213.8,
+   "end": 214.417,
+   "text": "bleeding"
+  },
+  {
+   "id": "s-0019",
+   "start": 215.317,
+   "end": 227.999,
+   "text": ", and the etiquette around it is absolute: when someone bleeds, you wait, you say nothing, you do not draw attention. Children are taught the rule before they can read."
+  },
+  {
+   "id": "s-0020",
+   "start": 228.899,
+   "end": 231.907,
+   "text": "If someone bleeds, be still and kind."
+  },
+  {
+   "id": "s-0021",
+   "start": 232.807,
+   "end": 246.853,
+   "text": "The other half of the etiquette is Memory Fasting. A citizen who has been wearing too many shards for too long voluntarily removes them all and spends days or weeks reconnecting with their authentic self."
+  },
+  {
+   "id": "s-0022",
+   "start": 247.253,
+   "end": 260.849,
+   "text": "They wear a grey ribbon on the wrist while doing it, the way someone elsewhere might wear a sling, and the city accommodates them. Conversations stay simple. Decisions are not asked of them."
+  },
+  {
+   "id": "s-0023",
+   "start": 261.249,
+   "end": 270.551,
+   "text": "The Still House and the Fasting Hall both offer rooms for the practice, ranging from comfortable to monastic depending on how serious the fast is."
+  },
+  {
+   "id": "s-0024",
+   "start": 271.451,
+   "end": 292.957,
+   "text": "Not all souls are equal, and the market reflects this with brutal precision. The rare temperament patterns, the perfect calm and inspired genius and masterful intuition that integrate seamlessly with any host, are called Pristine grade and sell for enough to buy a house."
+  },
+  {
+   "id": "s-0025",
+   "start": 293.357,
+   "end": 301.848,
+   "text": "Most working professionals wear Commercial grade, the steady useful traits a craftsman or scholar can save for."
+  },
+  {
+   "id": "s-0026",
+   "start": 302.248,
+   "end": 318.881,
+   "text": "At the bottom of the market are Static shards: clouded, low-quality fragments that offer nothing but vague urges and confusion, sold in plain cloth pouches in the Main Market for copper. The desperate buy them anyway. Some never stop buying them."
+  },
+  {
+   "id": "s-0027",
+   "start": 319.781,
+   "end": 323.118,
+   "text": "The Look"
+  },
+  {
+   "id": "s-0028",
+   "start": 324.018,
+   "end": 340.018,
+   "text": "Glaskatch is the quietest city in Virelia. Not silent in the Southfield way, where conversation is a duty kept in check, but quiet by design. The streets are paved with stone laid over packed earth to muffle footfalls."
+  },
+  {
+   "id": "s-0029",
+   "start": 340.418,
+   "end": 354.108,
+   "text": "The buildings are constructed with thick walls and sound-dampening panels in the ceilings. Nobody hangs signs that creak, nobody installs door chimes, and the carts that move through the wider avenues run on padded wheels."
+  },
+  {
+   "id": "s-0030",
+   "start": 354.508,
+   "end": 362.36,
+   "text": "The result is a city where you can hear a kettle boil three rooms away and where a raised voice carries half a district."
+  },
+  {
+   "id": "s-0031",
+   "start": 363.26,
+   "end": 377.008,
+   "text": "The colors match the sound. Muted greys, soft browns, undyed wool, slate, weathered timber. The Resonance Houses are pale stone with shuttered windows and no decoration on the facades."
+  },
+  {
+   "id": "s-0032",
+   "start": 377.408,
+   "end": 392.814,
+   "text": "The wealthier townhouses are larger versions of the same, with carved plaques beside their doors instead of signs. There is no civic statuary anywhere, no triumphal arches, no monuments."
+  },
+  {
+   "id": "s-0033",
+   "start": 393.214,
+   "end": 401.77,
+   "text": "Glaskatch built itself for trade and contemplation, in that order, and it has never seen a reason to ornament either."
+  },
+  {
+   "id": "s-0034",
+   "start": 402.67,
+   "end": 411.478,
+   "text": "The city grew from the lakeshore outward in irregular, unplanned layers, with no grid and no symmetry."
+  },
+  {
+   "id": "s-0035",
+   "start": 411.878,
+   "end": 426.534,
+   "text": "Streets twist according to where space was available when each generation needed to build, and the result is a dense fabric of narrow alleys and irregular blocks that strangers get lost in for hours. The walls enclose three sides."
+  },
+  {
+   "id": "s-0036",
+   "start": 426.934,
+   "end": 437.256,
+   "text": "The fourth side opens onto Trail's End Lake along a long stone promenade, the only place in the city where the design relaxes and lets people simply walk by water."
+  },
+  {
+   "id": "s-0037",
+   "start": 438.156,
+   "end": 440.889,
+   "text": "Districts"
+  },
+  {
+   "id": "s-0038",
+   "start": 441.789,
+   "end": 443.515,
+   "text": "•"
+  },
+  {
+   "id": "s-0039",
+   "start": 445.215,
+   "end": 447.189,
+   "text": "The Old Quarter:"
+  },
+  {
+   "id": "s-0040",
+   "start": 448.689,
+   "end": 465.056,
+   "text": "The dense lakefront tangle where the original market stood. The founding extraction families still operate from the same buildings their great-grandparents built, in narrow streets where the Mediators don't advertise because everyone who matters already knows where to find them."
+  },
+  {
+   "id": "s-0041",
+   "start": 465.456,
+   "end": 477.966,
+   "text": "Old money in Glaskatch is not measured in coin, it is measured in pedigree of practice, and three centuries of shard work in the same family is the kind of credential the Old Quarter trades on."
+  },
+  {
+   "id": "s-0042",
+   "start": 478.366,
+   "end": 489.88,
+   "text": "A stranger walking through gets the unmistakable sense that conversations stop a half-second before they round the corner, then resume after they pass."
+  },
+  {
+   "id": "s-0043",
+   "start": 490.78,
+   "end": 492.506,
+   "text": "•"
+  },
+  {
+   "id": "s-0044",
+   "start": 493.406,
+   "end": 497.177,
+   "text": "The Exchange District:"
+  },
+  {
+   "id": "s-0045",
+   "start": 498.077,
+   "end": 506.074,
+   "text": "The commercial middle of the city, the part that looks the way an outsider expects Glaskatch to look."
+  },
+  {
+   "id": "s-0046",
+   "start": 506.474,
+   "end": 523.607,
+   "text": "This is where the major Resonance Houses cluster, where the Tribunal Offices sit in a building that resembles a counting house more than a palace, and where licensed Mediator parlors operate from quiet ground-floor offices marked only by small brass plaques."
+  },
+  {
+   "id": "s-0047",
+   "start": 524.007,
+   "end": 535.528,
+   "text": "Merchants in fitted dark coats walk briskly between consultations. Clerks carry ledger books along the wider avenues. Conversations happen at half-volume and never on the street."
+  },
+  {
+   "id": "s-0048",
+   "start": 535.928,
+   "end": 545.247,
+   "text": "If a visitor pictured Glaskatch before they arrived, this is the district they pictured, and it is the only one that matches the picture."
+  },
+  {
+   "id": "s-0049",
+   "start": 546.147,
+   "end": 547.873,
+   "text": "•"
+  },
+  {
+   "id": "s-0050",
+   "start": 548.773,
+   "end": 550.877,
+   "text": "The Inn District:"
+  },
+  {
+   "id": "s-0051",
+   "start": 551.777,
+   "end": 568.98,
+   "text": "Sits inside the northern gate where the Quiet Road meets the city, and exists because Glaskatch performs itself for outsiders here. Visitors stay here, eat here, and get their first awkward shard consultations here."
+  },
+  {
+   "id": "s-0052",
+   "start": 569.38,
+   "end": 578.148,
+   "text": "The architecture is newer and less cramped than the rest of the city, and the cultural standards are slightly relaxed for the sake of trade."
+  },
+  {
+   "id": "s-0053",
+   "start": 578.548,
+   "end": 588.214,
+   "text": "The district is also the most watched in Glaskatch, because every Adjudicator knows that anyone interesting who comes through the gate sleeps within four streets of it."
+  },
+  {
+   "id": "s-0054",
+   "start": 588.614,
+   "end": 601.093,
+   "text": "Young Mediators set up shop here because they can't afford the Old Quarter and because the steady stream of nervous first-time clients is exactly the kind of work that builds a reputation."
+  },
+  {
+   "id": "s-0055",
+   "start": 601.993,
+   "end": 603.719,
+   "text": "•"
+  },
+  {
+   "id": "s-0056",
+   "start": 604.619,
+   "end": 606.442,
+   "text": "The Margins:"
+  },
+  {
+   "id": "s-0057",
+   "start": 607.342,
+   "end": 629.427,
+   "text": "Runs along the eastern wall, where the Main Market operates in semi-legitimacy. Static-grade shards in plain cloth pouches on simple wooden tables. Desperate buyers, drifting buyers, people who started using cheap product for a specific purpose and forgot what the purpose was."
+  },
+  {
+   "id": "s-0058",
+   "start": 629.827,
+   "end": 646.273,
+   "text": "The Tribunal permits the trade because driving it underground would be worse, and the Adjudicators sweep through weekly to make sure everyone present knows they are being watched. The point of the Margins is that it exists as a controlled release valve."
+  },
+  {
+   "id": "s-0059",
+   "start": 646.673,
+   "end": 653.293,
+   "text": "The Speculars know this and use it anyway, and everyone involved pretends not to know."
+  },
+  {
+   "id": "s-0060",
+   "start": 654.193,
+   "end": 655.876,
+   "text": "Governance"
+  },
+  {
+   "id": "s-0061",
+   "start": 656.776,
+   "end": 675.221,
+   "text": "The Ethics Tribunal began as a merchant arbitration board to standardize the shard trade and gradually absorbed every other function the city needed, until it became the city's government almost by accident. Its focus has never really shifted."
+  },
+  {
+   "id": "s-0062",
+   "start": 675.621,
+   "end": 697.864,
+   "text": "The Tribunal regulates the trade, licenses the Mediators and Extractors, sets quality standards, prosecutes shard-related crime, and treats everything else as a secondary concern. Public order is contracted out to private security firms. Civic infrastructure is handled by guild committees."
+  },
+  {
+   "id": "s-0063",
+   "start": 698.264,
+   "end": 701.481,
+   "text": "The Tribunal exists to keep the trade clean."
+  },
+  {
+   "id": "s-0064",
+   "start": 702.381,
+   "end": 718.015,
+   "text": "Seven seats, all held by senior Mediators with at least fifteen years of licensed practice, elected by their peers for staggered five-year terms. No hereditary positions, no purchased seats, no outside appointments."
+  },
+  {
+   "id": "s-0065",
+   "start": 718.415,
+   "end": 731.205,
+   "text": "The current Tribunal leans pragmatic rather than ideological, and meetings are conducted in the dry, technical register of professionals who understand both the craft and the economics."
+  },
+  {
+   "id": "s-0066",
+   "start": 731.605,
+   "end": 751.607,
+   "text": "Enforcement is handled by the Adjudicators, a corps of thirty or forty specialized investigators who dress in dark grey robes with a silver badge and have full authority to search, seize, and arrest in any matter touching the shard trade. They are not police."
+  },
+  {
+   "id": "s-0067",
+   "start": 752.007,
+   "end": 768.19,
+   "text": "They are forensic specialists who can tell, often by looking, whether a person is wearing illegal product. They are respected and quietly feared, and they take precedence over any other authority within the city walls."
+  },
+  {
+   "id": "s-0068",
+   "start": 769.09,
+   "end": 770.425,
+   "text": "The Quiet Rot"
+  },
+  {
+   "id": "s-0069",
+   "start": 771.325,
+   "end": 783.068,
+   "text": "The trouble with a city built on the malleability of the human spirit is that some of its citizens have started to wonder what the spirit might be malleable"
+  },
+  {
+   "id": "s-0070",
+   "start": 783.968,
+   "end": 784.766,
+   "text": "toward"
+  },
+  {
+   "id": "s-0071",
+   "start": 785.666,
+   "end": 787.359,
+   "text": "."
+  },
+  {
+   "id": "s-0072",
+   "start": 788.259,
+   "end": 798.741,
+   "text": "The Speculars are radical philosophers who believe reality itself is a trap, a closed room that hides a truer existence they call the Mirror Realm."
+  },
+  {
+   "id": "s-0073",
+   "start": 799.141,
+   "end": 816.101,
+   "text": "To them, the world's slow unraveling since the Sundering is not a disaster but a crack in the glass, and the goal is not to repair the world but to change the human vessel into something that can withstand seeing through the crack."
+  },
+  {
+   "id": "s-0074",
+   "start": 816.501,
+   "end": 838.969,
+   "text": "They believe a mortal mind perceives reality from one angle at a time, and that the Mirror Realm offers a state where every angle, timeline, and possibility is visible at once. The problem is that minds break under that perspective, a phenomenon they call the Glare."
+  },
+  {
+   "id": "s-0075",
+   "start": 839.369,
+   "end": 851.359,
+   "text": "The solution, in their reading, is to make the mind smoother, simpler, more reflective. To strip it down until nothing remains that can shatter."
+  },
+  {
+   "id": "s-0076",
+   "start": 852.259,
+   "end": 869.624,
+   "text": "In Glaskatch this has produced the Fragmentists, the Specular school that calls itself the Empty Glass. They use the city's shard technology in reverse. Where a normal Mediator adds traits to a client, a Fragmentist excises them."
+  },
+  {
+   "id": "s-0077",
+   "start": 870.024,
+   "end": 888.75,
+   "text": "They buy and commission Blanking Shards, fragments specifically designed to remove fear, trauma, identity markers, attachments, and eventually moral constraints, in pursuit of becoming smooth enough to reflect the Mirror Realm."
+  },
+  {
+   "id": "s-0078",
+   "start": 889.15,
+   "end": 906.299,
+   "text": "They run psychic chop-shops in basements and behind legitimate businesses. They flood the Main Market with cheap corrupted product as a recruitment tool, on the logic that anyone who loses themselves to a Static shard might be ready for the next stage."
+  },
+  {
+   "id": "s-0079",
+   "start": 906.699,
+   "end": 917.029,
+   "text": "The most persistent and unconfirmed rumor is that some cells have begun harvesting shards from living victims, leaving the bodies behind as breathing husks."
+  },
+  {
+   "id": "s-0080",
+   "start": 917.929,
+   "end": 937.973,
+   "text": "The Tribunal treats Fragmentist activity as the gravest crime in Glaskatch and prosecutes it accordingly, but the Fragmentists are difficult to identify precisely because they have removed the fear and hesitation that would normally betray them. They do not flinch under interrogation."
+  },
+  {
+   "id": "s-0081",
+   "start": 938.373,
+   "end": 956.326,
+   "text": "They do not lie convincingly because they no longer feel the need to. Some are funded quietly by wealthy patrons who have personally used blanking services to erase inconvenient memories and have a vested interest in the practice surviving."
+  },
+  {
+   "id": "s-0082",
+   "start": 956.726,
+   "end": 964.948,
+   "text": "The Adjudicators know roughly where the Fragmentists operate. Closing the loop has taken years and is not yet finished."
+  },
+  {
+   "id": "s-0083",
+   "start": 965.848,
+   "end": 968.688,
+   "text": "Notable Locations"
+  },
+  {
+   "id": "s-0084",
+   "start": 969.588,
+   "end": 971.314,
+   "text": "•"
+  },
+  {
+   "id": "s-0085",
+   "start": 973.014,
+   "end": 974.155,
+   "text": "The Resonance Houses:"
+  },
+  {
+   "id": "s-0086",
+   "start": 975.655,
+   "end": 986.744,
+   "text": "Wide two-story buildings of pale stone clustered in the Exchange District, each one specializing in a category of shards. Carved plaques beside the doors read"
+  },
+  {
+   "id": "s-0087",
+   "start": 987.644,
+   "end": 989.665,
+   "text": "Craft and Trade"
+  },
+  {
+   "id": "s-0088",
+   "start": 990.565,
+   "end": 991.877,
+   "text": ","
+  },
+  {
+   "id": "s-0089",
+   "start": 992.777,
+   "end": 994.327,
+   "text": "Academic Aptitudes"
+  },
+  {
+   "id": "s-0090",
+   "start": 995.227,
+   "end": 996.538,
+   "text": ","
+  },
+  {
+   "id": "s-0091",
+   "start": 997.438,
+   "end": 998.801,
+   "text": "Social Temperaments"
+  },
+  {
+   "id": "s-0092",
+   "start": 999.701,
+   "end": 1012.192,
+   "text": ". Inside: cool air, low ceilings, the faint smell of beeswax and ozone, and the soft sound of pen on paper."
+  },
+  {
+   "id": "s-0093",
+   "start": 1012.592,
+   "end": 1030.708,
+   "text": "The main floor is divided into consultation alcoves where Mediators meet with clients, and the back wall is lined floor to ceiling with hundreds of narrow drawers, each labelled with a small brass plate. The clerks navigate the system with practiced efficiency."
+  },
+  {
+   "id": "s-0094",
+   "start": 1031.108,
+   "end": 1039.428,
+   "text": "Tea is served, not as hospitality but in acknowledgment that people need time to sit with their decisions."
+  },
+  {
+   "id": "s-0095",
+   "start": 1040.328,
+   "end": 1042.055,
+   "text": "•"
+  },
+  {
+   "id": "s-0096",
+   "start": 1043.755,
+   "end": 1045.198,
+   "text": "The Tribunal Offices:"
+  },
+  {
+   "id": "s-0097",
+   "start": 1046.698,
+   "end": 1061.522,
+   "text": "A three-story building at the heart of the Exchange District, austere and functional and built to last. Small offices with desks and filing cabinets. Clerks working quietly. The steady scratch of pens."
+  },
+  {
+   "id": "s-0098",
+   "start": 1061.922,
+   "end": 1076.44,
+   "text": "The main hearing chamber is on the second floor, where the seven Tribunal members sit during formal proceedings, and there is a small holding cell in the basement for those accused of shard crimes pending trial."
+  },
+  {
+   "id": "s-0099",
+   "start": 1076.84,
+   "end": 1085.581,
+   "text": "The building looks more like a counting house than a seat of government, which is exactly the impression the Tribunal prefers to give."
+  },
+  {
+   "id": "s-0100",
+   "start": 1086.481,
+   "end": 1088.207,
+   "text": "•"
+  },
+  {
+   "id": "s-0101",
+   "start": 1089.107,
+   "end": 1092.054,
+   "text": "The Extraction House:"
+  },
+  {
+   "id": "s-0102",
+   "start": 1092.954,
+   "end": 1106.845,
+   "text": "Sits at the western edge of the Old Quarter and resembles a funeral parlor more than anything else. A quiet reception room where families wait, preparation chambers, and the extraction hall itself, where the psychic harvesting is performed."
+  },
+  {
+   "id": "s-0103",
+   "start": 1107.245,
+   "end": 1122.209,
+   "text": "Families arrive with the deceased and a pre-signed contract specifying which traits to preserve, and the process takes several hours behind closed doors. Only licensed Extractors are permitted inside."
+  },
+  {
+   "id": "s-0104",
+   "start": 1122.609,
+   "end": 1132.847,
+   "text": "People travel from across Virelia for the work done here, sometimes from weeks away, because there is nowhere else to take their dead."
+  },
+  {
+   "id": "s-0105",
+   "start": 1133.747,
+   "end": 1135.474,
+   "text": "•"
+  },
+  {
+   "id": "s-0106",
+   "start": 1136.374,
+   "end": 1136.584,
+   "text": "The Still House:"
+  },
+  {
+   "id": "s-0107",
+   "start": 1137.484,
+   "end": 1153.775,
+   "text": "A large tea house with private rooms upstairs for those undergoing Memory Fasting. The ground floor has comfortable tables, light meals, and the calmest atmosphere in the city, and it is where outsiders feel most at ease in Glaskatch."
+  },
+  {
+   "id": "s-0108",
+   "start": 1154.175,
+   "end": 1160.702,
+   "text": "Upstairs are small simple rooms with a bed and writing desk, rentable by the day."
+  },
+  {
+   "id": "s-0109",
+   "start": 1161.102,
+   "end": 1180.529,
+   "text": "The proprietor is a heavyset man named Ossin, who has been on a continuous rolling Memory Fast for three years, removing each shard as the next one integrates and rotating through a small collection in a cycle that never ends. He claims it keeps him fresh."
+  },
+  {
+   "id": "s-0110",
+   "start": 1180.929,
+   "end": 1190.135,
+   "text": "He remembers almost nothing about anyone he has met before, and is unfailingly kind, and is one of the saddest people in the city to spend an evening with."
+  },
+  {
+   "id": "s-0111",
+   "start": 1191.035,
+   "end": 1192.761,
+   "text": "•"
+  },
+  {
+   "id": "s-0112",
+   "start": 1193.661,
+   "end": 1196.749,
+   "text": "The Ceremonial Building:"
+  },
+  {
+   "id": "s-0113",
+   "start": 1197.649,
+   "end": 1209.207,
+   "text": "Stands on the lakeshore at the southern edge of the Old Quarter, a simple stone circle with a domed roof and a central pillar. Empty most of the year."
+  },
+  {
+   "id": "s-0114",
+   "start": 1209.607,
+   "end": 1223.695,
+   "text": "Once a year, during the Festival of Release, citizens gather here to perform the ritual of letting go: releasing shards they no longer wish to carry into the lake waters. It is not destruction, it is liberation."
+  },
+  {
+   "id": "s-0115",
+   "start": 1224.095,
+   "end": 1229.866,
+   "text": "The Speculars have their own interpretations of what accumulates in those depths."
+  },
+  {
+   "id": "s-0116",
+   "start": 1230.766,
+   "end": 1232.492,
+   "text": "•"
+  },
+  {
+   "id": "s-0117",
+   "start": 1233.392,
+   "end": 1234.805,
+   "text": "The Lakeshore Promenade:"
+  },
+  {
+   "id": "s-0118",
+   "start": 1235.705,
+   "end": 1255.16,
+   "text": "Runs along the entire southern face of the city, a broad stone walkway where the design of Glaskatch finally relaxes. People stroll in the evening. Children play by the water. Fishermen launch small boats. Elderly residents sit on benches and watch the sun set over Trail's End Lake."
+  },
+  {
+   "id": "s-0119",
+   "start": 1255.56,
+   "end": 1270.877,
+   "text": "The atmosphere here is less curated than anywhere else in the city, and Glaskatch comes closest to feeling like a normal place. Couples walk hand in hand. The sound of water lapping against stone provides a gentle constant backdrop."
+  },
+  {
+   "id": "s-0120",
+   "start": 1271.277,
+   "end": 1277.004,
+   "text": "It is the only district where a stranger can stand still without feeling watched."
+  },
+  {
+   "id": "s-0121",
+   "start": 1277.904,
+   "end": 1279.233,
+   "text": "Plot Hooks"
+  },
+  {
+   "id": "s-0122",
+   "start": 1280.133,
+   "end": 1281.859,
+   "text": "•"
+  },
+  {
+   "id": "s-0123",
+   "start": 1282.759,
+   "end": 1285.809,
+   "text": "The Hollow Men:"
+  },
+  {
+   "id": "s-0124",
+   "start": 1286.709,
+   "end": 1298.719,
+   "text": "A series of victims have been found in the alleys of the Old Quarter, physically unharmed but mentally hollowed out. They breathe and blink and respond to nothing."
+  },
+  {
+   "id": "s-0125",
+   "start": 1299.119,
+   "end": 1309.325,
+   "text": "The Tribunal suspects a Fragmentist cell has begun harvesting living shards, but the investigation has stalled because the victims cannot testify and no witnesses will come forward."
+  },
+  {
+   "id": "s-0126",
+   "start": 1309.725,
+   "end": 1317.016,
+   "text": "The party may be hired as outside investigators, or may simply be staying in an inn where one of the victims was last seen."
+  },
+  {
+   "id": "s-0127",
+   "start": 1317.416,
+   "end": 1336.733,
+   "text": "Following the trail leads through the Main Market to a man who calls himself the Woolman, a calm, articulate, disturbingly composed shard dealer who has excised so much of his own anxiety that he no longer reads as nervous when he should. He is not the leader of the cell."
+  },
+  {
+   "id": "s-0128",
+   "start": 1337.133,
+   "end": 1345.184,
+   "text": "He knows where it operates. He was, fifteen years ago, the apprentice of a senior Mediator named"
+  },
+  {
+   "id": "s-0129",
+   "start": 1346.084,
+   "end": 1347.037,
+   "text": "Calla Mourne"
+  },
+  {
+   "id": "s-0130",
+   "start": 1347.937,
+   "end": 1364.646,
+   "text": ", who has been deciding for eight months whether to report him and has not been able to. Calla is the party's most useful contact in the Old Quarter and the most ambivalent. Whichever way the case breaks, somebody she cares about gets destroyed."
+  },
+  {
+   "id": "s-0131",
+   "start": 1365.546,
+   "end": 1367.273,
+   "text": "•"
+  },
+  {
+   "id": "s-0132",
+   "start": 1368.173,
+   "end": 1370.339,
+   "text": "The Counterfeit Soul:"
+  },
+  {
+   "id": "s-0133",
+   "start": 1371.239,
+   "end": 1380.223,
+   "text": "A wealthy patron from outside Glaskatch has hired the party in desperation. He bought an expensive"
+  },
+  {
+   "id": "s-0134",
+   "start": 1381.123,
+   "end": 1382.452,
+   "text": "Heroic Impulse"
+  },
+  {
+   "id": "s-0135",
+   "start": 1383.352,
+   "end": 1395.788,
+   "text": "shard for his son through a private dealer rather than a licensed Resonance House, on the logic that the discount was significant and the discretion was useful. The shard is corrupted."
+  },
+  {
+   "id": "s-0136",
+   "start": 1396.188,
+   "end": 1409.583,
+   "text": "The boy is now prone to violent righteous outbursts that don't match his personality, delivers grandiose speeches about justice and duty, and suffers vivid hallucinations of battles that never happened."
+  },
+  {
+   "id": "s-0137",
+   "start": 1409.983,
+   "end": 1420.848,
+   "text": "The family cannot go to the Tribunal without admitting they used an unlicensed dealer, which would mean fines and possibly the boy's institutionalization."
+  },
+  {
+   "id": "s-0138",
+   "start": 1421.248,
+   "end": 1435.351,
+   "text": "Tracking the dealer leads to a wider problem: a flood of high-quality counterfeit shards has hit the market in the past few months, all with suspiciously similar authentication papers, and the"
+  },
+  {
+   "id": "s-0139",
+   "start": 1436.251,
+   "end": 1437.58,
+   "text": "Heroic Impulse"
+  },
+  {
+   "id": "s-0140",
+   "start": 1438.48,
+   "end": 1449.426,
+   "text": "the boy is wearing was extracted from a warlord who died screaming in madness. The dealer knew. The dealer sold it anyway. And the dealer is not working alone."
+  },
+  {
+   "id": "s-0141",
+   "start": 1450.326,
+   "end": 1452.052,
+   "text": "•"
+  },
+  {
+   "id": "s-0142",
+   "start": 1453.752,
+   "end": 1455.417,
+   "text": "The Festival of Release:"
+  },
+  {
+   "id": "s-0143",
+   "start": 1456.917,
+   "end": 1478.547,
+   "text": "The Festival is a week away. Every year, citizens gather at the Ceremonial Building to release shards they no longer wish to carry into the lake. This year, three days before the ritual, a Tribunal clerk has gone missing along with the master ledger of the Festival's expected participants."
+  },
+  {
+   "id": "s-0144",
+   "start": 1478.947,
+   "end": 1495.766,
+   "text": "The Adjudicators are quietly tearing the city apart looking for both. The party may be hired to find the clerk, may stumble onto the missing ledger in the wrong place, or may simply be present at the Festival when something rises out of Trail's End Lake that should not have been able to."
+  },
+  {
+   "id": "s-0145",
+   "start": 1496.166,
+   "end": 1503.554,
+   "text": "The Speculars have always had theories about what accumulates in those depths. One of those theories is about to be tested."
+  }
+ ]
+}

@@ -1,0 +1,476 @@
+{
+ "version": 1,
+ "source": "C:\\Users\\Ofek\\Downloads\\Virelia\\Virelia.docx",
+ "sourceHash": "9f195f71db1530eef74f830fea778e8428601d6f905d3985d8c9c611549107fd",
+ "images": [
+  {
+   "src": "assets/book/25788a746092.webp",
+   "width": 1400,
+   "height": 700,
+   "anchor": "This volume catalogues the regions, races, and factions that survive in the wreckage. Where the account seems unfair, spare me your judgment, for I did my best with what limited resources I had. You're welcome to step into the wilderness and make your own records, should my registers not suffice.",
+   "after": "What follows are my records of Virelia as it fell and as it still stands. For eighteen centuries now, our gods have been gone, and left us to stumble through the remains of their creations. We reached for what tools were left in hopes of walking proud once again, and only succeeded in outpacing the catastrophe with one of our own making. The wars that followed eroded what breakage the Sundering had missed. What remains is a continent of isolated holdings, rifts in reality, unstable arcana and leftover humanoids struggling to concoct new meaning from what we've become."
+  },
+  {
+   "src": "assets/book/b26efae701b9.webp",
+   "width": 1400,
+   "height": 764,
+   "anchor": "Remosa did not accept any of this. Three times across the years that followed the empire gathered what it had left and marched on Trefgann, each invasion smaller than the last and each one repulsed. The third was fifty years ago. Failed the way the others had, and at roughly the same border. Whether this counts as the end of the Fracture Wars is a question only the people who weren't doing the fighting bothered to ask. For everyone else, war was weather. No one could remember the world without it, and no one expected it to ever end.",
+   "after": "After Trefgann, the pattern repeated in Haldrith, Rivhalde, and Southfield. The era of grand armies was no longer. Those who replaced them were smaller, meaner, and fought over every last habitable scrap of land."
+  },
+  {
+   "src": "assets/book/e2236581dc8a.webp",
+   "width": 1400,
+   "height": 764,
+   "anchor": "The regions are not, for all this, uniformly grim. People marry, build, and quarrel over inheritances in places the empire would have written off as uninhabitable. Whatever the Sundering took, it was not our small communities or the quarrels inside them.",
+   "after": "Where the land stopped being the immediate problem, often the neighbors picked up the slack. The central regions function anyway, after their own fashion. The edges are a more complicated story, and they each have their fair share of problems. In some places the struggle is justified by resources which cannot be found elsewhere. In some, the locals are bullheaded madmen if you ask me."
+  },
+  {
+   "src": "assets/book/9b46426b97be.webp",
+   "width": 1400,
+   "height": 764,
+   "anchor": "A lush rugged highland that makes for a great place to lose things, and a terrible one for anything else but. Deep forests, jagged hills, with an alien, uncomfortable beauty to it all. The terrain is shifting, unstable. It is as deadly as it is unreliable. All on account of what the locals have lovingly (?) named Wendy, and everyone else calls by its name: the Wending. Voices of insects fill the area, and anything that can hold a pine needle, does indeed. The trees look just a bit off from a distance, but take a closer look and you'll see them fold inwards violently. Same goes for everything else here. Rivers flow uphill before correcting into loops that lead nowhere. Roads coil back on themselves. Fog swirls unnaturally, and the ground moves under your boots without you noticing. None of the neighboring regions dare cross this place, and navigating it is impossible for the rigid-minded. Survival requires one of two things: a scholarly, almost mathematical grasp of the shifting patterns, or an extremely sharp intuition. Those who rely only on their eyes and strict logic will find themselves walking in circles until they starve.",
+   "after": "The Garden of Forking Paths"
+  },
+  {
+   "src": "assets/book/090b8b0fa14e.webp",
+   "width": 1400,
+   "height": 766,
+   "anchor": "Gold Rush: A rich Haldrithian merchant wishes to create a “Knotsreach zoo” in Luznica, and looks to hire help to capture native species. Most locals resist, thinking this is either stupidity or a dangerous intrusion of nature. The argument is becoming heated, and sabotage is apparently no longer off the table.",
+   "after": "Heartache: A couple that has lived in the region for decades have decided they’ve had enough of each other. They insist one of them must leave, but they keep accidentally returning to the same place. In the meanwhile, the husband lives in a shed in the yard, but they insist this cannot continue. Their daughter is worried for her father’s safety in such an undefended structure."
+  },
+  {
+   "src": "assets/book/172d6320b26f.webp",
+   "width": 1400,
+   "height": 594,
+   "anchor": "The boundary between the two is called the Cannonade by the Molakari. A band of unstable air perhaps fifty meters wide where the desert and the Vein argue in hurricanes and gusts. Crossing it on foot in the wrong minute has killed more travelers than bandits and thirst combined. The worst of it can lift an entire caravan and set it down half a kilometer away, usually in pieces.",
+   "after": "Veins are another matter. Two kilometers across at their widest, hundreds of meters deep, their walls fluted ice the color of aquamarine. Every block cut from those walls is worth more than the lives of the men sent to cut it. Meltwater runs down the west faces when the sun catches them, pools on the floor, and freezes back into the wall overnight. Where cold air meets the heat above, the edge throws up a permanent curtain of steam that hides it from anyone standing more than a few paces off."
+  },
+  {
+   "src": "assets/book/5d6d627b92c3.webp",
+   "width": 1400,
+   "height": 745,
+   "anchor": "The Empty Vein: An Ishkane crew returned from a Vein they had been working for three generations to find it cleaned out, the stable seams gone, and Aylagu sled-tracks leading away. Aylagu denies the route was theirs. The Ishkane have called for arbitration in Ravelstead. Both clans are also quietly preparing for the arbitration to fail.",
+   "after": "The Glass Tomb: A sandstorm has scoured a dune and exposed a perfect dome of blue crystal where nothing should be. It has no opening. Those who lay a hand on it report hearing a heartbeat, slow and slowing. The clans cannot agree whether to break it open or bury it again before the rumor spreads."
+  },
+  {
+   "src": "assets/book/2a35d3a1e5b0.webp",
+   "width": 1400,
+   "height": 562,
+   "anchor": "For most of its post-Sundering history, Southfield was home to a region-wide rift that made noise leech on vitality. The exact nature of the phenomenon was never entirely understood, but the evidence was unquestionable. Where there was noise, life dwindled. Crops died. Stillborns were more common. Cattle got sick. The rift has been waning for roughly a century, and in the last fifty years was declared to no longer affect the land at all. Despite this, the locals mostly maintain the habits they developed during that period. Southfield is exceptionally quiet. Whether out of tradition or trauma depends on who you ask.",
+   "after": "Southfield is a simple-minded region, one of hardy people, traditionalists, farmers mostly. Good potatoes, mediocre poetry, and old people glaring at strangers. The weather is windy, on the cold side throughout most of the year, and fits the gloomy atmosphere that lurks throughout the region. The cottages are built low and thick. The sheep outnumber the people, and probably have more to say too."
+  },
+  {
+   "src": "assets/book/694c5150983e.webp",
+   "width": 1400,
+   "height": 764,
+   "anchor": "Remosa attempted to hold the region during the Fracture Wars and gave up within a decade. Walls may keep out the forest but not its effects, and a garrison that loses men to the woods faster than it can recruit them is not a garrison for long.",
+   "after": "Virelia is built differently. Things here are what they are regardless of who is looking, mostly, anyway. When the two collided, Virelia's rigidity began bleeding into Myrr and has been killing it ever since. What leaked the other way is what Myrskov is living with. Myrr, however, cannot become Virelia. Its ecology, its air, its ground, all of it was built around a shared experience. Where the Virelian rules reach, Myrr stops working. Forests collapse, rivers go still, whole valleys empty out. The Myrrkin who reach Myrskov are leaving a home that is rapidly being made uninhabitable."
+  },
+  {
+   "src": "assets/book/be396965d6d0.webp",
+   "width": 1400,
+   "height": 592,
+   "anchor": "Some would say the Druids are out of touch, and they'd have a point. Some would think the Listeners are sentimental, and they'd have a point. When it's urgent they work together, usually badly. The rest of the time they argue, and I suspect the region would collapse without either the cooperation or the arguing.",
+   "after": "The Listeners are the other half of the arrangement, and the half more likely to take the stubborn villager's side. They're traditionalists who walk the Chime Routes, old paths hung with iron bells and bone wind chimes that have been soaking in the forest long enough to register its shifts. Reading them is a practiced skill, passed down by apprenticeship, one Listener picking a child and spending a decade until the child replaces the teacher and the cycle of exploitation continues. They carry news, small trade goods, warnings about which paths have gone sour. Stay off their routes long enough and the forest starts thinking you’re a part of it. Past a certain point the Druids stop calling it a rescue and weapons are drawn. Ferals are dangerous, erratic. Think a pack of wolves with bows and well-planned traps. Which is why the villagers welcome the Listeners with open arms, and pay the organization the closest thing the region has to a tax. The Halcyons, naturally, think the whole operation is quaint. Their runners pass through Myrskov on continental routes and deliver mail faster than any Listener could. The Listeners tolerate the Halcyons the way a farmer tolerates a neighbor's dog that keeps barking in the night. As in, not really."
+  },
+  {
+   "src": "assets/book/3f6530bd3ed3.webp",
+   "width": 1400,
+   "height": 563,
+   "anchor": "Their only line of defense are their priests, the Mazuren. Part meteorologists and part oracles. They decide where a village is built, when a harvest is abandoned, which stretch of the Barktrail is safe to walk this season. After which the spice farms follow: cinnamon, ginger, vanilla, medicinal herbs. Grown quickly and to colossal heights. All respectfully sit where the Mazuren allow and await their turn to be harvested. Meanwhile the people sit on their pillows at their ridiculously small tables, drinking hot tea and eating the local spiced abominations they call food.",
+   "after": "Interestingly, if you buy into the Tavernashi claim that Kenosis is a philosophy and nothing else, Lastrago is probably the only place where religion has gained a foothold in Virelia. The Mazurat are their masters, and they can be oh so cruel. An unprepared village can get wiped off the map in a single tempest. Ferocious waves of rain, and winds strong enough to break bone. I’d pray too."
+  },
+  {
+   "src": "assets/book/c0b04be0dbe6.webp",
+   "width": 1400,
+   "height": 766,
+   "anchor": "Voices From The Deep: A farmer's child fell through the canopy and was missing for three days. She came back speaking words nobody recognizes and insisting there are people living beneath the tree line.",
+   "after": "The Messenger: An elf village that hasn't contacted Azwighen in decades has sent a runner asking for help. They won't say with what. The Mazuren aren't interested, and the runner was left to wait at the gate."
+  },
+  {
+   "src": "assets/book/dc092e70bf77.webp",
+   "width": 1400,
+   "height": 558,
+   "anchor": "Deeper in, even the notion of a walk becomes optimistic. Light bends around solid objects and puts everything a few meters from where it sits. The surges come harder and more often, and will blister exposed skin in minutes. Despite that, nature is abundant here. But more on that later, as it seems we’ve run out of page.",
+   "after": "Imagine waking from a summer nap at high noon. Eyes unfocused, drenched in sweat, the world is a bleary haze of drawn-out colors and painfully bright sun. Add a pinch of nausea, and you'd have a rough idea of what it's like stepping into Tintbent for the first time. \"Tintbent\", such an obtuse name. But what can you expect from a population of farming cave dwellers. The peninsula is riddled with caves. Old, water-carved. Communes have spent centuries refining and connecting them. People who have chosen to live where they're clearly unwanted, all for the sake of either laziness or greed. Only to find out life in Tintbent isn't the rumored \"two hours a day\" kind of work nor especially profitable. Most leave, others stick with a local crew and learn the hard way. They spend most of their time underground processing food, fishing, cultivating fungi, and sleeping. Not necessarily in that order. Occasionally they surface to work their excuses for a field. I'd call it an uphill battle, but people here have surrendered completely to the ecosystem. They can only farm on its terms, and go for a walk when they're allowed to."
+  },
+  {
+   "src": "assets/book/45f4f1282f8b.webp",
+   "width": 1400,
+   "height": 933,
+   "anchor": "Unearthed: A major surge strips the soil in the deep zones and exposes Shekrat-era architecture on the surface, partially intact. Three communes, a Specular cell, and a trader caravan are all converging on it for different reasons. A fight seems unavoidable.",
+   "after": "Exodus: A commune's Shekrat-era stabilizer is failing, and the zone it held calm for centuries is drifting hard. They need help to get to the nearby settlement across sixty kilometers of hard territory with children and livestock. And the neighbors are not, by any account, pleased with the idea."
+  },
+  {
+   "src": "assets/book/0754fd08aa5f.webp",
+   "width": 1400,
+   "height": 689,
+   "anchor": "And lastly, above the mountains are the peaks which granted the region its name. The floating archipelago, several hundred islands of stone hanging in the upper air, reached by glider from the launch ledges and connected to one another by a vocabulary of bridges, cable runs, and airways that only the proficient or the ignorant would dare cross. The peaks are what foreigners mean when they say Kelarra. The grounded range is what Kelarrans mean, but nobody asks them anyway.",
+   "after": "Above it lie the summits. There are few settlements here, mostly just waystations, Halcyon outposts, and the people who make their living guiding others up. Most who pass through here do so twice and as quickly as possible."
+  },
+  {
+   "src": "assets/book/c98f6a6a0127.webp",
+   "width": 1400,
+   "height": 764,
+   "anchor": "Most would describe Tavernash as a dull, flat rock on top of the ocean, filled with people who are just as dull and flat. The wind is always soft, the sea barely moves, try laughing too hard and it will be swallowed by the peninsula's overbearing effect. It's their sacred Gyre Stone, of course. A piece of imperial machinery at the peninsula's center, holding the world at an arm's length. Without it, Tavernash would be underwater, to little effect for the rest of the world. Aretzu centers this effect, which tapers off the further you go. The coastal villages get a softer version, just enough to keep the weather quiet. By land, Tavernash connects to the continent only through Knotsreach, which is to say not at all. Most arrivals come by ship through Vranek Bay. The Stone's calm extends a few kilometers out, making the voyage a short, yet exhausting journey filled with rowing. Exports are wine aged in Barkmail casks, kelp from the coast, and the occasional pilgrim back from the Ringwood. Imports are few, and whatever does arrive is taxed and inspected at the docks with a thoroughness that would embarrass the Greywater Compact. They don't want to sully their precious land with the ugliness outside, after all.",
+   "after": "Nothing Ever Happens"
+  },
+  {
+   "src": "assets/book/8fa1307ac12d.webp",
+   "width": 1400,
+   "height": 747,
+   "anchor": "The Southern Coast: Laden fishermen are going missing near the Ringwood. The villages pooled what they could afford to hire outsiders. The missing fishermen are alive, sitting in the wood, unable to remember why they walked in.",
+   "after": "The Sap of life: A smuggler in the fishing villages is exporting a concentrated, black version of the Nareth Sacrament. It causes total memory erasure, and leaves a trail of empty people behind."
+  },
+  {
+   "src": "assets/book/93bd98a29e6e.webp",
+   "width": 1400,
+   "height": 523,
+   "anchor": "These days they mine, they forge, they file, they drink, they fuck, they sleep, and then they do it all again for the sake of it. I'm convinced none of them could tell you what they work towards, unless you count the end of their shift or a contract's expiration date. Craftsmen demoted to statesmen. What a sad sight.",
+   "after": "They are capable of beauty, mind you. I have seen it. The ancient dwarven monuments of the Age of Silence, still standing in Remosa, waiting for a sculptor who will never come. Fallmere, fine polished rock, salted to gleam against Lake Remathis. All of it, slowly replaced by short-sighted greed one only expects to meet in legends. They scrapped the old Quartz townhall to rebuild it in metal and stone. They're on the seventh version now. The 6th's windows had a 0.6cm angle, you see. It's all run like a dick-swinging competition between guilds with more power than wisdom, and more aspirations than caution. A group of criminals, politicians and criminal politicians. And, as per usual, the people underneath get to answer to all of them in equal measure."
+  },
+  {
+   "src": "assets/book/fed7381bc7d0.webp",
+   "width": 1400,
+   "height": 776,
+   "anchor": "The Haldrithians will tell you this ensures that power is earned rather than given. Most would describe it as foolish and ineffective, but the Haldrithians take deep pride in their flawed system, which \"keeps the gears running while the machine is being tuned.\" I'd argue the machine has been \"tuned\" for 190 years and counting, but what do I know. I'm tall.",
+   "after": "I'll try to explain how the domains work, since the system is unique to Haldrith alone as far as I'm aware. Each guild serves a function. Tunhall runs your drink. Hjornast delivers your grain. The Black Hands forged the lock on your door. Hammerheads maintain the street outside it. In any given building, three or four guilds have a claim to a part of the owner's pocket, and the place only works because all of them provide for it. The theory is mutual dependency. The practice is that if Hjornast has a problem with you, your supply cart arrives late, or not at all. Nothing in Haldrith happens without passing through someone else's domain, and they all keep count. Meticulously so."
+  },
+  {
+   "src": "assets/book/79cc21a1db16.webp",
+   "width": 1400,
+   "height": 764,
+   "anchor": "The locals keep enough of what they grow to get by. The rest goes to the Compact's ledger. A village that falls behind on its assessments will quickly meet a Lienhunter crew. One is allowed to rid himself of his assets should he choose to, after all.",
+   "after": "Half the continent eats Rivhaldean grain, and the Compact has had generations to leverage that advantage into brutal, efficient strength. They are the wealthiest, most organized power on the continent, and no current rival has the means to challenge them directly. Luckily, they're so focused on making enemies of their own people that neighboring regions need not worry."
+  },
+  {
+   "src": "assets/book/8eaa3ee21d98.webp",
+   "width": 1400,
+   "height": 764,
+   "anchor": "God on Trial: A town near the border has filed a contract dispute against the Board itself, claiming the Compact has failed to deliver on its obligations under the original protection agreement. The legal argument is surprisingly solid. The Board seeks to hire outside help to make the problem disappear discreetly before anyone else gets the same idea.",
+   "after": "Ghosts, Ghosts Everywhere: Smugglers on a Ghost Road through the Feskir Woodland have found something in the trees that shouldn't be there. They can't report it without revealing their route, and they can't ignore it because it killed two of their people last week. They need outside help from someone who won't ask how they came across it."
+  },
+  {
+   "src": "assets/book/6661bcdf3301.webp",
+   "width": 1400,
+   "height": 764,
+   "anchor": "The Rebel: A Graith maintaining the ward-stones under Ezgarin's eastern district has stopped working. It has renegotiated its mantras and is now requesting a formal status review before it resumes. The district's water pressure is dropping by the day. The Council wants the problem solved quietly. What \"solved\" means the council prefers not to put in writing.",
+   "after": "The Fire Sale: A Mire Commander is selling captured magical artillery to a Haldrith crime syndicate. The council wants this to be dealt with, but he needs the coin for winter cloaks, and is, by every account, a decent man."
+  },
+  {
+   "src": "assets/book/09a52ea1a91c.webp",
+   "width": 1400,
+   "height": 723,
+   "anchor": "Remosa's open wound. They can't stop scratching it, and Trefgann has been opened and bled again and again and again. No wonder they can't think of themselves as anything but \"not Remosa\". Hillside forests the color of green rust, lakes rippling in the spring breeze, soil which smells of musty thyme, laced with an ancient road paved in marble. The Trefganners cling to a sense of simplicity, directness, freedom, maybe? Hardy people, weaponized working folk, sitting inside one of Virelia's greatest regions and too busy surveying Remosa to realize it. Too busy taking apart and mocking the ancient statues to marvel at their beauty. Maybe fittingly, the opposite of Remosa's hubris has taken the form of paranoia. I realize I'm painting a bleak picture here. And perhaps, an unfair one. The Trefganners are decent folk. Tight communities, strong agricultural identity, great tobacco. There's just something to be said about people who'd scorn anything and everything as long as it has a Remosan accent.",
+   "after": "Concord of War"
+  },
+  {
+   "src": "assets/book/c6d55a0ae180.webp",
+   "width": 1400,
+   "height": 764,
+   "anchor": "The Runaway: An eleven-year-old boy named Erik has escaped Cadfael village with nothing but the clothes on his back. His family is rightfully worried, but the other children of the village say it’s better that way since he was “a witch”.",
+   "after": "The Hidden Cache: A village bell rang last month. A kid's prank, false alarm. However, as result it turned out that Vanguard has enough weaponry to arm a small army. Much more than a village its size should. The Synod wants answers."
+  },
+  {
+   "src": "assets/book/48efdb48909e.webp",
+   "width": 1400,
+   "height": 993,
+   "anchor": "I've written what I could gather on each, starting with my own observations, followed by brief factual excerpts that might serve the lazy, who, understandably, grew tired of my ceaseless babbling. Though in my defense, if there is indeed anything that separates us from cattle, it is culture.",
+   "after": "Ancestries that could not have come from anywhere but here, and in some cases would probably have preferred not to. Though the will to live is often stronger than one's better judgement, as demonstrated by some of our more tragic cases."
+  },
+  {
+   "src": "assets/book/f6a0222025cd.webp",
+   "width": 1400,
+   "height": 764,
+   "anchor": "While I would've preferred to detail the ordeals and misfortunes each population has weathered these past eighteen centuries, I'm afraid this work will have to remain unfinished, for now. I prefer spending what limited time I have on what Virelia has birthed, instead of what it eroded, and I find it more fulfilling to engage with the misfits and the bizarre. It's a personal interest, or perversion. Depends on who you ask.",
+   "after": "Elves, supposedly, are still out there. Most living Virelians have never met one, but rumors tell of a strong core that remains hidden in Lastrago. A fellow researcher has told me they were plentiful once. However, they live for centuries and bear few children, and after eighteen centuries of indiscriminate death, the arithmetic did not work in their favor. A rift takes a village. Humans replace the loss in a generation. Elves carry it for centuries. Half-elves follow from the same scarcity, and carry no stigma beyond the obvious. There aren't enough elves left for anyone to have developed strong opinions on the matter, which is perhaps lucky when considering the way some other races are treated."
+  },
+  {
+   "src": "assets/book/e74bf501d20e.webp",
+   "width": 689,
+   "height": 1033,
+   "anchor": "Someone's solution to a problem",
+   "after": "Graith (plural: Graith)"
+  },
+  {
+   "src": "assets/book/ccbb7934dce5.webp",
+   "width": 1400,
+   "height": 764,
+   "anchor": "To be blunt, most of it is financial. Acknowledging personhood means wages, and nobody wants that. The debate, such as it is, lives almost entirely in modern Remosa, where the dependency is too large to ignore and too expensive to acknowledge. The Graith outside the empire's core have no debate to take sides in. Most carry on the way they always have, and the question of whether they count as people remains someone else's problem. Which, if nothing else, is a very human way to handle it.",
+   "after": "Whether Graith are people is a question most of Virelia answers based on convenience. They are constructs, so the question is not trivial. What the softhearted might call bigotry is a philosophical position that I think is worth acknowledging. When it is indeed a philosophical position, and not just fear. Graith that lose coherence are dangerous, that is an uncontested fact. But fear should not be the motivator behind our judgement of what is considered human, or the Graith will end up the first on a very long list of exclusions."
+  },
+  {
+   "src": "assets/book/f89e0657bb1c.webp",
+   "width": 1400,
+   "height": 712,
+   "anchor": "You know the Mending cantrip, which you need use to maintain your own body. Instead of sleeping, you must spend 4 hours in an inert, immobile state performing routine self-repair to gain the benefits of a long rest.",
+   "after": "Arcane Maintenance"
+  },
+  {
+   "src": "assets/book/420880df7cd0.webp",
+   "width": 1024,
+   "height": 1536,
+   "anchor": "Work in progress",
+   "after": "Orrak (plural: Orraks)"
+  },
+  {
+   "src": "assets/book/8f672d0ae5ac.webp",
+   "width": 721,
+   "height": 1081,
+   "anchor": "When the decline starts, an Orrak knows. The body they've spent their life shaping stops cooperating. Joints stiffen, modifications begin to reject, and the deterioration accelerates in a way that leaves little room for dignity. Most Orraks settle what needs settling, say what needs to be said, and end it alone on their own terms. It is not discussed at length among Orraks, and it is not mourned the way humans mourn, but there is something. A father sitting with his children for an evening longer than usual. A packed bag by the door. A fitting end, I guess, for a race defined by complete control over their bodies.",
+   "after": "Orrak children are raised by their families in civic settings and by the tribe where one exists. A fourteen-year-old is expected to work, fight if necessary, and should probably already have their first significant modification. Orraks don't fuss over their young the way we tend to. The child is taught what it needs to survive, and then it's expected to do so. They speak less than most and have little patience for talk that doesn't go anywhere. This extends to academics, philosophy, extended debate. The exceptions to the rule tend to be either very good at what they do or a bit odd. Often both."
+  },
+  {
+   "src": "assets/book/82b4b91518b5.webp",
+   "width": 1024,
+   "height": 1536,
+   "anchor": "Close Enough",
+   "after": "Duskwalker (plural: Duskwalkers)"
+  },
+  {
+   "src": "assets/book/360b7bdb3d9b.webp",
+   "width": 1400,
+   "height": 688,
+   "anchor": "Interacting with one is a challenge I'd recommend to everyone and no one. The most mundane questions either have no answer or an answer that kills the conversation on the spot. \"Where were you born?\" \"You mean originally, or the lab?\" \"Favorite food?\" \"I don't eat.\" You adjust, try something neutral. The weather, maybe. You might get a minute or two of normal exchange before something reminds both of you that the usual basis for conversation isn't there. And then the questions that curiosity produces once the politeness wears off. Whether they dream. Whether they still have to cut their toenails. What it feels like. Most people probably lack the tact to keep those to themselves. Now imagine doing this on every encounter, in every room, for what is potentially eternity for some Duskwalkers. No wonder they don't much care for conversation.",
+   "after": "I've personally spoken with two, and to people who've encountered a handful more, and in every case the Duskwalker was the least interesting party in the room. I don't mean that unkindly. The condition is truly unusual. But the people carrying it were, in both cases, far less dramatic than the reactions they provoked. They're functional, direct. A tad too direct maybe. Perhaps it's unfamiliarity with communication, a result of the distance the living tend to take from them. And maybe they've just got too much on their plate for pleasantries. Either way, in the face of their indifference, it is usually the living who are having a crisis. Reaching for words, looking at the ceiling, crossing the street. People spend most of their lives either avoiding death, or avoiding thinking of death. Staring at it directly can get uncomfortable for many."
+  },
+  {
+   "src": "assets/book/127608352c5b.webp",
+   "width": 1400,
+   "height": 714,
+   "anchor": "Deliberate cases are rarer and harder to generalize. The work generally happens in back rooms and private studies. A parent who lost a child and found the wrong kind of knowledge. A mage who stumbled across a wandering soul and, for reasons that amount to loneliness, built it a body. Amalgamists have seen limited success in assembling them from components... The methods vary. The results are similar enough that the distinction probably matters more to the people involved than to the Duskwalker.",
+   "after": "Most come from unstable Rifts. A tear opens where something died, or where the boundary was already thin, and whoever was nearby gets caught in it. What walks out the other side may carry fragments of a prior life or nothing at all. A name, a face they can't quite place. Or just the body and no explanation for it. Whether the blank ones are old souls that lost the thread or something entirely new is an open question. Butcher's Garden in central Remosa is the only stable Rift I'm familiar with that has consistently produced Duskwalkers, and the stories have given it a reputation for familial tragedy. Smart people avoid the place, and desperate ones come searching for even more despair. What good can come of a mother carrying her dead infant to a garden pulsing meat? As with all rifts, randomness is guaranteed, and the results are very rarely what a mourning person would have hoped for."
+  },
+  {
+   "src": "assets/book/c0ced37fc6cd.webp",
+   "width": 844,
+   "height": 1258,
+   "anchor": "Core Mechanics:",
+   "after": "I'm not sure what it is with Duskwalkers and death, though I have my suspicions. The ones at peace with their condition and the ones still struggling with it both seem to end up in the same place eventually. Mortuary work, burial rites, necromancy, clergy. The ones who don't engage with it professionally still seem drawn to it in their own time. I think it's familiarity more than fascination. The way someone who left a country young might still reach for books about it, not out of nostalgia exactly, it's more of a... recognizable texture. This does not, as you might imagine, help with the social situation."
+  },
+  {
+   "src": "assets/book/a14e4097e027.webp",
+   "width": 1024,
+   "height": 1024,
+   "anchor": "Out of the frying pan and into the fire",
+   "after": "Myrrkin (plural: Myrrkin)"
+  },
+  {
+   "src": "assets/book/b828c3938147.webp",
+   "width": 1400,
+   "height": 656,
+   "anchor": "I've heard enough accounts to know the pattern. But the ones who've been here long enough do learn, and some learn well enough that I'd caution against the assumption. A Myrrkin who already understands inner experience from the ground up, and has then acquired the Virelian habit of concealing it, is working with a combination most of us lack. A reputation for sincerity, a sharp read on people's emotional strings, and the capacity for cruelty. A minuscule minority, and we are probably fortunate that it is so.",
+   "after": "The closest thing to a common thread I've found is privacy. I've written about Myrr and its relationship to Myrskov and I won't repeat myself, but the relevant fact is this: nothing was hidden there. What you carried inside was what the world looked like around you, and everyone grew up with that as the only way things could work. The Myrrkin who crossed into Virelia discovered, among everything else, that other people have interiors you cannot see. What follows from that is predictable enough. A human child works out deception around the age of three because the world requires it. Myrr didn't, and when the framework isn't there, the results are about what you'd expect."
+  },
+  {
+   "src": "assets/book/8e9659f42df0.webp",
+   "width": 1400,
+   "height": 764,
+   "anchor": "Which brings us to the unavoidable topic of their names. What most first-generation crossers land on is whatever caught their attention in those early dazzled years. A word they liked the sound of. A texture. The color of something at a market, or a song a stranger was humming when they first walked into a town. Try asking one why she called herself \"Cobweb Beebuzz Yeast Ceramiccup\" and you'll quickly regret it. The later generations inherit or shorten these, or just go with Virelian names. By the third generation most have something conventional with a Myrrkin name trailing behind it that we all collectively agree to ignore.",
+   "after": "Individual Myrrkin turn up everywhere in small numbers. Pebbleclink Warbler Candlewax Dust Rice sits on the Haldrith Nonagon, in case you needed a demonstration of my earlier comment from the observations page. This should tell you enough about how far integration has come, but just to be sure: you can find them in politics, trade, academics, and also in groups that aren’t shy about sullying their hands."
+  },
+  {
+   "src": "assets/book/d92691bbd5b1.webp",
+   "width": 832,
+   "height": 1248,
+   "anchor": "Building Blocks",
+   "after": "Nirath (plural: Nirathi)"
+  },
+  {
+   "src": "assets/book/56b65ea543a8.webp",
+   "width": 1400,
+   "height": 764,
+   "anchor": "The rest of the time they're ordinary, which is the part that makes the periodic violence so hard to predict. A Nirath who's been your neighbor for years, whose work you've relied on, whose children grew up with yours. And then a rift opens or a harvest fails and the seams are all anyone sees. Long stretches of ordinary life, and then a week where that isn't, and then ordinary again and nobody mentions it. I feel like most Nirathi don't dwell on the violence much. They describe the return to normal. That, apparently, is the harder adjustment.",
+   "after": "They're found wherever humans are, in numbers too small to count as a demographic. No city has a Nirathi quarter, no region claims them. The versatility gets them hired. A Nirath with the right Aspects can shift between skills that would normally require different specialists, and guilds and mercenary outfits figured this out early. A fighter who becomes a field medic after a night's rest is worth whatever discomfort comes with it. So they fill necessary roles. Essential, even. And resented for it, the way anything essential is when it comes from someone you'd rather not need. The flexibility that makes them useful to a guild commander is the same trait a crowd remembers when the season turns. A person who can be three things is impressive when you're paying and suspicious when you're competing for the same job."
+  },
+  {
+   "src": "assets/book/d2961cd3a19f.webp",
+   "width": 1400,
+   "height": 567,
+   "anchor": "Note: When choosing your aspects in level 1, If you already possess a skill proficiency granted by an Aspect (through your class, background, or another source), you may choose a different skill proficiency to permanently associate with that Aspect instead.",
+   "after": "At 1st level, you define your internal council. Choose three Aspects from the table below to form your Cabinet. These are the only Aspects available to you. When you finish a Long Rest, you must perform an Alignment, choosing one Aspect from your Cabinet to be the \"Leading Aspect.\" You gain the Skill Proficiency and the Passive Benefit of that Aspect until your next Long Rest."
+  },
+  {
+   "src": "assets/book/2efb83951240.webp",
+   "width": 1024,
+   "height": 1536,
+   "anchor": "In a sense",
+   "after": "Varn (plural: Varn)"
+  },
+  {
+   "src": "assets/book/0cef2672ce9f.webp",
+   "width": 1400,
+   "height": 764,
+   "anchor": "They age like whatever race they were originally, which brings me to something I probably should have mentioned sooner. The lattice corrupts the nervous system in ways that biology can't route around. A Varn elf sleeps. Full nights, like a human, dead to the world. A Varn dwarf loses the dark. Same build, same face, can't see ten feet into the tunnel his healthy father works daily. The condition doesn't care what you were born as. It takes what it takes and leaves you something else. Not human, exactly. A Varn. Come to think of it, that's probably why I put them in this chapter. A Varn dwarf has more in common with a Varn elf than with anyone in his own family, and neither of them has worked that out yet.",
+   "after": "To quote \"On Traumatogenic Pathogenesis\" again, the growths favor \"areas of high nerve density: the spine, the brow ridge, the inner forearm, the joints of the hands. The lattice is warm to the touch, faintly resonant under pressure...\" Beyond that, it's as varied as the range of one's misfortune. I've seen Varn whose crystals amounted to a thin ridge above the eyebrow. Barely visible with the right glasses. I've seen others who looked like something bigger than them was trying to come out of their bodies. Clusters breaking through the skin along the shoulders and the back of the neck, heavy enough to affect posture, and expensive enough to outfit that a severe Varn's tailor bill would make a Haldrithian guild-master wince. Most grow in shades of dark violet, though wine red, black, and on rare occasions pink have been documented. The crystals sense arcane energy the way skin senses heat, a second scale laid on top of everything else. Most describe it as bearable. Some find it unbearable. A few, apparently, get a kick out of it. Always seemed odd to me. Though, I never understood people who were drawn to saunas also."
+  },
+  {
+   "src": "assets/book/5442fba0fd1c.webp",
+   "width": 1024,
+   "height": 1024,
+   "anchor": "Landmade Men",
+   "after": "Karex (plural: Karex)"
+  },
+  {
+   "src": "assets/book/fb9eb14aefc0.webp",
+   "width": 1400,
+   "height": 782,
+   "anchor": "This has created a geopolitical landscape that is fluid and ruthless. A city might be geographically located in the Remosan Empire, legally contracted to the Greywater Compact for police services, and reliant on the Halcyon League for its banking. Sovereignty in Virelia is a tangled web of receipts and debts. A city might sit geographically in the Remosan empire, contract the Greywater compact for police, and bank through the Halcyons.",
+   "after": "For the common citizen, this shift has fundamentally altered the social contract. One no longer pledges allegiance to a faction, but signs a contract with them. The relationship is pragmatic and transactional. You are safe only as long as you are solvent."
+  },
+  {
+   "src": "assets/book/473fd3f808d0.webp",
+   "width": 408,
+   "height": 292,
+   "anchor": "The Weave",
+   "after": "This has created a geopolitical landscape that is fluid and ruthless. A city might be geographically located in the Remosan Empire, legally contracted to the Greywater Compact for police services, and reliant on the Halcyon League for its banking. Sovereignty in Virelia is a tangled web of receipts and debts. A city might sit geographically in the Remosan empire, contract the Greywater compact for police, and bank through the Halcyons."
+  },
+  {
+   "src": "assets/book/05fcc2d57425.webp",
+   "width": 1400,
+   "height": 764,
+   "anchor": "I can't fathom why their waiting-room chairs are so uncomfortable. Nobody wants to be in that room to begin with. The chairs feel like a second fee. Though I suppose it's consistent. Deal with rifts, take everything in return, bum comfort included. Such is the Weave, the one organization on the continent that handles rifts, a fact they know precisely down to the copper. The testimonies I've collected over the years leave little doubt about their competence, and the Weave leaves little chance of hearing about the exceptions. Whatever the success rate, most Virelians will never be able to afford them. Nearby rift or not.",
+   "after": "The Business of Apocalypse"
+  },
+  {
+   "src": "assets/book/b6f72a39d067.webp",
+   "width": 1400,
+   "height": 594,
+   "anchor": "This means agents sit in this weird spot where people either admire them, despise them, or both at the same time. A bit like how some men chase after a woman's skirt only to swear at her once she denies their advances. People need them, want to be them, and will still spit at the floor as they pass by.",
+   "after": "As you can imagine, having this sort of characters, in addition to a monopoly on rift knowledge and containment, doesn't garner the Weave a lot of love. They can't be replaced, and everyone has tried. The Compact tried to tax their operations, and when that didn't work attempted to invest in their own Rift department, which famously collapsed three years down the line. Remosa issued a decree some thirty years ago requiring Weave crews to operate under military oversight, and the Weave pulled out for six weeks before the empire gave in. Even Haldrith has tried forcing the Weave to follow the guilds' protocols, and had to swallow their pride when the Weave outright refused. A Weave hub in your city means your rift problem is someone else's and your sovereignty is slightly fictional, and most governments have decided this is an acceptable trade, if occasionally a pricey one. For the commoners it's a different story. A rift opens near a farmstead, the village scrapes together what it can, the intake desk quotes the rate. If it isn't enough the messenger goes home and the rift does what rifts do."
+  },
+  {
+   "src": "assets/book/03dccdbb2b4d.webp",
+   "width": 314,
+   "height": 288,
+   "anchor": "This means agents sit in this weird spot where people either admire them, despise them, or both at the same time. A bit like how some men chase after a woman's skirt only to swear at her once she denies their advances. People need them, want to be them, and will still spit at the floor as they pass by.",
+   "after": "As you can imagine, having this sort of characters, in addition to a monopoly on rift knowledge and containment, doesn't garner the Weave a lot of love. They can't be replaced, and everyone has tried. The Compact tried to tax their operations, and when that didn't work attempted to invest in their own Rift department, which famously collapsed three years down the line. Remosa issued a decree some thirty years ago requiring Weave crews to operate under military oversight, and the Weave pulled out for six weeks before the empire gave in. Even Haldrith has tried forcing the Weave to follow the guilds' protocols, and had to swallow their pride when the Weave outright refused. A Weave hub in your city means your rift problem is someone else's and your sovereignty is slightly fictional, and most governments have decided this is an acceptable trade, if occasionally a pricey one. For the commoners it's a different story. A rift opens near a farmstead, the village scrapes together what it can, the intake desk quotes the rate. If it isn't enough the messenger goes home and the rift does what rifts do."
+  },
+  {
+   "src": "assets/book/9b20ae1e2f7f.webp",
+   "width": 316,
+   "height": 291,
+   "anchor": "This means agents sit in this weird spot where people either admire them, despise them, or both at the same time. A bit like how some men chase after a woman's skirt only to swear at her once she denies their advances. People need them, want to be them, and will still spit at the floor as they pass by.",
+   "after": "As you can imagine, having this sort of characters, in addition to a monopoly on rift knowledge and containment, doesn't garner the Weave a lot of love. They can't be replaced, and everyone has tried. The Compact tried to tax their operations, and when that didn't work attempted to invest in their own Rift department, which famously collapsed three years down the line. Remosa issued a decree some thirty years ago requiring Weave crews to operate under military oversight, and the Weave pulled out for six weeks before the empire gave in. Even Haldrith has tried forcing the Weave to follow the guilds' protocols, and had to swallow their pride when the Weave outright refused. A Weave hub in your city means your rift problem is someone else's and your sovereignty is slightly fictional, and most governments have decided this is an acceptable trade, if occasionally a pricey one. For the commoners it's a different story. A rift opens near a farmstead, the village scrapes together what it can, the intake desk quotes the rate. If it isn't enough the messenger goes home and the rift does what rifts do."
+  },
+  {
+   "src": "assets/book/96105507d409.webp",
+   "width": 301,
+   "height": 303,
+   "anchor": "This means agents sit in this weird spot where people either admire them, despise them, or both at the same time. A bit like how some men chase after a woman's skirt only to swear at her once she denies their advances. People need them, want to be them, and will still spit at the floor as they pass by.",
+   "after": "As you can imagine, having this sort of characters, in addition to a monopoly on rift knowledge and containment, doesn't garner the Weave a lot of love. They can't be replaced, and everyone has tried. The Compact tried to tax their operations, and when that didn't work attempted to invest in their own Rift department, which famously collapsed three years down the line. Remosa issued a decree some thirty years ago requiring Weave crews to operate under military oversight, and the Weave pulled out for six weeks before the empire gave in. Even Haldrith has tried forcing the Weave to follow the guilds' protocols, and had to swallow their pride when the Weave outright refused. A Weave hub in your city means your rift problem is someone else's and your sovereignty is slightly fictional, and most governments have decided this is an acceptable trade, if occasionally a pricey one. For the commoners it's a different story. A rift opens near a farmstead, the village scrapes together what it can, the intake desk quotes the rate. If it isn't enough the messenger goes home and the rift does what rifts do."
+  },
+  {
+   "src": "assets/book/ec7d9ec2ae80.webp",
+   "width": 312,
+   "height": 306,
+   "anchor": "This means agents sit in this weird spot where people either admire them, despise them, or both at the same time. A bit like how some men chase after a woman's skirt only to swear at her once she denies their advances. People need them, want to be them, and will still spit at the floor as they pass by.",
+   "after": "As you can imagine, having this sort of characters, in addition to a monopoly on rift knowledge and containment, doesn't garner the Weave a lot of love. They can't be replaced, and everyone has tried. The Compact tried to tax their operations, and when that didn't work attempted to invest in their own Rift department, which famously collapsed three years down the line. Remosa issued a decree some thirty years ago requiring Weave crews to operate under military oversight, and the Weave pulled out for six weeks before the empire gave in. Even Haldrith has tried forcing the Weave to follow the guilds' protocols, and had to swallow their pride when the Weave outright refused. A Weave hub in your city means your rift problem is someone else's and your sovereignty is slightly fictional, and most governments have decided this is an acceptable trade, if occasionally a pricey one. For the commoners it's a different story. A rift opens near a farmstead, the village scrapes together what it can, the intake desk quotes the rate. If it isn't enough the messenger goes home and the rift does what rifts do."
+  },
+  {
+   "src": "assets/book/6a00b1c2bc8d.webp",
+   "width": 308,
+   "height": 303,
+   "anchor": "This means agents sit in this weird spot where people either admire them, despise them, or both at the same time. A bit like how some men chase after a woman's skirt only to swear at her once she denies their advances. People need them, want to be them, and will still spit at the floor as they pass by.",
+   "after": "As you can imagine, having this sort of characters, in addition to a monopoly on rift knowledge and containment, doesn't garner the Weave a lot of love. They can't be replaced, and everyone has tried. The Compact tried to tax their operations, and when that didn't work attempted to invest in their own Rift department, which famously collapsed three years down the line. Remosa issued a decree some thirty years ago requiring Weave crews to operate under military oversight, and the Weave pulled out for six weeks before the empire gave in. Even Haldrith has tried forcing the Weave to follow the guilds' protocols, and had to swallow their pride when the Weave outright refused. A Weave hub in your city means your rift problem is someone else's and your sovereignty is slightly fictional, and most governments have decided this is an acceptable trade, if occasionally a pricey one. For the commoners it's a different story. A rift opens near a farmstead, the village scrapes together what it can, the intake desk quotes the rate. If it isn't enough the messenger goes home and the rift does what rifts do."
+  },
+  {
+   "src": "assets/book/a82354b7e205.webp",
+   "width": 307,
+   "height": 302,
+   "anchor": "This means agents sit in this weird spot where people either admire them, despise them, or both at the same time. A bit like how some men chase after a woman's skirt only to swear at her once she denies their advances. People need them, want to be them, and will still spit at the floor as they pass by.",
+   "after": "As you can imagine, having this sort of characters, in addition to a monopoly on rift knowledge and containment, doesn't garner the Weave a lot of love. They can't be replaced, and everyone has tried. The Compact tried to tax their operations, and when that didn't work attempted to invest in their own Rift department, which famously collapsed three years down the line. Remosa issued a decree some thirty years ago requiring Weave crews to operate under military oversight, and the Weave pulled out for six weeks before the empire gave in. Even Haldrith has tried forcing the Weave to follow the guilds' protocols, and had to swallow their pride when the Weave outright refused. A Weave hub in your city means your rift problem is someone else's and your sovereignty is slightly fictional, and most governments have decided this is an acceptable trade, if occasionally a pricey one. For the commoners it's a different story. A rift opens near a farmstead, the village scrapes together what it can, the intake desk quotes the rate. If it isn't enough the messenger goes home and the rift does what rifts do."
+  },
+  {
+   "src": "assets/book/dd1482697142.webp",
+   "width": 395,
+   "height": 351,
+   "anchor": "Greywater Compact",
+   "after": "This means agents sit in this weird spot where people either admire them, despise them, or both at the same time. A bit like how some men chase after a woman's skirt only to swear at her once she denies their advances. People need them, want to be them, and will still spit at the floor as they pass by."
+  },
+  {
+   "src": "assets/book/5422a75b390d.webp",
+   "width": 1024,
+   "height": 822,
+   "anchor": "Four generations on, the Greywaters are still on the Board, though some would say in name only. When Remosa's second march cut the Heartland Sea trade route, half their revenue disappeared overnight. The family never successfully pivoted, and nowadays have just enough to keep the seat and not enough to matter. Kelharn and Breskir have been quietly acquiring Greywater contracts for the better part of a decade, and the only thing preventing an outright carve-up is that neither wants the other to get the bigger piece. That, and the Compact. Hard to overtake the one whose name is stamped on the top of your government system. In general, most families' competence seems to deteriorate with each passing generation. Spoiled, prideful children, standing on the shoulders of their long gone forefathers. Rivhaldeans often show pride in their heritage. Overthrew the empire, overthrew nobility, braved the bandits. Free folk, with their own land and their own laws. Right before a signatory who never so much as touched a sickle comes to take their due. For all their contempt, Rivhalde is very much a monarchy. Try telling them that, though.",
+   "after": "How It Goes"
+  },
+  {
+   "src": "assets/book/4da677d6cd41.webp",
+   "width": 1074,
+   "height": 992,
+   "anchor": "The Zwigots",
+   "after": "Brenst Breskir proposed three new acquisitions at the same session, all former Greywater contracts, and nobody objected because nobody bothers arguing when Brenst wants to buy something. The man collects as if he'll get to keep it all after he's dead: books, paintings, rings, contracts. His accountant is probably the most stressed person in Virelia, which sets quite a high bar. Between the two of them, they account for most of the Board's substance, and the protocols show no disagreement on anything that mattered. Drelm Hartlepp showed up, spoke once about a road in his suite, and left before the session ended. This is governance in Rivhalde. What baffles me is that it works. Not the Board. The Board is a circus of inheritance and appetite. But somewhere between Halverd's wine bill and Brenst's latest acquisition, a layer of assessors and clerks translates all of it into a tax system more sophisticated than anything I've seen outside an imperial capital. The roads stay paved. The grain moves. The Weave gets paid. I keep looking for the part where the rot at the top should have ruined the machinery underneath, and it's there if you look closely, but somehow stays hidden if you only slightly avert your gaze."
+  },
+  {
+   "src": "assets/book/89b0a3088b17.webp",
+   "width": 1400,
+   "height": 594,
+   "anchor": "Which brings us back to Lastrago, since I said I would. The Mazuren looked at the same sky and built an apparatus for getting out from under it. A priesthood whose entire function is telling you when it's time to leave. Beltzu's answer to the same phenomenon was that running is wrong. People, like the Mazuren themselves, ought to accept the Mazurat. Death and all. You can see why Azwighen preferred him elsewhere. Two religions out of one storm, and fourteen centuries on they're still the only declared two on this continent.",
+   "after": "The Tzikhari has gone through many translations, which eroded the enigmatic original even more. I'll give you an example. \"Chabol zeb komak tzi-ot\", commonly translated: \"eat what is put in front of you\". But this is merely one interpretation. Komak also means sits. Stays. Remains. You see, several ways to translate, and then several more to interpret each translation. \"Chabol zeb komak tzi-ot\". Four words, and they can't even agree whether it's about food. One reads: the thing is there, you eat it, and the eating is the whole of the acceptance. Another takes it nearer to remains, as in leftovers, as in what the world has already finished with, and that's the reading that ends with a monk face down in mud and human flesh. The third holds that the sentence is about food and nothing else, and is popular among parents who wish their kids would eat more turnip. Underneath all three sits the same core claim. There is one substance. Not gods, not laws. One substance, and everything is it. To the Zwigot mind, the Sundering didn't split the world, and the world is not, in fact, being broken apart. Because one substance can't be broken down into anything but the same substance. A rift is the world doing what the world does: recycling. So is rot, and so is the child whose shadow walks off on its own. The only thing that has actually happened in eighteen centuries is that people insisted on struggling against the obvious, clinging to a world that only wants to be remade."
+  },
+  {
+   "src": "assets/book/45559113607c.webp",
+   "width": 1400,
+   "height": 764,
+   "anchor": "Zwigots are banned from entering Lastrago, and I can't tell you when that started. The temple records treat the prohibition as something that was always true, which in my experience means somebody lost an argument nobody wanted written down. Anyway. A Zwigot found in a Lastragan village is most likely beaten to death, and then hanged regardless. There are more such cases than I care to list. And should one reach Mazuren hands, as a mockery of their legend, they'll be put to the spire repeatedly until they perish. What's amusing about the whole thing is that the Zwigots believe this to be a great honor. Retelling the story, becoming one with nature, that sort of thing. Every year some make the journey in hiding, only to reveal themselves to the priests in order to go through the ceremony. Their brethren will then call them saints. I'd use a different word.",
+   "after": "I've mentioned that Beltzu chose exile over a second drowning. An important caveat to that is that this is the Mazuren version of events, and also the widely accepted one. The Zwigots think differently. In one of their better known legends, Beltzu never made an incorrect reading, and was scorned by the Mazuren for his success, and for gathering a following that contradicted their teachings. So they put him to the drowning meaning to kill him, and he survived it. They did it again, and again, for a year, before accepting that the man was beyond death and exiling him instead, before he could be taken for a martyr. It's the same trick every priesthood pulls on its founder's worst day, and I'd have more patience for it if the Mazuren version didn't have 169 names attached. Which leads me to an obvious point. The two religions don't get along. Who would have thought."
+  },
+  {
+   "src": "assets/book/e13ea135a264.webp",
+   "width": 624,
+   "height": 624,
+   "anchor": "The Speculars",
+   "after": "From the Tzikhari"
+  },
+  {
+   "src": "assets/book/ca92d5f24f91.webp",
+   "width": 1400,
+   "height": 764,
+   "anchor": "It is difficult to discuss philosophy plainly, and the Specular point of view, by their own account, is a philosophy. By others', a dangerous occult fascination. Either way, I intend to give it a fair presentation, if only because my safety might otherwise be put into question. Which, I might add, does not help their case. And should a Specular come across this and find my conclusions unkind, well. Luckily, this book is written anonymously.",
+   "after": "I've always found it odd that, for all their notoriety, the Speculars' doctrine is so exposed, so public. Most shadow groups, cults and the like, work the other way around: a warm welcome at the door, and the dogma kept for those in too deep to walk out. Here the doctrine is the door. The core texts are easy enough to find, for something so widely banned. The services are known to all, and so are the risks. And yet the fascination persists, which makes sense, I guess, once you realize that it survives on people not reading the literature. Nothing undermines the mystique of tampering with minds quite like six hundred pages of perception theory."
+  },
+  {
+   "src": "assets/book/dcd917a0ea26.webp",
+   "width": 1400,
+   "height": 564,
+   "anchor": "And the bans did what they always do: spread the word. Turn the odd niche into an exciting trend. As was later proved by the Cantemir affair of 1723. Ciprian Cantemir, youngest son of one of Remosa's established noble houses, was replaced at age fifteen by a common-born Specular named Drazho Morarin. A craft-class kid from Netford who wanted a warm bed and a life where people used his name with respect. The real Ciprian's identity was stripped and bound into an object using what we'd now call Doppler technique. His body was found in a storage cellar, weeks later, breathing and responding to nothing. Drazho lived as Ciprian for three years. Attended court. Signed papers. Married a girl. The wife noticed first, told her sister, the sister told a priest. Eventually the rumor got to the boy's family. Drazho, when confronted, couldn't say where the object containing Ciprian had gone. He'd had the memory of the procedure blanked afterward. A safety measure. The real Ciprian was never recovered. Drazho was executed in 1727. The Cantemir family pushed Remosa to issue a kill-order specifically targeting Speculars, which was granted, and which has accomplished exactly the results you'd expect.",
+   "after": "The event that turned the Speculars from a nuisance into a genuine threat was the Tintbent plot of 1397. An Inverter cell led by one Thorro Rent, operating from somewhere in the Tintbent interior, attempted to collapse a section of the mountain range separating the Tintbent peninsula from the continent. The intention, as best anyone has reconstructed it, was to let the anomaly spread. Trefganni border patrols intercepted the cell before the attempt could be carried out. The trial was brief. The executions were public. Within a decade, most jurisdictions had issued standing orders against Specular cells."
+  },
+  {
+   "src": "assets/book/909c5417e5f2.webp",
+   "width": 1400,
+   "height": 764,
+   "anchor": "Then there's Noella Dyann, \"Nenne\". An Amalgamist, and a beloved figure in Specular circles. She is, by every account, motherly, pleasant, patient and deeply knowledgeable. The type who makes a lot of tea and remembers her assistants' birthdays. She is also, to my knowledge, the only active researcher systematically studying souls. Her position is that the Fragmentists are chasing the wrong target. Subtract personality all you like, the soul persists, still imposing its limits on perception. The soul is the barrier, and she means to prove it. I've read some of her published work. Fascinating stuff. What the research looks like in practice is, unfortunately, gruesome. Her hypothesis also creates a genuine problem for the movement, because if she's right, everything the Fragmentists have done to themselves amounts to pointless mutilation. The Fragmentists, for their part, have not slowed down. If anything, the prospect of proving her wrong has given them a second wind.",
+   "after": "In this day and age I don't believe the Speculars have a defined leadership. But I'll name some of the more influential living practitioners, both to paint a picture and because these are genuinely interesting specimens. One name I keep encountering, and probably the closest thing the movement has to a leader, is Einar. No family name. He is said to have lived for several centuries by moving between bodies, and the documentation is more plausible than I'd like. Someone operating under that name has been connected to shard and erasure operations in at least four regions across 167 years. Either the man has been swapping vessels for longer than most institutions have existed, or the name is passed along with the operation. An Inverter by inclination and a merchant by practice. His network, if it is one man's network, is the largest Specular operation I'm aware of, and it sells forgetting. Espionage and assassination appear in the margins of his file as well. That's all I have on him, unfortunately."
+  },
+  {
+   "src": "assets/book/0cd89f9a67f0.webp",
+   "width": 1400,
+   "height": 463,
+   "anchor": "At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, the Temporary Suppression duration extends to 7 days, and Magical Bond automatically ends qualifying spells of a level equal to or lower than the slot used. When you use a slot of 7th level or higher, the suppression duration extends to 30 days.",
+   "after": "Temporary Suppression. You suppress a specific memory in a willing creature. The target loses access to one memory of your choice (specified during casting) for 24 hours. The memory returns fully after this period. The target is aware something has been suppressed but cannot recall what. A Remove Curse or Greater Restoration spell ends this effect early."
+  },
+  {
+   "src": "assets/book/f56997c12594.webp",
+   "width": 1400,
+   "height": 764,
+   "anchor": "The bound creature can repeat the Strength saving throw at the end of each of its turns, at disadvantage, ending the effect on a success. The binding breaks if you and the target are ever more than 120 feet apart or on different planes.",
+   "after": "Shared Fate. When you are forced to make a saving throw against a spell or effect, you can use your reaction to force the bound creature to make the same saving throw against the same effect, as though it were also a target. The creature uses its own saving throw modifiers."
+  },
+  {
+   "src": "assets/book/a5362b17026a.webp",
+   "width": 522,
+   "height": 482,
+   "anchor": "The Halcyon League",
+   "after": "GM Note. This spell is included for narrative completeness. It is not intended as a standard player option. A character who casts Inversion has, in mechanical terms, left the campaign. Whether the Mirror Realm exists, whether the caster survives the crossing, and what (if anything) looks back from the other side is entirely at the GM's discretion. The Speculars consider this spell a success. Everyone else considers it suicide. Neither side has conclusive evidence."
+  },
+  {
+   "src": "assets/book/135453a8b4a7.webp",
+   "width": 1400,
+   "height": 463,
+   "anchor": "Some of my colleagues argue we should judge the Halcyons by their philosophy and intentions, which are, by all accounts, rather noble. Silly old me prefers to judge things by the physical reality, not some naive notion of what might be going through someone's head. And in the physical reality, the Halcyons possess more money and more leverage than most governments, and a history of using both, with a splash of violence here and there.",
+   "after": "Unpopular as it is, I retain my position that the Halcyons are a bank dressed up as something more in order to claim neutrality, exploit its workers and retain a virtuous image, with the goodwill that comes alongside it. An army of skilled runners, inns to house them, and the only established financial network on the continent. The more generous narrative is that they're an organization which dedicates itself to maintaining communication throughout Virelia, which also maintains a banking front, \"on the side,\" to fund its pursuit of this grand goal. Most Virelians, and certainly most Halcyons, prefer the latter narrative. That's not to say that it's more true, only that it is more convenient."
+  }
+ ]
+}

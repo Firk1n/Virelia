@@ -1,0 +1,206 @@
+{
+ "version": 1,
+ "entryId": "tavernash",
+ "textHash": "b0ec5962f1fe2ff3bbfe7195d2e8a45c6dd35084d7c23472d5420a0b70e7b404",
+ "renderProfile": "95a2da9b62343cd5173677c0922c2494c47407937d3f85d9b273c982c957e2f6",
+ "segments": [
+  {
+   "id": "s-0001",
+   "start": 0.6,
+   "end": 1.428,
+   "text": "Tavernash"
+  },
+  {
+   "id": "s-0002",
+   "start": 2.528,
+   "end": 16.326,
+   "text": "\"I have a rock here from Haldrith. Look at it. Jagged. Sharp. Unbalanced. Hold it. Feels good, doesn't it? It's yours for fifty silver. Just don't let your father see you holding that.\""
+  },
+  {
+   "id": "s-0003",
+   "start": 18.026,
+   "end": 22.149,
+   "text": "Franz Greenhaven, smuggler, talking to an absolved child"
+  },
+  {
+   "id": "s-0004",
+   "start": 23.649,
+   "end": 25.19,
+   "text": "Nothing Ever Happens"
+  },
+  {
+   "id": "s-0005",
+   "start": 26.04,
+   "end": 45.877,
+   "text": "Most would describe Tavernash as a dull, flat rock on top of the ocean, filled with people who are just as dull and flat. The wind is always soft, the sea barely moves, try laughing too hard and it will be swallowed by the peninsula's overbearing effect."
+  },
+  {
+   "id": "s-0006",
+   "start": 46.277,
+   "end": 66.328,
+   "text": "It's their sacred Gyre Stone, of course. A piece of imperial machinery at the peninsula's center, holding the world at an arm's length. Without it, Tavernash would be underwater, to little effect for the rest of the world. Aretzu centers this effect, which tapers off the further you go."
+  },
+  {
+   "id": "s-0007",
+   "start": 66.728,
+   "end": 85.093,
+   "text": "The coastal villages get a softer version, just enough to keep the weather quiet. By land, Tavernash connects to the continent only through Knotsreach, which is to say not at all. Most arrivals come by ship through Vranek Bay."
+  },
+  {
+   "id": "s-0008",
+   "start": 85.493,
+   "end": 104.358,
+   "text": "The Stone's calm extends a few kilometers out, making the voyage a short, yet exhausting journey filled with rowing. Exports are wine aged in Barkmail casks, kelp from the coast, and the occasional pilgrim back from the Ringwood."
+  },
+  {
+   "id": "s-0009",
+   "start": 104.758,
+   "end": 119.264,
+   "text": "Imports are few, and whatever does arrive is taxed and inspected at the docks with a thoroughness that would embarrass the Greywater Compact. They don't want to sully their precious land with the ugliness outside, after all."
+  },
+  {
+   "id": "s-0010",
+   "start": 120.164,
+   "end": 121.124,
+   "text": "The Doll's House"
+  },
+  {
+   "id": "s-0011",
+   "start": 121.974,
+   "end": 135.773,
+   "text": "There are conflicting records regarding pre-Sundering Tavernash. Some claim Nareth, the god who ruled it, was a god of calm. He's described as shy, curious and introspective."
+  },
+  {
+   "id": "s-0012",
+   "start": 136.173,
+   "end": 154.578,
+   "text": "One especially disturbing piece claims he was actually no more than a child, whose monarchic kingdom served merely as theatrical entertainment. He enjoyed watching the mortals celebrate their ceremonies and scheme their way up and down the ladder of nobility."
+  },
+  {
+   "id": "s-0013",
+   "start": 154.978,
+   "end": 170.819,
+   "text": "Either way, the Gyre-Stone was built to keep the wider world from interrupting his kingdom. After Nareth vanished, the priests who maintained it put it to the court plainly: hand over the throne, or the peninsula drowns."
+  },
+  {
+   "id": "s-0014",
+   "start": 171.219,
+   "end": 190.804,
+   "text": "The Tavren have been in power since, powerful and exceptionally long lived. The records of how they got there have vanished from every Tavernashi archive. Imperial ones, UNFORTUNATELY for them, have not. Sacred continuity, the locals call it, and best not to try to tell them otherwise."
+  },
+  {
+   "id": "s-0015",
+   "start": 191.704,
+   "end": 194.578,
+   "text": "The Varieties of Religious Experience"
+  },
+  {
+   "id": "s-0016",
+   "start": 195.428,
+   "end": 213.581,
+   "text": "The Kenosis, \"The Great Emptying\", teaches that emotion is a vice that binds the soul to the suffering of the material world. To be holy is to let the world pass through you, to exist beyond it."
+  },
+  {
+   "id": "s-0017",
+   "start": 213.981,
+   "end": 231.489,
+   "text": "In order to achieve this state, the nobility drinks \"The Sacrament of Nareth\", ceremonial tea brewed from Ringwood sap which dissolves anxiety, ambition, and rage. It's also quite vile. They call themselves the \"Absolved\"."
+  },
+  {
+   "id": "s-0018",
+   "start": 231.889,
+   "end": 239.348,
+   "text": "They're calculated, slow to speak and move with the type of grace only one with no weight on his shoulders could carry."
+  },
+  {
+   "id": "s-0019",
+   "start": 240.248,
+   "end": 255.384,
+   "text": "Then of course, there are the commoners. The \"Laden\". Too busy for enlightenment and too NECESSARY to be offered any. Fishermen, Kelp farmers, winemakers and any other profession that brings use to society."
+  },
+  {
+   "id": "s-0020",
+   "start": 255.784,
+   "end": 276.369,
+   "text": "They bear their role with pride, convinced their rulers sacrifice their humanity for a sacred spiritual duty. Whether the Absolved experience this as sacrifice is a question the Laden have learned not to ask."
+  },
+  {
+   "id": "s-0021",
+   "start": 277.269,
+   "end": 278.973,
+   "text": "Hallowed Be Thy Name"
+  },
+  {
+   "id": "s-0022",
+   "start": 279.823,
+   "end": 295.162,
+   "text": "Valerian VI governs from Aretzu, if governing is the word for it. He takes his Sacrament, maintains the Stone, and signs what his advisors put in front of him, in roughly that order of importance."
+  },
+  {
+   "id": "s-0023",
+   "start": 295.562,
+   "end": 320.545,
+   "text": "The kingdom runs the way it ran the last three centuries, and will probably continue to until the day when it's Valerian VII's turn to walk the lakes in sequence, each with its own ceremony. Dawn, Vigil, Signet, Oath, Ascension, Feast, Crown, and lastly, Sword."
+  },
+  {
+   "id": "s-0024",
+   "start": 320.945,
+   "end": 324.2,
+   "text": "Unfortunate that spine isn't one."
+  },
+  {
+   "id": "s-0025",
+   "start": 325.1,
+   "end": 346.136,
+   "text": "Order is kept by the Tranquils, monks armed with tuning-fork staves who police discord. A brawl, a breakdown, a bad reaction to the Sacrament, all met with swift sedation and isolation. The fishing villages handle their own disputes. If it doesn't reach Aretzu, it isn't anyone's problem."
+  },
+  {
+   "id": "s-0026",
+   "start": 347.036,
+   "end": 348.863,
+   "text": "Sorites Paradox"
+  },
+  {
+   "id": "s-0027",
+   "start": 349.713,
+   "end": 369.21,
+   "text": "The Nareth Ringwood sits at the peninsula's southern tip, past the Stone's reach. The trees absorb sound, and the deeper you walk, the more you leave behind. The sap the Absolved drink comes from here, and the trees are far more effective in their raw form."
+  },
+  {
+   "id": "s-0028",
+   "start": 369.61,
+   "end": 391.923,
+   "text": "At the center of the perfectly round forest sits Silence, a stable Rift. Pilgrims come from across the continent to whisper their worst memories into the woods. Silence takes what's offered, and returns sweet nothingness. They exit leaving a piece of themselves behind."
+  },
+  {
+   "id": "s-0029",
+   "start": 392.323,
+   "end": 404.318,
+   "text": "Fragmentists, as they are, flock to the place. The crown considers them heretics, and the Tranquils handle the matter with the most enthusiasm the kingdom has ever shown for anything."
+  },
+  {
+   "id": "s-0030",
+   "start": 405.218,
+   "end": 405.773,
+   "text": "Rumors"
+  },
+  {
+   "id": "s-0031",
+   "start": 406.623,
+   "end": 416.343,
+   "text": "The Defect: An Absolved noblewoman is looking for someone who can get her off the peninsula. She's been tapering off the Sacrament in secret and the feelings are coming back."
+  },
+  {
+   "id": "s-0032",
+   "start": 417.243,
+   "end": 433.982,
+   "text": "The Sap of life: A smuggler in the fishing villages is exporting a concentrated, black version of the Nareth Sacrament. It causes total memory erasure, and leaves a trail of empty people behind."
+  },
+  {
+   "id": "s-0033",
+   "start": 434.882,
+   "end": 449.114,
+   "text": "The Southern Coast: Laden fishermen are going missing near the Ringwood. The villages pooled what they could afford to hire outsiders. The missing fishermen are alive, sitting in the wood, unable to remember why they walked in."
+  }
+ ]
+}

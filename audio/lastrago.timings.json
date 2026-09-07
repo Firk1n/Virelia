@@ -1,0 +1,326 @@
+{
+ "version": 1,
+ "entryId": "lastrago",
+ "textHash": "ffd6ef78ce4be727b4e0535fba3905a01284137ca0018cfdd8b192ecab37f4e3",
+ "renderProfile": "95a2da9b62343cd5173677c0922c2494c47407937d3f85d9b273c982c957e2f6",
+ "segments": [
+  {
+   "id": "s-0001",
+   "start": 0.6,
+   "end": 1.301,
+   "text": "Lastrago"
+  },
+  {
+   "id": "s-0002",
+   "start": 2.401,
+   "end": 18.368,
+   "text": "\"Everything is wet. My boots are molding while I wear them. The paper in my ledger is turning to mush. I have to oil my sword three times a day or it rusts in the scabbard. I hate this place. The CINNAMON, though...\""
+  },
+  {
+   "id": "s-0003",
+   "start": 20.068,
+   "end": 22.336,
+   "text": "Sheylok Genn, merchant"
+  },
+  {
+   "id": "s-0004",
+   "start": 23.836,
+   "end": 25.311,
+   "text": "When It Rains"
+  },
+  {
+   "id": "s-0005",
+   "start": 26.161,
+   "end": 46.948,
+   "text": "Mold and mosquitoes. Thus declared whatever god created Lastrago as it is. Thick canopy, above it tower the Barktrail and the cities, all carried on stilts. And further up, the Mazuhrat, \"Sky rivers\". All this glory, filled to the brim with mold and mosquitoes."
+  },
+  {
+   "id": "s-0006",
+   "start": 47.348,
+   "end": 62.059,
+   "text": "A jungle of mad prophets calculating the elements day and night, and their flock, which happens to produce some of the best spices a tongue could come across. Such is Lastrago, with its roaring thunder and its somber rain."
+  },
+  {
+   "id": "s-0007",
+   "start": 62.959,
+   "end": 87.045,
+   "text": "Interestingly, if you buy into the Tavernashi claim that Kenosis is a philosophy and nothing else, Lastrago is probably the only place where religion has gained a foothold in Virelia. The Mazuhrat are their masters, and they can be oh so cruel."
+  },
+  {
+   "id": "s-0008",
+   "start": 87.445,
+   "end": 100.182,
+   "text": "An unprepared village can get wiped off the map in a single tempest. Ferocious waves of rain, and winds strong enough to break bone. I'd pray too."
+  },
+  {
+   "id": "s-0009",
+   "start": 101.082,
+   "end": 120.27,
+   "text": "Their only line of defense are their priests, the Mazuhren. Part meteorologists and part oracles. They decide where a village is built, when a harvest is abandoned, which stretch of the Barktrail is safe to walk this season."
+  },
+  {
+   "id": "s-0010",
+   "start": 120.67,
+   "end": 133.919,
+   "text": "After which the spice farms follow: cinnamon, ginger, vanilla, medicinal herbs. Grown quickly and to colossal heights. All respectfully sit where the Mazuhren allow and await their turn to be harvested."
+  },
+  {
+   "id": "s-0011",
+   "start": 134.319,
+   "end": 144.827,
+   "text": "Meanwhile the people sit on their pillows at their ridiculously small tables, drinking hot tea and eating the local spiced abominations they call food."
+  },
+  {
+   "id": "s-0012",
+   "start": 145.727,
+   "end": 147.504,
+   "text": "A Ripple in the Pond"
+  },
+  {
+   "id": "s-0013",
+   "start": 148.354,
+   "end": 167.204,
+   "text": "We know the people of Shining Age Lastrago really liked the unpleasant part of the alphabet, all these \"Tz\" and \"Ch\" sounds. Unfortunately, they didn't leave us enough of it to work out their language. What pieces remain lie in the names of some settlements that survive to this day."
+  },
+  {
+   "id": "s-0014",
+   "start": 167.604,
+   "end": 185.522,
+   "text": "Then, following the Sundering, came the Mazuhrat. That much we know for sure. Apparently river-shaped storms are enough of a thing for everyone to write about in all the languages that were available at the time. I've read conflicting records of the event itself, the \"Mazur\"."
+  },
+  {
+   "id": "s-0015",
+   "start": 185.922,
+   "end": 201.221,
+   "text": "The Mazuhren myth is especially vivid. \"Sacred water from the tears of the gods who were forced away\". I will spare you the details of the myth, point is it's probably bollocks. The foreign accounts are more useful."
+  },
+  {
+   "id": "s-0016",
+   "start": 201.621,
+   "end": 213.461,
+   "text": "If we filter the noise, they repeat roughly the same thing: the sky cracked, water poured, and since then it's all mold and mosquitoes."
+  },
+  {
+   "id": "s-0017",
+   "start": 214.361,
+   "end": 230.558,
+   "text": "After a long period of chaos, comes a Car-Rex named Pakara with glowing eyes who's good at predicting the weather, and so a new religion is formed. One must wonder if we were always so unexacting towards the divine."
+  },
+  {
+   "id": "s-0018",
+   "start": 230.958,
+   "end": 245.426,
+   "text": "Anyway, they built their first temple in Azwighen, and given enough time, temples always turn into bureaucracy. The Mazuhren established their rule in the next few centuries."
+  },
+  {
+   "id": "s-0019",
+   "start": 245.826,
+   "end": 263.428,
+   "text": "They built the (very impressive) Barktrail, the cities as they stand today, and a culture that quite literally worships the weather. Lucky for them, they weren't tested on much more than that. The Fracture Wars never got here."
+  },
+  {
+   "id": "s-0020",
+   "start": 263.828,
+   "end": 268.234,
+   "text": "Trefgann separates them from Remosa's reach, and they've prospered for it."
+  },
+  {
+   "id": "s-0021",
+   "start": 269.134,
+   "end": 269.858,
+   "text": "Downstream"
+  },
+  {
+   "id": "s-0022",
+   "start": 270.708,
+   "end": 288.039,
+   "text": "Imagine a deep, turbulent river, sweeping up anything in its path in an unrefined demonstration of power. Now, take that same river, and lift it off the ground. Constantly on the move, raining from above, twisting and curling like a snake on a warpath."
+  },
+  {
+   "id": "s-0023",
+   "start": 288.439,
+   "end": 309.301,
+   "text": "Imagine this, and you get a single Mazuhrat. Lastrago has about ten at any given time, each with its own kill count and name. On a calm day you can watch one crawl across the horizon trailing rain like a hem. On a bad day one drops."
+  },
+  {
+   "id": "s-0024",
+   "start": 310.201,
+   "end": 330.245,
+   "text": "The Lastragans call it a cascade. The word undersells it. A cascade strips canopy, soil, and anything built on either down to bare rock. A recount I came across goes: \"Kichavvo had called for the evacuation two days prior. He said we were lucky to have one so early."
+  },
+  {
+   "id": "s-0025",
+   "start": 330.645,
+   "end": 348.388,
+   "text": "I've waited a week for things to quiet down before I came back, hoping to grab some of my things from the ruins. There was nothing. The entire village, gone. Trees snapped at the base, roots in the air, as if the Mazuhrat has made a deliberate choice to leave absolutely nothing behind."
+  },
+  {
+   "id": "s-0026",
+   "start": 348.788,
+   "end": 355.072,
+   "text": "Seventeen people who refused to leave are still buried there, under the mud.\""
+  },
+  {
+   "id": "s-0027",
+   "start": 355.972,
+   "end": 376.091,
+   "text": "The canopy then closes over the cascade site within weeks. The water the Mazuhrat carries is heavy with minerals and compounds nobody has been able to identify or replicate. Where it hits, the soil turns obscenely fertile. Cinnamon bark grows as thick as a loaf of bread."
+  },
+  {
+   "id": "s-0028",
+   "start": 376.491,
+   "end": 387.096,
+   "text": "Vanilla reaches the canopy in a single season. The spice farmers know this, and follow the cascades with complete disregard to whatever might have been there prior."
+  },
+  {
+   "id": "s-0029",
+   "start": 387.496,
+   "end": 402.948,
+   "text": "They plant in the still-wet soil before the mud has settled, harvest what they can before the forest reclaims it, and move on. The whole economy runs on the aftermath of disasters the Mazuhren spend their lives trying to predict."
+  },
+  {
+   "id": "s-0030",
+   "start": 403.348,
+   "end": 412.733,
+   "text": "Somewhat ironic, to have a nation officially organized around cleaning up after their modern gods' mess."
+  },
+  {
+   "id": "s-0031",
+   "start": 413.633,
+   "end": 414.306,
+   "text": "Upstream"
+  },
+  {
+   "id": "s-0032",
+   "start": 415.156,
+   "end": 431.735,
+   "text": "The Barktrail is a massive road on pylons of petrified wood and cut stone, rising above the canopy and connecting Azwighen to Tinzarit and out to Imellah. Apparently a devoted public with access to mathematics can accomplish quite the feats."
+  },
+  {
+   "id": "s-0033",
+   "start": 432.135,
+   "end": 442.555,
+   "text": "Probably better not to let the modern Remosan bureaucrats know that. It was routed through stretches historically safe from the Mazuhrat, and built to survive one anyway."
+  },
+  {
+   "id": "s-0034",
+   "start": 442.955,
+   "end": 465.234,
+   "text": "The two cities at either end follow the same logic: steep roofs, runoff funneled into aqueducts that roar beneath the walkways during storms. Everything angled, braced, channeled. A coordinated machine for surviving a waterfall. The farming villages, as always, weren't quite so lucky."
+  },
+  {
+   "id": "s-0035",
+   "start": 465.634,
+   "end": 472.777,
+   "text": "They build lighter, because a Mazuhren can declare their home abandoned the moment the skies demand it."
+  },
+  {
+   "id": "s-0036",
+   "start": 473.677,
+   "end": 495.28,
+   "text": "The Mazuhren rule is too ramified to summarize in a single paragraph, or an entire book for that matter. What I will say is that it relies on two pillars. The first are the Storm-Marked. Car-Rex, taken from their families young, strapped to the temple spires for the next breaking cascade."
+  },
+  {
+   "id": "s-0037",
+   "start": 495.68,
+   "end": 512.584,
+   "text": "Most die up there. The survivors gain some sort of insight into the storms, and then it's a childhood of meteorology lessons followed by a life of tasting water and calculating charts. The highest of honors in Lastragan society."
+  },
+  {
+   "id": "s-0038",
+   "start": 512.984,
+   "end": 529.091,
+   "text": "A priest whose reading later fails is offered the same spire again. Or there's exile. The Mazuhren call it the Second Drowning. Fittingly, as most don't survive."
+  },
+  {
+   "id": "s-0039",
+   "start": 529.991,
+   "end": 553.505,
+   "text": "The second are the archives. Both Azwighen and Tinzarit keep branching catacombs filled with rows of stone pools, each holding water from a recorded cascade. Priests take a sample and \"taste\" the conditions that produced it, cross-referencing against their current charts."
+  },
+  {
+   "id": "s-0040",
+   "start": 553.905,
+   "end": 575.593,
+   "text": "Basically wine tasting with no alcohol nor fun. The priesthood employs collectors for this. Reckless fanatics who run toward the Mazuhrat with a pot in their hand while everyone else runs the other way. Foolish, stupid, simple-minded, indispensable idiots."
+  },
+  {
+   "id": "s-0041",
+   "start": 576.493,
+   "end": 577.342,
+   "text": "The Locals"
+  },
+  {
+   "id": "s-0042",
+   "start": 578.192,
+   "end": 598.599,
+   "text": "Lastragan \"traders\" mostly sit on their ass next to a pile of cinnamon and wait for the people who want it to come to them, which they reliably do. Caravans make the trip because cascade-grown spices grow nowhere else, and the Mazuhren know this well enough to set terms nobody refuses."
+  },
+  {
+   "id": "s-0043",
+   "start": 598.999,
+   "end": 620.422,
+   "text": "The temples allocate the cascade sites, approve the harvest, take their cut, and bless whatever's left for export. Religion and commerce are the same apparatus here, as is the case anywhere else, really. The elves figured this out centuries ago and wanted no part of it."
+  },
+  {
+   "id": "s-0044",
+   "start": 620.822,
+   "end": 639.924,
+   "text": "Their villages in the deep canopy predate the Mazuhren, and they've kept to themselves since. The Mazuhren let them because pretending they don't exist is easier than searching, and no priest wants to deal with an outsider that might disagree with his methods."
+  },
+  {
+   "id": "s-0045",
+   "start": 640.324,
+   "end": 644.823,
+   "text": "A sensible arrangement, all things considered. Rare for Virelia."
+  },
+  {
+   "id": "s-0046",
+   "start": 645.723,
+   "end": 663.063,
+   "text": "The two temples don't always agree, and the Lastragans made this the local equivalent for entertainment. When Azwighen and Tinzarit issue contradicting forecasts for the same territory, the priests argue in front of the affected villages."
+  },
+  {
+   "id": "s-0047",
+   "start": 663.463,
+   "end": 682.151,
+   "text": "Samples are tasted, charts compared, and the farmers who will stake their harvest or their lives on the result sit and choose the more convincing priest. Two seasons ago a village split between the readings. Seven people died on Tinzarit's side."
+  },
+  {
+   "id": "s-0048",
+   "start": 682.551,
+   "end": 691.088,
+   "text": "The surviving priests are still arguing methodology, which tells you everything about the priorities of everyone involved."
+  },
+  {
+   "id": "s-0049",
+   "start": 691.988,
+   "end": 692.543,
+   "text": "Rumors"
+  },
+  {
+   "id": "s-0050",
+   "start": 693.393,
+   "end": 715.376,
+   "text": "Little April Shower: A cascade stripped an ancient pylon foundation bare, exposing inscriptions in a script nobody can read. A dwarf mason copied them before the pylon was rebuilt. A Rivhaldean scholar who saw the rubbings claims they're coordinates. To what is anyone's guess."
+  },
+  {
+   "id": "s-0051",
+   "start": 716.276,
+   "end": 737.635,
+   "text": "The Conquest of Bread: A Molakari trade caravan is stuck in Azwighen. The Mazuhren have closed the Barktrail's southern stretch for the season. The Molakari insist it's a play to extort a bribe. The Mazuhren insist it's necessary. Meanwhile the cargo insists that it is spoiling."
+  },
+  {
+   "id": "s-0052",
+   "start": 738.535,
+   "end": 752.611,
+   "text": "The Messenger: An elf village that hasn't contacted Azwighen in decades has sent a runner asking for help. They won't say with what. The Mazuhren aren't interested, and the runner was left to wait at the gate."
+  },
+  {
+   "id": "s-0053",
+   "start": 753.511,
+   "end": 767.295,
+   "text": "Voices From The Deep: A farmer's child fell through the canopy and was missing for three days. She came back speaking words nobody recognizes and insisting there are people living beneath the tree line."
+  }
+ ]
+}

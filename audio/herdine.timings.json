@@ -1,0 +1,434 @@
+{
+ "version": 1,
+ "entryId": "herdine",
+ "textHash": "892e5512b8c1d0f691d1875fec96f2aeb10880eec5640576cf4a6c8bc6d34000",
+ "renderProfile": "95a2da9b62343cd5173677c0922c2494c47407937d3f85d9b273c982c957e2f6",
+ "segments": [
+  {
+   "id": "s-0001",
+   "start": 0.6,
+   "end": 1.176,
+   "text": "Herdine"
+  },
+  {
+   "id": "s-0002",
+   "start": 2.276,
+   "end": 10.929,
+   "text": "\"In the city they ask you how was work. Up here Don asks me what's today's find. Suits me better.\""
+  },
+  {
+   "id": "s-0003",
+   "start": 12.629,
+   "end": 14.511,
+   "text": "- Overheard in the Travelling Owl"
+  },
+  {
+   "id": "s-0004",
+   "start": 16.011,
+   "end": 17.774,
+   "text": "The Forest Provides"
+  },
+  {
+   "id": "s-0005",
+   "start": 18.674,
+   "end": 39.006,
+   "text": "Herdine sits three days uphill northwest of Brenmath, in mixed highland forest with no road in or out. About two hundred and fifty people live here in timber and stone houses scattered loosely across a wooded shoulder of the mountain, not clustered the way Trefganner villages usually are."
+  },
+  {
+   "id": "s-0006",
+   "start": 39.406,
+   "end": 51.107,
+   "text": "Footpaths rather than streets, and the footpaths do not run in straight lines because they follow the contour of the land and the old deer trails the first villagers used."
+  },
+  {
+   "id": "s-0007",
+   "start": 51.507,
+   "end": 68.974,
+   "text": "Every house has its own kitchen garden, its own drying rack for mushrooms and herbs, and its own set of baskets hung from the eaves. In spring and summer the air smells of pine, woodsmoke, and whatever is drying on the racks. In autumn it smells of mushrooms and honey."
+  },
+  {
+   "id": "s-0008",
+   "start": 69.374,
+   "end": 72.425,
+   "text": "In winter it smells of woodsmoke and nothing else."
+  },
+  {
+   "id": "s-0009",
+   "start": 73.325,
+   "end": 85.745,
+   "text": "The village lives off the forest. There is no road, no river worth fishing, and no farmable land beyond a few household plots."
+  },
+  {
+   "id": "s-0010",
+   "start": 86.145,
+   "end": 97.393,
+   "text": "What Herdine has instead is a stretch of old highland wood that has never been logged or pushed too hard, and two centuries of inherited knowledge about what it gives and when."
+  },
+  {
+   "id": "s-0011",
+   "start": 97.793,
+   "end": 113.289,
+   "text": "Mushrooms in real variety, wild berries, honey from a dozen managed hives, herbs that fetch good prices in the city, roots, game, and the clean water of small springs scattered through the hills that only a Herdiner knows how to find."
+  },
+  {
+   "id": "s-0012",
+   "start": 113.689,
+   "end": 124.727,
+   "text": "The villagers know their patches the way fishermen know their tides. A child here learns which slope gives morels in April and which one gives them two weeks later, and why."
+  },
+  {
+   "id": "s-0013",
+   "start": 125.127,
+   "end": 133.347,
+   "text": "An outsider walking the same ground would find half of what a child does and damage the other half by taking it at the wrong time."
+  },
+  {
+   "id": "s-0014",
+   "start": 134.247,
+   "end": 152.554,
+   "text": "Four times a year a mule-train walks down to Brenmath carrying dried mushrooms, preserved herbs, honey, smoked game, and the small quantities of rarer things the city's apothecaries and wealthier kitchens pay good money for. It comes back loaded with grain, salt, iron, cloth, and news."
+  },
+  {
+   "id": "s-0015",
+   "start": 152.954,
+   "end": 173.0,
+   "text": "The muleteers are all Herdiners and the route is theirs, and the relationship with Brenmath is otherwise nonexistent. The Synod nominally claims the village. No tax has been collected and no functionary has made the climb in a decade."
+  },
+  {
+   "id": "s-0016",
+   "start": 173.9,
+   "end": 174.694,
+   "text": "The People"
+  },
+  {
+   "id": "s-0017",
+   "start": 175.594,
+   "end": 195.309,
+   "text": "Herdiners are quiet, patient, and competent in the wilderness in a way that unsettles visitors who think of themselves as outdoorsmen. The core of the village is Trefganner stock, but a high proportion of the population came up the mountain from somewhere else and stayed."
+  },
+  {
+   "id": "s-0018",
+   "start": 195.709,
+   "end": 212.901,
+   "text": "Three days uphill through pathless forest is a filter. People who make the climb without a clear reason tend to have a reason they are not saying, and the villagers do not ask. What matters is whether a person pulls their weight and learns the patches they are taught."
+  },
+  {
+   "id": "s-0019",
+   "start": 213.801,
+   "end": 229.919,
+   "text": "The village does not advertise its foraging knowledge to outsiders, and does not refuse to share it either. Outsiders are not told where the patches are because outsiders have nothing to reciprocate with, and the balance only works if everybody has skin in it."
+  },
+  {
+   "id": "s-0020",
+   "start": 230.319,
+   "end": 247.142,
+   "text": "A traveler who stays a season and proves they are not going to take more than they should might be shown a patch or two by the family that works it, and then a few more, and at that point they are no longer a traveler."
+  },
+  {
+   "id": "s-0021",
+   "start": 248.042,
+   "end": 251.421,
+   "text": "There is no formal leadership."
+  },
+  {
+   "id": "s-0022",
+   "start": 251.821,
+   "end": 270.939,
+   "text": "When something needs deciding the meeting happens at the Travelling Owl after dinner: Ada puts the word out during the day, the affected parties come, anyone else who cares to listen comes too, and the room talks the matter through until a rough consensus settles in."
+  },
+  {
+   "id": "s-0023",
+   "start": 271.339,
+   "end": 286.118,
+   "text": "No vote, no chair, no formal authority. The convention is that anyone can speak and that the meeting is over when nobody is still arguing. It works because the village is small and because people who could not stand it left long ago."
+  },
+  {
+   "id": "s-0024",
+   "start": 287.018,
+   "end": 289.858,
+   "text": "Notable Locations"
+  },
+  {
+   "id": "s-0025",
+   "start": 290.758,
+   "end": 292.484,
+   "text": "•"
+  },
+  {
+   "id": "s-0026",
+   "start": 293.384,
+   "end": 295.27,
+   "text": "The Travelling Owl:"
+  },
+  {
+   "id": "s-0027",
+   "start": 296.17,
+   "end": 313.57,
+   "text": "Herdine's only inn and the closest thing the village has to a square. A long timber building with a wide kitchen, a common room hung with drying herbs from the rafters, and a long wooden table outside in the clearing where people sit on good evenings."
+  },
+  {
+   "id": "s-0028",
+   "start": 313.97,
+   "end": 323.566,
+   "text": "Ada runs it, a woman in her late fifties who has been taking in strangers for thirty years and asking none of them about their pasts."
+  },
+  {
+   "id": "s-0029",
+   "start": 323.966,
+   "end": 345.606,
+   "text": "She offers a room and work in exchange for a roof until the new arrival finds their feet, and a number of her current regulars came to her the same way and never left. She is a good cook who became a better one after Herdine taught her what the forest gives in every season."
+  },
+  {
+   "id": "s-0030",
+   "start": 346.506,
+   "end": 348.233,
+   "text": "•"
+  },
+  {
+   "id": "s-0031",
+   "start": 349.133,
+   "end": 350.607,
+   "text": "Mara Voss's Workshop:"
+  },
+  {
+   "id": "s-0032",
+   "start": 351.507,
+   "end": 359.039,
+   "text": "A low building at the upper edge of the village, ringed by drying racks and smelling of bruised leaves and beeswax."
+  },
+  {
+   "id": "s-0033",
+   "start": 359.439,
+   "end": 372.639,
+   "text": "Mara is a working herbalist in her forties, the third generation of her family in the trade, and she knows what every plant within a half-day's walk of Herdine is good for, including the ones that will kill you."
+  },
+  {
+   "id": "s-0034",
+   "start": 373.039,
+   "end": 390.126,
+   "text": "She brews teas, salves, poultices, and the practical remedies that keep a village without a doctor functional. Her preparations go down to Brenmath with the mule-train and fetch good prices in the city because they are made from forest stock the city herbalists cannot get."
+  },
+  {
+   "id": "s-0035",
+   "start": 390.526,
+   "end": 394.875,
+   "text": "Brisk, unsentimental, and good at what she does."
+  },
+  {
+   "id": "s-0036",
+   "start": 395.775,
+   "end": 397.501,
+   "text": "•"
+  },
+  {
+   "id": "s-0037",
+   "start": 398.401,
+   "end": 401.484,
+   "text": "The Mast Grove:"
+  },
+  {
+   "id": "s-0038",
+   "start": 402.384,
+   "end": 411.117,
+   "text": "A stretch of old oak and beech about half a day's walk southwest of the village, where the pig-herders run their drifts in autumn."
+  },
+  {
+   "id": "s-0039",
+   "start": 411.517,
+   "end": 425.488,
+   "text": "Three families in Herdine keep pigs the old forest way: turn them out into the wood under the mast-fall, follow them on foot for six or eight weeks, and bring them home fat on acorns and beech-nuts."
+  },
+  {
+   "id": "s-0040",
+   "start": 425.888,
+   "end": 443.293,
+   "text": "The pigs are half-wild and recognize their handlers, and the largest drift belongs to Bero Halse, a heavy quiet man in his fifties whose dozen pigs each have names and who can find any of them in the forest within an hour."
+  },
+  {
+   "id": "s-0041",
+   "start": 443.693,
+   "end": 462.286,
+   "text": "Herdine ham and smoked pork go down with the mule-train and fetch the kind of prices that make Brenmath butchers quietly furious. The grove itself is unremarkable when the pigs are not there, just old wood with the forest floor cleared by generations of rooting."
+  },
+  {
+   "id": "s-0042",
+   "start": 463.186,
+   "end": 464.912,
+   "text": "•"
+  },
+  {
+   "id": "s-0043",
+   "start": 465.812,
+   "end": 468.195,
+   "text": "The Long Cave:"
+  },
+  {
+   "id": "s-0044",
+   "start": 469.095,
+   "end": 487.571,
+   "text": "A narrow opening in the rock about an hour's walk above the village, half-hidden behind a stand of pines. The mouth is a horizontal slit you have to duck to enter, opening into a low passage that runs straight back into the hill. As far as the villagers know, the passage does not end."
+  },
+  {
+   "id": "s-0045",
+   "start": 487.971,
+   "end": 504.722,
+   "text": "Nobody has ever reached a wall, a chamber, or a turning. The air inside stays the same temperature year-round and the floor is dry, and the walls are unmarked stone the whole way in. Children dare each other to go in. Adults do not."
+  },
+  {
+   "id": "s-0046",
+   "start": 505.122,
+   "end": 520.442,
+   "text": "Foragers walk a little way inside for the cave mushrooms and the pale moss that grows along the lower walls, and then quickly come back out. Every Herdiner knows at least some version of a story where someone went into the cave and never came out."
+  },
+  {
+   "id": "s-0047",
+   "start": 521.342,
+   "end": 523.068,
+   "text": "•"
+  },
+  {
+   "id": "s-0048",
+   "start": 523.968,
+   "end": 525.851,
+   "text": "Old Algud's House:"
+  },
+  {
+   "id": "s-0049",
+   "start": 526.751,
+   "end": 537.248,
+   "text": "A weathered cabin on the south side of the village belonging to the village's oldest resident, a retired muleteer in his seventies who has lived in Herdine longer than anyone."
+  },
+  {
+   "id": "s-0050",
+   "start": 537.648,
+   "end": 552.545,
+   "text": "He keeps to himself, he spends the mornings in his porch rocking chair in his infamous red underwear, and at the evenings he sits at the long table outside the Owl. He knows where every patch in the woods is and who works it."
+  },
+  {
+   "id": "s-0051",
+   "start": 553.445,
+   "end": 555.171,
+   "text": "•"
+  },
+  {
+   "id": "s-0052",
+   "start": 556.071,
+   "end": 557.489,
+   "text": "The Mule Yard:"
+  },
+  {
+   "id": "s-0053",
+   "start": 558.389,
+   "end": 571.729,
+   "text": "A fenced enclosure on the downhill edge of the village, with a long shed for tack and the seven mules that make the four-times-a-year run to Brenmath. The muleteers keep their own counsel and their own gear."
+  },
+  {
+   "id": "s-0054",
+   "start": 572.129,
+   "end": 581.943,
+   "text": "The yard smells of mules and oiled leather, and the gate is always open because there is nowhere for a mule to wander to that a Herdiner could not find it."
+  },
+  {
+   "id": "s-0055",
+   "start": 582.843,
+   "end": 584.171,
+   "text": "Plot Hooks"
+  },
+  {
+   "id": "s-0056",
+   "start": 585.071,
+   "end": 586.797,
+   "text": "•"
+  },
+  {
+   "id": "s-0057",
+   "start": 587.697,
+   "end": 590.049,
+   "text": "Bero's Missing Drifter:"
+  },
+  {
+   "id": "s-0058",
+   "start": 590.949,
+   "end": 608.898,
+   "text": "One of Bero Halse's pigs has not come back from the mast grove. A sow named Hessa, a veteran of six autumns who has never wandered before and who Bero can usually whistle in from half a mile away. She has been missing for four days."
+  },
+  {
+   "id": "s-0059",
+   "start": 609.298,
+   "end": 629.308,
+   "text": "Bero has been walking the grove and the surrounding wood alone from dawn to dusk and not finding her, which he will tell you is impossible, because he could find Hessa blindfolded. He is not panicked. He is something quieter and worse."
+  },
+  {
+   "id": "s-0060",
+   "start": 629.708,
+   "end": 643.033,
+   "text": "He will pay, modestly, for help searching ground he has already covered twice, because a second set of eyes is the one thing he does not have, and because whatever took a pig that size did not leave the tracks it should have."
+  },
+  {
+   "id": "s-0061",
+   "start": 643.933,
+   "end": 645.66,
+   "text": "•"
+  },
+  {
+   "id": "s-0062",
+   "start": 646.56,
+   "end": 649.352,
+   "text": "The Quiet Theft:"
+  },
+  {
+   "id": "s-0063",
+   "start": 650.252,
+   "end": 666.713,
+   "text": "Somebody has been working a foraging patch that is not theirs, quietly, over the last season. Old Algud has noticed because Old Algud notices everything in the woods, and he has not raised it at the Owl yet because he is waiting to see if it resolves itself. It is not going to."
+  },
+  {
+   "id": "s-0064",
+   "start": 667.113,
+   "end": 680.023,
+   "text": "The patch in question belongs to a family who are about to notice on their own, and when they do the meeting at the Owl is going to be the kind of meeting Herdine has not had to hold in a generation."
+  },
+  {
+   "id": "s-0065",
+   "start": 680.423,
+   "end": 690.008,
+   "text": "The thief is somebody nobody would suspect, for a reason that is sympathetic enough to make the village's consensus-by-arguing system buckle."
+  },
+  {
+   "id": "s-0066",
+   "start": 690.908,
+   "end": 692.634,
+   "text": "•"
+  },
+  {
+   "id": "s-0067",
+   "start": 693.534,
+   "end": 696.433,
+   "text": "The Light Mule-Train:"
+  },
+  {
+   "id": "s-0068",
+   "start": 697.333,
+   "end": 709.879,
+   "text": "Last month's mule-train came back from Brenmath with less grain than the village had paid for, and the merchant the Herdiners have dealt with for fifteen years had no explanation that satisfied them."
+  },
+  {
+   "id": "s-0069",
+   "start": 710.279,
+   "end": 725.678,
+   "text": "The muleteers were too tired to push the matter on the spot, and now the village is two months out from running short of salt and four months out from running short of iron. The next run is in three weeks."
+  },
+  {
+   "id": "s-0070",
+   "start": 726.078,
+   "end": 742.228,
+   "text": "Somebody needs to go down to the city ahead of it and find out what changed, and the village would prefer that somebody not be a Herdiner, because Herdiners going to Brenmath to ask questions of merchants is the kind of thing that ends with a Herdiner shouting in a city street,"
+  },
+  {
+   "id": "s-0071",
+   "start": 742.628,
+   "end": 744.119,
+   "text": "which is bad for trade."
+  }
+ ]
+}

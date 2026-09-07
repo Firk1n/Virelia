@@ -1,2 +1,5 @@
 tools/.build-stamps.json
 __pycache__/
+
+# Intermediate: rebuilt by scripts/shrink-docx.py
+build/

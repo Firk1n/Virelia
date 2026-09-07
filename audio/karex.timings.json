@@ -1,0 +1,200 @@
+{
+ "version": 1,
+ "entryId": "karex",
+ "textHash": "fe8093f783fd0c7686bae2ec762608595abbec9f33b8c92eded1b0065541fcc9",
+ "renderProfile": "95a2da9b62343cd5173677c0922c2494c47407937d3f85d9b273c982c957e2f6",
+ "segments": [
+  {
+   "id": "s-0001",
+   "start": 0.6,
+   "end": 1.774,
+   "text": "Car-Rex"
+  },
+  {
+   "id": "s-0002",
+   "start": 2.874,
+   "end": 4.198,
+   "text": "Landmade Men"
+  },
+  {
+   "id": "s-0003",
+   "start": 5.098,
+   "end": 7.593,
+   "text": "Observations:"
+  },
+  {
+   "id": "s-0004",
+   "start": 8.493,
+   "end": 27.094,
+   "text": "A Car-Rex is a person who was somehow permanently affected by a Rift. I'll start there because it's about the only clean definition this entry is going to get. They share nothing else. Nothing. The word itself is a filing convenience, though a commonly used one."
+  },
+  {
+   "id": "s-0005",
+   "start": 27.494,
+   "end": 47.911,
+   "text": "I included them here because I wanted to write about them and there was nowhere else to put them. So there, it's your problem now. What makes them different from the other entries in this chapter is that every other race is safely not you. Nobody lies awake worried about becoming a Graith."
+  },
+  {
+   "id": "s-0006",
+   "start": 48.311,
+   "end": 65.723,
+   "text": "But a Rift can form anywhere with no warning. You might not even realize it's there until its effects bleed into you. Everyone knows at least one person who just woke up as a Car-Rex one day, not even sure how and when it occurred. It colors everything."
+  },
+  {
+   "id": "s-0007",
+   "start": 66.123,
+   "end": 88.566,
+   "text": "A Car-Rex who can read ancient texts gets attention that isn't quite respect. A Car-Rex who eats gravel gets a distance that isn't quite cruelty. The same neighbor will pity one and envy the other and be disgusted by the third and never work out that all reactions come from the same place."
+  },
+  {
+   "id": "s-0008",
+   "start": 89.466,
+   "end": 113.692,
+   "text": "I've always felt they're the most fitting group to our troubled continent. Virelia comes in, Car-Rex comes out. People who were quite literally bound with our land. Its essence, its breakage. I apologize for being a tad melodramatic here, but the metaphor is practically impossible to ignore."
+  },
+  {
+   "id": "s-0009",
+   "start": 114.092,
+   "end": 134.984,
+   "text": "It's all just so random, the same way everything in life is. You might be born with a sharp mind or a bad back. In Virelia, you might also stop reflecting light. The range is wider, the stakes are higher, but the principle is the same. Lastrago straps them to temple spires."
+  },
+  {
+   "id": "s-0010",
+   "start": 135.384,
+   "end": 153.943,
+   "text": "Molakar goes to war over them. The Weave pays well for the ones whose bodies have adapted to specific types of rifts. Whether any given Car-Rex is a freak or a prophet depends entirely on where they ended up and what someone found to do with them."
+  },
+  {
+   "id": "s-0011",
+   "start": 154.343,
+   "end": 161.682,
+   "text": "And then there's the rest, the ones nobody found a use for. They get to serve no purpose, like the rest of us."
+  },
+  {
+   "id": "s-0012",
+   "start": 162.582,
+   "end": 163.808,
+   "text": "Origins:"
+  },
+  {
+   "id": "s-0013",
+   "start": 164.708,
+   "end": 186.939,
+   "text": "To have any meaningful discussion about the origins of the Car-Rex, I should start by explaining what a Rift is. Virelia's governing laws have diluted since the Sundering. While reality is mostly still intact, occasionally things slip. That's a rift. They can take many forms."
+  },
+  {
+   "id": "s-0014",
+   "start": 187.339,
+   "end": 204.375,
+   "text": "Endless, in fact. The Weave have made an attempt at a cataloging system, if you want to delve deeper into that. Point is, it's rarely simple. A rift can be conceptual, physical, temporal, sentient... You get the gist."
+  },
+  {
+   "id": "s-0015",
+   "start": 204.775,
+   "end": 213.397,
+   "text": "Some rifts engulf entire regions, while a tiny fracture might form at the exact point of pressure where a fireball is cast."
+  },
+  {
+   "id": "s-0016",
+   "start": 214.297,
+   "end": 229.848,
+   "text": "Which is how you get Car-Rex. A person walks through one of these, or lives near one long enough, or was simply born in the wrong spot, and something sticks. It isn't hereditary, unlike the Varn. But plenty of mothers have tried to split the difference."
+  },
+  {
+   "id": "s-0017",
+   "start": 230.248,
+   "end": 238.205,
+   "text": "Live near the right rift at the right month, and maybe the child comes out special. Maybe it doesn't come out at all."
+  },
+  {
+   "id": "s-0018",
+   "start": 239.105,
+   "end": 259.102,
+   "text": "Any of the old races can become Car-Rex. The newer ones seem to be exempt, though I'd hesitate to call that confirmed. But generally speaking, the anomaly sits on top, whether you're a halfling or a half-orc. The dramatic cases are easy."
+  },
+  {
+   "id": "s-0019",
+   "start": 259.502,
+   "end": 277.646,
+   "text": "A mining crew hits a spatial rift, one of them walks out with a shadow that moves independently. A woman in Riv-hold stopped aging at forty. Her wife noticed before she did. She'd never been near a documented rift, but that's the point. You don't always know."
+  },
+  {
+   "id": "s-0020",
+   "start": 278.046,
+   "end": 296.032,
+   "text": "I swear half the adolescents on this continent have convinced themselves they're Car-Rex at some point. A strange dream, a birthmark, a persistent cough, a feeling that you're different. The definition is wide enough that nobody can tell them they're wrong with any authority."
+  },
+  {
+   "id": "s-0021",
+   "start": 296.432,
+   "end": 303.791,
+   "text": "The actual Car-Rex, the ones who eat rocks or whose breath comes out in colors, find this less amusing than everyone else does."
+  },
+  {
+   "id": "s-0022",
+   "start": 304.691,
+   "end": 305.918,
+   "text": "Appearance:"
+  },
+  {
+   "id": "s-0023",
+   "start": 306.818,
+   "end": 308.311,
+   "text": "Yeah, I give up on that one."
+  },
+  {
+   "id": "s-0024",
+   "start": 309.211,
+   "end": 312.192,
+   "text": "Current Place in the World:"
+  },
+  {
+   "id": "s-0025",
+   "start": 313.092,
+   "end": 330.318,
+   "text": "A Car-Rex with a limb that doesn't match the rest of them is dealing with a different life than one with borrowed memories, and they both know it. The visible ones get stared at. The invisible ones get to wonder whether they should mention it on dates. Most don't."
+  },
+  {
+   "id": "s-0026",
+   "start": 330.718,
+   "end": 348.552,
+   "text": "I wouldn't call it \"stigma,\" that would be too far. But they're usually the first to get bullied as kids, and even between them I've seen very little camaraderie. Despite them being roughly five percent of the population. And most Car-Rex, to my surprise, seem to accept this."
+  },
+  {
+   "id": "s-0027",
+   "start": 349.452,
+   "end": 367.061,
+   "text": "Where you live matters too. Rift-adjacent towns have seen enough of this that a Car-Rex is just another thing to work around. In Riv-hold, where the Compact pays to keep rifts shut, they're rarer and stranger for it. Even more so in Tavernash."
+  },
+  {
+   "id": "s-0028",
+   "start": 367.461,
+   "end": 378.528,
+   "text": "In Knotsreach, where the land itself barely follows the rules, they're part of the furniture. But a large share of almost NOBODY is still almost nobody."
+  },
+  {
+   "id": "s-0029",
+   "start": 379.428,
+   "end": 394.276,
+   "text": "With rare exceptions (Lastrago's infamous \"zombies\" incident comes to mind) the condition doesn't spread between people. That hasn't stopped anyone from treating certain Car-Rex like it might."
+  },
+  {
+   "id": "s-0030",
+   "start": 394.676,
+   "end": 412.785,
+   "text": "The ones who glow, hum, or whose presence makes candles flicker tend to find themselves drinking alone more often than they'd like, regardless of whether any of it is actually contagious. The Weave recruits from exactly this crowd."
+  },
+  {
+   "id": "s-0031",
+   "start": 413.185,
+   "end": 420.952,
+   "text": "A body that already survived rift exposure has obvious professional value in an organization that walks into rifts for a living."
+  },
+  {
+   "id": "s-0032",
+   "start": 421.352,
+   "end": 433.406,
+   "text": "Whether they're hired out of respect or to keep them where they can be watched and studied is a question I've asked more than one agent, and the answer depends on how many drinks they've had."
+  }
+ ]
+}

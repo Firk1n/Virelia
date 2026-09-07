@@ -1,0 +1,304 @@
+{
+  "version": 1,
+  "source": "C:/Users/Ofek/Downloads/Virelia/Virelia.txt",
+  "sourceHash": "73fe6f2a01ccfa2de1fa644c8d3f5ee69cf98968440402959788a1ab0e7de26e",
+  "entries": [
+    {
+      "id": "the_shining_age",
+      "title": "The Shining Age",
+      "sourceHash": "b5e9a00a69f96d3436a811b47f59bc0dba1abbf83cf3474196d43569163174dd",
+      "textHash": "992fc7da7e56eb8375c035a93df3fdcebb043db2540dad5e6fd813f7fdc19d63",
+      "segments": 7
+    },
+    {
+      "id": "the_sundering",
+      "title": "The Sundering",
+      "sourceHash": "26172ceb28fb8c1fde8d1f6a89a61935df41013367d880f510f477bc32cf9ea8",
+      "textHash": "847142068ff1ee0e2260981583dfc14a1ef79c96e7c330e73a550b761496ea90",
+      "segments": 5
+    },
+    {
+      "id": "the_age_of_silence",
+      "title": "The Age of Silence",
+      "sourceHash": "90b3352e4a71cbbc508375f27e2285f018c1567a68dae5e0430ac7a1251b9c10",
+      "textHash": "5350ac7779fdea48c196bd294eb2e9d654c414051be77d2e4117ac1183b76a6d",
+      "segments": 10
+    },
+    {
+      "id": "the_fracture_wars",
+      "title": "The Fracture Wars",
+      "sourceHash": "f51d066b0a18f36c839a208ce3d7c9bd733774a51785fa64542f3d1ecbfd3f38",
+      "textHash": "d7f12dfc21636400da05ae744ccaf95df9895237a5e99225e5c8e452132eca1a",
+      "segments": 7
+    },
+    {
+      "id": "the_fractured_era",
+      "title": "The Fractured Era (The Current Day)",
+      "sourceHash": "dcbec3fcccc7d70879fc46959b3b082514d56d7ece15fd1dfd085dbb399ee8fb",
+      "textHash": "3b7a6b2df4087f1e3acb51bfe2b763d681b5c8d87b824bac449b3b0e3fb5406f",
+      "segments": 43
+    },
+    {
+      "id": "knotsreach",
+      "title": "Knotsreach",
+      "sourceHash": "cd10a6c0077c2a6f5be488caf14615d06df0a0820d90f9e540a9ac5d8352a8b8",
+      "textHash": "9d682a594961f9775a96c907887e7bdc9d47ede4a7c4ab1bee75b938c4a671e2",
+      "segments": 48
+    },
+    {
+      "id": "molakar",
+      "title": "Molakar",
+      "sourceHash": "470a72dfdd87a211a0b6882593ae2b1f16f6cc9e38f6922bef4fd0ee5d6c27e0",
+      "textHash": "7989c296ec367f972740824cc3a4873ca23bba66377a6b1457a36f1f098f1e8d",
+      "segments": 38
+    },
+    {
+      "id": "southfield",
+      "title": "Southfield",
+      "sourceHash": "d1aa9aadfb0f26c4d07fecfb8fbc3b1e22e85db96ac27f98a07b0e8ede182a5a",
+      "textHash": "7fd98a1c82b5ab2152118195fc7b429c84f0f9240e1e96626ac49792658927f5",
+      "segments": 42
+    },
+    {
+      "id": "myrskov",
+      "title": "Myrskov",
+      "sourceHash": "7ff013d7c5206606bb240e816e6115b216849f56ade2e2a6ddca251184c280e6",
+      "textHash": "cea5944576522d5981c86336fddccd2148d0abb401e20ff8149e18cfee59a75d",
+      "segments": 56
+    },
+    {
+      "id": "lastrago",
+      "title": "Lastrago",
+      "sourceHash": "b5279fda0cfdbb5e6b8afdb0a560f9a4b51a606593d0aa2c3de25f1d60f9cd34",
+      "textHash": "ffd6ef78ce4be727b4e0535fba3905a01284137ca0018cfdd8b192ecab37f4e3",
+      "segments": 53
+    },
+    {
+      "id": "tintbent",
+      "title": "Tintbent",
+      "sourceHash": "474a277c3786b2268fd135a8e907d07e249084b2a7aa83a57c1b4eab0e3e2e58",
+      "textHash": "c5fe37170854686d8c39ce23a1d12f9179381bcce69e34c46d1f71c2a7cb93a4",
+      "segments": 51
+    },
+    {
+      "id": "kelarra_peaks",
+      "title": "Kelarra Peaks",
+      "sourceHash": "b1e06fe37f6b103841d90c3bf2376cca197b96df723f174adce2daf37245739b",
+      "textHash": "0d390c2a399731b9bba5ba4eaf7e8688533de2346270547d962412ef763d375b",
+      "segments": 51
+    },
+    {
+      "id": "tavernash",
+      "title": "Tavernash",
+      "sourceHash": "75c4a7b9bc0587c089d0e3d8d1c0fbfc417030311ddbc02efd7a0df2dd406b4d",
+      "textHash": "b0ec5962f1fe2ff3bbfe7195d2e8a45c6dd35084d7c23472d5420a0b70e7b404",
+      "segments": 33
+    },
+    {
+      "id": "haldrith",
+      "title": "Haldrith",
+      "sourceHash": "cfd2b62e5c6bc88492df4e86127dccddf92d0bde6a3f15a77380e58e16a7b704",
+      "textHash": "e73f0a622d73f56bf366a3b458b604ecb002f73792606ba439cde111b8a71697",
+      "segments": 76
+    },
+    {
+      "id": "rivhalde",
+      "title": "Rivhalde",
+      "sourceHash": "f884cd58b5a91ef55e682844a97bba0f4d89bfa038ed422655b7b512c0f73326",
+      "textHash": "46ebe21d49b872a153ad74811fb9f22a430606706dc6670679c68d2c33d020f9",
+      "segments": 37
+    },
+    {
+      "id": "remosa",
+      "title": "Remosa",
+      "sourceHash": "a1f07eb15c5f6436972a1baa1b1a645a38b503d76de8caf0d1c871854561dc39",
+      "textHash": "53db877931ba9e32a237a4d53d252f82caf8015045f4420549ef03a190f700d4",
+      "segments": 53
+    },
+    {
+      "id": "trefgann",
+      "title": "Trefgann",
+      "sourceHash": "b02fc1d1b381e4d9cac61869f561ba1b058b9a7111b9db56e7850852fad2bf89",
+      "textHash": "f418b616b8272a48d1390a63de076bc617221d271db24effd3e17035f80cee8c",
+      "segments": 47
+    },
+    {
+      "id": "the_races_of_virelia",
+      "title": "The Races of Virelia",
+      "sourceHash": "7801ef09e69d1e45c98eb91dedc8f5bacec097d051954e8cfbfa06c288da793c",
+      "textHash": "69d73cc201983e4ca7217195424274ca072dad862620e682e857d01a0dfc7010",
+      "segments": 37
+    },
+    {
+      "id": "graith",
+      "title": "Graith",
+      "sourceHash": "5c6e73cbe4c3d69fab36b1f3d489338c250f4ef9d3ce38359f50705ad84825e4",
+      "textHash": "2a669ca59db4cf6360a16e317812f275f5edbd60605983f47eef6b4757f55f65",
+      "segments": 41
+    },
+    {
+      "id": "orrak",
+      "title": "Orrak",
+      "sourceHash": "b01530a6df67f2b5446c0c59ac749eb57d62e6bb900904e40fd9932bff9c0418",
+      "textHash": "9014183745adf6f024ff2ff7edfcb43012a8ccf22415885206c1e38799c002f2",
+      "segments": 35
+    },
+    {
+      "id": "duskwalker",
+      "title": "Duskwalker",
+      "sourceHash": "caa226f8dcbf5240b85dc3c5d4c8932f907ad0f4b38e67c1f934e94274b54e99",
+      "textHash": "3d1e42632012519c88f1449aa175179dbadf804862b22c829ed0664aad098d3c",
+      "segments": 39
+    },
+    {
+      "id": "myrrkin",
+      "title": "Myrrkin",
+      "sourceHash": "576e5b2555d059e6fbaec0b200325751174793d79412390354ca92fc2f7796c8",
+      "textHash": "422db789bc60b46c6eefe013b0a46353dec06f031d2e44f89f31481bb96a258b",
+      "segments": 52
+    },
+    {
+      "id": "nirath",
+      "title": "Nirath",
+      "sourceHash": "bed6e11bbf13544dbd8cd7cc536722e790382d155cca1ea2bac56c14149ed328",
+      "textHash": "67abb8eac452e49ca6b57d183a76522ea04e1c69d2d8f39c11fb7234a59802eb",
+      "segments": 50
+    },
+    {
+      "id": "varn",
+      "title": "Varn",
+      "sourceHash": "e57345e7807542d6c01c5a68f9a12634fa8d09c2f46ee1beeb8416b8b5a766a0",
+      "textHash": "8047c716b0974bc9b295961e21bf777a27278cb863fddd5a107dbb2579df73fb",
+      "segments": 41
+    },
+    {
+      "id": "karex",
+      "title": "Karex",
+      "sourceHash": "a1381df308d069e245a5d76459ddadb0bc989f08f8d9ef17cea19efce01e9a1f",
+      "textHash": "fe8093f783fd0c7686bae2ec762608595abbec9f33b8c92eded1b0065541fcc9",
+      "segments": 32
+    },
+    {
+      "id": "the_factions_of_virelia",
+      "title": "The Factions of Virelia",
+      "sourceHash": "da06ed68bf55861ef7dc849def31b6a81df79406e07db51bc3bf990054ead8f5",
+      "textHash": "43ebe06b732288af1459b05891f6493349d1e54d2fc45be8e0471ccb3d55ef4b",
+      "segments": 10
+    },
+    {
+      "id": "the_weave",
+      "title": "The Weave",
+      "sourceHash": "6530dac5a56b2a9142fd97f08dff87f3aeeddf766055e5a74886b5e449a7e339",
+      "textHash": "0f3202b4313d0dbaa305225c46e4b6e98d02512d73926c1660b34b9c8f3aeaf0",
+      "segments": 81
+    },
+    {
+      "id": "greywater_compact",
+      "title": "Greywater Compact",
+      "sourceHash": "0d965e218db289e70642f9b11807c6f55bf1639e6411e56cfbbaa628198e0343",
+      "textHash": "5eca4669e0d5fe9542e50b6d39808d3285b29310eeaf948782ef3cbccd9987ab",
+      "segments": 54
+    },
+    {
+      "id": "the_zwigots",
+      "title": "The Zwigots",
+      "sourceHash": "18f7a87f8e91604675047a8ef4c96b8af5c698e448cb1a8464d823447ae711b3",
+      "textHash": "79c4e6faf588fccaba9d8b6be04c81a8b539504eee0c11eb5bdf6a1292afaffc",
+      "segments": 90
+    },
+    {
+      "id": "the_speculars",
+      "title": "The Speculars",
+      "sourceHash": "fa462ca4a16ce62ae7d01e425e7cc13a31261a088ee218c263a766d2f6284ae0",
+      "textHash": "46446545724bb9fc7891a8d4a7f0dadf74423b82a64b67c6c6641b2cddb7011f",
+      "segments": 296
+    },
+    {
+      "id": "the_halcyon_league",
+      "title": "The Halcyon League",
+      "sourceHash": "bcc82f018f0994086e9864b7ca441b5913129069fe7ce61fbebf9235bfe980ae",
+      "textHash": "dc4fd722e12a37393162c1fa54f95aeb0fd307bcaaea87b24fb975b6d9c5705b",
+      "segments": 8
+    },
+    {
+      "id": "glaskatch",
+      "title": "Glaskatch",
+      "sourceHash": "848e2417abcc881d37fde2f765b7183ccff60add0de0e32fd3807cc9742c8c85",
+      "textHash": "9201dcace042ea472f1f7e8bbd52fb2c8d0547622c032674368b9c48a4073338",
+      "segments": 145
+    },
+    {
+      "id": "downsview",
+      "title": "Downsview",
+      "sourceHash": "eb734dcb2357e52c55506e5f0d4b026fc2424518814ba87c1e5816ff5f14e15e",
+      "textHash": "efcccda67387865018e9a922924f73af38261a0cbcee5837135821f65d4b11a2",
+      "segments": 63
+    },
+    {
+      "id": "glenroot",
+      "title": "Glenroot",
+      "sourceHash": "a26b594edb1ce485b42a33ec86df39f66cfbff6562cd6a5156827c6dec448433",
+      "textHash": "792ac2439e58024283d0341d274eaec65b8b2e9919c50ff3b227def09341646d",
+      "segments": 67
+    },
+    {
+      "id": "brenmath",
+      "title": "Brenmath",
+      "sourceHash": "7e2c3ea3e9198c768c90eea26a91baa183555722140d1dcc0725aab8c1787631",
+      "textHash": "7a53e25569a31e24aea6821953edf8f8ac3eb942e7012ce459f572a942067781",
+      "segments": 102
+    },
+    {
+      "id": "netclam",
+      "title": "Netclam",
+      "sourceHash": "313c1bb27639c0055d8a74a654da239eda62600893f5ad440a2881cfcd64ef9d",
+      "textHash": "8dec0f7351b3ace3a13533bee02e501c44c1fd0a08ac2061f4e907edd3315adf",
+      "segments": 79
+    },
+    {
+      "id": "vanguard",
+      "title": "Vanguard",
+      "sourceHash": "cebeaa72b0d52af6b736d67b07954238dd9bc736a3979f6ae47fd0b45295ce8c",
+      "textHash": "435924ece7d7a061eecd945b3587b9591bb1c293a414777f7aab0b6c41a0ca77",
+      "segments": 81
+    },
+    {
+      "id": "herdine",
+      "title": "Herdine",
+      "sourceHash": "776b11ee4989c89ffc5ae88cac18098244f50eb4ea8dc26d0268eb3a4ef87775",
+      "textHash": "892e5512b8c1d0f691d1875fec96f2aeb10880eec5640576cf4a6c8bc6d34000",
+      "segments": 71
+    },
+    {
+      "id": "ashfield_marsh",
+      "title": "Ashfield Marsh",
+      "sourceHash": "456ebcb0ccd106e2ae7e257529a3e698a5b3ade38ce9fded8fab63b5dba024d9",
+      "textHash": "be6ac0fad71773a31c3cad06a8fdf061713766f371d15cb198c45eefb3028521",
+      "segments": 24
+    },
+    {
+      "id": "castra_vull",
+      "title": "Castra Vull",
+      "sourceHash": "9a10252261f8ca1e8ca911d5359fafa974644e9e44125b13941267d061783317",
+      "textHash": "4e4816d74d88c228b532659738f26e599a0ed76587f7ab33ce47208680d701a1",
+      "segments": 34
+    },
+    {
+      "id": "trazh",
+      "title": "Trazh",
+      "sourceHash": "9d5d50cbeb9e7bb86ce6ba934b58b237bdc1a99ef5d821a33d40e63a53742840",
+      "textHash": "45f0068e3310b523d0f5eafbe52c014e63e3a2b8d51ea7c10a55f5608dc680bc",
+      "segments": 47
+    },
+    {
+      "id": "the_hung_tree",
+      "title": "The Hung Tree",
+      "sourceHash": "06275f49a402d0821eee448fa53a06e467557283069c770d1a4f212e4af3977b",
+      "textHash": "e74c0797fa1e0549bed1cfa9be36fae9a9306cc7195055d9b81baa47a619b700",
+      "segments": 5
+    }
+  ],
+  "changed": [
+    "downsview"
+  ]
+}

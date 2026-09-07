@@ -13,6 +13,9 @@ var bounds = [[-85, -180], [-2, 176]];
 //   minZoom is not a fixed number -- see updateMinZoom() below.
 var map = L.map('map', {
     attributionControl: false,
+    // No +/- control: the wheel, pinch and double-click all zoom already, and
+    // the buttons only sat on top of the painting.
+    zoomControl: false,
     maxBounds: bounds,
     maxBoundsViscosity: 1.0,
     minZoom: 0,
@@ -190,43 +193,15 @@ map.on('zoomend', updateVisibleMarkers);
 
 
 // --- SIDEBAR & LIGHTBOX LOGIC ---
+// Rendering, cross-linking, history and map focus all live in wiki-runtime.js
+// and regions.js. These two stay as the names the rest of the page (and the
+// inline onclick in index.html) already call.
 window.openEntry = function(key) {
-    let entry = wikiData[key];
-    let sidebar = document.getElementById('sidebar');
-    let contentDiv = document.getElementById('sidebar-content');
-    
-    if (entry) {
-        contentDiv.innerHTML = ''; 
-
-        let titleBlock = document.createElement('h2');
-        titleBlock.innerHTML = `${entry.title} <small style="font-size:0.6em">(${entry.type})</small>`;
-        
-        if (entry.image) {
-            let img = document.createElement('img');
-            img.className = 'ribbon';
-            img.src = entry.image;
-            img.onclick = function() { showLightbox(entry.image); };
-            img.style.cursor = "zoom-in"; 
-            img.onerror = function() { this.style.display = 'none'; };
-            contentDiv.appendChild(img);
-        }
-
-        contentDiv.appendChild(titleBlock);
-
-        let contentContainer = document.createElement('div');
-        contentContainer.innerHTML = entry.content;
-        contentDiv.appendChild(contentContainer);
-
-        sidebar.classList.add('active');
-
-        if (entry.coords && markers[key]) {
-            map.panTo(entry.coords); 
-        }
-    }
+    window.WikiRuntime.open(key);
 };
 
 window.closeSidebar = function() {
-    document.getElementById('sidebar').classList.remove('active');
+    window.WikiRuntime.close();
 };
 
 // Edit mode (loaded via edit.js when ?edit is present in the URL) hooks into:

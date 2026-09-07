@@ -1,0 +1,50 @@
+{
+ "version": 1,
+ "entryId": "the_shining_age",
+ "textHash": "992fc7da7e56eb8375c035a93df3fdcebb043db2540dad5e6fd813f7fdc19d63",
+ "renderProfile": "95a2da9b62343cd5173677c0922c2494c47407937d3f85d9b273c982c957e2f6",
+ "segments": [
+  {
+   "id": "s-0001",
+   "start": 0.6,
+   "end": 1.735,
+   "text": "The Shining Age"
+  },
+  {
+   "id": "s-0002",
+   "start": 2.835,
+   "end": 21.048,
+   "text": "Before time, Virelia was a place of divine order. There were as many gods as there were domains to maintain, and they directed the natural order by hand, lovingly carving each leaf and grain of sand into its proper shape."
+  },
+  {
+   "id": "s-0003",
+   "start": 21.948,
+   "end": 43.383,
+   "text": "Some relished the mortal races. They took delight in the attention, the adoration, the small intricate stories mortals could not help but conjure. Some saw no real difference between a man and a stone, and preferred tending to other projects: designing new physics, tending to a garden or perfecting a gust of wind to flutter around leaves in a manner that matches their exact taste."
+  },
+  {
+   "id": "s-0004",
+   "start": 43.783,
+   "end": 56.604,
+   "text": "This was an era of beauty and miracles, where mountains were raised in symmetrical ranges and rivers softly trickled where they were commanded. The Gods walked the earth and had turned it into their heaven."
+  },
+  {
+   "id": "s-0005",
+   "start": 57.504,
+   "end": 76.461,
+   "text": "As a reflection of the gods' law, the immemorial Remosan Empire ruled over the vast majority of the continent. It was an extraordinary period of abundance coupled with immense hubris, when Gyre-Stones were built to regulate the weather, and imperial highways healed themselves over night."
+  },
+  {
+   "id": "s-0006",
+   "start": 77.361,
+   "end": 100.997,
+   "text": "War still happened, but it carried a different sentiment from what the word means now. Soldiers fell in battle and rose again the next morning, dusted off by the local god and sent home with a story to tell. The weapons they used, ones that modern Virelia knows only as legend, were left scattered across the fields after the day's fighting, to be picked up and put away back into the toybox."
+  },
+  {
+   "id": "s-0007",
+   "start": 102.697,
+   "end": 108.712,
+   "text": "There were no Rifts, there was nothing yet that could break, unless someone willed it."
+  }
+ ]
+}

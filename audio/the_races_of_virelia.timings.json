@@ -1,0 +1,230 @@
+{
+ "version": 1,
+ "entryId": "the_races_of_virelia",
+ "textHash": "69d73cc201983e4ca7217195424274ca072dad862620e682e857d01a0dfc7010",
+ "renderProfile": "95a2da9b62343cd5173677c0922c2494c47407937d3f85d9b273c982c957e2f6",
+ "segments": [
+  {
+   "id": "s-0001",
+   "start": 0.6,
+   "end": 2.538,
+   "text": "The Races of Virelia"
+  },
+  {
+   "id": "s-0002",
+   "start": 3.638,
+   "end": 6.7,
+   "text": "Variations on the human experience"
+  },
+  {
+   "id": "s-0003",
+   "start": 7.6,
+   "end": 23.911,
+   "text": "\"Races\" isn't quite the right word here, but I'll be using it for lack of a better one. Can people plagued by magic-catching crystals be called a race? Can golems? Mistakes, anomalies, diseased, produced and discarded."
+  },
+  {
+   "id": "s-0004",
+   "start": 24.311,
+   "end": 30.967,
+   "text": "These are the glorious creations of our short-sighted predecessors and our generous homeland."
+  },
+  {
+   "id": "s-0005",
+   "start": 31.867,
+   "end": 44.418,
+   "text": "Since I strongly refuse to take part in the endless arguments regarding taxonomy, I'll say only this: if it's common enough to have a name, and there's a common denominator that I can point to, then it's a race."
+  },
+  {
+   "id": "s-0006",
+   "start": 44.818,
+   "end": 60.423,
+   "text": "I don't care whether you were born that way, shaped that way, infected or constructed by a bloody nutjob. Either way, you're it. People will name you so, and that's enough for you to join the catalogue."
+  },
+  {
+   "id": "s-0007",
+   "start": 61.323,
+   "end": 78.766,
+   "text": "Ancestries that could not have come from anywhere but here, and in some cases would probably have preferred not to. Though the will to live is often stronger than one's better judgement, as demonstrated by some of our more tragic cases."
+  },
+  {
+   "id": "s-0008",
+   "start": 79.666,
+   "end": 93.791,
+   "text": "I've written what I could gather on each, starting with my own observations, followed by brief factual excerpts that might serve the lazy, who, understandably, grew tired of my ceaseless babbling."
+  },
+  {
+   "id": "s-0009",
+   "start": 94.191,
+   "end": 101.344,
+   "text": "Though in my defense, if there is indeed anything that separates us from cattle, it is culture."
+  },
+  {
+   "id": "s-0010",
+   "start": 102.244,
+   "end": 105.029,
+   "text": "What Was, And What Remains"
+  },
+  {
+   "id": "s-0011",
+   "start": 105.879,
+   "end": 120.48,
+   "text": "If you'll indulge me, before we proceed to the newer races, I believe the old ones are deserving of an explanation too. I have seen ancient records lament the disappearance of ones such as Aasimar, Dragonborn and Tiefling."
+  },
+  {
+   "id": "s-0012",
+   "start": 120.88,
+   "end": 135.994,
+   "text": "I assume the necessary conditions for their reproduction have been absent from Virelia in its current form, as none of them remain today. As for the ones who are still with us, I'll start by stating the ones that are commonly found."
+  },
+  {
+   "id": "s-0013",
+   "start": 136.894,
+   "end": 158.117,
+   "text": "Humans remain the majority in every region and require no further COMMENTARY. Dwarves are common, especially in Haldrith, where they and the rock gnomes have shaped the culture so completely that a visitor might forget what a naturally shaped stone looks like."
+  },
+  {
+   "id": "s-0014",
+   "start": 158.517,
+   "end": 180.167,
+   "text": "You'll find both in most cities, in smaller or larger margins. Halflings are harder to pin down. They scatter, unable to sit in one place both in micro and macro levels. They're practically everywhere, especially the outskirts. Tintbent, upper Kelara, Knotsreach."
+  },
+  {
+   "id": "s-0015",
+   "start": 180.567,
+   "end": 199.751,
+   "text": "Places where the population is thin enough that five halflings in a settlement of fifty starts to feel like a demographic. It isn't. It's just that most others weren't stupid enough to stay. Forest gnomes are rarer. Myrskov and Lastrago, mostly."
+  },
+  {
+   "id": "s-0016",
+   "start": 200.651,
+   "end": 214.124,
+   "text": "Half-orcs are an uncomfortable topic to discuss. Orcs are out there, in the connecting tissue between holdings, scrapping over ground the rest of us couldn't keep. A child born of that kind of \"encounter\" is possible."
+  },
+  {
+   "id": "s-0017",
+   "start": 214.524,
+   "end": 227.515,
+   "text": "The circumstances that produce one are rarely the kind anyone writes home about. The Or-Racks have made the question feel antique, and most people don't bother distinguishing anymore, to the offense of everyone involved."
+  },
+  {
+   "id": "s-0018",
+   "start": 228.415,
+   "end": 242.473,
+   "text": "Elves, supposedly, are still out there. Most living Virelians have never met one, but rumors tell of a strong core that remains hidden in Lastrago. A fellow researcher has told me they were plentiful once."
+  },
+  {
+   "id": "s-0019",
+   "start": 242.873,
+   "end": 260.258,
+   "text": "However, they live for centuries and bear few children, and after eighteen centuries of indiscriminate death, the arithmetic did not work in their favor. A rift takes a village. Humans replace the loss in a generation. Elves carry it for centuries."
+  },
+  {
+   "id": "s-0020",
+   "start": 260.658,
+   "end": 277.941,
+   "text": "Half-elves follow from the same scarcity, and carry no stigma beyond the obvious. There aren't enough elves left for anyone to have developed strong opinions on the matter, which is perhaps lucky when considering the way some other races are treated."
+  },
+  {
+   "id": "s-0021",
+   "start": 278.841,
+   "end": 290.755,
+   "text": "While I would've preferred to detail the ordeals and misfortunes each population has weathered these past eighteen centuries, I'm afraid this work will have to remain unfinished, for now."
+  },
+  {
+   "id": "s-0022",
+   "start": 291.155,
+   "end": 308.041,
+   "text": "I prefer spending what limited time I have on what Virelia has birthed, instead of what it eroded, and I find it more fulfilling to engage with the misfits and the bizarre. It's a personal interest, or perversion. Depends on who you ask."
+  },
+  {
+   "id": "s-0023",
+   "start": 308.941,
+   "end": 309.497,
+   "text": "Graith"
+  },
+  {
+   "id": "s-0024",
+   "start": 310.347,
+   "end": 313.577,
+   "text": "+two Any,"
+  },
+  {
+   "id": "s-0025",
+   "start": 314.477,
+   "end": 315.423,
+   "text": "Or-Rack"
+  },
+  {
+   "id": "s-0026",
+   "start": 316.273,
+   "end": 319.176,
+   "text": "+two Con,"
+  },
+  {
+   "id": "s-0027",
+   "start": 320.076,
+   "end": 320.875,
+   "text": "Varn"
+  },
+  {
+   "id": "s-0028",
+   "start": 321.725,
+   "end": 323.378,
+   "text": "+two Int,"
+  },
+  {
+   "id": "s-0029",
+   "start": 324.278,
+   "end": 325.124,
+   "text": "Myrrkin"
+  },
+  {
+   "id": "s-0030",
+   "start": 325.974,
+   "end": 328.74,
+   "text": "+two Cha,"
+  },
+  {
+   "id": "s-0031",
+   "start": 329.64,
+   "end": 330.127,
+   "text": "Nirath"
+  },
+  {
+   "id": "s-0032",
+   "start": 330.977,
+   "end": 332.523,
+   "text": "+two Wis,"
+  },
+  {
+   "id": "s-0033",
+   "start": 333.423,
+   "end": 334.878,
+   "text": "Dusk-Walker"
+  },
+  {
+   "id": "s-0034",
+   "start": 335.728,
+   "end": 337.381,
+   "text": "+two Int,"
+  },
+  {
+   "id": "s-0035",
+   "start": 338.281,
+   "end": 339.221,
+   "text": "Car-Rex"
+  },
+  {
+   "id": "s-0036",
+   "start": 340.071,
+   "end": 341.93,
+   "text": "+one Any,"
+  },
+  {
+   "id": "s-0037",
+   "start": 342.83,
+   "end": 343.971,
+   "text": "+one Other"
+  }
+ ]
+}
