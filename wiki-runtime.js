@@ -34,20 +34,40 @@
     // Kept for defensive compatibility if a future data loader explicitly
     // rejects an override. Book-only entries are valid and are created above.
     if (unknown.length) {
-        reportBuildError('Generated content refers to ' + unknown.length +
+        // Console only: a reader cannot act on this, and every entry they can
+        // actually reach still works.
+        reportBuildError(null, 'Generated content refers to ' + unknown.length +
             ' unknown entry ID(s): ' + unknown.join(', ') +
             '. Fix content/entry-meta.json or add the entry to wiki-data.js.');
     }
 
-    function reportBuildError(message) {
-        console.error('[wiki] ' + message);
+    /**
+     * Say a thing went wrong.
+     *
+     * `detail` is the build instruction and goes to the console only. The
+     * banner is the reader's, so it carries `message` alone -- a visitor who
+     * is handed "Run: node scripts/build-book.mjs" learns nothing from it and
+     * concludes the site is broken.
+     *
+     * With no `message`, nothing is shown at all: some failures are worth
+     * recording for whoever maintains the site and not worth interrupting a
+     * reader who may never touch the affected part.
+     */
+    function reportBuildError(message, detail) {
+        console.error('[wiki] ' + (detail || message));
+        if (!message) return;
         var banner = document.getElementById('build-error');
         if (!banner) {
             banner = document.createElement('div');
             banner.id = 'build-error';
+            banner.setAttribute('role', 'status');
             document.body.appendChild(banner);
         }
+        // The same missing artifact can be reported by several callers; one
+        // line per distinct message, not one per attempt.
+        if (banner.querySelector('[data-message="' + CSS.escape(message) + '"]')) return;
         var line = document.createElement('div');
+        line.dataset.message = message;
         line.textContent = message;
         banner.appendChild(line);
     }
@@ -156,6 +176,15 @@
     // them.
     var trail = [];
 
+    // A #haldrith link is shareable and bookmarkable, so the tab it opens
+    // should say what it is rather than repeating the site's name. Captured
+    // once, before anything has changed it.
+    var SITE_TITLE = document.title;
+
+    function setTitle(entry) {
+        document.title = entry ? entry.title + ' — Virelia' : SITE_TITLE;
+    }
+
     function currentView() {
         if (typeof map === 'undefined') return null;
         var c = map.getCenter();
@@ -205,7 +234,7 @@
             img.className = 'ribbon';
             img.src = entry.image;
             img.alt = entry.title;
-            img.onclick = function () { showLightbox(entry.image); };
+            img.onclick = function () { showLightbox(entry.image, entry.title); };
             img.onerror = function () { this.style.display = 'none'; };
             contentDiv.appendChild(img);
         }
@@ -240,6 +269,7 @@
 
         sidebar.classList.add('active');
         sidebar.dataset.entry = id;
+        setTitle(entry);
         updateBackControl();
         if (window.Narration) window.Narration.attach(id, contentDiv);
     }
@@ -250,6 +280,7 @@
         delete sidebar.dataset.entry;
         if (window.Narration) window.Narration.stop();
         if (window.MapFocus) window.MapFocus.clear();
+        setTitle(null);
         // Closing starts a new reading session. Replace the active entry
         // state instead of pushing an empty history item, then clear the
         // sidebar's Back label so it can never advertise a closed entry.
@@ -295,6 +326,7 @@
             if (window.MapFocus) window.MapFocus.focusEntry(state.entry, state.view);
         } else {
             document.getElementById('sidebar').classList.remove('active');
+            setTitle(null);
             if (window.Narration) window.Narration.stop();
             if (window.MapFocus) window.MapFocus.clear();
             if (state && state.view && typeof map !== 'undefined') {
@@ -322,7 +354,10 @@
     document.addEventListener('click', function (event) {
         var image = event.target.closest && event.target.closest('.entry-figure img');
         if (!image || typeof showLightbox !== 'function') return;
-        showLightbox(image.getAttribute('src'));
+        var figure = image.closest('.entry-figure');
+        var caption = figure && figure.querySelector('figcaption');
+        showLightbox(image.getAttribute('src'),
+            image.getAttribute('alt') || (caption && caption.textContent) || '');
     });
 
     /**

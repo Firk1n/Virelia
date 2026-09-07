@@ -3,3 +3,6 @@ __pycache__/
 
 # Intermediate: rebuilt by scripts/shrink-docx.py
 build/
+
+# Editor/pipeline backups
+*.bak

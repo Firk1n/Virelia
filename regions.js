@@ -32,6 +32,22 @@
         return (data && data.regions && data.regions[id]) || null;
     }
 
+    /**
+     * The box to frame for a region.
+     *
+     * The only question the page asks of a traced border is how wide it is, so
+     * the page is given generated/region-bounds.js -- twelve boxes, a kilobyte
+     * -- instead of region-geometry.js, which is 832 KB of polygon detail that
+     * exists for the region tool. Edit mode does load the full geometry, and
+     * there the freshly traced ring must win over a stale generated box.
+     */
+    function boundsFor(id) {
+        var geometry = geometryFor(id);
+        if (geometry) return L.geoJSON(geometry).getBounds();
+        var box = window.REGION_BOUNDS && window.REGION_BOUNDS[id];
+        return box ? L.latLngBounds(box[0], box[1]) : null;
+    }
+
     function photoshopOverlayFor(id) {
         var data = window.REGION_OVERLAYS;
         return (data && data.regions && data.regions[id]) || null;
@@ -84,12 +100,11 @@
         var entry = wikiData[id];
         if (!entry) return null;
         var point = entry.coords ? L.latLng(entry.coords) : null;
-        var geometry = geometryFor(id);
-        if (!geometry) {
+        var shapeBounds = boundsFor(id);
+        if (!shapeBounds) {
             return point ? { bounds: null, center: point, zoom: currentZoom() } : null;
         }
 
-        var shapeBounds = L.geoJSON(geometry).getBounds();
         // The marker is not always inside its region's centroid box -- it sits
         // on the painted label, which for Molakar is well east of the border's
         // middle. Frame both, or the "you are here" dot ends up under the panel

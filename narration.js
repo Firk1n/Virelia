@@ -320,22 +320,44 @@
         });
     }
 
+    /**
+     * Refuse a timing file we cannot trust, and say so twice.
+     *
+     * A reader is owed a plain sentence about what they can and cannot do; the
+     * instruction for repairing the build is for whoever maintains it, and
+     * belongs in the console. Putting the second in the sidebar -- which is
+     * what "see generated/build-report.json" was doing -- tells the reader
+     * nothing and looks broken.
+     */
+    function refuse(reader, detail) {
+        console.error('[narration] ' + detail);
+        var error = new Error(reader);
+        error.detail = detail;
+        return error;
+    }
+
     function validate(timings, entryId, narration) {
+        var title = (wikiData[entryId] && wikiData[entryId].title) || entryId;
         if (timings.version !== TIMING_VERSION) {
-            throw new Error('Timing file version ' + timings.version + ' is not supported.');
+            throw refuse('The narration for ' + title + ' cannot be played in this version.',
+                'Timing file version ' + timings.version + ' is not supported (expected ' +
+                TIMING_VERSION + ').');
         }
         if (timings.entryId !== entryId) {
-            throw new Error('Timing file is for "' + timings.entryId + '", not "' + entryId + '".');
+            throw refuse('The narration for ' + title + ' is unavailable.',
+                'Timing file is for "' + timings.entryId + '", not "' + entryId + '".');
         }
         // The whole point of the hash: prose was edited and rebuilt, but the
         // audio was not re-rendered. Highlighting against those timings would
         // mark the wrong sentences, which is worse than not highlighting.
         if (timings.textHash !== narration.textHash) {
-            throw new Error('Narration is out of date for this entry. Re-render it: ' +
-                'see generated/build-report.json "changed".');
+            throw refuse('No up-to-date reading of ' + title + ' yet. The written entry is complete.',
+                'textHash mismatch for "' + entryId + '": the prose was rebuilt without ' +
+                're-rendering the audio. Re-render it -- see generated/build-report.json "changed".');
         }
         if (!Array.isArray(timings.segments) || !timings.segments.length) {
-            throw new Error('Timing file contains no segments.');
+            throw refuse('The narration for ' + title + ' is unavailable.',
+                'Timing file for "' + entryId + '" contains no segments.');
         }
     }
 

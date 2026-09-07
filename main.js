@@ -30,6 +30,11 @@ var map = L.map('map', {
 // map.getBoundsZoom(mapBounds, true) instead -- that gives 4 at 1920x1080.)
 var mapBounds = L.latLngBounds(bounds);
 
+// Whether we have ever managed to measure the container. Until we have, there
+// is no floor to sit the map on -- and applying the *stale* minimum instead is
+// exactly how the map ends up a postage stamp floating in open grey.
+var floorApplied = false;
+
 function updateMinZoom() {
     var viewportWidth = map.getSize().x;
     if (!viewportWidth) { return; }      // container not laid out yet; 'resize' will retry
@@ -39,14 +44,21 @@ function updateMinZoom() {
         var se = map.project(mapBounds.getSouthEast(), z);
         if (se.x - nw.x >= viewportWidth) { floor = z; break; }
     }
-    if (floor !== map.getMinZoom()) {
-        map.setMinZoom(floor);          // Leaflet zooms in if we are below it
+    if (floor !== map.getMinZoom()) { map.setMinZoom(floor); }
+
+    // Leaflet only raises a below-minimum zoom through an *animated* setZoom,
+    // which needs a frame to land and silently does nothing if that frame
+    // never comes. Do it here, unanimated, so the map cannot be left below its
+    // own floor -- and do it on the first successful measurement, which is
+    // what puts the map on the floor at startup.
+    if (!floorApplied || map.getZoom() < floor) {
+        floorApplied = true;
+        map.setZoom(floor, { animate: false });
     }
 }
 
 updateMinZoom();
 map.on('resize', updateMinZoom);
-map.setZoom(map.getMinZoom());
 
 // 2. Define the Layers
 
@@ -149,8 +161,24 @@ for (let key in wikiData) {
     if (entry.coords) {
         let selectedIcon = getIcon(entry.type);
         
-        // Create marker BUT DO NOT ADD TO MAP YET
-        let marker = L.marker(entry.coords, {icon: selectedIcon});
+        // Create marker BUT DO NOT ADD TO MAP YET.
+        // Leaflet makes every marker focusable (tabindex 0, role button), so
+        // without a name the map is 42 anonymous buttons to a keyboard or a
+        // screen reader. `title` is the tooltip; `alt` becomes the aria-label.
+        let label = entry.title + (entry.type ? ', ' + entry.type : '');
+        let marker = L.marker(entry.coords, {
+            icon: selectedIcon,
+            title: entry.title,
+            alt: label
+        });
+
+        // These are divIcons, and Leaflet only turns `alt` into markup for an
+        // <img>. The layer group tears markers down and rebuilds them on every
+        // zoom step, so the name is reapplied on each add rather than once.
+        marker.on('add', function () {
+            let el = marker.getElement();
+            if (el) el.setAttribute('aria-label', label);
+        });
         
         // Store references
         markers[key] = marker;

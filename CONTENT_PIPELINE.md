@@ -148,6 +148,18 @@ npm run serve
   }
   ```
 
+- `generated/region-bounds.js` exports `window.REGION_BOUNDS` as
+  `{ id: [[south, west], [north, east]] }` and is what the *page* frames a
+  region with. `region-geometry.js` holds the traced polygons and is loaded
+  only under `?edit`, so `regions.js` prefers the full geometry when it is
+  present and falls back to the generated boxes otherwise. Re-trace a border
+  and you must run `npm run bounds`, or the page keeps framing the old shape.
+- The page must stay free of build instructions. `reportBuildError(message,
+  detail)` and `narration.js`'s `refuse(reader, detail)` both take the
+  reader's sentence first and the maintainer's second; only the first is ever
+  shown, and the second goes to the console. A visitor handed
+  "Run: node scripts/build-book.mjs" learns nothing and concludes the site is
+  broken.
 - `entry-meta.json` owns aliases. Do not infer adjectival forms with a stemmer:
   fantasy names create false links. Never create a self-link.
 - Race mechanics are rendered in a collapsed **Game mechanics appendix** and

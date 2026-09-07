@@ -80,10 +80,13 @@
                     body.appendChild(frame);
                     return;
                 }
+                console.error('[book] ' + SRC + ' is missing. Export it: npm run pdf');
                 var missing = document.createElement('p');
                 missing.className = 'book-missing';
-                missing.textContent = 'The book has not been exported yet. ' +
-                    'Run: npm run pdf';
+                // The reader gets the fact and the alternative, not the build
+                // step -- they are not the one who can run it.
+                missing.textContent = 'The book is not available to read here yet. ' +
+                    'Everything in it can be read in the Wiki.';
                 body.appendChild(missing);
             });
     }

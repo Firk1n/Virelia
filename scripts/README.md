@@ -75,6 +75,8 @@ The map exporter restores layer visibility and does not save the PSD.
 | Script | Role |
 |---|---|
 | `build-wiki.mjs` | parses source prose into entries, HTML segments, cross-links, and the narration manifest |
+| `build-region-bounds.mjs` | reduces `region-geometry.js` to the twelve boxes the page reads (832 KB -> 1 KB) |
+| `build-social-card.py` | stitches `assets/social-card.jpg` from the map tiles, for link previews |
 | `build-book.mjs` | builds the whole-book reader data |
 | `parse-source.mjs` | shared source parser |
 | `audit.mjs` | validates generated data, links, timing contracts, and region geometry |
