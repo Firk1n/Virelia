@@ -148,6 +148,13 @@ npm run serve
   }
   ```
 
+- **The build is author-side and must never run on the host.**
+  `scripts/build-wiki.mjs` reads `Virelia.txt` from a path on the authoring
+  machine, so `npm run build` cannot succeed anywhere else. Every artifact it
+  produces is committed under `generated/`, which makes the deployed site pure
+  static files. `vercel.json` sets an empty `buildCommand` to say so; without
+  it Vercel sees the `build` script in `package.json`, runs it, and the deploy
+  fails with ENOENT on a `C:\Users\...` path.
 - `generated/region-bounds.js` exports `window.REGION_BOUNDS` as
   `{ id: [[south, west], [north, east]] }` and is what the *page* frames a
   region with. `region-geometry.js` holds the traced polygons and is loaded
