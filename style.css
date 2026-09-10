@@ -1007,6 +1007,24 @@ body.edit-mode-active .map-buttons { display: none; }
     color: #fdf6e3;
 }
 .reader-head h1 { margin: 0; font-size: 20px; font-weight: 600; letter-spacing: 0.5px; }
+.reader-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.reader-contents-toggle {
+    display: none;
+    padding: 6px 10px;
+    background: transparent;
+    border: 1px solid rgba(253, 246, 227, 0.6);
+    border-radius: 4px;
+    color: #fdf6e3;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.reader-contents-toggle:hover { background: rgba(253, 246, 227, 0.2); }
 .reader-close {
     background: transparent;
     border: 1px solid rgba(253, 246, 227, 0.6);
@@ -1157,12 +1175,15 @@ body.edit-mode-active .map-buttons { display: none; }
 @media (max-width: 700px) {
     #reader { padding: 0; }
     .reader-body { flex-direction: column; }
+    .reader-contents-toggle { display: block; }
     .reader-toc {
+        display: none;
         flex: 0 0 auto;
-        max-height: 30vh;
+        max-height: 42dvh;
         border-right: none;
         border-bottom: 2px solid #d8cbb0;
     }
+    .reader-frame.toc-open .reader-toc { display: block; }
     .reader-page { padding: 18px; }
     .reader-pager { padding: 8px 12px; }
     .reader-pager-btn { font-size: 11px; }

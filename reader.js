@@ -46,10 +46,13 @@
             '<div class="reader-frame">' +
                 '<header class="reader-head">' +
                     '<h1>Virelia</h1>' +
-                    '<button type="button" id="reader-close" class="reader-close" aria-label="Close">&times;</button>' +
+                    '<div class="reader-actions">' +
+                        '<button type="button" id="reader-contents-toggle" class="reader-contents-toggle" aria-expanded="false" aria-controls="reader-toc">Contents</button>' +
+                        '<button type="button" id="reader-close" class="reader-close" aria-label="Close">&times;</button>' +
+                    '</div>' +
                 '</header>' +
                 '<div class="reader-body">' +
-                    '<nav class="reader-toc" aria-label="Chapters"><ol id="reader-toc-list"></ol></nav>' +
+                    '<nav id="reader-toc" class="reader-toc" aria-label="Chapters"><ol id="reader-toc-list"></ol></nav>' +
                     '<div class="reader-main">' +
                         '<article class="reader-page" id="reader-page" tabindex="-1"></article>' +
                         '<nav class="reader-pager" aria-label="Chapter navigation" hidden>' +
@@ -62,9 +65,11 @@
         document.body.appendChild(overlay);
 
         elements.overlay = overlay;
+        elements.frame = overlay.querySelector('.reader-frame');
         elements.list = overlay.querySelector('#reader-toc-list');
         elements.page = overlay.querySelector('#reader-page');
         elements.close = overlay.querySelector('#reader-close');
+        elements.contentsToggle = overlay.querySelector('#reader-contents-toggle');
         elements.main = overlay.querySelector('.reader-main');
         elements.pager = overlay.querySelector('.reader-pager');
         // There is one narrator and one transport in the page. Rather than
@@ -75,6 +80,9 @@
         elements.next = overlay.querySelector('#reader-next');
 
         elements.close.addEventListener('click', close);
+        elements.contentsToggle.addEventListener('click', function () {
+            setContentsOpen(!elements.frame.classList.contains('toc-open'));
+        });
         overlay.addEventListener('keydown', onKeyDown);
         // The darkened surround is a way out, as it is for the search panel.
         // mousedown rather than click, and only when it is the surround itself,
@@ -103,6 +111,11 @@
             close();
             window.WikiRuntime.open(link.dataset.entry);
         });
+    }
+
+    function setContentsOpen(open) {
+        elements.frame.classList.toggle('toc-open', open);
+        elements.contentsToggle.setAttribute('aria-expanded', String(open));
     }
 
     /** Fetch and run generated/book.js once, resolving to the book or null. */
@@ -230,6 +243,9 @@
         var chapter = chapters[index];
         if (!chapter) return;
         currentIndex = index;
+        // On a phone the contents is a drawer, not a permanent half-screen
+        // column. Choosing a chapter returns immediately to the prose.
+        setContentsOpen(false);
         elements.page.innerHTML = '';
 
         var head = document.createElement('div');
