@@ -450,6 +450,9 @@ body, html {
     #sidebar {
         width: 100%;
         right: -100%;
+        /* `100%` can include browser chrome on mobile Safari. Dynamic viewport
+           units keep the close and audio controls inside the visible screen. */
+        height: 100dvh;
     }
 
     #sidebar-content {
@@ -495,6 +498,16 @@ body, html {
         /* Update negative margins to pull to the new edge */
         margin: -20px -20px 20px -20px;
     }
+
+    /* Keep the map actions as proper thumb-sized targets. The layer switcher
+       moves below them (rather than across the Book button) in the rule near
+       the map controls, where Leaflet's positioning is defined. */
+    .map-button {
+        min-height: 44px;
+        box-sizing: border-box;
+        padding: 8px 11px;
+    }
+
 }
 /* --- GENERATED ENTRY CONTENT ---------------------------------------------
    Markup produced by scripts/build-wiki.mjs. The older hand-written entries
@@ -902,6 +915,13 @@ h2.seg-active { box-shadow: none; }
 .map-button:hover { background: #f6dfbf; }
 .map-button:hover .map-button-icon { color: #8b0000; }
 body.edit-mode-active .map-buttons { display: none; }
+
+@media (max-width: 600px) {
+    /* Leaflet starts this control in the top-right corner, which is also where
+       the last map action ends on a phone. Giving it its own row prevents the
+       labels and radio buttons from sitting on top of each other. */
+    .leaflet-top.leaflet-right { top: 54px; }
+}
 
 /* These stay pinned to their corner and let a left-docked panel cover them,
    exactly as the layer control lets a right-docked one cover it. A control
@@ -1358,11 +1378,13 @@ body.edit-mode-active .map-buttons { display: none; }
         top: 0;
         left: 0;
         width: 100vw;
-        height: 100vh;
-        max-height: 100vh;
+        height: 100dvh;
+        max-height: 100dvh;
         border-radius: 0;
         border-width: 0 0 2px 0;
     }
+
+    #lightbox { padding: 16px; }
 }
 
 /* --- ENTRY SWAP --- */
@@ -1420,3 +1442,33 @@ body.edit-mode-active .map-buttons { display: none; }
 }
 .entry-wiki-link svg { width: 17px; height: 17px; }
 .entry-wiki-link:hover { background: #93403c; color: #fdf6e3; }
+
+/* This sits after the base player rules so the phone arrangement wins the
+   cascade (the sidebar's phone rules can live above because their base rules
+   are earlier in the file). */
+@media (max-width: 600px) {
+    .map-button { padding: 8px 11px; }
+
+    #entry-bar {
+        flex-wrap: nowrap;
+        gap: 6px;
+        padding: 8px 12px;
+    }
+    .entry-bar-controls {
+        display: grid;
+        grid-template-columns: 32px 40px 32px minmax(64px, 1fr) 52px;
+        grid-template-rows: 36px 16px;
+        align-items: center;
+        gap: 3px 6px;
+    }
+    .entry-bar-btn { padding: 6px 4px; }
+    .narration-play { min-width: 40px; }
+    .narration-jump { min-width: 32px; }
+    #narration-seek { min-width: 0; }
+    .narration-time {
+        grid-column: 4 / 6;
+        grid-row: 2;
+        align-self: start;
+    }
+    .narration-toggle { width: 36px; height: 36px; }
+}

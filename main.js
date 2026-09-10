@@ -36,13 +36,26 @@ var mapBounds = L.latLngBounds(bounds);
 var floorApplied = false;
 
 function updateMinZoom() {
-    var viewportWidth = map.getSize().x;
-    if (!viewportWidth) { return; }      // container not laid out yet; 'resize' will retry
+    var viewport = map.getSize();
+    var viewportWidth = viewport.x;
+    if (!viewportWidth || !viewport.y) { return; } // container not laid out yet; 'resize' will retry
+
+    // On a portrait phone, fitting the map only to the narrow edge leaves a
+    // small strip of map floating in a great deal of empty ocean. Fill both
+    // axes there instead: the map remains pannable horizontally, but it is a
+    // map first rather than a postage stamp. Wide screens retain the original
+    // overview-friendly, width-based floor.
+    var fillPortraitViewport = window.matchMedia('(max-width: 700px)').matches;
     var floor = map.getMaxZoom();
     for (var z = 0; z <= map.getMaxZoom(); z++) {
         var nw = map.project(mapBounds.getNorthWest(), z);
         var se = map.project(mapBounds.getSouthEast(), z);
-        if (se.x - nw.x >= viewportWidth) { floor = z; break; }
+        var mapWidth = se.x - nw.x;
+        var mapHeight = se.y - nw.y;
+        if (mapWidth >= viewportWidth && (!fillPortraitViewport || mapHeight >= viewport.y)) {
+            floor = z;
+            break;
+        }
     }
     if (floor !== map.getMinZoom()) { map.setMinZoom(floor); }
 
