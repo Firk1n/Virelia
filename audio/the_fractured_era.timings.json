@@ -1,8 +1,9 @@
 {
  "version": 1,
  "entryId": "the_fractured_era",
- "textHash": "3b7a6b2df4087f1e3acb51bfe2b763d681b5c8d87b824bac449b3b0e3fb5406f",
- "renderProfile": "95a2da9b62343cd5173677c0922c2494c47407937d3f85d9b273c982c957e2f6",
+ "textHash": "54542a6b72df3b89c4f2dc229a224ad56dd2c25ef22e23f03f158acb1aa6fe7a",
+ "renderProfile": "7e0f7001f0340334513ade5dc6f3dad7aee7d07a508816c9b42498849811fb2f",
+ "audioSrc": "audio/the_fractured_era.mp3",
  "segments": [
   {
    "id": "s-0001",
@@ -13,254 +14,86 @@
   {
    "id": "s-0002",
    "start": 3.951,
-   "end": 23.481,
-   "text": "The last failed Remosan invasion of Trefgann was fifty years ago, and the Empire could no longer afford to organize a fourth. That is as close as we have come to peace. No treaty was signed and no borders were formalized, but the grand armies are gone, even though everything they were meant to protect us from is still here."
+   "end": 19.276,
+   "text": "The last failed Remosan invasion of Trefgann was fifty years ago, and the Empire could no longer afford to organize a fourth. That is as close as we have come to peace."
   },
   {
    "id": "s-0003",
-   "start": 24.381,
-   "end": 51.258,
-   "text": "Riv-hold, Southfield, Haldrith, Trefgann and a handful of other regions hold their own ground, more or less, against the wildlands between. Less in most cases. Rifts still open in market squares on ordinary afternoons. Bandits take the roads the militia cannot afford to patrol. Rogue arcane weather drifts in from unstable areas and occasionally kills a village nobody had the manpower to warn."
+   "start": 19.676,
+   "end": 29.065,
+   "text": "No treaty was signed and no borders were formalized, but the grand armies are gone, even though everything they were meant to protect us from is still here."
   },
   {
    "id": "s-0004",
-   "start": 51.658,
-   "end": 61.288,
-   "text": "Trefgann still expects a Fourth March within the lifetime of its current children and trains accordingly. Is this peace? Either way, it is what it is."
+   "start": 29.965,
+   "end": 53.013,
+   "text": "Riv-hold, Southfield, Haldrith, Trefgann and a handful of other regions hold their own ground, more or less, against the wildlands between. Less in most cases. Rifts still open in market squares on ordinary afternoons. Bandits take the roads the militia cannot afford to patrol."
   },
   {
    "id": "s-0005",
-   "start": 62.188,
-   "end": 89.661,
-   "text": "Magic. Goddamned magic. The apparatus the Age of Silence left behind has been rotting for most of two millennia, and most people have decided they want nothing to do with what remains of it. They have reasons. A wall that mostly repairs itself is of no comfort when it occasionally throws a brick at your house. A road that mends overnight will, twice a generation, mend itself through a cart and the family in it."
+   "start": 53.413,
+   "end": 71.417,
+   "text": "Rogue arcane weather drifts in from unstable areas and occasionally kills a village nobody had the manpower to warn. Trefgann still expects a Fourth March within the lifetime of its current children and trains accordingly. Is this peace? Either way, it is what it is."
   },
   {
    "id": "s-0006",
-   "start": 90.061,
-   "end": 102.759,
-   "text": "The few divine-era objects that still work reliably are guarded by people who understand them far less than they pretend to, and the ones that work unreliably kill more men than they have ever saved."
+   "start": 72.317,
+   "end": 87.237,
+   "text": "Magic. Goddamned magic. The apparatus the Age of Silence left behind has been rotting for most of two millennia, and most people have decided they want nothing to do with what remains of it. They have reasons."
   },
   {
    "id": "s-0007",
-   "start": 103.659,
-   "end": 129.68,
-   "text": "Religion has shifted from worship to archaeology. A handful of clerics still name their gods, either because their families never stopped praying or because the names survived in scholarship, but no living priesthood carries an unbroken tradition. Most clerics don't bother with the names at all. They channel what is theorized to be Divine Residue, tapping into leftover echoes of the vanished Gods like scavengers."
+   "start": 87.637,
+   "end": 102.619,
+   "text": "A wall that mostly repairs itself is of no comfort when it occasionally throws a brick at your house. A road that mends overnight will, twice a generation, mend itself through a cart and the family in it."
   },
   {
    "id": "s-0008",
-   "start": 130.08,
-   "end": 144.715,
-   "text": "The average person is atheistic, not as a philosophical position but as a practical one. The gods are no more. This is something a child learns early, alongside which neighbors to avoid."
+   "start": 103.019,
+   "end": 116.237,
+   "text": "The few divine-era objects that still work reliably are guarded by people who understand them far less than they pretend to, and the ones that work unreliably kill more men than they have ever saved."
   },
   {
    "id": "s-0009",
-   "start": 145.615,
-   "end": 174.724,
-   "text": "In the absence of an empire, governance has settled into a multitude of pragmatic (and less pragmatic) arrangements: city-states, trade consortiums, industrial guilds, monastic orders, each ruling its own island and answerable to nothing larger than its own survival. Authority is measured in what a ruler can secure for his people: food, safe roads, protection against whatever drifts in from the wild. No one rules further than they can reach."
+   "start": 117.137,
+   "end": 134.024,
+   "text": "Religion has shifted from worship to archaeology. A handful of clerics still name their gods, either because their families never stopped praying or because the names survived in scholarship, but no living priesthood carries an unbroken tradition."
   },
   {
    "id": "s-0010",
-   "start": 175.124,
-   "end": 193.582,
-   "text": "Factions trade because they must, cooperate where their interests align, and guard their borders against rivals and the encroaching wild with equal vigilance. Contracts, coin, and the constant threat of collapse hold local order together. No one is under the illusion that they have built anything that will outlast them."
+   "start": 134.424,
+   "end": 153.494,
+   "text": "Most clerics don't bother with the names at all. They channel what is theorized to be Divine Residue, tapping into leftover echoes of the vanished Gods like scavengers. The average person is atheistic, not as a philosophical position but as a practical one. The gods are no more."
   },
   {
    "id": "s-0011",
-   "start": 195.282,
-   "end": 196.46,
-   "text": "Index"
+   "start": 153.894,
+   "end": 158.268,
+   "text": "This is something a child learns early, alongside which neighbors to avoid."
   },
   {
    "id": "s-0012",
-   "start": 197.96,
-   "end": 200.227,
-   "text": "The Regions of Virelia one"
+   "start": 159.168,
+   "end": 179.138,
+   "text": "In the absence of an empire, governance has settled into a multitude of pragmatic (and less pragmatic) arrangements: city-states, trade consortiums, industrial guilds, monastic orders, each ruling its own island and answerable to nothing larger than its own survival."
   },
   {
    "id": "s-0013",
-   "start": 201.077,
-   "end": 202.295,
-   "text": "Knotsreach three"
+   "start": 179.538,
+   "end": 191.32,
+   "text": "Authority is measured in what a ruler can secure for his people: food, safe roads, protection against whatever drifts in from the wild. No one rules further than they can reach."
   },
   {
    "id": "s-0014",
-   "start": 203.145,
-   "end": 204.585,
-   "text": "Molakar six"
+   "start": 191.72,
+   "end": 208.669,
+   "text": "Factions trade because they must, cooperate where their interests align, and guard their borders against rivals and the encroaching wild with equal vigilance. Contracts, coin, and the constant threat of collapse hold local order together."
   },
   {
    "id": "s-0015",
-   "start": 205.435,
-   "end": 206.642,
-   "text": "Southfield nine"
-  },
-  {
-   "id": "s-0016",
-   "start": 207.492,
-   "end": 208.54,
-   "text": "Myrskov twelve"
-  },
-  {
-   "id": "s-0017",
-   "start": 209.39,
-   "end": 210.529,
-   "text": "Lastrago fifteen"
-  },
-  {
-   "id": "s-0018",
-   "start": 211.379,
-   "end": 212.508,
-   "text": "Tintbent nineteen"
-  },
-  {
-   "id": "s-0019",
-   "start": 213.358,
-   "end": 215.712,
-   "text": "Kelara Peaks twenty-three"
-  },
-  {
-   "id": "s-0020",
-   "start": 216.562,
-   "end": 217.845,
-   "text": "Tavernash twenty-seven"
-  },
-  {
-   "id": "s-0021",
-   "start": 218.695,
-   "end": 219.514,
-   "text": "Haldrith thirty"
-  },
-  {
-   "id": "s-0022",
-   "start": 220.364,
-   "end": 221.887,
-   "text": "Riv-hold thirty-five"
-  },
-  {
-   "id": "s-0023",
-   "start": 222.737,
-   "end": 224.408,
-   "text": "Remosa thirty-eight"
-  },
-  {
-   "id": "s-0024",
-   "start": 225.258,
-   "end": 226.305,
-   "text": "Trefgann forty-two"
-  },
-  {
-   "id": "s-0025",
-   "start": 227.155,
-   "end": 229.086,
-   "text": "The Races of Virelia forty"
-  },
-  {
-   "id": "s-0026",
-   "start": 229.936,
-   "end": 231.548,
-   "text": "Dusk-Walker forty-two"
-  },
-  {
-   "id": "s-0027",
-   "start": 232.398,
-   "end": 233.413,
-   "text": "Graith forty-six"
-  },
-  {
-   "id": "s-0028",
-   "start": 234.263,
-   "end": 235.47,
-   "text": "Myrrkin fifty-two"
-  },
-  {
-   "id": "s-0029",
-   "start": 236.32,
-   "end": 238.157,
-   "text": "Or-Rack fifty-six"
-  },
-  {
-   "id": "s-0030",
-   "start": 239.007,
-   "end": 240.731,
-   "text": "Nirath sixty"
-  },
-  {
-   "id": "s-0031",
-   "start": 241.581,
-   "end": 243.103,
-   "text": "Varn sixty-five"
-  },
-  {
-   "id": "s-0032",
-   "start": 243.953,
-   "end": 245.959,
-   "text": "Car-Rex sixty-nine"
-  },
-  {
-   "id": "s-0033",
-   "start": 246.809,
-   "end": 249.125,
-   "text": "The factions of Virelia seventy-six"
-  },
-  {
-   "id": "s-0034",
-   "start": 249.975,
-   "end": 251.64,
-   "text": "The Weave seventy-seven"
-  },
-  {
-   "id": "s-0035",
-   "start": 252.49,
-   "end": 254.325,
-   "text": "Greywater Compact eighty"
-  },
-  {
-   "id": "s-0036",
-   "start": 255.175,
-   "end": 257.556,
-   "text": "The Halcyon League eighty-eight"
-  },
-  {
-   "id": "s-0037",
-   "start": 258.406,
-   "end": 259.806,
-   "text": "The Regions of Virelia"
-  },
-  {
-   "id": "s-0038",
-   "start": 260.656,
-   "end": 265.08,
-   "text": "Twelve regions, and not one country between them."
-  },
-  {
-   "id": "s-0039",
-   "start": 265.98,
-   "end": 273.217,
-   "text": "While the land is intact, although bruised, the continent's regions stand mostly alone."
-  },
-  {
-   "id": "s-0040",
-   "start": 273.617,
-   "end": 288.079,
-   "text": "The ground between holdings has gone hostile enough that steady trade and diplomacy are more aspiration than practice, and what a caravan brings home from the next region over has often been paid for in more than coin."
-  },
-  {
-   "id": "s-0041",
-   "start": 288.979,
-   "end": 302.633,
-   "text": "Where the land stopped being the immediate problem, often the neighbors picked up the slack. The central regions function anyway, after their own fashion. The edges are a more complicated story, and they each have their fair share of problems."
-  },
-  {
-   "id": "s-0042",
-   "start": 303.033,
-   "end": 312.833,
-   "text": "In some places the struggle is justified by resources which cannot be found elsewhere. In some, the locals are bullheaded madmen if you ask me."
-  },
-  {
-   "id": "s-0043",
-   "start": 313.733,
-   "end": 335.435,
-   "text": "The regions are not, for all this, uniformly grim. People marry, build, and quarrel over inheritances in places the empire would have written off as uninhabitable. Whatever the Sundering took, it was not our small communities or the quarrels inside them."
+   "start": 209.069,
+   "end": 214.767,
+   "text": "No one is under the illusion that they have built anything that will outlast them."
   }
  ]
 }

@@ -7,6 +7,7 @@
     { "id": "the_age_of_silence", "heading": "The Age of Silence", "type": "history", "aliases": [] },
     { "id": "the_fracture_wars", "heading": "The Fracture Wars", "type": "history", "aliases": [] },
     { "id": "the_fractured_era", "heading": "The Fractured Era (The Current Day)", "type": "history", "aliases": ["The Current Day"] },
+    { "id": "the_regions_of_virelia", "heading": "The Regions of Virelia", "type": "region overview", "aliases": [] },
     { "id": "knotsreach", "heading": "Knotsreach", "type": "region", "aliases": ["Knotsreacher", "Knotsreachian"] },
     { "id": "molakar", "heading": "Molakar", "type": "region", "aliases": ["Molakari"] },
     { "id": "southfield", "heading": "Southfield", "type": "region", "aliases": ["Southfielder"] },

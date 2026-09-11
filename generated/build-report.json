@@ -1,7 +1,7 @@
 {
   "version": 1,
   "source": "C:/Users/Ofek/Downloads/Virelia/Virelia.txt",
-  "sourceHash": "73fe6f2a01ccfa2de1fa644c8d3f5ee69cf98968440402959788a1ab0e7de26e",
+  "sourceHash": "0ced9fb0f07f204f79350d295e31982bf82eb70dc6050790a4730da907634909",
   "entries": [
     {
       "id": "the_shining_age",
@@ -34,9 +34,16 @@
     {
       "id": "the_fractured_era",
       "title": "The Fractured Era (The Current Day)",
-      "sourceHash": "dcbec3fcccc7d70879fc46959b3b082514d56d7ece15fd1dfd085dbb399ee8fb",
-      "textHash": "3b7a6b2df4087f1e3acb51bfe2b763d681b5c8d87b824bac449b3b0e3fb5406f",
-      "segments": 43
+      "sourceHash": "16ec825dad80fb666becbd1ed0aaad4ed5070452b1a13cff081c0d42e4472afe",
+      "textHash": "54542a6b72df3b89c4f2dc229a224ad56dd2c25ef22e23f03f158acb1aa6fe7a",
+      "segments": 15
+    },
+    {
+      "id": "the_regions_of_virelia",
+      "title": "The Regions of Virelia",
+      "sourceHash": "eb63c1c9a63b16a0cf32ec37294aa89042af24b5f6852d6f4de0d185455e13cf",
+      "textHash": "e366d57aa9e6b5f2f8c11bcea90cf4f391f983282ce8ce87867d09a03cc0202a",
+      "segments": 7
     },
     {
       "id": "knotsreach",
@@ -299,9 +306,7 @@
     }
   ],
   "changed": [
-    "the_shining_age",
-    "the_sundering",
-    "the_age_of_silence",
-    "the_fracture_wars"
+    "the_fractured_era",
+    "the_regions_of_virelia"
   ]
 }

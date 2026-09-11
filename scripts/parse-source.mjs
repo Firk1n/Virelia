@@ -54,6 +54,30 @@ function isSectionHeading(s) {
 
 /* ------------------------------------------------------------------ sections */
 
+/**
+ * Drop the book's table of contents.
+ *
+ * The Index names every chapter, so a parser that looks headings up by name
+ * finds each one twice: once as a page-number row and once as the chapter
+ * itself. Left in, it lands at the tail of whichever section precedes it --
+ * an entry of prose followed by thirty stray headings.
+ *
+ * It ends where the first real heading begins, and the caller says which
+ * headings those are: a row like "Knotsreach   3" cannot be mistaken for the
+ * chapter, but the exporter mangled one row into a bare tab-indented name, so
+ * only an unindented exact match counts.
+ */
+export function stripTableOfContents(text, headings) {
+  const lines = text.split('\n');
+  const start = lines.findIndex(line => line.trim() === 'Index');
+  if (start < 0) return text;
+  const wanted = new Set(headings.map(heading => heading.trim().toLowerCase()));
+  const end = lines.findIndex((line, i) =>
+    i > start && !/^\s/.test(line) && wanted.has(line.trim().toLowerCase()));
+  if (end <= start) return text;
+  return [...lines.slice(0, start), ...lines.slice(end)].join('\n');
+}
+
 function findHeading(text, heading, from = 0) {
   const escaped = heading.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   const pattern = new RegExp(`^${escaped}\\s*$`, 'gm');

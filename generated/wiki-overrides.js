@@ -219,9 +219,9 @@ window.WIKI_ENTRY_OVERRIDES = {
     "aliases": [
       "The Current Day"
     ],
-    "content": "<blockquote class=\"entry-epigraph\"><p><span class=\"seg\" data-seg=\"s-0002\">The last failed Remosan invasion of Trefgann was fifty years ago, and the Empire could no longer afford to organize a fourth. That is as close as we have come to peace. No treaty was signed and no borders were formalized, but the grand armies are gone, even though everything they were meant to protect us from is still here.</span></p>\n<p><span class=\"seg\" data-seg=\"s-0003\">Rivhalde, Southfield, Haldrith, Trefgann and a handful of other regions hold their own ground, more or less, against the wildlands between. Less in most cases. Rifts still open in market squares on ordinary afternoons. Bandits take the roads the militia cannot afford to patrol. Rogue arcane weather drifts in from unstable areas and occasionally kills a village nobody had the manpower to warn.</span> <span class=\"seg\" data-seg=\"s-0004\">Trefgann still expects a Fourth March within the lifetime of its current children and trains accordingly. Is this peace? Either way, it is what it is.</span></p>\n<p><span class=\"seg\" data-seg=\"s-0005\">Magic. Goddamned magic. The apparatus the Age of Silence left behind has been rotting for most of two millennia, and most people have decided they want nothing to do with what remains of it. They have reasons. A wall that mostly repairs itself is of no comfort when it occasionally throws a brick at your house. A road that mends overnight will, twice a generation, mend itself through a cart and the family in it.</span> <span class=\"seg\" data-seg=\"s-0006\">The few divine-era objects that still work reliably are guarded by people who understand them far less than they pretend to, and the ones that work unreliably kill more men than they have ever saved.</span></p>\n<p><span class=\"seg\" data-seg=\"s-0007\">Religion has shifted from worship to archaeology. A handful of clerics still name their gods, either because their families never stopped praying or because the names survived in scholarship, but no living priesthood carries an unbroken tradition. Most clerics don&#39;t bother with the names at all. They channel what is theorized to be Divine Residue, tapping into leftover echoes of the vanished Gods like scavengers.</span> <span class=\"seg\" data-seg=\"s-0008\">The average person is atheistic, not as a philosophical position but as a practical one. The gods are no more. This is something a child learns early, alongside which neighbors to avoid.</span></p>\n<p><span class=\"seg\" data-seg=\"s-0009\">In the absence of an empire, governance has settled into a multitude of pragmatic (and less pragmatic) arrangements: city-states, trade consortiums, industrial guilds, monastic orders, each ruling its own island and answerable to nothing larger than its own survival. Authority is measured in what a ruler can secure for his people: food, safe roads, protection against whatever drifts in from the wild. No one rules further than they can reach.</span> <span class=\"seg\" data-seg=\"s-0010\">Factions trade because they must, cooperate where their interests align, and guard their borders against rivals and the encroaching wild with equal vigilance. Contracts, coin, and the constant threat of collapse hold local order together. No one is under the illusion that they have built anything that will outlast them.</span></p>\n<p class=\"entry-cite\"><span class=\"seg\" data-seg=\"s-0011\">Index</span></p></blockquote>\n<h3 class=\"entry-section\"><span class=\"seg\" data-seg=\"s-0012\">The Regions of Virelia 1</span></h3>\n<h3 class=\"entry-section\"><span class=\"seg\" data-seg=\"s-0013\">Knotsreach 3</span></h3>\n<h3 class=\"entry-section\"><span class=\"seg\" data-seg=\"s-0014\">Molakar 6</span></h3>\n<h3 class=\"entry-section\"><span class=\"seg\" data-seg=\"s-0015\">Southfield 9</span></h3>\n<h3 class=\"entry-section\"><span class=\"seg\" data-seg=\"s-0016\">Myrskov 12</span></h3>\n<h3 class=\"entry-section\"><span class=\"seg\" data-seg=\"s-0017\">Lastrago 15</span></h3>\n<h3 class=\"entry-section\"><span class=\"seg\" data-seg=\"s-0018\">Tintbent 19</span></h3>\n<h3 class=\"entry-section\"><span class=\"seg\" data-seg=\"s-0019\">Kelarra Peaks 23</span></h3>\n<h3 class=\"entry-section\"><span class=\"seg\" data-seg=\"s-0020\">Tavernash 27</span></h3>\n<h3 class=\"entry-section\"><span class=\"seg\" data-seg=\"s-0021\">Haldrith 30</span></h3>\n<h3 class=\"entry-section\"><span class=\"seg\" data-seg=\"s-0022\">Rivhalde 35</span></h3>\n<h3 class=\"entry-section\"><span class=\"seg\" data-seg=\"s-0023\">Remosa 38</span></h3>\n<h3 class=\"entry-section\"><span class=\"seg\" data-seg=\"s-0024\">Trefgann 42</span></h3>\n<h3 class=\"entry-section\"><span class=\"seg\" data-seg=\"s-0025\">The Races of Virelia 40</span></h3>\n<h3 class=\"entry-section\"><span class=\"seg\" data-seg=\"s-0026\">Duskwalker 42</span></h3>\n<h3 class=\"entry-section\"><span class=\"seg\" data-seg=\"s-0027\">Graith 46</span></h3>\n<h3 class=\"entry-section\"><span class=\"seg\" data-seg=\"s-0028\">Myrrkin 52</span></h3>\n<h3 class=\"entry-section\"><span class=\"seg\" data-seg=\"s-0029\">Orrak 56</span></h3>\n<h3 class=\"entry-section\"><span class=\"seg\" data-seg=\"s-0030\">Nirath 60</span></h3>\n<h3 class=\"entry-section\"><span class=\"seg\" data-seg=\"s-0031\">Varn 65</span></h3>\n<h3 class=\"entry-section\"><span class=\"seg\" data-seg=\"s-0032\">Karex 69</span></h3>\n<h3 class=\"entry-section\"><span class=\"seg\" data-seg=\"s-0033\">The factions of Virelia 76</span></h3>\n<h3 class=\"entry-section\"><span class=\"seg\" data-seg=\"s-0034\">The Weave 77</span></h3>\n<h3 class=\"entry-section\"><span class=\"seg\" data-seg=\"s-0035\">Greywater Compact 80</span></h3>\n<div class=\"entry-table-wrap\"><table class=\"entry-table\"><thead><tr><th></th><th>The Speculars</th></tr></thead><tbody></tbody></table></div>\n<h3 class=\"entry-section\"><span class=\"seg\" data-seg=\"s-0036\">The Halcyon League 88</span></h3>\n<h3 class=\"entry-section\"><span class=\"seg\" data-seg=\"s-0037\">The Regions of Virelia</span></h3>\n<p><span class=\"seg\" data-seg=\"s-0038\">Twelve regions, and not one country between them.</span></p>\n<p><span class=\"seg\" data-seg=\"s-0039\">While the land is intact, although bruised, the continent’s regions stand mostly alone.</span> <span class=\"seg\" data-seg=\"s-0040\">The ground between holdings has gone hostile enough that steady trade and diplomacy are more aspiration than practice, and what a caravan brings home from the next region over has often been paid for in more than coin.</span></p>\n<p><span class=\"seg\" data-seg=\"s-0041\">Where the land stopped being the immediate problem, often the neighbors picked up the slack. The central regions function anyway, after their own fashion. The edges are a more complicated story, and they each have their fair share of problems.</span> <span class=\"seg\" data-seg=\"s-0042\">In some places the struggle is justified by resources which cannot be found elsewhere. In some, the locals are bullheaded madmen if you ask me.</span></p>\n<p><span class=\"seg\" data-seg=\"s-0043\">The regions are not, for all this, uniformly grim. People marry, build, and quarrel over inheritances in places the empire would have written off as uninhabitable. Whatever the Sundering took, it was not our small communities or the quarrels inside them.</span></p>\n<figure class=\"entry-figure\"><img src=\"assets/book/e2236581dc8a.webp\" width=\"796\" height=\"434\" loading=\"lazy\" alt=\"Illustration from The Fractured Era (The Current Day)\"></figure>",
+    "content": "<p><span class=\"seg\" data-seg=\"s-0002\">The last failed Remosan invasion of Trefgann was fifty years ago, and the Empire could no longer afford to organize a fourth. That is as close as we have come to peace.</span> <span class=\"seg\" data-seg=\"s-0003\">No treaty was signed and no borders were formalized, but the grand armies are gone, even though everything they were meant to protect us from is still here.</span></p>\n<p><span class=\"seg\" data-seg=\"s-0004\">Rivhalde, Southfield, Haldrith, Trefgann and a handful of other regions hold their own ground, more or less, against the wildlands between. Less in most cases. Rifts still open in market squares on ordinary afternoons. Bandits take the roads the militia cannot afford to patrol.</span> <span class=\"seg\" data-seg=\"s-0005\">Rogue arcane weather drifts in from unstable areas and occasionally kills a village nobody had the manpower to warn. Trefgann still expects a Fourth March within the lifetime of its current children and trains accordingly. Is this peace? Either way, it is what it is.</span></p>\n<p><span class=\"seg\" data-seg=\"s-0006\">Magic. Goddamned magic. The apparatus the Age of Silence left behind has been rotting for most of two millennia, and most people have decided they want nothing to do with what remains of it. They have reasons.</span> <span class=\"seg\" data-seg=\"s-0007\">A wall that mostly repairs itself is of no comfort when it occasionally throws a brick at your house. A road that mends overnight will, twice a generation, mend itself through a cart and the family in it.</span> <span class=\"seg\" data-seg=\"s-0008\">The few divine-era objects that still work reliably are guarded by people who understand them far less than they pretend to, and the ones that work unreliably kill more men than they have ever saved.</span></p>\n<p><span class=\"seg\" data-seg=\"s-0009\">Religion has shifted from worship to archaeology. A handful of clerics still name their gods, either because their families never stopped praying or because the names survived in scholarship, but no living priesthood carries an unbroken tradition.</span> <span class=\"seg\" data-seg=\"s-0010\">Most clerics don&#39;t bother with the names at all. They channel what is theorized to be Divine Residue, tapping into leftover echoes of the vanished Gods like scavengers. The average person is atheistic, not as a philosophical position but as a practical one. The gods are no more.</span> <span class=\"seg\" data-seg=\"s-0011\">This is something a child learns early, alongside which neighbors to avoid.</span></p>\n<p><span class=\"seg\" data-seg=\"s-0012\">In the absence of an empire, governance has settled into a multitude of pragmatic (and less pragmatic) arrangements: city-states, trade consortiums, industrial guilds, monastic orders, each ruling its own island and answerable to nothing larger than its own survival.</span> <span class=\"seg\" data-seg=\"s-0013\">Authority is measured in what a ruler can secure for his people: food, safe roads, protection against whatever drifts in from the wild. No one rules further than they can reach.</span> <span class=\"seg\" data-seg=\"s-0014\">Factions trade because they must, cooperate where their interests align, and guard their borders against rivals and the encroaching wild with equal vigilance. Contracts, coin, and the constant threat of collapse hold local order together.</span> <span class=\"seg\" data-seg=\"s-0015\">No one is under the illusion that they have built anything that will outlast them.</span></p>",
     "narration": {
-      "textHash": "3b7a6b2df4087f1e3acb51bfe2b763d681b5c8d87b824bac449b3b0e3fb5406f",
+      "textHash": "54542a6b72df3b89c4f2dc229a224ad56dd2c25ef22e23f03f158acb1aa6fe7a",
       "audioSrc": "audio/the_fractured_era.mp3",
       "timingSrc": "audio/the_fractured_era.timings.json",
       "segments": [
@@ -231,170 +231,100 @@ window.WIKI_ENTRY_OVERRIDES = {
         },
         {
           "id": "s-0002",
-          "role": "epigraph"
+          "role": "prose"
         },
         {
           "id": "s-0003",
-          "role": "epigraph"
+          "role": "prose"
         },
         {
           "id": "s-0004",
-          "role": "epigraph"
+          "role": "prose"
         },
         {
           "id": "s-0005",
-          "role": "epigraph"
+          "role": "prose"
         },
         {
           "id": "s-0006",
-          "role": "epigraph"
+          "role": "prose"
         },
         {
           "id": "s-0007",
-          "role": "epigraph"
+          "role": "prose"
         },
         {
           "id": "s-0008",
-          "role": "epigraph"
+          "role": "prose"
         },
         {
           "id": "s-0009",
-          "role": "epigraph"
+          "role": "prose"
         },
         {
           "id": "s-0010",
-          "role": "epigraph"
+          "role": "prose"
         },
         {
           "id": "s-0011",
-          "role": "attribution"
+          "role": "prose"
         },
         {
           "id": "s-0012",
-          "role": "heading"
+          "role": "prose"
         },
         {
           "id": "s-0013",
-          "role": "heading"
+          "role": "prose"
         },
         {
           "id": "s-0014",
-          "role": "heading"
+          "role": "prose"
         },
         {
           "id": "s-0015",
-          "role": "heading"
+          "role": "prose"
+        }
+      ]
+    }
+  },
+  "the_regions_of_virelia": {
+    "id": "the_regions_of_virelia",
+    "title": "The Regions of Virelia",
+    "type": "region overview",
+    "aliases": [],
+    "content": "<blockquote class=\"entry-epigraph\"><p class=\"entry-tagline\"><span class=\"seg\" data-seg=\"s-0002\">Twelve regions, and not one country between them.</span></p></blockquote>\n<p><span class=\"seg\" data-seg=\"s-0003\">While the land is intact, although bruised, the continent’s regions stand mostly alone.</span> <span class=\"seg\" data-seg=\"s-0004\">The ground between holdings has gone hostile enough that steady trade and diplomacy are more aspiration than practice, and what a caravan brings home from the next region over has often been paid for in more than coin.</span></p>\n<p><span class=\"seg\" data-seg=\"s-0005\">Where the land stopped being the immediate problem, often the neighbors picked up the slack. The central regions function anyway, after their own fashion. The edges are a more complicated story, and they each have their fair share of problems.</span> <span class=\"seg\" data-seg=\"s-0006\">In some places the struggle is justified by resources which cannot be found elsewhere. In some, the locals are bullheaded madmen if you ask me.</span></p>\n<p><span class=\"seg\" data-seg=\"s-0007\">The regions are not, for all this, uniformly grim. People marry, build, and quarrel over inheritances in places the empire would have written off as uninhabitable. Whatever the Sundering took, it was not our small communities or the quarrels inside them.</span></p>\n<figure class=\"entry-figure\"><img src=\"assets/book/e2236581dc8a.webp\" width=\"796\" height=\"434\" loading=\"lazy\" alt=\"Illustration from The Regions of Virelia\"></figure>",
+    "narration": {
+      "textHash": "e366d57aa9e6b5f2f8c11bcea90cf4f391f983282ce8ce87867d09a03cc0202a",
+      "audioSrc": "audio/the_regions_of_virelia.mp3",
+      "timingSrc": "audio/the_regions_of_virelia.timings.json",
+      "segments": [
+        {
+          "id": "s-0001",
+          "role": "title"
         },
         {
-          "id": "s-0016",
-          "role": "heading"
+          "id": "s-0002",
+          "role": "tagline"
         },
         {
-          "id": "s-0017",
-          "role": "heading"
-        },
-        {
-          "id": "s-0018",
-          "role": "heading"
-        },
-        {
-          "id": "s-0019",
-          "role": "heading"
-        },
-        {
-          "id": "s-0020",
-          "role": "heading"
-        },
-        {
-          "id": "s-0021",
-          "role": "heading"
-        },
-        {
-          "id": "s-0022",
-          "role": "heading"
-        },
-        {
-          "id": "s-0023",
-          "role": "heading"
-        },
-        {
-          "id": "s-0024",
-          "role": "heading"
-        },
-        {
-          "id": "s-0025",
-          "role": "heading"
-        },
-        {
-          "id": "s-0026",
-          "role": "heading"
-        },
-        {
-          "id": "s-0027",
-          "role": "heading"
-        },
-        {
-          "id": "s-0028",
-          "role": "heading"
-        },
-        {
-          "id": "s-0029",
-          "role": "heading"
-        },
-        {
-          "id": "s-0030",
-          "role": "heading"
-        },
-        {
-          "id": "s-0031",
-          "role": "heading"
-        },
-        {
-          "id": "s-0032",
-          "role": "heading"
-        },
-        {
-          "id": "s-0033",
-          "role": "heading"
-        },
-        {
-          "id": "s-0034",
-          "role": "heading"
-        },
-        {
-          "id": "s-0035",
-          "role": "heading"
-        },
-        {
-          "id": "s-0036",
-          "role": "heading"
-        },
-        {
-          "id": "s-0037",
-          "role": "heading"
-        },
-        {
-          "id": "s-0038",
+          "id": "s-0003",
           "role": "prose"
         },
         {
-          "id": "s-0039",
+          "id": "s-0004",
           "role": "prose"
         },
         {
-          "id": "s-0040",
+          "id": "s-0005",
           "role": "prose"
         },
         {
-          "id": "s-0041",
+          "id": "s-0006",
           "role": "prose"
         },
         {
-          "id": "s-0042",
-          "role": "prose"
-        },
-        {
-          "id": "s-0043",
+          "id": "s-0007",
           "role": "prose"
         }
       ]

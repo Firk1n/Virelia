@@ -13,7 +13,7 @@ import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import vm from 'node:vm';
-import { extractSections, groupNarrationSentences, indexImages, parseBlocks, renderEntry, splitMechanicsAppendix } from './parse-source.mjs';
+import { extractSections, groupNarrationSentences, indexImages, parseBlocks, renderEntry, splitMechanicsAppendix, stripTableOfContents } from './parse-source.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const metaPath = path.join(root, 'content', 'entry-meta.json');
@@ -144,7 +144,12 @@ if (!sourcePath) throw new Error('No source configured. Set entry-meta.json.sour
 // final faction runs to EOF, so a terminator is optional rather than inferred.
 const terminator = meta.terminator || null;
 
-const book = (await readFile(sourcePath, 'utf8')).replace(/\r\n/g, '\n');
+// The Index sits inside The Fractured Era's section and is not part of it.
+// Dropping it before the split is what keeps a page of prose from ending in
+// the book's whole table of contents.
+const book = stripTableOfContents(
+  (await readFile(sourcePath, 'utf8')).replace(/\r\n/g, '\n'),
+  meta.entries.map(entry => entry.heading));
 const sections = extractSections(book, meta.entries, terminator);
 const previous = await readJson(outputPaths.narration, { entries: {} });
 const wikiData = await readWikiData();

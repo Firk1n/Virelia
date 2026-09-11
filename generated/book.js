@@ -57,7 +57,7 @@ window.VIRELIA_BOOK = {
    "title": "The Regions of Virelia",
    "kind": "part",
    "part": "The Regions of Virelia",
-   "entryId": null,
+   "entryId": "the_regions_of_virelia",
    "html": "<blockquote class=\"entry-epigraph\"><p class=\"entry-tagline\"><span class=\"seg\" data-seg=\"s-0002\">Twelve regions, and not one country between them.</span></p></blockquote>\n<p><span class=\"seg\" data-seg=\"s-0003\">While the land is intact, although bruised, the continent’s regions stand mostly alone.</span> <span class=\"seg\" data-seg=\"s-0004\">The ground between holdings has gone hostile enough that steady trade and diplomacy are more aspiration than practice, and what a caravan brings home from the next region over has often been paid for in more than coin.</span></p>\n<p><span class=\"seg\" data-seg=\"s-0005\">Where the land stopped being the immediate problem, often the neighbors picked up the slack. The central regions function anyway, after their own fashion. The edges are a more complicated story, and they each have their fair share of problems.</span> <span class=\"seg\" data-seg=\"s-0006\">In some places the struggle is justified by resources which cannot be found elsewhere. In some, the locals are bullheaded madmen if you ask me.</span></p>\n<p><span class=\"seg\" data-seg=\"s-0007\">The regions are not, for all this, uniformly grim. People marry, build, and quarrel over inheritances in places the empire would have written off as uninhabitable. Whatever the Sundering took, it was not our small communities or the quarrels inside them.</span></p>\n<figure class=\"entry-figure\"><img src=\"assets/book/e2236581dc8a.webp\" width=\"796\" height=\"434\" loading=\"lazy\" alt=\"Illustration from The Regions of Virelia\"></figure>"
   },
   {

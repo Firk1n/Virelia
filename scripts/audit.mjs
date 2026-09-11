@@ -15,7 +15,7 @@ import { readFile, stat } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import vm from 'node:vm';
-import { extractSections, parseBlocks, renderEntry, splitMechanicsAppendix } from './parse-source.mjs';
+import { extractSections, parseBlocks, renderEntry, splitMechanicsAppendix, stripTableOfContents } from './parse-source.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const problems = [];
@@ -52,7 +52,11 @@ for (const [id, override] of Object.entries(overrides || {})) {
 /* -------------------------------------------------- 1. generated data is fresh */
 
 {
-  const book = (await readFile(meta.source, 'utf8')).replace(/\r\n/g, '\n');
+  // Same two steps as scripts/build-wiki.mjs, in the same order: this check is
+  // only worth anything if it reads the source the way the build does.
+  const book = stripTableOfContents(
+    (await readFile(meta.source, 'utf8')).replace(/\r\n/g, '\n'),
+    meta.entries.map(entry => entry.heading));
   const sections = extractSections(book, meta.entries, meta.terminator || null);
   for (const section of sections) {
     const split = String(section.type).toLowerCase() === 'race'

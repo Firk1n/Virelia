@@ -12,7 +12,7 @@ import { createHash } from 'node:crypto';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { indexImages, parseBlocks, renderEntry } from './parse-source.mjs';
+import { indexImages, parseBlocks, renderEntry, stripTableOfContents } from './parse-source.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const metaPath = path.join(root, 'content', 'entry-meta.json');
@@ -59,13 +59,7 @@ function slug(title) {
 
 /** Split the whole book into chapters, dropping only the table of contents. */
 function splitBook(text) {
-  let lines = text.split('\n');
-  const tocStart = lines.findIndex(l => l.trim() === 'Index');
-  if (tocStart >= 0) {
-    const tocEnd = lines.findIndex((l, i) =>
-      i > tocStart && PARTS.some(p => p.toLowerCase() === l.trim().toLowerCase()));
-    if (tocEnd > tocStart) lines = [...lines.slice(0, tocStart), ...lines.slice(tocEnd)];
-  }
+  const lines = stripTableOfContents(text, PARTS).split('\n');
 
   const chapters = [{ title: 'Preface', kind: 'front', part: null, lines: [] }];
   let part = null;

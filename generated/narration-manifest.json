@@ -270,8 +270,8 @@
     },
     "the_fractured_era": {
       "title": "The Fractured Era (The Current Day)",
-      "text": "The Fractured Era (The Current Day)\nThe last failed Remosan invasion of Trefgann was fifty years ago, and the Empire could no longer afford to organize a fourth. That is as close as we have come to peace. No treaty was signed and no borders were formalized, but the grand armies are gone, even though everything they were meant to protect us from is still here.\nRivhalde, Southfield, Haldrith, Trefgann and a handful of other regions hold their own ground, more or less, against the wildlands between. Less in most cases. Rifts still open in market squares on ordinary afternoons. Bandits take the roads the militia cannot afford to patrol. Rogue arcane weather drifts in from unstable areas and occasionally kills a village nobody had the manpower to warn.\nTrefgann still expects a Fourth March within the lifetime of its current children and trains accordingly. Is this peace? Either way, it is what it is.\nMagic. Goddamned magic. The apparatus the Age of Silence left behind has been rotting for most of two millennia, and most people have decided they want nothing to do with what remains of it. They have reasons. A wall that mostly repairs itself is of no comfort when it occasionally throws a brick at your house. A road that mends overnight will, twice a generation, mend itself through a cart and the family in it.\nThe few divine-era objects that still work reliably are guarded by people who understand them far less than they pretend to, and the ones that work unreliably kill more men than they have ever saved.\nReligion has shifted from worship to archaeology. A handful of clerics still name their gods, either because their families never stopped praying or because the names survived in scholarship, but no living priesthood carries an unbroken tradition. Most clerics don't bother with the names at all. They channel what is theorized to be Divine Residue, tapping into leftover echoes of the vanished Gods like scavengers.\nThe average person is atheistic, not as a philosophical position but as a practical one. The gods are no more. This is something a child learns early, alongside which neighbors to avoid.\nIn the absence of an empire, governance has settled into a multitude of pragmatic (and less pragmatic) arrangements: city-states, trade consortiums, industrial guilds, monastic orders, each ruling its own island and answerable to nothing larger than its own survival. Authority is measured in what a ruler can secure for his people: food, safe roads, protection against whatever drifts in from the wild. No one rules further than they can reach.\nFactions trade because they must, cooperate where their interests align, and guard their borders against rivals and the encroaching wild with equal vigilance. Contracts, coin, and the constant threat of collapse hold local order together. No one is under the illusion that they have built anything that will outlast them.\nIndex\nThe Regions of Virelia 1\nKnotsreach 3\nMolakar 6\nSouthfield 9\nMyrskov 12\nLastrago 15\nTintbent 19\nKelarra Peaks 23\nTavernash 27\nHaldrith 30\nRivhalde 35\nRemosa 38\nTrefgann 42\nThe Races of Virelia 40\nDuskwalker 42\nGraith 46\nMyrrkin 52\nOrrak 56\nNirath 60\nVarn 65\nKarex 69\nThe factions of Virelia 76\nThe Weave 77\nGreywater Compact 80\nThe Halcyon League 88\nThe Regions of Virelia\nTwelve regions, and not one country between them.\nWhile the land is intact, although bruised, the continent’s regions stand mostly alone.\nThe ground between holdings has gone hostile enough that steady trade and diplomacy are more aspiration than practice, and what a caravan brings home from the next region over has often been paid for in more than coin.\nWhere the land stopped being the immediate problem, often the neighbors picked up the slack. The central regions function anyway, after their own fashion. The edges are a more complicated story, and they each have their fair share of problems.\nIn some places the struggle is justified by resources which cannot be found elsewhere. In some, the locals are bullheaded madmen if you ask me.\nThe regions are not, for all this, uniformly grim. People marry, build, and quarrel over inheritances in places the empire would have written off as uninhabitable. Whatever the Sundering took, it was not our small communities or the quarrels inside them.",
-      "textHash": "3b7a6b2df4087f1e3acb51bfe2b763d681b5c8d87b824bac449b3b0e3fb5406f",
+      "text": "The Fractured Era (The Current Day)\nThe last failed Remosan invasion of Trefgann was fifty years ago, and the Empire could no longer afford to organize a fourth. That is as close as we have come to peace.\nNo treaty was signed and no borders were formalized, but the grand armies are gone, even though everything they were meant to protect us from is still here.\nRivhalde, Southfield, Haldrith, Trefgann and a handful of other regions hold their own ground, more or less, against the wildlands between. Less in most cases. Rifts still open in market squares on ordinary afternoons. Bandits take the roads the militia cannot afford to patrol.\nRogue arcane weather drifts in from unstable areas and occasionally kills a village nobody had the manpower to warn. Trefgann still expects a Fourth March within the lifetime of its current children and trains accordingly. Is this peace? Either way, it is what it is.\nMagic. Goddamned magic. The apparatus the Age of Silence left behind has been rotting for most of two millennia, and most people have decided they want nothing to do with what remains of it. They have reasons.\nA wall that mostly repairs itself is of no comfort when it occasionally throws a brick at your house. A road that mends overnight will, twice a generation, mend itself through a cart and the family in it.\nThe few divine-era objects that still work reliably are guarded by people who understand them far less than they pretend to, and the ones that work unreliably kill more men than they have ever saved.\nReligion has shifted from worship to archaeology. A handful of clerics still name their gods, either because their families never stopped praying or because the names survived in scholarship, but no living priesthood carries an unbroken tradition.\nMost clerics don't bother with the names at all. They channel what is theorized to be Divine Residue, tapping into leftover echoes of the vanished Gods like scavengers. The average person is atheistic, not as a philosophical position but as a practical one. The gods are no more.\nThis is something a child learns early, alongside which neighbors to avoid.\nIn the absence of an empire, governance has settled into a multitude of pragmatic (and less pragmatic) arrangements: city-states, trade consortiums, industrial guilds, monastic orders, each ruling its own island and answerable to nothing larger than its own survival.\nAuthority is measured in what a ruler can secure for his people: food, safe roads, protection against whatever drifts in from the wild. No one rules further than they can reach.\nFactions trade because they must, cooperate where their interests align, and guard their borders against rivals and the encroaching wild with equal vigilance. Contracts, coin, and the constant threat of collapse hold local order together.\nNo one is under the illusion that they have built anything that will outlast them.",
+      "textHash": "54542a6b72df3b89c4f2dc229a224ad56dd2c25ef22e23f03f158acb1aa6fe7a",
       "audioSrc": "audio/the_fractured_era.mp3",
       "timingSrc": "audio/the_fractured_era.timings.json",
       "segments": [
@@ -282,252 +282,134 @@
         },
         {
           "id": "s-0002",
-          "role": "epigraph",
-          "text": "The last failed Remosan invasion of Trefgann was fifty years ago, and the Empire could no longer afford to organize a fourth. That is as close as we have come to peace. No treaty was signed and no borders were formalized, but the grand armies are gone, even though everything they were meant to protect us from is still here.",
-          "last": true
+          "role": "prose",
+          "text": "The last failed Remosan invasion of Trefgann was fifty years ago, and the Empire could no longer afford to organize a fourth. That is as close as we have come to peace.",
+          "last": false
         },
         {
           "id": "s-0003",
-          "role": "epigraph",
-          "text": "Rivhalde, Southfield, Haldrith, Trefgann and a handful of other regions hold their own ground, more or less, against the wildlands between. Less in most cases. Rifts still open in market squares on ordinary afternoons. Bandits take the roads the militia cannot afford to patrol. Rogue arcane weather drifts in from unstable areas and occasionally kills a village nobody had the manpower to warn.",
-          "last": false
+          "role": "prose",
+          "text": "No treaty was signed and no borders were formalized, but the grand armies are gone, even though everything they were meant to protect us from is still here.",
+          "last": true
         },
         {
           "id": "s-0004",
-          "role": "epigraph",
-          "text": "Trefgann still expects a Fourth March within the lifetime of its current children and trains accordingly. Is this peace? Either way, it is what it is.",
-          "last": true
-        },
-        {
-          "id": "s-0005",
-          "role": "epigraph",
-          "text": "Magic. Goddamned magic. The apparatus the Age of Silence left behind has been rotting for most of two millennia, and most people have decided they want nothing to do with what remains of it. They have reasons. A wall that mostly repairs itself is of no comfort when it occasionally throws a brick at your house. A road that mends overnight will, twice a generation, mend itself through a cart and the family in it.",
+          "role": "prose",
+          "text": "Rivhalde, Southfield, Haldrith, Trefgann and a handful of other regions hold their own ground, more or less, against the wildlands between. Less in most cases. Rifts still open in market squares on ordinary afternoons. Bandits take the roads the militia cannot afford to patrol.",
           "last": false
         },
         {
-          "id": "s-0006",
-          "role": "epigraph",
-          "text": "The few divine-era objects that still work reliably are guarded by people who understand them far less than they pretend to, and the ones that work unreliably kill more men than they have ever saved.",
+          "id": "s-0005",
+          "role": "prose",
+          "text": "Rogue arcane weather drifts in from unstable areas and occasionally kills a village nobody had the manpower to warn. Trefgann still expects a Fourth March within the lifetime of its current children and trains accordingly. Is this peace? Either way, it is what it is.",
           "last": true
         },
         {
+          "id": "s-0006",
+          "role": "prose",
+          "text": "Magic. Goddamned magic. The apparatus the Age of Silence left behind has been rotting for most of two millennia, and most people have decided they want nothing to do with what remains of it. They have reasons.",
+          "last": false
+        },
+        {
           "id": "s-0007",
-          "role": "epigraph",
-          "text": "Religion has shifted from worship to archaeology. A handful of clerics still name their gods, either because their families never stopped praying or because the names survived in scholarship, but no living priesthood carries an unbroken tradition. Most clerics don't bother with the names at all. They channel what is theorized to be Divine Residue, tapping into leftover echoes of the vanished Gods like scavengers.",
+          "role": "prose",
+          "text": "A wall that mostly repairs itself is of no comfort when it occasionally throws a brick at your house. A road that mends overnight will, twice a generation, mend itself through a cart and the family in it.",
           "last": false
         },
         {
           "id": "s-0008",
-          "role": "epigraph",
-          "text": "The average person is atheistic, not as a philosophical position but as a practical one. The gods are no more. This is something a child learns early, alongside which neighbors to avoid.",
+          "role": "prose",
+          "text": "The few divine-era objects that still work reliably are guarded by people who understand them far less than they pretend to, and the ones that work unreliably kill more men than they have ever saved.",
           "last": true
         },
         {
           "id": "s-0009",
-          "role": "epigraph",
-          "text": "In the absence of an empire, governance has settled into a multitude of pragmatic (and less pragmatic) arrangements: city-states, trade consortiums, industrial guilds, monastic orders, each ruling its own island and answerable to nothing larger than its own survival. Authority is measured in what a ruler can secure for his people: food, safe roads, protection against whatever drifts in from the wild. No one rules further than they can reach.",
+          "role": "prose",
+          "text": "Religion has shifted from worship to archaeology. A handful of clerics still name their gods, either because their families never stopped praying or because the names survived in scholarship, but no living priesthood carries an unbroken tradition.",
           "last": false
         },
         {
           "id": "s-0010",
-          "role": "epigraph",
-          "text": "Factions trade because they must, cooperate where their interests align, and guard their borders against rivals and the encroaching wild with equal vigilance. Contracts, coin, and the constant threat of collapse hold local order together. No one is under the illusion that they have built anything that will outlast them.",
-          "last": true
+          "role": "prose",
+          "text": "Most clerics don't bother with the names at all. They channel what is theorized to be Divine Residue, tapping into leftover echoes of the vanished Gods like scavengers. The average person is atheistic, not as a philosophical position but as a practical one. The gods are no more.",
+          "last": false
         },
         {
           "id": "s-0011",
-          "role": "attribution",
-          "text": "Index",
+          "role": "prose",
+          "text": "This is something a child learns early, alongside which neighbors to avoid.",
           "last": true
         },
         {
           "id": "s-0012",
-          "role": "heading",
-          "text": "The Regions of Virelia 1",
-          "last": true
+          "role": "prose",
+          "text": "In the absence of an empire, governance has settled into a multitude of pragmatic (and less pragmatic) arrangements: city-states, trade consortiums, industrial guilds, monastic orders, each ruling its own island and answerable to nothing larger than its own survival.",
+          "last": false
         },
         {
           "id": "s-0013",
-          "role": "heading",
-          "text": "Knotsreach 3",
-          "last": true
+          "role": "prose",
+          "text": "Authority is measured in what a ruler can secure for his people: food, safe roads, protection against whatever drifts in from the wild. No one rules further than they can reach.",
+          "last": false
         },
         {
           "id": "s-0014",
-          "role": "heading",
-          "text": "Molakar 6",
-          "last": true
+          "role": "prose",
+          "text": "Factions trade because they must, cooperate where their interests align, and guard their borders against rivals and the encroaching wild with equal vigilance. Contracts, coin, and the constant threat of collapse hold local order together.",
+          "last": false
         },
         {
           "id": "s-0015",
-          "role": "heading",
-          "text": "Southfield 9",
-          "last": true
-        },
-        {
-          "id": "s-0016",
-          "role": "heading",
-          "text": "Myrskov 12",
-          "last": true
-        },
-        {
-          "id": "s-0017",
-          "role": "heading",
-          "text": "Lastrago 15",
-          "last": true
-        },
-        {
-          "id": "s-0018",
-          "role": "heading",
-          "text": "Tintbent 19",
-          "last": true
-        },
-        {
-          "id": "s-0019",
-          "role": "heading",
-          "text": "Kelarra Peaks 23",
-          "last": true
-        },
-        {
-          "id": "s-0020",
-          "role": "heading",
-          "text": "Tavernash 27",
-          "last": true
-        },
-        {
-          "id": "s-0021",
-          "role": "heading",
-          "text": "Haldrith 30",
-          "last": true
-        },
-        {
-          "id": "s-0022",
-          "role": "heading",
-          "text": "Rivhalde 35",
-          "last": true
-        },
-        {
-          "id": "s-0023",
-          "role": "heading",
-          "text": "Remosa 38",
-          "last": true
-        },
-        {
-          "id": "s-0024",
-          "role": "heading",
-          "text": "Trefgann 42",
-          "last": true
-        },
-        {
-          "id": "s-0025",
-          "role": "heading",
-          "text": "The Races of Virelia 40",
-          "last": true
-        },
-        {
-          "id": "s-0026",
-          "role": "heading",
-          "text": "Duskwalker 42",
-          "last": true
-        },
-        {
-          "id": "s-0027",
-          "role": "heading",
-          "text": "Graith 46",
-          "last": true
-        },
-        {
-          "id": "s-0028",
-          "role": "heading",
-          "text": "Myrrkin 52",
-          "last": true
-        },
-        {
-          "id": "s-0029",
-          "role": "heading",
-          "text": "Orrak 56",
-          "last": true
-        },
-        {
-          "id": "s-0030",
-          "role": "heading",
-          "text": "Nirath 60",
-          "last": true
-        },
-        {
-          "id": "s-0031",
-          "role": "heading",
-          "text": "Varn 65",
-          "last": true
-        },
-        {
-          "id": "s-0032",
-          "role": "heading",
-          "text": "Karex 69",
-          "last": true
-        },
-        {
-          "id": "s-0033",
-          "role": "heading",
-          "text": "The factions of Virelia 76",
-          "last": true
-        },
-        {
-          "id": "s-0034",
-          "role": "heading",
-          "text": "The Weave 77",
-          "last": true
-        },
-        {
-          "id": "s-0035",
-          "role": "heading",
-          "text": "Greywater Compact 80",
-          "last": true
-        },
-        {
-          "id": "s-0036",
-          "role": "heading",
-          "text": "The Halcyon League 88",
-          "last": true
-        },
-        {
-          "id": "s-0037",
-          "role": "heading",
-          "text": "The Regions of Virelia",
-          "last": true
-        },
-        {
-          "id": "s-0038",
           "role": "prose",
+          "text": "No one is under the illusion that they have built anything that will outlast them.",
+          "last": true
+        }
+      ]
+    },
+    "the_regions_of_virelia": {
+      "title": "The Regions of Virelia",
+      "text": "The Regions of Virelia\nTwelve regions, and not one country between them.\nWhile the land is intact, although bruised, the continent’s regions stand mostly alone.\nThe ground between holdings has gone hostile enough that steady trade and diplomacy are more aspiration than practice, and what a caravan brings home from the next region over has often been paid for in more than coin.\nWhere the land stopped being the immediate problem, often the neighbors picked up the slack. The central regions function anyway, after their own fashion. The edges are a more complicated story, and they each have their fair share of problems.\nIn some places the struggle is justified by resources which cannot be found elsewhere. In some, the locals are bullheaded madmen if you ask me.\nThe regions are not, for all this, uniformly grim. People marry, build, and quarrel over inheritances in places the empire would have written off as uninhabitable. Whatever the Sundering took, it was not our small communities or the quarrels inside them.",
+      "textHash": "e366d57aa9e6b5f2f8c11bcea90cf4f391f983282ce8ce87867d09a03cc0202a",
+      "audioSrc": "audio/the_regions_of_virelia.mp3",
+      "timingSrc": "audio/the_regions_of_virelia.timings.json",
+      "segments": [
+        {
+          "id": "s-0001",
+          "role": "title",
+          "text": "The Regions of Virelia"
+        },
+        {
+          "id": "s-0002",
+          "role": "tagline",
           "text": "Twelve regions, and not one country between them.",
           "last": true
         },
         {
-          "id": "s-0039",
+          "id": "s-0003",
           "role": "prose",
           "text": "While the land is intact, although bruised, the continent’s regions stand mostly alone.",
           "last": false
         },
         {
-          "id": "s-0040",
+          "id": "s-0004",
           "role": "prose",
           "text": "The ground between holdings has gone hostile enough that steady trade and diplomacy are more aspiration than practice, and what a caravan brings home from the next region over has often been paid for in more than coin.",
           "last": true
         },
         {
-          "id": "s-0041",
+          "id": "s-0005",
           "role": "prose",
           "text": "Where the land stopped being the immediate problem, often the neighbors picked up the slack. The central regions function anyway, after their own fashion. The edges are a more complicated story, and they each have their fair share of problems.",
           "last": false
         },
         {
-          "id": "s-0042",
+          "id": "s-0006",
           "role": "prose",
           "text": "In some places the struggle is justified by resources which cannot be found elsewhere. In some, the locals are bullheaded madmen if you ask me.",
           "last": true
         },
         {
-          "id": "s-0043",
+          "id": "s-0007",
           "role": "prose",
           "text": "The regions are not, for all this, uniformly grim. People marry, build, and quarrel over inheritances in places the empire would have written off as uninhabitable. Whatever the Sundering took, it was not our small communities or the quarrels inside them.",
           "last": true
