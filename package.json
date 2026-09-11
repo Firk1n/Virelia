@@ -5,9 +5,9 @@
   "description": "Interactive Virelia map and wiki, built from Virelia.txt",
   "type": "module",
   "scripts": {
-    "build": "node scripts/build-wiki.mjs && node scripts/build-book.mjs && node scripts/build-region-bounds.mjs",
+    "build": "node scripts/build-wiki.mjs && node scripts/build-book.mjs && node scripts/build-region-bounds.mjs && node scripts/build-offline-manifest.mjs",
     "plan": "node scripts/build-wiki.mjs --dry-run",
-    "check": "node scripts/build-wiki.mjs --check && node scripts/build-book.mjs --check && node scripts/build-region-bounds.mjs --check",
+    "check": "node scripts/build-wiki.mjs --check && node scripts/build-book.mjs --check && node scripts/build-region-bounds.mjs --check && node scripts/build-offline-manifest.mjs",
     "test": "npm run check && node scripts/audit.mjs",
     "images": "python scripts/import-docx-images.py",
     "pdf": "python scripts/shrink-docx.py",

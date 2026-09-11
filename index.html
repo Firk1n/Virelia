@@ -25,6 +25,7 @@
          circle is not worth a request. -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%236d746b'/><circle cx='16' cy='16' r='8.5' fill='%2396373f' stroke='%23fdf6e3' stroke-width='3'/></svg>">
     <link rel="apple-touch-icon" href="assets/social-card.jpg">
+    <link rel="manifest" href="manifest.webmanifest">
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
     <link rel="stylesheet" href="style.css">
@@ -71,6 +72,10 @@
             <svg class="map-button-icon" aria-hidden="true"><use href="#icon-wiki"></use></svg>Wiki</button>
         <button type="button" id="open-book" class="map-button" title="Open the book">
             <svg class="map-button-icon" aria-hidden="true"><use href="#icon-book"></use></svg>Book</button>
+        <button type="button" id="open-offline" class="map-button" hidden>Offline</button>
+    </div>
+    <div id="offline-dialog" hidden role="dialog" aria-modal="true" aria-label="Download Virelia">
+      <div class="offline-card"><button id="offline-later" type="button">Not now</button><h2>Download</h2><p>Will make the website available offline</p><strong id="offline-size"></strong><p id="offline-progress" hidden></p><button id="offline-download" type="button">Download</button></div>
     </div>
 
     <div id="sidebar">
@@ -150,6 +155,8 @@
     <script src="reader.js"></script>
     <script src="book.js"></script>
     <script src="search.js"></script>
+    <script src="generated/offline-manifest.js"></script>
+    <script src="offline.js"></script>
 
 <script>
     // --- LIGHTBOX ---
