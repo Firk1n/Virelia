@@ -61,21 +61,41 @@
             <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
             <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
         </symbol>
+        <symbol id="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 6h18M3 12h18M3 18h18"></path>
+        </symbol>
+        <symbol id="icon-download" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <path d="M7 10l5 5 5-5M12 15V3"></path>
+        </symbol>
     </svg>
 
     <div id="map"></div>
 
+    <!-- Search stays on the map, since it is the one reached for mid-session;
+         everything else folds into the menu beside it. A disclosure rather than
+         an ARIA menu: plain buttons in a panel, reached with Tab. -->
     <div class="map-buttons">
+        <div class="map-menu">
+            <button type="button" id="open-menu" class="map-button map-menu-toggle"
+                    aria-expanded="false" aria-controls="map-menu" aria-label="Menu" title="Menu">
+                <svg class="map-button-icon" aria-hidden="true"><use href="#icon-menu"></use></svg></button>
+            <div id="map-menu" class="map-menu-panel" hidden>
+                <button type="button" id="open-reader" class="map-menu-item" title="Read the wiki">
+                    <svg class="map-button-icon" aria-hidden="true"><use href="#icon-wiki"></use></svg>Wiki</button>
+                <button type="button" id="open-book" class="map-menu-item" title="Open the book">
+                    <svg class="map-button-icon" aria-hidden="true"><use href="#icon-book"></use></svg>Book</button>
+                <button type="button" id="open-offline" class="map-menu-item" title="Download for offline use" hidden>
+                    <svg class="map-button-icon" aria-hidden="true"><use href="#icon-download"></use></svg>Offline</button>
+            </div>
+        </div>
         <button type="button" id="open-search" class="map-button" title="Search Virelia (/)">
             <svg class="map-button-icon" aria-hidden="true"><use href="#icon-search"></use></svg>Search</button>
-        <button type="button" id="open-reader" class="map-button" title="Read the wiki">
-            <svg class="map-button-icon" aria-hidden="true"><use href="#icon-wiki"></use></svg>Wiki</button>
-        <button type="button" id="open-book" class="map-button" title="Open the book">
-            <svg class="map-button-icon" aria-hidden="true"><use href="#icon-book"></use></svg>Book</button>
-        <button type="button" id="open-offline" class="map-button" hidden>Offline</button>
     </div>
     <div id="offline-dialog" hidden role="dialog" aria-modal="true" aria-label="Download Virelia">
-      <div class="offline-card"><button id="offline-close" class="offline-close" type="button" aria-label="Close"><span>&times;</span></button><p>Will make the website available offline</p><strong id="offline-size"></strong><p id="offline-progress" hidden></p><button id="offline-download" type="button">Download</button></div>
+      <div class="offline-card"><div class="offline-message">Download the website to make it available offline.</div><button id="offline-close" class="offline-close" type="button" aria-label="Close"><span>&times;</span></button><p id="offline-progress" hidden></p><div class="offline-bottom"><p class="offline-size-label">Current size: <strong id="offline-size"></strong></p><div class="offline-actions"><button id="offline-download" type="button">Continue</button><button id="offline-cancel" type="button">Cancel</button></div></div></div>
     </div>
 
     <div id="sidebar">
@@ -200,6 +220,46 @@
             if (event.key === 'Escape') { event.preventDefault(); closeLightbox(); }
             // Two focusable things, one of which is the image; keep Tab here.
             if (event.key === 'Tab') { event.preventDefault(); closeButton.focus(); }
+        });
+    })();
+
+    // --- MAP MENU ---
+    (function () {
+        'use strict';
+        var toggle = document.getElementById('open-menu');
+        var panel = document.getElementById('map-menu');
+
+        function setOpen(open) {
+            panel.hidden = !open;
+            toggle.setAttribute('aria-expanded', String(open));
+        }
+
+        toggle.addEventListener('click', function () { setOpen(panel.hidden); });
+
+        // Capture phase, so this runs before the item's own handler: the
+        // reader, book and offline dialogs remember document.activeElement to
+        // hand focus back on close, and the item is hidden by then. Moving
+        // focus to the toggle first gives them somewhere real to return to.
+        panel.addEventListener('click', function (event) {
+            if (!event.target.closest('.map-menu-item')) return;
+            toggle.focus();
+            setOpen(false);
+        }, true);
+
+        panel.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') { event.preventDefault(); toggle.focus(); setOpen(false); }
+        });
+        toggle.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape' && !panel.hidden) { event.preventDefault(); setOpen(false); }
+        });
+
+        // A click or a Tab anywhere else puts it away.
+        var menu = toggle.parentNode;
+        document.addEventListener('pointerdown', function (event) {
+            if (!panel.hidden && !menu.contains(event.target)) setOpen(false);
+        });
+        menu.addEventListener('focusout', function (event) {
+            if (event.relatedTarget && !menu.contains(event.relatedTarget)) setOpen(false);
         });
     })();
 
